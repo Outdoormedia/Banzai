@@ -1,0 +1,104 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "partials/resets";
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/oma_mixins";
+
+body
+     
+     {
+       font: georgia bold san-serif;
+       color: $oma_green;
+//       background: $oma_green_fade-3;
+   
+       & .box {
+	  height: 200px;
+	  width:  250px;
+	  border: 1px solid black;
+	  background: $oma_grey_fade-2;
+          }
+       }
+.panel
+      {
+        margin-top: 10px;
+        margin-left:5%;
+        margin-right:5%;
+        margin-bottom: 30px;
+        }
+
+.oma_header
+      {
+        @extend .panel;
+//        border: 1px solid pink;
+        background: $white;
+        }
+.oma_footer 
+      {
+	@extend .panel;
+        }
+
+.oma_menu_bar
+      {
+        border: 1px solid orange;
+        @extend .panel;
+        margin-top: 0px;
+        margin-left:0px;
+        margin-right:0px;
+        margin-bottom: 0px;
+        background: $oma_grey;
+        }
+
+.oma_welcome_outer_panel
+      {
+//        border: 1px solid cyan;
+        @extend .panel;
+        height: 400px;
+        background: $oma_green_fade-3;
+        }
+
+.oma_welcome_inner_panel
+      {
+        @extend .panel;
+        background: $white;
+        height: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 0px;
+        position:relative;
+        top:-0px;
+        }
+
+.infobox
+       {
+         width: 400px;
+        .message {
+          border: 1px solid $oma_green;
+          .title {
+            color: %white; } }
+        .user {
+            border: 2px solid black;
+            .title {
+              color: %oma_grey; } } }
+
+
+oma_info_text{
+	background: yellow;
+        }
+
+// rule for login invitations
+#oma_login_invite{
+        text-align: right;
+        color: $oma_green;	
+        position:relative;
+        top:-70px;
+        }
+
+
+.product_title 
+    {
+	 border: 1px solid black;
+	 @include oma_text;
+	 }

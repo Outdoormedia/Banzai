@@ -1,0 +1,24 @@
+// Put all mixins defined for OMA here
+
+@mixin oma_green_text {
+  color:       $oma_green;
+  font-family: $oma_font;
+  font-size:   $oma_font-size ;
+  font-variant: small-caps; }
+
+@mixin oma_menu_item {
+  background-color: $oma_grey_fade-2;
+}
+
+@mixin oma_page_header {
+  background-color: $oma_grey;
+  width: span(24)
+}
+
+@mixin oma_text($color: oma_green, $size: 12px) {
+  color: $color;
+  font-family: $oma_font_family;
+  font-size: $size;
+}
+
+
