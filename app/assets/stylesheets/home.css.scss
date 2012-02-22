@@ -85,3 +85,15 @@ body{
 	 border: 1px solid black;
 	 @include oma_text;
 	 }
+
+.center{
+	float:center;
+        }
+
+.left{
+	float:left;
+        }
+
+.right{
+        float:right;
+        }

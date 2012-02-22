@@ -1,11 +1,18 @@
 
 .oma_footer
-  = image_tag("zenith.gif", :alt => "Sample App", :class => "round")
 
-  = @copyright_message
+  .left
+    = image_tag("zenith.gif", :alt => "Sample App")
 
-  = @organization_name
+ 
+  .right  
+    = image_tag("oma_logo.png", :alt => "Sample App")
 
-  = image_tag("oma_logo.png", :alt => "Sample App", :class => "menu_item")
+  .center
+    %br
+    %br
+    = @copyright_message
+    %br
+    = @organization_name
 
 

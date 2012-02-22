@@ -111,3 +111,12 @@ body {
   color: oma_green;
   font-family: georgia, helvetica, arial, sans-serif;
   font-size: 12px; }
+
+.center {
+  float: center; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
