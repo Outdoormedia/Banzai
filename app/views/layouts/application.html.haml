@@ -12,14 +12,15 @@
         =image_tag("image003.jpg", :alt => "Sample App", :class => "round")
         #oma_login_invite
           = @login_message
-        
+      %br  
 
       .oma_welcome_outer_panel
         = render '/shared/menu_bar'       
 
         .oma_welcome_inner_panel
-          .span
+          .oma_welcome_message
             = @welcome_message
+          .oma_welcome_message
             = @login_status_message
 
     = yield

@@ -45,26 +45,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  font: georgia bold san-serif;
-  color: #25b264; }
-  body .box {
-    height: 200px;
-    width: 250px;
-    border: 1px solid black;
-    background: #dddede; }
-
 .panel, .oma_header, .oma_footer, .oma_menu_bar, .oma_welcome_outer_panel, .oma_welcome_inner_panel {
   margin-top: 10px;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 30px; }
 
+body {
+  font: georgia bold san-serif;
+  color: #25b264; }
+
 .oma_header {
   background: white; }
 
+.oma_footer {
+  font-size: 10px;
+  text-align: center;
+  color: #25b264; }
+
+.oma_footer_text {
+  font-size: 10px;
+  text-align: center;
+  color: #25b264; }
+
 .oma_menu_bar {
-  border: 1px solid orange;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -84,25 +88,23 @@ body {
   position: relative;
   top: 0px; }
 
-.infobox {
-  width: 400px; }
-  .infobox .message {
-    border: 1px solid #25b264; }
-    .infobox .message .title {
-      color: %white; }
-  .infobox .user {
-    border: 2px solid black; }
-    .infobox .user .title {
-      color: %oma_grey; }
+.oma_welcome_message {
+  position: relative;
+  left: 200px;
+  top: 70px; }
 
-oma_info_text {
-  background: yellow; }
+.oma_info_text {
+  text-align: center;
+  color: #25b264;
+  position: relative;
+  left: -20px; }
 
 #oma_login_invite {
   text-align: right;
   color: #25b264;
   position: relative;
-  top: -70px; }
+  left: -180px;
+  top: -60px; }
 
 .product_title {
   border: 1px solid black;

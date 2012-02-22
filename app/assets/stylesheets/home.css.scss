@@ -7,42 +7,31 @@
 @import "partials/fonts";
 @import "partials/oma_mixins";
 
-body
-     
-     {
+body{
        font: georgia bold san-serif;
        color: $oma_green;
-//       background: $oma_green_fade-3;
-   
-       & .box {
-	  height: 200px;
-	  width:  250px;
-	  border: 1px solid black;
-	  background: $oma_grey_fade-2;
-          }
        }
-.panel
-      {
-        margin-top: 10px;
-        margin-left:5%;
-        margin-right:5%;
-        margin-bottom: 30px;
-        }
 
-.oma_header
-      {
+
+.oma_header{
         @extend .panel;
 //        border: 1px solid pink;
         background: $white;
         }
-.oma_footer 
-      {
+
+.oma_footer{
 	@extend .panel;
+	font-size: 10px;
+        text-align: center;
+        color: $oma_green;	
+        }
+.oma_footer_text{
+	font-size: 10px;
+        text-align: center;
+        color: $oma_green;	
         }
 
-.oma_menu_bar
-      {
-        border: 1px solid orange;
+.oma_menu_bar{
         @extend .panel;
         margin-top: 0px;
         margin-left:0px;
@@ -51,16 +40,14 @@ body
         background: $oma_grey;
         }
 
-.oma_welcome_outer_panel
-      {
+.oma_welcome_outer_panel{
 //        border: 1px solid cyan;
         @extend .panel;
         height: 400px;
         background: $oma_green_fade-3;
         }
 
-.oma_welcome_inner_panel
-      {
+.oma_welcome_inner_panel{
         @extend .panel;
         background: $white;
         height: 50%;
@@ -71,21 +58,17 @@ body
         top:-0px;
         }
 
-.infobox
-       {
-         width: 400px;
-        .message {
-          border: 1px solid $oma_green;
-          .title {
-            color: %white; } }
-        .user {
-            border: 2px solid black;
-            .title {
-              color: %oma_grey; } } }
+.oma_welcome_message{
+	position:relative;
+	left:200px;
+	top: 70px;
+        }
 
-
-oma_info_text{
-	background: yellow;
+.oma_info_text{
+        text-align: center;
+        color: $oma_green;	
+        position:relative;
+        left:-20px;
         }
 
 // rule for login invitations
@@ -93,12 +76,12 @@ oma_info_text{
         text-align: right;
         color: $oma_green;	
         position:relative;
-        top:-70px;
+        left: -180px;
+        top: -60px;
         }
 
 
-.product_title 
-    {
+.product_title{
 	 border: 1px solid black;
 	 @include oma_text;
 	 }
