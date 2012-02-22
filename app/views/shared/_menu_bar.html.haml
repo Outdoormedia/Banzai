@@ -1,18 +1,21 @@
-.oma_menu_bar
-  .span
-    = link_to "Home", '#', :method => 'get'
-    %button
-      Plan
-    %button
-      = 'Proof'
-    %button
-      = 'Buy'
-    %button
-      = '   '
-    %button
-      = '   '
-    %button
-      = 'Admin'
-    %button
-      = 'Move Admin'
-  
+
+%ul.oma_menu_bar
+
+  %li.oma_menu_item
+    =link_to 'Home', root_url
+
+  %li.oma_menu_item
+    =link_to 'Planning', href="http://www.wsj.com"
+
+  %li
+    =link_to 'Buying', href="http://moveoutdoor.com.au"
+
+  %li.oma_menu_item
+    =link_to 'Learning', href=root_url
+
+  %li.oma_menu_item
+    =link_to 'Proof', href=root_url
+
+  %li.oma_menu_item
+    =link_to 'Contact', href="http://moveoutdoor.com.au/contact-us"
+

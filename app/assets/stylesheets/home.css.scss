@@ -31,15 +31,6 @@ body{
         color: $oma_green;	
         }
 
-.oma_menu_bar{
-        @extend .panel;
-        margin-top: 0px;
-        margin-left:0px;
-        margin-right:0px;
-        margin-bottom: 0px;
-        background: $oma_grey;
-        }
-
 .oma_welcome_outer_panel{
 //        border: 1px solid cyan;
         @extend .panel;
@@ -97,3 +88,41 @@ body{
 .right{
         float:right;
         }
+
+
+//.oma_menu_bar{
+//        @extend .panel;
+//        margin-top: 0px;
+//        margin-left:0px;
+//        margin-right:0px;
+//        margin-bottom: 0px;
+//        background: $oma_grey;
+//        }
+
+
+oma_menu_bar, ul{
+       list-style-type:none;
+       margin:0;
+       padding:0;
+       overflow:hidden;
+       }
+oma_menu_item, li{
+       float:left;
+       }
+a:link,a:visited
+{
+       display:block;
+       width:132px;
+       font-family:verdana;
+       font-weight:bold;
+       color:$white;
+       background-color:$oma_green;
+       text-align:center;
+       padding:4px;
+       text-decoration:none;
+       text-transform:uppercase;
+       }
+a:hover,a:active{
+       background-color:$oma_green_fade-2;
+       }
+
