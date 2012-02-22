@@ -121,14 +121,14 @@ oma_menu_bar, ul {
   overflow: hidden; }
 
 oma_menu_item, li {
-  float: left;
-  border-right: 1px red; }
+  float: left; }
 
 a:link, a:visited {
   display: block;
   width: 132px;
   font-family: verdana;
   font-weight: bold;
+  font-size: 12px;
   color: white;
   background-color: #25b264;
   text-align: center;
