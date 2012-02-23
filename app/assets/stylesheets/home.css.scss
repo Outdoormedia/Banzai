@@ -1,6 +1,6 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//  Place all  the styles  related to  the Home  controller here.  
+//  They  will automatically  be included   in  application.css.   
+//  You   can  use   Sass  (SCSS)   here:  http://sass-lang.com/
 
 @import "partials/resets";
 @import "partials/colors";
@@ -90,16 +90,6 @@ body{
         }
 
 
-//.oma_menu_bar{
-//        @extend .panel;
-//        margin-top: 0px;
-//        margin-left:0px;
-//        margin-right:0px;
-//        margin-bottom: 0px;
-//        background: $oma_grey;
-//        }
-
-
 oma_menu_bar, ul{
        list-style-type:none;
        margin:0;
@@ -107,11 +97,17 @@ oma_menu_bar, ul{
        overflow:hidden;
        background: $oma_green;
        }
-oma_menu_item, li{
-       float:left;
+.oma_menu_item, li{
+       @extend .menu_item;
        }
-a:link,a:visited
-{
+#oma_snapshot_menu_item{
+       @extend .menu_item;
+//       visibility: hidden;
+       height: 100px;
+       width: 100px;
+       background-color: $oma_green;
+       }
+a:link,a:visited{
        display:block;
        width:132px;
        font-family:verdana;

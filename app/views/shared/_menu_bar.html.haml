@@ -5,17 +5,19 @@
     =link_to 'Home', root_url
 
   %li.oma_menu_item
-    =link_to_function 'Planning', "alert('Snapshots and Plan By Format tabs from MOVE AMS.  No logon required.');"
+    =link_to_function 'Planning', "alert('Snapshots and Plan By Format tabs from MOVE AMS.  No logon required.');", onmouseover: "alert('Contact link from moveoutdoor.com');"
+
+    =link_to_function 'Planning', "$('#oma_snapshot_menu_item').toggle();"
 
   %li
-    =link_to_function 'Buying', "alert('MOVE AMS tabs with logon required.');"
+    =link_to_function 'Buying', "alert('MOVE AMS tabs with logon required.');", onmouseover: "alert('mouse!');"
 
   %li.oma_menu_item
-    =link_to_function 'Learning',  "alert('Not implemented this release.');"
+    =link_to_function 'Learning',  "alert('Not implemented this release.)"
 
   %li.oma_menu_item
     =link_to_function 'Proof',  "alert('Not implemented this release.');"
 
   %li.oma_menu_item
-    =link_to 'Contact', href="http://moveoutdoor.com.au/contact-us"
+    =link_to 'Contact', href="http://moveoutdoor.com.au/contact-us", onmouseover: "alert('Contact link from moveoutdoor.com');"
 

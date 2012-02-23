@@ -22,7 +22,11 @@
   font-size: $size;
   }
 
-// @extend classes, here for lack of a better idea
+// @extend classes, here for lack of a better place
+.menu_item, li{
+       float:left;
+       }
+
 .panel{
         margin-top: 10px;
         margin-left:5%;
