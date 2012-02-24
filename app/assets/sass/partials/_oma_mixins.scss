@@ -7,10 +7,6 @@
   font-variant: small-caps; 
   }
 
-@mixin oma_menu_item {
-  background-color: $oma_grey_fade-2;
-  }
-
 @mixin oma_page_header {
   background-color: $oma_grey;
   width: span(24)
@@ -20,6 +16,12 @@
   color: $color;
   font-family: $oma_font_family;
   font-size: $size;
+  }
+
+@mixin oma_sub-menu_item($color: $oma_grey) {
+  background-color: $color;
+  display: none;
+  float:left;
   }
 
 // @extend classes, here for lack of a better place

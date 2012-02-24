@@ -45,7 +45,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.menu_item, .oma_menu_item, li, #oma_snapshot_menu_item, li {
+.menu_item, li {
   float: left; }
 
 .panel, .oma_header, .oma_footer, .oma_welcome_outer_panel, .oma_welcome_inner_panel {
@@ -124,10 +124,15 @@ oma_menu_bar, ul {
   overflow: hidden;
   background: #25b264; }
 
-#oma_snapshot_menu_item {
-  height: 100px;
-  width: 100px;
-  background-color: #25b264; }
+#oma_snapshot_sub-menu_item {
+  background-color: #51c183;
+  display: none;
+  float: left; }
+
+#oma_plan-by-format_sub-menu_item {
+  background-color: #51c183;
+  display: none;
+  float: left; }
 
 a:link, a:visited {
   display: block;

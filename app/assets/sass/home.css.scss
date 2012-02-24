@@ -89,7 +89,6 @@ body{
         float:right;
         }
 
-
 oma_menu_bar, ul{
        list-style-type:none;
        margin:0;
@@ -97,16 +96,13 @@ oma_menu_bar, ul{
        overflow:hidden;
        background: $oma_green;
        }
-.oma_menu_item, li{
-       @extend .menu_item;
+#oma_snapshot_sub-menu_item{
+       @include oma_sub-menu_item( $oma_green_fade-1 );
        }
-#oma_snapshot_menu_item{
-       @extend .menu_item;
-//       visibility: hidden;
-       height: 100px;
-       width: 100px;
-       background-color: $oma_green;
+#oma_plan-by-format_sub-menu_item{
+       @include oma_sub-menu_item( $oma_green_fade-1 );
        }
+
 a:link,a:visited{
        display:block;
        width:132px;
