@@ -1,18 +1,22 @@
 
-%ul.oma_menu_bar
+%ul.oma_main_menu_bar
 
   %li.oma_menu_item
-    =link_to 'Home', root_url
+    =link_to_function 'Home', :onclick => "say_hi();"
 
   %li.oma_menu_item
-    =link_to_function 'Planning', "$('#oma_snapshot_sub-menu_item').toggle();"
+    =link_to_function 'Planning', 
+    "$('#oma_snapshot_sub-menu_item').toggle(); $('#oma_plan-by-format_sub-menu_item').toggle();"
 
-    .oma_menu_bar
-      #oma_snapshot_sub-menu_item
-        =link_to_function 'Snapshot',       "$('#oma_snapshot_sub-menu_item').toggle();"
-        =link_to_function 'Plan By Format', "$('#oma_plan-by-format_sub-menu_item').toggle();"
-        =link_to_function 'Snapshot',       "$('#oma_snapshot_sub-menu_item').toggle();"
-        =link_to_function 'Plan By Format', "$('#oma_plan-by-format_sub-menu_item').toggle();"
+    %ul
+      #oma_menu_bar
+        %li
+          #oma_snapshot_sub-menu_item
+            =link_to_function 'Snapshot', :onclick => "alert('wtf?')"
+
+        %li
+          #oma_plan-by-format_sub-menu_item
+            =link_to_function "Plan By Format", "#"
 
   %li.oma_menu_item
     =link_to_function 'Buying', "alert('MOVE AMS tabs with logon required.');", onmouseover: "alert('mouse!');"

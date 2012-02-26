@@ -18,11 +18,20 @@
   font-size: $size;
   }
 
+//
+// Menus elements
+//
+@mixin oma_menu_bar($color: oma_grey){
+       background: $color;
+       display:none;
+       float:left;
+       }
+
 @mixin oma_sub-menu_item($color: $oma_grey) {
-  background-color: $color;
-  display: none;
-  float:left;
-  }
+       background-color: $color;
+       display: none;
+       float:left;
+       }
 
 // @extend classes, here for lack of a better place
 .menu_item, li{

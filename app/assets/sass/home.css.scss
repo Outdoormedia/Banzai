@@ -89,18 +89,15 @@ body{
         float:right;
         }
 
-oma_menu_bar, ul{
-       list-style-type:none;
-       margin:0;
-       padding:0;
-       overflow:hidden;
-       background: $oma_green;
+oma_main_menu_bar, ul{
+	@include oma_menu_bar($oma_green_fade-2);
        }
+
 #oma_snapshot_sub-menu_item{
-       @include oma_sub-menu_item( $oma_green_fade-1 );
+       @include oma_sub-menu_item;
        }
 #oma_plan-by-format_sub-menu_item{
-       @include oma_sub-menu_item( $oma_green_fade-1 );
+       @include oma_sub-menu_item;
        }
 
 a:link,a:visited{
@@ -121,3 +118,13 @@ a:hover,a:active{
        background-color:$oma_green_fade-2;
        }
 
+#grid {
+position: relative;
+text-align: center;
+width: 480px;
+margin: 16px auto;
+padding: 32px 0;
+border: 2px solid #555;
+font-size: 64px;
+font-family: Monaco, "DejaVu Sans Mono", "Lucida Console", monospace;
+}
