@@ -1,36 +1,39 @@
-%oma_menu_item
-  #test 
-    =link_to_function 'Test', "$(test_click();)"
 
-%ul.oma_main_menu_bar
 
-  %li.oma_menu_item
+%ul.oma_menu_bar
+
+  %li
     #home
-      =link_to_function 'Home', "$(test_click();)", onmouseover: "say_hi();"
+      =link_to_function 'Home', nil
 
-  %li.oma_menu_item
-    =link_to_function 'Planning', 
-    "$('#oma_snapshot_sub-menu_item').toggle(); $('#oma_plan-by-format_sub-menu_item').toggle();"
+  %li
+    #plan
+      =link_to_function 'Planning', nil
 
     %ul
       #oma_menu_bar
+
         %li
           #oma_snapshot_sub-menu_item
             =link_to_function 'Snapshot', "#"
-
+    
         %li
           #oma_plan-by-format_sub-menu_item
             =link_to_function "Plan By Format", "#"
 
-  %li.oma_menu_item
-    =link_to_function 'Buying', "alert('MOVE AMS tabs with logon required.');", onmouseover: "alert('mouse!');"
+  %li
+    #buy
+      =link_to_function 'Buying', nil
 
-  %li.oma_menu_item
-    =link_to_function 'Learning',  "alert('Not implemented this release.)"
+  %li
+    #learn
+      =link_to_function 'Learning', nil
 
-  %li.oma_menu_item
-    =link_to_function 'Proof',  "alert('Not implemented this release.');"
+  %li
+    #proof
+      =link_to_function 'Proof', nil
 
-  %li.oma_menu_item
-    =link_to 'Contact', href="http://moveoutdoor.com.au/contact-us", onmouseover: "alert('Contact link from moveoutdoor.com');"
+  %li
+    #contact
+      =link_to 'Contact', href="http://moveoutdoor.com.au/contact-us", onmouseover: "alert('Contact link from moveoutdoor.com');"
 
