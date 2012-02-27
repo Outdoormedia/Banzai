@@ -14,7 +14,7 @@ if defined?(Production)
    config.assets.initialize_on_precompile = false
 end
         
-module OmaPortal3
+module OmaPortal
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

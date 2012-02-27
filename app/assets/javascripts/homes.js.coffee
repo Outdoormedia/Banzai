@@ -4,3 +4,8 @@
 #  jQuery ->
 #  $("#oma_snapshot_sub-menu_item").blur ->
 #      $("#oma_snapshot_sub-menu_item").text("Invalid credit card number.")
+
+
+$(document).ready ->
+  $('#test').bind 'click', ->
+    alert 'Hey!'

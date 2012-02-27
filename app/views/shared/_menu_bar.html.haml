@@ -1,8 +1,11 @@
+%oma_menu_item
+  #test 
+    =link_to_function 'Test', "$(test_click();)"
 
 %ul.oma_main_menu_bar
 
   %li.oma_menu_item
-    =link_to_function 'Home', :onclick => "say_hi();"
+    =link_to_function 'Home', "alert('say_hi()');", onmouseover: "say_hi();"
 
   %li.oma_menu_item
     =link_to_function 'Planning', 
@@ -12,7 +15,7 @@
       #oma_menu_bar
         %li
           #oma_snapshot_sub-menu_item
-            =link_to_function 'Snapshot', :onclick => "alert('wtf?')"
+            =link_to_function 'Snapshot', "#"
 
         %li
           #oma_plan-by-format_sub-menu_item
