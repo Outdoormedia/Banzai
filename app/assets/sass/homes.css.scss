@@ -90,16 +90,19 @@ body{
         }
 
 oma_menu_bar, ul {
-       @include oma_menu_bar($oma_green_fade-2);
+       @include menu_bar($oma_green_fade-2);
        }
 .oma_menu_item {
-	@include menu_item;
+       @include menu_item;
        }
 #oma_snapshot_sub-menu_item{
        @include oma_sub-menu_item;
+       display:inline;
        }
 #oma_plan-by-format_sub-menu_item{
        @include oma_sub-menu_item;
+       position:relative;
+       left:-20px;
        }
 
 a:link,a:visited{

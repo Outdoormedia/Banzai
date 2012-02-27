@@ -7,30 +7,33 @@
 
 
 #
-# Setup (i.e. bind) events
+# Setup (i.e. bind) for :click and :onmouseover events
 #
 $(document).ready ->
   $('#home').bind 'click', ->
     alert 'You clicked Home!'
 
   $('#home').bind 'mouseover', ->
-    alert 'you did a mouseover on Home!'
+    $('.oma_welcome_message').text("you did a mouseover on Home!")
 
   $('#plan').bind 'click', ->
     $('#oma_snapshot_sub-menu_item').toggle()
     $('#oma_plan-by-format_sub-menu_item').toggle()
 
+  $('#oma_snapshot_sub-menu_item').bind 'click', ->
+    $('.oma_welcome_message').text("Snapshot content here.")
+
   $('#buy').bind 'click', ->
-    alert 'MOVE AMS tabs with logon required.'
+    $('.oma_welcome_message').text('MOVE AMS tabs with logon required.')
 
   $('#learn').bind 'click', ->
-    alert 'Not implemented this release.'
+    $('.oma_welcome_message').text('MOVE AMS tabs with logon required. Not implemented this release.')
 
   $('#proof').bind 'click', ->
-   alert 'Not implemented this release.'
+    $('.oma_welcome_message').text('Proof AMS tabs with logon required. Not implemented this release.')
 
   $('#oma_snapshot_sub-menu_item').bind 'click', ->
-   alert 'Snapshot.'
+    $('.oma_welcome_message').text('Snapshot.  WHAT IS THIS CONTENT?  WE CAN DO A ONE PAGE UI RIGHT HERE')
 
   $('#oma_plan-by-format_sub-menu_item').bind 'click', ->
-    alert 'Plan by format.'
+    $('.oma_welcome_message').text('Plan By Format.  What ROUTE to this conent?')
