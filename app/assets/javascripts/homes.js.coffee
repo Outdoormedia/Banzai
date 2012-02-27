@@ -8,4 +8,10 @@
 
 $(document).ready ->
   $('#test').bind 'click', ->
-    alert 'Hey!'
+    alert 'You clicked Test!'
+
+  $('#test').bind 'mouseover', ->
+    alert 'you did a mouseover on Test!'
+
+  $('#home').bind 'mouseover', ->
+    alert 'you did a mouseover on Home!'

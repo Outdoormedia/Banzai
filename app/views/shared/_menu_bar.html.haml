@@ -5,7 +5,8 @@
 %ul.oma_main_menu_bar
 
   %li.oma_menu_item
-    =link_to_function 'Home', "alert('say_hi()');", onmouseover: "say_hi();"
+    #home
+      =link_to_function 'Home', "$(test_click();)", onmouseover: "say_hi();"
 
   %li.oma_menu_item
     =link_to_function 'Planning', 
