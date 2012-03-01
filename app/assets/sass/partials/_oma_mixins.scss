@@ -24,7 +24,7 @@
 @mixin menu_bar($color: $oma_grey){
        background: $color;
        display:none;
-       float:left;
+       position:absolute;
        }
 
 @mixin menu_item($color: $oma_grey) {

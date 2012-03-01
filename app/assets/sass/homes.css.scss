@@ -85,10 +85,9 @@ body{
         float:right;
         }
 
-.oma_menu_bar.ul {
+#oma_menu_bar.ul {
        @include menu_bar($oma_green_fade-2);
-       position:relative;
-       left: 20px;
+       left: -200px;
        }
 .oma_menu_item {
        @include menu_item;
