@@ -2,8 +2,8 @@
 %html
   %head
     %title OMA Portal
-    = stylesheet_link_tag    "application", :media => "all"
-    = javascript_include_tag "application"
+    = stylesheet_link_tag    "application", "homes"
+    = javascript_include_tag "application", "homes"
     = csrf_meta_tag
     = yield(:head)
 
@@ -18,9 +18,10 @@
         = render '/shared/menu_bar'       
 
         .oma_welcome_inner_panel
+      
           .oma_welcome_message
             = @welcome_message
-          .oma_welcome_message
+          .oma_status_message
             = @login_status_message
 
       #grid
@@ -37,3 +38,4 @@
 
     = render '/shared/footer'
   
+        

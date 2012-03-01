@@ -2,8 +2,8 @@
 
 @mixin oma_green_text {
   color:       $oma_green;
-  font-family: $oma_font;
-  font-size:   $oma_font-size ;
+  font-family: $oma_font_family;
+  font-size:   $oma_font_size ;
   font-variant: small-caps; 
   }
 
@@ -12,7 +12,7 @@
   width: span(24)
   }
 
-@mixin oma_text($color: oma_green, $size: 12px) {
+@mixin oma_text($color: $oma_green, $size: 12px) {
   color: $color;
   font-family: $oma_font_family;
   font-size: $size;
@@ -21,41 +21,43 @@
 //
 // Menus elements
 //
-@mixin menu_bar($color: oma_grey){
+@mixin menu_bar($color: $oma_grey){
        background: $color;
        display:none;
        float:left;
        }
 
-@mixin oma_sub-menu_item($color: $oma_grey) {
-       background-color: $color;
-       display: none;
-       float:left;
-       }
-
-@mixin menu_item{
+@mixin menu_item($color: $oma_grey) {
        float: left;
-       display:block;
-       width:132px;
-       font-family: %oma_font;
+       font-family: $oma_menu_font;
        font-weight:bold;
        font-size: 12px;
-       color:$white;
+       color:$color;
        background-color:$oma_green;
        text-align:center;
-       padding:4px;
        text-decoration:none;
        text-transform:uppercase;
-       border: 8px solid $oma_grey;
+       border-right-style:solid;
+       border-right-width:4px;
+       border-right-color:$color;
+       padding:4px;
+       width: 132px;
 }
-// @extend classes, here for lack of a better place
-//.menu_item, li{
-//       float:left;
-//       }
+@mixin sub-menu_item( $color: $oma_grey) {
+	@include menu_item;
+        color: $color;
+        display:block;
+        width:132px;
+        text-align:center;
+        padding:4px;
+       }
 
-.panel{
+
+@mixin panel{
         margin-top: 10px;
         margin-left:5%;
         margin-right:5%;
         margin-bottom: 30px;
+        background: $white;
+        height: 50%;
         }

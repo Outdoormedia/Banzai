@@ -1,38 +1,40 @@
 
-
 %ul.oma_menu_bar
 
-  %li
-    #home
-      =link_to_function 'Home', nil
+  %li#home Home
 
   %li
-    #plan
-      =link_to_function 'Planning', nil
+    #plan Planning
 
-    %ul
+    %ul.oma_menu_bar
 
       %li
-        #oma_snapshot_sub-menu_item
-          =link_to_function 'Snapshot', "#"
-      
+        :javascript
+          $('#plan').click(function() {
+            $('#snapshot').toggle('slow', function() {
+            // Animation complete.
+            });
+          });
+        #snapshot Snapshot
+      %br
       %li
-        #oma_plan-by-format_sub-menu_item
-          =link_to_function "Plan By Format", "#"
+        :javascript
+          $('#plan').click(function() {
+            $('#plan-by-format').toggle('slow', function() {
+            // Animation complete.
+            });
+          });
+        #plan-by-format Plan By Format
 
   %li
-    #buy
-      =link_to_function 'Buying', nil
+    #buy Buy
 
   %li
-    #learn
-      =link_to_function 'Learning', nil
+    #learn Learn
 
   %li
-    #proof
-      =link_to_function 'Proof', nil
+    #proof Proof
 
   %li
-    #contact
-      =link_to 'Contact', href="http://moveoutdoor.com.au/contact-us", onmouseover: "alert('Contact link from moveoutdoor.com');"
+    #contact Contact
 
