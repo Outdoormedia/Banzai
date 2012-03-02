@@ -64,21 +64,17 @@ body {
   font: georgia, helvetica, arial, sans-serif; }
 
 .oma_header {
-  margin-top: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 30px;
   background: #bbbcbc;
   height: 50%;
+  margin-right: 5%;
+  margin-left: 5%;
   background: white; }
 
 .oma_footer {
-  margin-top: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 30px;
   background: #bbbcbc;
   height: 50%;
+  margin-right: 5%;
+  margin-left: 5%;
   font-size: 10px;
   text-align: center;
   color: #25b264; }
@@ -89,51 +85,48 @@ body {
   color: #25b264; }
 
 .oma_welcome_outer_panel {
-  margin-top: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 30px;
   background: #bbbcbc;
   height: 50%;
+  margin-right: 5%;
+  margin-left: 5%;
   height: 400px;
-  background: #d3f0e0; }
+  background: #d3f0e0;
+  z-index: 0; }
 
 .oma_welcome_inner_panel {
-  margin-top: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 30px;
   background: white;
   height: 50%;
+  margin-right: 5%;
+  margin-left: 5%;
   position: absolute;
   width: 600px;
   height: 200px;
-  top: 250px; }
+  margin-left: 4.5%;
+  z-index: 1; }
 
 #oma_top_menu {
-  margin-top: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 30px;
   background: #25b264;
   height: 50%;
+  margin-right: 5%;
+  margin-left: 5%;
   position: relative;
-  height: 24px; }
+  height: 22px; }
 
 #oma_plan_menu {
-  margin-top: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 30px;
   background: #51c183;
   height: 50%;
+  margin-right: 5%;
+  margin-left: 5%;
   display: none;
-  margin: 50px, 5px, 5px, 5px;
   height: 48px;
-  width: 136px;
-  position: relative;
-  top: -30px;
-  left: 144px; }
+  width: 132px;
+  position: absolute;
+  top: 145px;
+  left: 182px;
+  border-left: 4px solid #d3f0e0;
+  border-right: 4px solid #d3f0e0;
+  border-bottom: 4px solid #d3f0e0;
+  z-index: 2; }
 
 #oma_menu_item {
   float: left;
@@ -147,7 +140,7 @@ body {
   border-right-style: solid;
   border-right-width: 4px;
   border-right-color: #51c183;
-  padding: 4px;
+  padding-top: 6px;
   width: 132px;
   position: relative;
   color: white; }
@@ -205,7 +198,7 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 4px;
   border-right-color: #bbbcbc;
-  padding: 4px;
+  padding-top: 6px;
   width: 132px; }
 
 #home {
@@ -220,7 +213,7 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 4px;
   border-right-color: white;
-  padding: 4px;
+  padding-top: 6px;
   width: 132px; }
 
 #plan {
@@ -235,7 +228,7 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 4px;
   border-right-color: white;
-  padding: 4px;
+  padding-top: 6px;
   width: 132px; }
 
 #snapshot {
@@ -243,14 +236,14 @@ oma_menu_item {
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
-  color: white;
+  color: #d3f0e0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
   border-right-width: 4px;
-  border-right-color: white;
-  padding: 4px;
+  border-right-color: #d3f0e0;
+  padding-top: 6px;
   width: 132px;
   display: none; }
 
@@ -259,19 +252,16 @@ oma_menu_item {
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
-  color: white;
+  color: #d3f0e0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
   border-right-width: 4px;
-  border-right-color: white;
-  padding: 4px;
+  border-right-color: #d3f0e0;
+  padding-top: 6px;
   width: 132px;
-  display: none;
-  border-left-color: #bbbcbc;
-  border-bottom-color: #bbbcbc;
-  border-right-color: #bbbcbc; }
+  display: none; }
 
 #buy {
   float: left;
@@ -285,7 +275,7 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 4px;
   border-right-color: white;
-  padding: 4px;
+  padding-top: 6px;
   width: 132px; }
 
 #learn {
@@ -300,7 +290,7 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 4px;
   border-right-color: white;
-  padding: 4px;
+  padding-top: 6px;
   width: 132px; }
 
 #proof {
@@ -315,7 +305,7 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 4px;
   border-right-color: white;
-  padding: 4px;
+  padding-top: 6px;
   width: 132px; }
 
 #contact {
@@ -330,9 +320,8 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 4px;
   border-right-color: white;
-  padding: 4px;
-  width: 132px;
-  border-right-width: 0px; }
+  padding-top: 6px;
+  width: 132px; }
 
 a:link, a:visited {
   display: block;

@@ -32,6 +32,7 @@ body{
         @include panel;
         height: 400px;
         background: $oma_green_fade-3;
+        z-index: 0;
         }
 
 .oma_welcome_inner_panel{
@@ -39,24 +40,30 @@ body{
         position:absolute;
         width: 600px;
         height: 200px;
-        top: 250px;
+        margin-left: 4.5%;
+        z-index: 1;
+//        top: 250px;
+        
         }
 
 #oma_top_menu {
        @include panel($oma_green);
        position:relative;
-       height: 24px;
+       height: 22px;
        }
 
 #oma_plan_menu {
        @include panel($oma_green_fade-1);
        display: none;
-       margin: 50px, 5px, 5px, 5px;
        height: 48px;
-       width: 136px;
-       position: relative;
-       top: -30px;
-       left: 144px;
+       width: 132px;
+       position: absolute;
+       top: 145px;
+       left: 182px;
+       border-left:4px solid $oma_green_fade-3;
+       border-right: 4px solid $oma_green_fade-3;
+       border-bottom: 4px solid $oma_green_fade-3;
+       z-index: 2;
        }
 
 #oma_menu_item {
@@ -120,15 +127,12 @@ oma_menu_item {
        @include menu_item( $oma_white );
        }
 #snapshot {
-       @include menu_item( $oma_white );
+       @include menu_item( $oma_green_fade-3 );
        display:none;
        }
 #plan-by-format {
-       @include menu_item( $oma_white );
+       @include menu_item( $oma_green_fade-3 );
        display:none;
-       border-left-color: $oma_grey;
-       border-bottom-color: $oma_grey;
-       border-right-color: $oma_grey;
        }
 #buy   {
        @include menu_item( $oma_white );
@@ -142,7 +146,7 @@ oma_menu_item {
 
 #contact {
        @include menu_item( $oma_white );
-       border-right-width:0px;
+//       border-right-width:0px;
        }
 
 a:link,a:visited{

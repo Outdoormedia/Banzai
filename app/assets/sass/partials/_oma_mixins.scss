@@ -22,12 +22,10 @@
 // Menus elements
 //
 @mixin panel( $color: $oma_grey){
-        margin-top: 10px;
-        margin-left:5%;
-        margin-right:5%;
-        margin-bottom: 30px;
         background: $color;
         height: 50%;
+        margin-right: 5%;
+        margin-left: 5%;
         }
 
 @mixin menu_bar($color: $oma_grey){
@@ -49,7 +47,7 @@
        border-right-style:solid;
        border-right-width:4px;
        border-right-color:$color;
-       padding:4px;
+       padding-top:6px;
        width: 132px;
 }
 
