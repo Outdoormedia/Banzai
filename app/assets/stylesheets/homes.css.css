@@ -68,7 +68,7 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 30px;
-  background: white;
+  background: #bbbcbc;
   height: 50%;
   background: white; }
 
@@ -77,7 +77,7 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 30px;
-  background: white;
+  background: #bbbcbc;
   height: 50%;
   font-size: 10px;
   text-align: center;
@@ -93,16 +93,49 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 30px;
-  background: white;
+  background: #bbbcbc;
   height: 50%;
   height: 400px;
   background: #d3f0e0; }
 
 .oma_welcome_inner_panel {
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  background: white;
+  height: 50%;
   position: absolute;
   width: 600px;
   height: 200px;
   top: 250px; }
+
+#oma_top_menu {
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  background: #25b264;
+  height: 50%;
+  position: relative;
+  height: 24px; }
+
+#oma_menu_item {
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: #51c183;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: #51c183;
+  padding: 4px;
+  width: 132px;
+  position: relative;
+  color: white; }
 
 .oma_status_message {
   font-family: georgia, helvetica, arial, sans-serif;
@@ -139,20 +172,6 @@ body {
 
 .right {
   float: right; }
-
-oma_menu_bar {
-  background-color: #25b264;
-  display: block;
-  position: absolute;
-  left: 10%; }
-
-oma_sub-menu_bar {
-  background-color: #51c183;
-  display: block;
-  position: absolute;
-  left: 10%;
-  display: none;
-  visibility: hidden; }
 
 oma_menu_item {
   float: left;
@@ -204,38 +223,32 @@ oma_menu_item {
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
-  color: #bbbcbc;
+  color: white;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
   border-right-width: 4px;
-  border-right-color: #bbbcbc;
+  border-right-color: white;
   padding: 4px;
   width: 132px;
-  color: white;
-  width: 132px;
-  text-align: center;
-  padding: 4px; }
+  display: block; }
 
 #plan-by-format {
   float: left;
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
-  color: #bbbcbc;
+  color: white;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
   border-right-width: 4px;
-  border-right-color: #bbbcbc;
+  border-right-color: white;
   padding: 4px;
   width: 132px;
-  color: white;
-  width: 132px;
-  text-align: center;
-  padding: 4px;
+  display: block;
   border-left-color: #bbbcbc;
   border-bottom-color: #bbbcbc;
   border-right-color: #bbbcbc; }

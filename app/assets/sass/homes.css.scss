@@ -35,11 +35,24 @@ body{
         }
 
 .oma_welcome_inner_panel{
+	@include panel($oma_white);
         position:absolute;
         width: 600px;
         height: 200px;
         top: 250px;
         }
+
+#oma_top_menu {
+       @include panel($oma_green);
+       position:relative;
+       height: 24px;
+       }
+
+#oma_menu_item {
+       @include menu_item($oma_green_fade-1);
+       position:relative;
+       color: $oma_white;
+       }
 
 .oma_status_message{
 	font-family: $oma_font_family;
@@ -85,14 +98,6 @@ body{
         float:right;
         }
 
-oma_menu_bar {
-       @include menu_bar($oma_green);
-       }
-oma_sub-menu_bar{
-	@include menu_bar($oma_green_fade-1);
-        display:none;
-        visibility: hidden;
-        }
 oma_menu_item {
        @include menu_item;
        }
@@ -104,10 +109,12 @@ oma_menu_item {
        @include menu_item( $oma_white );
        }
 #snapshot {
-       @include sub-menu_item( $oma_white );
+       @include menu_item( $oma_white );
+       display:block;
        }
 #plan-by-format {
-       @include sub-menu_item( $oma_white );
+       @include menu_item( $oma_white );
+       display:block;
        border-left-color: $oma_grey;
        border-bottom-color: $oma_grey;
        border-right-color: $oma_grey;

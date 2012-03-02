@@ -43,20 +43,12 @@
        padding:4px;
        width: 132px;
 }
-@mixin sub-menu_item( $color: $oma_grey) {
-	@include menu_item;
-        color: $color;
-        width:132px;
-        text-align:center;
-        padding:4px;
-       }
 
-
-@mixin panel{
+@mixin panel( $color: $oma_grey){
         margin-top: 10px;
         margin-left:5%;
         margin-right:5%;
         margin-bottom: 30px;
-        background: $white;
+        background: $color;
         height: 50%;
         }
