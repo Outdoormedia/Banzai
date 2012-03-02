@@ -1,30 +1,19 @@
 
 %oma_menu_bar
 
-  %li#home Home
+  %li 
+    #home Home
  
   %li
-    #plan Planning
+    #plan Plan
  
-    %oma_menu_bar
- 
-      %li
-        :javascript
-          $('#plan').click(function() {
-            $('#snapshot').toggle('slow', function() {
-            // Animation complete.
-            });
-          });
-        #snapshot Snapshot
-      %br
-      %li
-        :javascript
-          $('#plan').click(function() {
-            $('#plan-by-format').toggle('slow', function() {
-            // Animation complete.
-            });
-          });
-        #plan-by-format Plan By Format
+    %oma_sub-menu_bar
+      %ul
+        %li
+          #snapshot Snapshot
+        %br
+        %li
+          #plan-by-format Plan By Format
  
   %li
     #buy Buy

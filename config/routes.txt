@@ -1,0 +1,8 @@
+    homes GET    /homes(.:format)          homes#index
+          POST   /homes(.:format)          homes#create
+ new_home GET    /homes/new(.:format)      homes#new
+edit_home GET    /homes/:id/edit(.:format) homes#edit
+     home GET    /homes/:id(.:format)      homes#show
+          PUT    /homes/:id(.:format)      homes#update
+          DELETE /homes/:id(.:format)      homes#destroy
+     root        /                         homes#index

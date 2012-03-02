@@ -4,6 +4,6 @@ $oma_font_size: 24px;
 
 li { font: 12px/14px sans-serif }
 li { font: 80% sans-serif }
-li { font: x-large/110% "New Century Schoolbook", serif }
-li { font: bold italic large Palatino, serif }
-li { font: normal small-caps 120%/120% fantasy }
+li { font: x-large/110% $oma_font_family, serif }
+li { font: bold italic large $oma_font_family, serif }
+li { font: normal small-caps 120%/120% helvetica }

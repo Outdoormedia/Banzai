@@ -1,0 +1,328 @@
+/* 
+   Sass Reset - Converted by Hampton Catlin
+   A modification of the original found at...
+   http://meyerweb.com/eric/tools/css/reset/
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+li {
+  font: 12px/14px sans-serif; }
+
+li {
+  font: 80% sans-serif; }
+
+li {
+  font: x-large/110% georgia, helvetica, arial, sans-serif, serif; }
+
+li {
+  font: bold italic large georgia, helvetica, arial, sans-serif, serif; }
+
+li {
+  font: normal small-caps 120%/120% helvetica; }
+
+body {
+  font: georgia, helvetica, arial, sans-serif; }
+
+.oma_header {
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  background: white;
+  height: 50%;
+  background: white; }
+
+.oma_footer {
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  background: white;
+  height: 50%;
+  font-size: 10px;
+  text-align: center;
+  color: #25b264; }
+
+.oma_footer_text {
+  font-size: 10px;
+  text-align: center;
+  color: #25b264; }
+
+.oma_welcome_outer_panel {
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  background: white;
+  height: 50%;
+  height: 400px;
+  background: #d3f0e0; }
+
+.oma_welcome_inner_panel {
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  top: 250px; }
+
+.oma_status_message {
+  font-family: georgia, helvetica, arial, sans-serif;
+  text-align: left;
+  position: absolute;
+  left: 200px;
+  top: 40px; }
+
+.oma_welcome_message {
+  font-family: georgia, helvetica, arial, sans-serif;
+  text-align: left;
+  position: absolute;
+  left: 200px;
+  top: 60px; }
+
+.oma_info_text {
+  text-align: center;
+  color: #25b264;
+  position: relative;
+  left: -20px; }
+
+#oma_login_invite {
+  text-align: right;
+  color: #25b264;
+  position: relative;
+  left: -180px;
+  top: -60px; }
+
+.center {
+  float: center; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+oma_menu_bar {
+  background-color: #25b264;
+  display: block;
+  position: absolute;
+  left: 10%; }
+
+oma_sub-menu_bar {
+  background-color: #51c183;
+  display: block;
+  position: absolute;
+  left: 10%;
+  display: none;
+  visibility: hidden; }
+
+oma_menu_item {
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: #bbbcbc;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: #bbbcbc;
+  padding: 4px;
+  width: 132px; }
+
+#home {
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: white;
+  padding: 4px;
+  width: 132px; }
+
+#plan {
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: white;
+  padding: 4px;
+  width: 132px; }
+
+#snapshot {
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: #bbbcbc;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: #bbbcbc;
+  padding: 4px;
+  width: 132px;
+  color: white;
+  width: 132px;
+  text-align: center;
+  padding: 4px; }
+
+#plan-by-format {
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: #bbbcbc;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: #bbbcbc;
+  padding: 4px;
+  width: 132px;
+  color: white;
+  width: 132px;
+  text-align: center;
+  padding: 4px;
+  border-left-color: #bbbcbc;
+  border-bottom-color: #bbbcbc;
+  border-right-color: #bbbcbc; }
+
+#buy {
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: white;
+  padding: 4px;
+  width: 132px; }
+
+#learn {
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: white;
+  padding: 4px;
+  width: 132px; }
+
+#proof {
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: white;
+  padding: 4px;
+  width: 132px; }
+
+#contact {
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: white;
+  padding: 4px;
+  width: 132px;
+  border-right-width: 0px; }
+
+a:link, a:visited {
+  display: block;
+  width: 132px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  background: #25b264;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+a:hover, a:active {
+  background-color: #92d8b1; }
+
+#grid {
+  position: relative;
+  text-align: center;
+  width: 480px;
+  margin: 16px auto;
+  padding: 32px 0;
+  border: 2px solid #555;
+  font-size: 12px;
+  font-family: georgia, helvetica, arial, sans-serif; }

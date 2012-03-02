@@ -85,11 +85,15 @@ body{
         float:right;
         }
 
-#oma_menu_bar.ul {
-       @include menu_bar($oma_green_fade-2);
-       left: -200px;
+oma_menu_bar {
+       @include menu_bar($oma_green);
        }
-.oma_menu_item {
+oma_sub-menu_bar{
+	@include menu_bar($oma_green_fade-1);
+        display:none;
+        visibility: hidden;
+        }
+oma_menu_item {
        @include menu_item;
        }
 
@@ -115,9 +119,6 @@ body{
        @include menu_item( $oma_white );
        }
 #proof {
-       @include menu_item( $oma_white );
-       }
-#plan {
        @include menu_item( $oma_white );
        }
 

@@ -22,9 +22,10 @@
 // Menus elements
 //
 @mixin menu_bar($color: $oma_grey){
-       background: $color;
-       display:none;
+       background-color: $color;
+       display:block;
        position:absolute;
+       left: 10%;
        }
 
 @mixin menu_item($color: $oma_grey) {
@@ -33,7 +34,6 @@
        font-weight:bold;
        font-size: 12px;
        color:$color;
-       background-color:$oma_green;
        text-align:center;
        text-decoration:none;
        text-transform:uppercase;
@@ -46,7 +46,6 @@
 @mixin sub-menu_item( $color: $oma_grey) {
 	@include menu_item;
         color: $color;
-        display:block;
         width:132px;
         text-align:center;
         padding:4px;

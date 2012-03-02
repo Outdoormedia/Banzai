@@ -17,6 +17,7 @@ $(document).ready ->
 
   $('#plan').bind 'click', ->
     $('.oma_welcome_message').text('You clicked Plan (nice one).')
+    $('div ul').toggle()
 
   $('#plan').bind 'mouseover', ->
     $('.oma_welcome_message').text("You moused over Plan!")
