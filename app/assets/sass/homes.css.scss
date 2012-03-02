@@ -48,6 +48,17 @@ body{
        height: 24px;
        }
 
+#oma_plan_menu {
+       @include panel($oma_green_fade-1);
+       display: none;
+       margin: 50px, 5px, 5px, 5px;
+       height: 48px;
+       width: 136px;
+       position: relative;
+       top: -30px;
+       left: 144px;
+       }
+
 #oma_menu_item {
        @include menu_item($oma_green_fade-1);
        position:relative;

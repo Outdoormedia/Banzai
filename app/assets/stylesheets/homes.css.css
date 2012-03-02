@@ -120,6 +120,21 @@ body {
   position: relative;
   height: 24px; }
 
+#oma_plan_menu {
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  background: #51c183;
+  height: 50%;
+  display: none;
+  margin: 50px, 5px, 5px, 5px;
+  height: 48px;
+  width: 136px;
+  position: relative;
+  top: -30px;
+  left: 144px; }
+
 #oma_menu_item {
   float: left;
   font-family: helvetica;

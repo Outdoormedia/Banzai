@@ -17,13 +17,20 @@ $(document).ready ->
 
   $('#plan').bind 'click', -> 
     $('.oma_welcome_message').text('You clicked Plan (nice one).')
-    $('#snapshot').toggle(1000)
-    $('#plan-by-format').toggle(1000)
-    
+    $('#oma_plan_menu').show()    
 
   $('#plan').bind 'mouseover', ->
     $('.oma_welcome_message').text("You moused over Plan!")
 
+
+  $('#plan').bind 'mousedown', ->
+    $('#snapshot').show()
+    $('#plan-by-format').show()
+
+  $('#plan').bind 'mouseup', ->
+    $('#snapshot').hide()
+    $('#plan-by-format').hide()
+	
   $('#snapshot').bind 'click', ->
     $('.oma_welcome_message').text('Snapshot.  WHAT IS THIS CONTENT?  WE CAN DO A ONE PAGE UI RIGHT HERE')
 
