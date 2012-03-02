@@ -15,10 +15,11 @@ $(document).ready ->
   $('#home').bind 'mouseover', ->
     $('.oma_welcome_message').text("you did a mouseover on Home!")
 
-  $('#plan').bind 'click', ->
+  $('#plan').bind 'click', -> 
     $('.oma_welcome_message').text('You clicked Plan (nice one).')
-    $('#snapshot').hide()
-    $('#plan-by-format').hide()
+    $('#snapshot').toggle(1000)
+    $('#plan-by-format').toggle(1000)
+    
 
   $('#plan').bind 'mouseover', ->
     $('.oma_welcome_message').text("You moused over Plan!")

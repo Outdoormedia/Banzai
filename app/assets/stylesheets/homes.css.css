@@ -138,18 +138,23 @@ body {
   color: white; }
 
 .oma_status_message {
+  color: #25b264;
   font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 24px;
+  font-variant: small-caps;
   text-align: left;
   position: absolute;
   left: 200px;
   top: 40px; }
 
 .oma_welcome_message {
+  color: #25b264;
   font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 14px;
   text-align: left;
   position: absolute;
   left: 200px;
-  top: 60px; }
+  top: 70px; }
 
 .oma_info_text {
   text-align: center;
@@ -232,7 +237,7 @@ oma_menu_item {
   border-right-color: white;
   padding: 4px;
   width: 132px;
-  display: block; }
+  display: none; }
 
 #plan-by-format {
   float: left;
@@ -248,7 +253,7 @@ oma_menu_item {
   border-right-color: white;
   padding: 4px;
   width: 132px;
-  display: block;
+  display: none;
   border-left-color: #bbbcbc;
   border-bottom-color: #bbbcbc;
   border-right-color: #bbbcbc; }

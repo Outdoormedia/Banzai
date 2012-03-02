@@ -12,7 +12,7 @@
   width: span(24)
   }
 
-@mixin oma_text($color: $oma_green, $size: 12px) {
+@mixin oma_text($color: $oma_green, $size: 14px) {
   color: $color;
   font-family: $oma_font_family;
   font-size: $size;

@@ -55,18 +55,18 @@ body{
        }
 
 .oma_status_message{
-	font-family: $oma_font_family;
+        @include oma_green_text;
         text-align: left;
 	position:absolute;
 	left:200px;
 	top: 40px;
         }
 .oma_welcome_message{
-        font-family: $oma_font_family;
+        @include oma_text;
         text-align: left;
 	position:absolute;
 	left:200px;
-	top: 60px;
+	top: 70px;
         }
 
 .oma_info_text{
@@ -110,11 +110,11 @@ oma_menu_item {
        }
 #snapshot {
        @include menu_item( $oma_white );
-       display:block;
+       display:none;
        }
 #plan-by-format {
        @include menu_item( $oma_white );
-       display:block;
+       display:none;
        border-left-color: $oma_grey;
        border-bottom-color: $oma_grey;
        border-right-color: $oma_grey;
