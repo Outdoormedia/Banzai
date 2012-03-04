@@ -60,8 +60,12 @@ li {
 li {
   font: normal small-caps 120%/120% helvetica; }
 
-body {
+body h1 p {
   font: georgia, helvetica, arial, sans-serif; }
+
+h1 {
+  font-size: 24px;
+  color: #25b264; }
 
 .oma_header {
   background: white;
@@ -102,13 +106,31 @@ body {
   margin-left: 4.5%;
   z-index: 1; }
 
+#oma_ipso_laurem_panel {
+  background: #f1f1f1;
+  height: 50%;
+  margin-right: 5%;
+  margin-left: 5%;
+  position: relative;
+  width: 600px;
+  height: 200px;
+  margin-left: 34%;
+  top: -220px;
+  z-index: 1;
+  overflow: hidden;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  resize: both;
+  overflow: auto;
+  display: none; }
+
 #oma_top_menu {
   background: #25b264;
   height: 50%;
   margin-right: 5%;
   margin-left: 5%;
   position: relative;
-  height: 22px; }
+  height: 24px; }
 
 #oma_plan_menu {
   background: #51c183;
@@ -118,12 +140,12 @@ body {
   display: none;
   height: 48px;
   width: 132px;
-  position: absolute;
-  top: 145px;
-  left: 182px;
-  border-left: 4px solid #d3f0e0;
-  border-right: 4px solid #d3f0e0;
-  border-bottom: 4px solid #d3f0e0;
+  position: relative;
+  top: 0px;
+  left: 132px;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
   z-index: 2; }
 
 #oma_menu_item {
@@ -141,7 +163,8 @@ body {
   padding-top: 6px;
   width: 132px;
   position: relative;
-  color: white; }
+  color: white;
+  height: 26px; }
 
 .oma_status_message {
   color: #25b264;
@@ -234,13 +257,13 @@ oma_menu_item {
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
-  color: #d3f0e0;
+  color: white;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
   border-right-width: 4px;
-  border-right-color: #d3f0e0;
+  border-right-color: white;
   padding-top: 6px;
   width: 132px;
   display: none; }
@@ -250,13 +273,13 @@ oma_menu_item {
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
-  color: #d3f0e0;
+  color: white;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
   border-right-width: 4px;
-  border-right-color: #d3f0e0;
+  border-right-color: white;
   padding-top: 6px;
   width: 132px;
   display: none; }

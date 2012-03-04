@@ -7,10 +7,13 @@
 @import "partials/fonts";
 @import "partials/oma_mixins";
 
-body{
+body h1 p{
        font: $oma_font_family;
        }
-
+h1     {
+       font-size: $oma_font_size;
+       color: $oma_green;
+       }
 .oma_header{
         @include panel($oma_white);
         }
@@ -40,14 +43,28 @@ body{
         height: 200px;
         margin-left: 4.5%;
         z-index: 1;
-//        top: 250px;
-        
+        }
+
+#oma_ipso_laurem_panel{
+	@include panel($oma_grey_fade-3);
+        position:relative;
+        width: 600px;
+        height: 200px;
+        margin-left: 34%;
+        top: -220px;
+        z-index: 1;
+        overflow: hidden;
+        word-wrap: normal;
+        text-overflow: ellipsis;
+        resize:both;
+        overflow:auto;
+        display:none;
         }
 
 #oma_top_menu {
        @include panel($oma_green);
        position:relative;
-       height: 22px;
+       height: 24px;
        }
 
 #oma_plan_menu {
@@ -55,12 +72,12 @@ body{
        display: none;
        height: 48px;
        width: 132px;
-       position: absolute;
-       top: 145px;
-       left: 182px;
-       border-left:4px solid $oma_green_fade-3;
-       border-right: 4px solid $oma_green_fade-3;
-       border-bottom: 4px solid $oma_green_fade-3;
+       position: relative;
+       top: 0px;
+       left: 132px;
+       border-left:   4px solid $oma_white;
+       border-right:  4px solid $oma_white;
+       border-bottom: 4px solid $oma_white;
        z-index: 2;
        }
 
@@ -68,6 +85,7 @@ body{
        @include menu_item($oma_green_fade-1);
        position:relative;
        color: $oma_white;
+       height: 26px;
        }
 
 .oma_status_message{
@@ -125,11 +143,11 @@ oma_menu_item {
        @include menu_item( $oma_white );
        }
 #snapshot {
-       @include menu_item( $oma_green_fade-3 );
+       @include menu_item( $oma_white );
        display:none;
        }
 #plan_by_format {
-       @include menu_item( $oma_green_fade-3 );
+       @include menu_item( $oma_white );
        display:none;
        }
 #buy   {

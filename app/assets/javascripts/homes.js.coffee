@@ -8,10 +8,8 @@ window.MenuStates = {oma_plan_menu: 'hidden'}
 
 toggle_plan_menu = (x) -> 
   if x == 'hidden'
-    $('.oma_welcome_message').text("state is #{x}, setting it to visible")
     return window.MenuStates.oma_plan_menu = 'visible'
   else
-    $('.oma_welcome_message').text("state is #{x}, setting it to hidden")
     return window.MenuStates.oma_plan_menu = 'hidden'
   return
 
@@ -46,6 +44,7 @@ $(document).ready ->
 	
   $('#snapshot').bind 'click', ->
     $('.oma_welcome_message').text('Snapshot.  WHAT IS THIS CONTENT?  WE CAN DO A ONE PAGE UI RIGHT HERE')
+    $('#oma_ipso_laurem_panel').show()
 
   $('#plan_by_format').bind 'click', ->
     $('.oma_welcome_message').text('Plan By Format.  What ROUTE to this conent?')
