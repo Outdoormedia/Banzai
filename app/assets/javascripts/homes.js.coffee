@@ -1,14 +1,25 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
-#  jQuery ->
-#  $("#oma_snapshot_sub-menu_item").blur ->
-#      $("#oma_snapshot_sub-menu_item").text("Invalid credit card number.")
+
+
+Inspect = window.Inspect
+window.MenuStates = {oma_plan_menu: 'hidden'}
+
+toggle_plan_menu = (x) -> 
+  if x == 'hidden'
+    $('.oma_welcome_message').text("state is #{x}, setting it to visible")
+    return window.MenuStates.oma_plan_menu = 'visible'
+  else
+    $('.oma_welcome_message').text("state is #{x}, setting it to hidden")
+    return window.MenuStates.oma_plan_menu = 'hidden'
+  return
 
 #
 # Setup (i.e. bind) for :click and :onmouseover events
 #
 $(document).ready ->
+
   $('#home').bind 'click', ->
     $('.oma_welcome_message').text('You clicked Home, wonder where that is?')
 
@@ -17,19 +28,17 @@ $(document).ready ->
 
   $('#plan').bind 'click', -> 
     $('.oma_welcome_message').text('You clicked Plan (nice one).')
-    $('#oma_plan_menu').show()    
-
+    if window.MenuStates.oma_plan_menu == 'hidden'
+      toggle_plan_menu(window.MenuStates.oma_plan_menu)
+      $('#oma_plan_menu').show() 
+    else
+      toggle_plan_menu(window.MenuStates.oma_plan_menu)
+      $('#oma_plan_menu').hide()
+    stopImmediatePropagation()
+    return
+    
   $('#plan').bind 'mouseover', ->
     $('.oma_welcome_message').text("You moused over Plan!")
-
-
-  $('#plan').bind 'mousedown', ->
-    $('#snapshot').show()
-    $('#plan-by-format').show()
-
-  $('#plan').bind 'mouseup', ->
-    $('#snapshot').hide()
-    $('#plan-by-format').hide()
 	
   $('#snapshot').bind 'click', ->
     $('.oma_welcome_message').text('Snapshot.  WHAT IS THIS CONTENT?  WE CAN DO A ONE PAGE UI RIGHT HERE')

@@ -12,15 +12,13 @@ body{
        }
 
 .oma_header{
-        @include panel;
-        background: $white;
+        @include panel($oma_white);
         }
 
 .oma_footer{
-	@include panel;
+	@include panel($oma_white);
 	font-size: 10px;
         text-align: center;
-        color: $oma_green;	
         }
 .oma_footer_text{
 	font-size: 10px;
@@ -127,7 +125,7 @@ oma_menu_item {
        @include menu_item( $oma_white );
        }
 #snapshot {
-       @include menu_item( $oma_green_fade-3 );
+       @include panel( $oma_green_fade-3 );
        display:none;
        }
 #plan-by-format {
@@ -149,22 +147,6 @@ oma_menu_item {
 //       border-right-width:0px;
        }
 
-a:link,a:visited{
-       display:block;
-       width:132px;
-       font-family: $oma_font_family;
-       font-weight:bold;
-       font-size: 12px;
-       color:$white;
-       background:$oma_green;
-       text-align:center;
-       padding:4px;
-       text-decoration:none;
-       text-transform:uppercase;
-       }
-a:hover,a:active{
-       background-color:$oma_green_fade-2;
-       }
 
 
 

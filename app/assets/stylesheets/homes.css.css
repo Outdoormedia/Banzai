@@ -64,20 +64,18 @@ body {
   font: georgia, helvetica, arial, sans-serif; }
 
 .oma_header {
-  background: #bbbcbc;
+  background: white;
   height: 50%;
   margin-right: 5%;
-  margin-left: 5%;
-  background: white; }
+  margin-left: 5%; }
 
 .oma_footer {
-  background: #bbbcbc;
+  background: white;
   height: 50%;
   margin-right: 5%;
   margin-left: 5%;
   font-size: 10px;
-  text-align: center;
-  color: #25b264; }
+  text-align: center; }
 
 .oma_footer_text {
   font-size: 10px;
@@ -232,19 +230,10 @@ oma_menu_item {
   width: 132px; }
 
 #snapshot {
-  float: left;
-  font-family: helvetica;
-  font-weight: bold;
-  font-size: 12px;
-  color: #d3f0e0;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-right-style: solid;
-  border-right-width: 4px;
-  border-right-color: #d3f0e0;
-  padding-top: 6px;
-  width: 132px;
+  background: #d3f0e0;
+  height: 50%;
+  margin-right: 5%;
+  margin-left: 5%;
   display: none; }
 
 #plan-by-format {
@@ -322,22 +311,6 @@ oma_menu_item {
   border-right-color: white;
   padding-top: 6px;
   width: 132px; }
-
-a:link, a:visited {
-  display: block;
-  width: 132px;
-  font-family: georgia, helvetica, arial, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  color: white;
-  background: #25b264;
-  text-align: center;
-  padding: 4px;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-a:hover, a:active {
-  background-color: #92d8b1; }
 
 #grid {
   position: relative;
