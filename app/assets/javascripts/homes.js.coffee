@@ -31,9 +31,13 @@ $(document).ready ->
     if window.MenuStates.oma_plan_menu == 'hidden'
       toggle_plan_menu(window.MenuStates.oma_plan_menu)
       $('#oma_plan_menu').show() 
+      $('#snapshot').show()
+      $('#plan_by_format').show()
     else
       toggle_plan_menu(window.MenuStates.oma_plan_menu)
       $('#oma_plan_menu').hide()
+      $('#snapshot').hide()
+      $('#plan_by_format').hide()
     stopImmediatePropagation()
     return
     
@@ -43,7 +47,7 @@ $(document).ready ->
   $('#snapshot').bind 'click', ->
     $('.oma_welcome_message').text('Snapshot.  WHAT IS THIS CONTENT?  WE CAN DO A ONE PAGE UI RIGHT HERE')
 
-  $('#plan-by-format').bind 'click', ->
+  $('#plan_by_format').bind 'click', ->
     $('.oma_welcome_message').text('Plan By Format.  What ROUTE to this conent?')
 
   $('#buy').bind 'mouseover', ->

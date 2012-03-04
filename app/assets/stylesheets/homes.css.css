@@ -230,13 +230,22 @@ oma_menu_item {
   width: 132px; }
 
 #snapshot {
-  background: #d3f0e0;
-  height: 50%;
-  margin-right: 5%;
-  margin-left: 5%;
+  float: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 12px;
+  color: #d3f0e0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: #d3f0e0;
+  padding-top: 6px;
+  width: 132px;
   display: none; }
 
-#plan-by-format {
+#plan_by_format {
   float: left;
   font-family: helvetica;
   font-weight: bold;

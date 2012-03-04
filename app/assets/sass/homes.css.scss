@@ -125,10 +125,10 @@ oma_menu_item {
        @include menu_item( $oma_white );
        }
 #snapshot {
-       @include panel( $oma_green_fade-3 );
+       @include menu_item( $oma_green_fade-3 );
        display:none;
        }
-#plan-by-format {
+#plan_by_format {
        @include menu_item( $oma_green_fade-3 );
        display:none;
        }
