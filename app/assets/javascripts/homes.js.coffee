@@ -41,7 +41,7 @@ $(document).ready ->
 
   $('#plan_by_format').bind 'click', ->
     $('.oma_welcome_message').text('Plan By Format.  What ROUTE to this conent?')
-    $('#oma_ipso_laurem_panel').toggle()
+    $('#oma_ipso_laurem_cols_panel').toggle()
     stopImmediatePropagation()
 
   $('#buy').bind 'mouseover', ->

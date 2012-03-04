@@ -124,6 +124,29 @@ h1 {
   overflow: auto;
   display: none; }
 
+#oma_ipso_laurem_cols_panel {
+  background: #f1f1f1;
+  height: 50%;
+  margin-right: 5%;
+  margin-left: 5%;
+  position: relative;
+  width: 600px;
+  height: 200px;
+  margin-left: 44%;
+  top: -220px;
+  z-index: 1;
+  overflow: hidden;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  resize: both;
+  overflow: auto;
+  display: none;
+  -moz-column-count: 3;
+  /* Firefox */
+  -webkit-column-count: 3;
+  /* Safari and Chrome */
+  column-count: 3; }
+
 #oma_top_menu {
   background: #25b264;
   height: 50%;
