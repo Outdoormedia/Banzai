@@ -29,6 +29,30 @@ h1     {
         color: $oma_green;	
         }
 
+.oma_diagonal_panel{
+        @include panel;
+        height: 20px;
+        width: 44px;
+        background: $oma_green;
+        z-index: 0;
+        color: $oma_white;
+        font: $oma_font_family;
+        font-weight:bold;
+        font-size: $oma_font_size;
+        text-shadow: 5px 5px 5px #110011;
+        
+        position:relative;
+        margin-left: 64%;
+        top: 40px;
+        padding: 24px;
+
+        transform:rotate(30deg);
+        -ms-transform:rotate(30deg); /* IE 9 */
+        -moz-transform:rotate(30deg); /* Firefox */
+        -webkit-transform:rotate(30deg); /* Safari and Chrome */
+        -o-transform:rotate(30deg); /* Opera */
+        }
+
 .oma_welcome_outer_panel{
         @include panel;
         height: 400px;
@@ -59,6 +83,11 @@ h1     {
         resize:both;
         overflow:auto;
         display:none;
+
+        padding-left: 12px;
+        padding-left: 12px;
+        padding-top: 30px;
+
         }
 #oma_ipso_laurem_cols_panel{
 	@include panel($oma_grey_fade-3);
@@ -78,6 +107,10 @@ h1     {
         -moz-column-count:3; /* Firefox */
         -webkit-column-count:3; /* Safari and Chrome */
         column-count:3;
+
+        padding-left: 18px;
+        padding-top: 40px;
+
         }
 
 #oma_top_menu {
