@@ -30,20 +30,16 @@ h1     {
         }
 
 .oma_diagonal_panel{
-        @include panel;
-        height: 20px;
-        width: 44px;
-        background: $oma_green;
-        z-index: 0;
+        background: $oma_grey;
+        z-index: 2;
         color: $oma_white;
         font: $oma_font_family;
         font-weight:bold;
         font-size: $oma_font_size;
         text-shadow: 5px 5px 5px #110011;
         
-        position:relative;
-        margin-left: 64%;
-        top: 40px;
+        position:absolute;
+        top: 182px;
         padding: 24px;
 
         transform:rotate(30deg);
