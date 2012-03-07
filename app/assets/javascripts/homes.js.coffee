@@ -55,4 +55,6 @@ $(document).ready ->
 
   $('#contact').bind 'mouseover', ->
     $('.oma_welcome_message').text('Contact OMA using href=\'http://moveoutdoor.com.au/contact-us')
+    $('#oma_diagonal_logo3').toggle()
+    stopImmediatePropagation()
   

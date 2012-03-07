@@ -10,7 +10,7 @@
 
     %body
       .oma_header
-        =image_tag("image003.jpg", :alt => "Sample App", :class => "round")
+        =image_tag("image003.jpg", :alt => "OMA Portal")
         #oma_login_invite
           = @login_message
       %br  
@@ -32,6 +32,12 @@
         = render '/shared/ipso_laurem'
       #oma_ipso_laurem_cols_panel
         = render '/shared/ipso_laurem_cols'
+
+      .div#oma_diagonal_logo2
+        =image_tag("image002.jpg", :alt => "OMA Portal", :size=>'62x34')
+
+      .div#oma_diagonal_logo3
+        =image_tag("image003.jpg", :alt => "OMA Portal", :size=>'62x34')
 
       #grid
         this 

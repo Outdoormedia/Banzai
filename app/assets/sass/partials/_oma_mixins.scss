@@ -27,6 +27,21 @@
         margin-right: 5%;
         margin-left: 5%;
         }
+@mixin diagonal_image_panel{
+        background: $oma_grey;
+        z-index: 2;
+        
+        position:absolute;
+        padding: 2px;
+        right: 300px;
+        bottom: 380px;
+
+        transform:rotate(30deg);
+        -ms-transform:rotate(30deg); /* IE 9 */
+        -moz-transform:rotate(30deg); /* Firefox */
+        -webkit-transform:rotate(30deg); /* Safari and Chrome */
+        -o-transform:rotate(30deg); /* Opera */
+        }
 
 @mixin menu_bar($color: $oma_grey){
        background-color: $color;

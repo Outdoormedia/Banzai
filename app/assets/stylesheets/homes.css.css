@@ -86,6 +86,49 @@ h1 {
   text-align: center;
   color: #25b264; }
 
+#oma_diagonal_logo2 {
+  background: #bbbcbc;
+  z-index: 2;
+  position: absolute;
+  padding: 2px;
+  right: 300px;
+  bottom: 380px;
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  /* IE 9 */
+  -moz-transform: rotate(30deg);
+  /* Firefox */
+  -webkit-transform: rotate(30deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(30deg);
+  /* Opera */
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  /* IE 9 */
+  -moz-transform: rotate(10deg);
+  /* Firefox */
+  -webkit-transform: rotate(10deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(10deg);
+  /* Opera */ }
+
+#oma_diagonal_logo3 {
+  background: #bbbcbc;
+  z-index: 2;
+  position: absolute;
+  padding: 2px;
+  right: 300px;
+  bottom: 380px;
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  /* IE 9 */
+  -moz-transform: rotate(30deg);
+  /* Firefox */
+  -webkit-transform: rotate(30deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(30deg);
+  /* Opera */ }
+
 #oma_diagonal_panel {
   background: #bbbcbc;
   z-index: 2;
