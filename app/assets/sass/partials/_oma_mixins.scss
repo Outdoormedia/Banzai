@@ -47,7 +47,6 @@
        }
 
 @mixin menu_item($color: $oma_grey) {
-       float: left;
        font-family: $oma_menu_font;
        font-weight:bold;
        font-size: 12px;
@@ -56,9 +55,8 @@
        text-decoration:none;
        text-transform:uppercase;
        border-right-style:solid;
-       border-right-width:4px;
+       border-right-width:1px;
        border-right-color:$color;
        padding-top:6px;
-       width: 132px;
 }
 

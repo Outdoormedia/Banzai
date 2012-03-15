@@ -239,7 +239,6 @@ h1 {
   z-index: 2; }
 
 #oma_menu_item {
-  float: left;
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -248,10 +247,9 @@ h1 {
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
-  border-right-width: 4px;
+  border-right-width: 1px;
   border-right-color: #51c183;
   padding-top: 6px;
-  width: 132px;
   position: relative;
   color: white;
   height: 26px; }
@@ -301,7 +299,6 @@ h1 {
   float: right; }
 
 oma_menu_item {
-  float: left;
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -310,13 +307,11 @@ oma_menu_item {
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
-  border-right-width: 4px;
+  border-right-width: 1px;
   border-right-color: #bbbcbc;
-  padding-top: 6px;
-  width: 132px; }
+  padding-top: 6px; }
 
 #home {
-  float: left;
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -325,13 +320,11 @@ oma_menu_item {
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
-  border-right-width: 4px;
+  border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px;
-  width: 132px; }
+  padding-top: 6px; }
 
 #plan {
-  float: left;
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -340,13 +333,11 @@ oma_menu_item {
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
-  border-right-width: 4px;
+  border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px;
-  width: 132px; }
+  padding-top: 6px; }
 
 #snapshot {
-  float: left;
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -355,14 +346,12 @@ oma_menu_item {
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
-  border-right-width: 4px;
+  border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
-  width: 132px;
   display: none; }
 
 #plan_by_format {
-  float: left;
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -371,14 +360,12 @@ oma_menu_item {
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
-  border-right-width: 4px;
+  border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
-  width: 132px;
   display: none; }
 
 #buy {
-  float: left;
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -387,13 +374,11 @@ oma_menu_item {
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
-  border-right-width: 4px;
+  border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px;
-  width: 132px; }
+  padding-top: 6px; }
 
 #learn {
-  float: left;
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -402,13 +387,11 @@ oma_menu_item {
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
-  border-right-width: 4px;
+  border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px;
-  width: 132px; }
+  padding-top: 6px; }
 
-#proof {
-  float: left;
+#roof {
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -417,13 +400,11 @@ oma_menu_item {
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
-  border-right-width: 4px;
+  border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px;
-  width: 132px; }
+  padding-top: 6px; }
 
 #contact {
-  float: left;
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -432,10 +413,9 @@ oma_menu_item {
   text-decoration: none;
   text-transform: uppercase;
   border-right-style: solid;
-  border-right-width: 4px;
+  border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px;
-  width: 132px; }
+  padding-top: 6px; }
 
 #oma_grid {
   background: #dddede;

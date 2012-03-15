@@ -12,21 +12,14 @@
 #    return window.MenuStates.oma_plan_menu = 'hidden'
 #  return
 
-$(document).ready ->
-  Grid = Backbone.Model.extend(promptColor: ->
-    cssColor = prompt("Please enter a CSS color:")
-    @set color: cssColor
-    )
-  window.grid = new Grid
-
 
 $(document).ready ->
 
   $('#oma_promo_panel').bind 'mouseover', ->
-    $('.oma_welcome_message').text('You clicked Promo Panel!')
+    $('.oma_welcome_message').text('You moused over Promo Panel!')
 
   $('#oma_promo_panel').bind 'click', ->
-    $('.oma_welcome_message').text('You clicked Promo Panel!')
+    $('.oma_welcome_message').text('Show a sidebar of things to learn about?!')
 
   $('#home').bind 'click', ->
     $('.oma_welcome_message').text('You clicked Home, wonder where that is?')
@@ -61,7 +54,7 @@ $(document).ready ->
     $('.oma_welcome_message').text('Learn using MOVE AMS, logon required. Not implemented this release.')
 
   $('#proof').bind 'mouseover', ->
-    $('#oma_welcome_message').text('Proof using MOVE AMS, logon required. Not implemented this release.')
+    $('.oma_welcome_message').text('Proof using MOVE AMS, logon required. Not implemented this release.')
 
   $('#contact').bind 'mouseover', ->
     $('.oma_welcome_message').text('Contact OMA using href=\'http://moveoutdoor.com.au/contact-us')
@@ -77,4 +70,4 @@ $(document).ready ->
     stopImmediatePropagation()
 
   $('#oma_grid').bind 'mouseover', ->
-    $('.oma_welcome_message').text('Contact OMA using href=\'http://moveoutdoor.com.au/contact-us')
+    $('.oma_welcome_message').text('We could make this runnable to illustrate concepts...')

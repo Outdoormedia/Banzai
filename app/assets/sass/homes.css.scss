@@ -56,6 +56,7 @@ h1     {
         position:absolute;
         top: 182px;
         padding: 14px;
+
         }
 
 .oma_welcome_outer_panel{
@@ -213,7 +214,7 @@ oma_menu_item {
 #learn {
        @include menu_item( $oma_white );
        }
-#proof {
+#roof {
        @include menu_item( $oma_white );
        }
 #contact {
