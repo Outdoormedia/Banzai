@@ -1,3 +1,12 @@
+// From the console command line, enter
+// "Inspect.methods(foo)" and you get a dump of all the methods on the object foo,
+// "Inspect.properties(foo)" and you get a dump of the properties.
+//
+//  Set a hash up this way
+// 	Inspect = window.Inspect 
+//      window.MenuStates = {oma_plan_menu: 'hidden'} 
+// then can test window.MenuStates.oma_plan_menu == 'hidden'
+
 var Inspect = {
     TYPE_FUNCTION: 'function',
     // Returns an array of (the names of) all methods

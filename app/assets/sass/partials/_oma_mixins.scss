@@ -27,14 +27,10 @@
         margin-right: 5%;
         margin-left: 5%;
         }
-@mixin diagonal_image_panel{
-        background: $oma_grey;
-        z-index: 2;
-        
+@mixin diagonal_panel($bg-color: $oma_grey){
+        background: $bg-color;        
         position:absolute;
         padding: 2px;
-        right: 300px;
-        bottom: 380px;
 
         transform:rotate(30deg);
         -ms-transform:rotate(30deg); /* IE 9 */

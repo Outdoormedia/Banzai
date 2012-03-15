@@ -30,21 +30,22 @@ h1     {
         }
 
 #oma_diagonal_logo2 {
-	@include diagonal_image_panel;
-        transform:rotate(10deg);
-        -ms-transform:rotate(10deg); /* IE 9 */
-        -moz-transform:rotate(10deg); /* Firefox */
-        -webkit-transform:rotate(10deg); /* Safari and Chrome */
-        -o-transform:rotate(10deg); /* Opera */
-
+	@include diagonal_panel;
+	top: 250px;
+        transform:rotate(5deg);
+        -ms-transform:rotate(5deg); /* IE 9 */
+        -moz-transform:rotate(5deg); /* Firefox */
+        -webkit-transform:rotate(5deg); /* Safari and Chrome */
+        -o-transform:rotate(5deg); /* Opera */
         }
 
 #oma_diagonal_logo3 {
-	@include diagonal_image_panel;
+	@include diagonal_panel;
+	top: 250px;
         }
 
-#oma_diagonal_panel {
-        background: $oma_grey;
+#oma_promo_panel {
+	@include diagonal_panel($oma_black);
         z-index: 2;
         color: $oma_white;
         font: $oma_font_family;
@@ -54,13 +55,7 @@ h1     {
         
         position:absolute;
         top: 182px;
-        padding: 24px;
-
-        transform:rotate(30deg);
-        -ms-transform:rotate(30deg); /* IE 9 */
-        -moz-transform:rotate(30deg); /* Firefox */
-        -webkit-transform:rotate(30deg); /* Safari and Chrome */
-        -o-transform:rotate(30deg); /* Opera */
+        padding: 14px;
         }
 
 .oma_welcome_outer_panel{
@@ -181,7 +176,7 @@ h1     {
         top: -60px;
         }
 
-
+.big { font-size: 30px; }
 .center{
 	float:center;
         }
@@ -221,22 +216,19 @@ oma_menu_item {
 #proof {
        @include menu_item( $oma_white );
        }
-
 #contact {
        @include menu_item( $oma_white );
-//       border-right-width:0px;
        }
 
 
-
-
-#grid {
-position: relative;
-text-align: center;
-width: 480px;
-margin: 16px auto;
-padding: 32px 0;
-border: 2px solid #555;
-font-size: 12px;
-font-family: $oma_font_family;
-}
+#oma_grid {
+       background: $oma_grey_fade-2;
+       position: relative;
+       text-align: center;
+       width: 480px;
+       margin: 16px auto;
+       padding: 32px 0;
+       border: 2px solid #555;
+       font-size: 12px;
+       font-family: $oma_font_family;
+       }

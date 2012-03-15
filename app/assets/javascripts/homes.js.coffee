@@ -5,7 +5,6 @@
 # Vestigial, to be removed when example not useful...
 #Inspect = window.Inspect
 #window.MenuStates = {oma_plan_menu: 'hidden'}
-
 #toggle_plan_menu = (x) -> 
 #  if x == 'hidden'
 #    return window.MenuStates.oma_plan_menu = 'visible'
@@ -13,10 +12,21 @@
 #    return window.MenuStates.oma_plan_menu = 'hidden'
 #  return
 
-#
-# Setup (i.e. bind) for :click and :onmouseover events
-#
 $(document).ready ->
+  Grid = Backbone.Model.extend(promptColor: ->
+    cssColor = prompt("Please enter a CSS color:")
+    @set color: cssColor
+    )
+  window.grid = new Grid
+
+
+$(document).ready ->
+
+  $('#oma_promo_panel').bind 'mouseover', ->
+    $('.oma_welcome_message').text('You clicked Promo Panel!')
+
+  $('#oma_promo_panel').bind 'click', ->
+    $('.oma_welcome_message').text('You clicked Promo Panel!')
 
   $('#home').bind 'click', ->
     $('.oma_welcome_message').text('You clicked Home, wonder where that is?')
@@ -32,7 +42,7 @@ $(document).ready ->
     stopImmediatePropagation()
     
   $('#plan').bind 'mouseover', ->
-    $('.oma_welcome_message').text("You moused over Plan!")
+    $('.oma_welcome_message').text("You moused over Plan! Try clicking it.")
 	
   $('#snapshot').bind 'click', ->
     $('.oma_welcome_message').text('Snapshot.  WHAT IS THIS CONTENT?  WE CAN DO A ONE PAGE UI RIGHT HERE')
@@ -58,3 +68,13 @@ $(document).ready ->
     $('#oma_diagonal_logo3').toggle()
     stopImmediatePropagation()
   
+  $('#oma_diagonal_logo2').bind 'mouseover', ->
+    $('#oma_diagonal_logo3').toggle()
+    stopImmediatePropagation()
+
+  $('#oma_diagonal_logo3').bind 'mouseover', ->
+    $('#oma_diagonal_logo2').toggle()
+    stopImmediatePropagation()
+
+  $('#oma_grid').bind 'mouseover', ->
+    $('.oma_welcome_message').text('Contact OMA using href=\'http://moveoutdoor.com.au/contact-us')

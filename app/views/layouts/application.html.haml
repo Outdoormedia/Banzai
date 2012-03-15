@@ -1,25 +1,28 @@
 !!!
 %html
   %head
-    %title OMA Portal
+    %title OMA Portal Proof of Concept
 
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
+
     = csrf_meta_tag
     = yield(:head)
 
     %body
+
       .oma_header
         =image_tag("image003.jpg", :alt => "OMA Portal")
         #oma_login_invite
           = @login_message
       %br  
+      #oma_icon
 
       .oma_welcome_outer_panel
         = render '/shared/menu_bar'
 
-        .div#oma_diagonal_panel
-          New!
+        #oma_promo_panel
+          What's New?
 
         .oma_welcome_inner_panel
       
@@ -33,13 +36,13 @@
       #oma_ipso_laurem_cols_panel
         = render '/shared/ipso_laurem_cols'
 
-      .div#oma_diagonal_logo2
+      #oma_diagonal_logo2
         =image_tag("image002.jpg", :alt => "OMA Portal", :size=>'62x34')
 
-      .div#oma_diagonal_logo3
+      #oma_diagonal_logo3
         =image_tag("image003.jpg", :alt => "OMA Portal", :size=>'62x34')
 
-      #grid
+      #oma_grid
         this 
         is
         a 
@@ -49,8 +52,8 @@
         else
         here
 
-    = yield
+      = yield
 
-    = render '/shared/footer'
+      = render '/shared/footer'
   
         
