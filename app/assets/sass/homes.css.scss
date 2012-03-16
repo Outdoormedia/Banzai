@@ -32,6 +32,7 @@ h1     {
 #oma_diagonal_logo2 {
 	@include diagonal_panel;
 	top: 250px;
+        right:300px;
         transform:rotate(5deg);
         -ms-transform:rotate(5deg); /* IE 9 */
         -moz-transform:rotate(5deg); /* Firefox */
@@ -42,6 +43,7 @@ h1     {
 #oma_diagonal_logo3 {
 	@include diagonal_panel;
 	top: 250px;
+	right: 300px;
         }
 
 #oma_promo_panel {
@@ -56,7 +58,6 @@ h1     {
         position:absolute;
         top: 182px;
         padding: 14px;
-
         }
 
 .oma_welcome_outer_panel{
@@ -136,14 +137,14 @@ h1     {
        border-left:   4px solid $oma_white;
        border-right:  4px solid $oma_white;
        border-bottom: 4px solid $oma_white;
-       z-index: 2;
+       z-index: 1;
        }
 
 #oma_menu_item {
        @include menu_item($oma_green_fade-1);
-       position:relative;
        color: $oma_white;
        height: 26px;
+       width: 132px;
        }
 
 .oma_status_message{
