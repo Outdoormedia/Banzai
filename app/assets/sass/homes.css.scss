@@ -55,9 +55,8 @@ h1     {
         font-size: $oma_font_size;
         text-shadow: 5px 5px 5px #110011;
         
-        position:absolute;
         top: 182px;
-        padding: 14px;
+        padding: 1px;
         }
 
 .oma_welcome_outer_panel{
@@ -191,15 +190,13 @@ h1     {
         float:right;
         }
 
-oma_menu_item {
-       @include menu_item;
-       }
-
 #home {
        @include menu_item( $oma_white );
+       width:10%;
        }
 #plan {
        @include menu_item( $oma_white );
+       width:10%;
        }
 #snapshot {
        @include menu_item( $oma_white );
@@ -211,15 +208,19 @@ oma_menu_item {
        }
 #buy   {
        @include menu_item( $oma_white );
+       width:10%;
        }
 #learn {
        @include menu_item( $oma_white );
+       width:10%;
        }
-#roof {
+#proof {
        @include menu_item( $oma_white );
+       width:10%;
        }
 #contact {
        @include menu_item( $oma_white );
+       width:10%;
        }
 
 

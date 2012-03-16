@@ -100,6 +100,7 @@ h1 {
   -o-transform: rotate(30deg);
   /* Opera */
   top: 250px;
+  right: 300px;
   transform: rotate(5deg);
   -ms-transform: rotate(5deg);
   /* IE 9 */
@@ -123,7 +124,8 @@ h1 {
   /* Safari and Chrome */
   -o-transform: rotate(30deg);
   /* Opera */
-  top: 250px; }
+  top: 250px;
+  right: 300px; }
 
 #oma_promo_panel {
   background: #231f20;
@@ -144,9 +146,8 @@ h1 {
   font-weight: bold;
   font-size: 24px;
   text-shadow: 5px 5px 5px #110011;
-  position: absolute;
   top: 182px;
-  padding: 14px; }
+  padding: 1px; }
 
 .oma_welcome_outer_panel {
   background: #bbbcbc;
@@ -236,7 +237,7 @@ h1 {
   border-left: 4px solid white;
   border-right: 4px solid white;
   border-bottom: 4px solid white;
-  z-index: 2; }
+  z-index: 1; }
 
 #oma_menu_item {
   font-family: helvetica;
@@ -252,7 +253,8 @@ h1 {
   padding-top: 6px;
   position: relative;
   color: white;
-  height: 26px; }
+  height: 26px;
+  width: 132px; }
 
 .oma_status_message {
   color: #25b264;
@@ -298,19 +300,6 @@ h1 {
 .right {
   float: right; }
 
-oma_menu_item {
-  font-family: helvetica;
-  font-weight: bold;
-  font-size: 12px;
-  color: #bbbcbc;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: #bbbcbc;
-  padding-top: 6px; }
-
 #home {
   font-family: helvetica;
   font-weight: bold;
@@ -322,7 +311,9 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px; }
+  padding-top: 6px;
+  position: relative;
+  width: 10%; }
 
 #plan {
   font-family: helvetica;
@@ -335,7 +326,9 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px; }
+  padding-top: 6px;
+  position: relative;
+  width: 10%; }
 
 #snapshot {
   font-family: helvetica;
@@ -349,6 +342,7 @@ oma_menu_item {
   border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
+  position: relative;
   display: none; }
 
 #plan_by_format {
@@ -363,6 +357,7 @@ oma_menu_item {
   border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
+  position: relative;
   display: none; }
 
 #buy {
@@ -376,7 +371,9 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px; }
+  padding-top: 6px;
+  position: relative;
+  width: 10%; }
 
 #learn {
   font-family: helvetica;
@@ -389,9 +386,11 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px; }
+  padding-top: 6px;
+  position: relative;
+  width: 10%; }
 
-#roof {
+#proof {
   font-family: helvetica;
   font-weight: bold;
   font-size: 12px;
@@ -402,7 +401,9 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px; }
+  padding-top: 6px;
+  position: relative;
+  width: 10%; }
 
 #contact {
   font-family: helvetica;
@@ -415,7 +416,9 @@ oma_menu_item {
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: white;
-  padding-top: 6px; }
+  padding-top: 6px;
+  position: relative;
+  width: 10%; }
 
 #oma_grid {
   background: #dddede;
