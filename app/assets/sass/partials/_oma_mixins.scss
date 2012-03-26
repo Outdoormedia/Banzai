@@ -18,26 +18,20 @@
   font-size: $size;
   }
 
+@mixin panel($deg: 0deg, $bg-color: $oma_grey){
+        background: $bg-color;        
+        padding: 2px;
+
+        transform:rotate($deg);
+        -ms-transform:rotate($deg); /* IE 9 */
+        -moz-transform:rotate($deg); /* Firefox */
+        -webkit-transform:rotate($deg); /* Safari and Chrome */
+        -o-transform:rotate($deg); /* Opera */
+        }
+
 //
 // Menus elements
 //
-@mixin panel( $color: $oma_grey){
-        background: $color;
-        height: 50%;
-        margin-right: 5%;
-        margin-left: 5%;
-        }
-@mixin diagonal_panel($bg-color: $oma_grey){
-        background: $bg-color;        
-        position:absolute;
-        padding: 2px;
-
-        transform:rotate(30deg);
-        -ms-transform:rotate(30deg); /* IE 9 */
-        -moz-transform:rotate(30deg); /* Firefox */
-        -webkit-transform:rotate(30deg); /* Safari and Chrome */
-        -o-transform:rotate(30deg); /* Opera */
-        }
 
 @mixin menu_bar($color: $oma_grey){
        background-color: $color;
@@ -58,6 +52,6 @@
        border-right-width:1px;
        border-right-color:$color;
        padding-top:6px;
-       position:relative;
+       display: inline;
 }
 

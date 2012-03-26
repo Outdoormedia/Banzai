@@ -16,16 +16,16 @@
 $(document).ready ->
 
   $('#oma_promo_panel').bind 'mouseover', ->
-    $('.oma_welcome_message').text('You moused over Promo Panel!')
+    $('#oma_welcome_message').text('You moused over Promo Panel!')
 
   $('#oma_promo_panel').bind 'click', ->
-    $('.oma_welcome_message').text('Show a sidebar of things to learn about?!')
+    $('#oma_welcome_message').text('Show a sidebar of things to learn about?!')
 
   $('#home').bind 'click', ->
-    $('.oma_welcome_message').text('You clicked Home, wonder where that is?')
+    $('#oma_welcome_message').text('You clicked Home, wonder where that is?')
 
   $('#home').bind 'mouseover', ->
-    $('.oma_welcome_message').text("you did a mouseover on Home!")
+    $('#oma_welcome_message').text("you did a mouseover on Home!")
 
   $('#plan').bind 'click', -> 
     $('.oma_welcome_message').text('You clicked Plan (nice one).')
@@ -35,7 +35,7 @@ $(document).ready ->
     stopImmediatePropagation()
     
   $('#plan').bind 'mouseover', ->
-    $('.oma_welcome_message').text("You moused over Plan! Try clicking it.")
+    $('#oma_welcome_message').text("You moused over Plan! Try clicking it.")
 	
   $('#snapshot').bind 'click', ->
     $('.oma_welcome_message').text('Snapshot.  WHAT IS THIS CONTENT?  WE CAN DO A ONE PAGE UI RIGHT HERE')
@@ -48,16 +48,16 @@ $(document).ready ->
     stopImmediatePropagation()
 
   $('#buy').bind 'mouseover', ->
-    $('.oma_welcome_message').text('Buy using MOVE AMS,  logon required.')
+    $('#oma_welcome_message').text('Buy using MOVE AMS,  logon required.')
 
   $('#learn').bind 'mouseover', ->
-    $('.oma_welcome_message').text('Learn using MOVE AMS, logon required. Not implemented this release.')
+    $('#oma_welcome_message').text('Learn using MOVE AMS, logon required. Not implemented this release.')
 
   $('#proof').bind 'mouseover', ->
-    $('.oma_welcome_message').text('Proof using MOVE AMS, logon required. Not implemented this release.')
+    $('#oma_welcome_message').text('Proof using MOVE AMS, logon required. Not implemented this release.')
 
   $('#contact').bind 'mouseover', ->
-    $('.oma_welcome_message').text('Contact OMA using href=\'http://moveoutdoor.com.au/contact-us')
+    $('#oma_welcome_message').text('Contact OMA using href=\'http://moveoutdoor.com.au/contact-us')
     $('#oma_diagonal_logo3').toggle()
     stopImmediatePropagation()
   
@@ -70,4 +70,5 @@ $(document).ready ->
     stopImmediatePropagation()
 
   $('#oma_grid').bind 'mouseover', ->
-    $('.oma_welcome_message').text('We could make this runnable to illustrate concepts...')
+    $('#oma_welcome_message').text('We could make this runnable to illustrate concepts...')
+    stopImmediatePropagation()

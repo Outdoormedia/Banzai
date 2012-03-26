@@ -69,17 +69,30 @@ h1 {
 
 .oma_header {
   background: white;
-  height: 50%;
-  margin-right: 5%;
-  margin-left: 5%; }
+  padding: 2px;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -moz-transform: rotate(0deg);
+  /* Firefox */
+  -webkit-transform: rotate(0deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(0deg);
+  /* Opera */ }
 
 .oma_footer {
-  background: white;
-  height: 50%;
-  margin-right: 5%;
-  margin-left: 5%;
-  font-size: 10px;
-  text-align: center; }
+  background: #25b264;
+  padding: 2px;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -moz-transform: rotate(0deg);
+  /* Firefox */
+  -webkit-transform: rotate(0deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(0deg);
+  /* Opera */
+  height: 54px; }
 
 .oma_footer_text {
   font-size: 10px;
@@ -88,7 +101,6 @@ h1 {
 
 #oma_diagonal_logo2 {
   background: #bbbcbc;
-  position: absolute;
   padding: 2px;
   transform: rotate(30deg);
   -ms-transform: rotate(30deg);
@@ -99,8 +111,11 @@ h1 {
   /* Safari and Chrome */
   -o-transform: rotate(30deg);
   /* Opera */
-  top: 250px;
-  right: 300px;
+  top: 50px; }
+
+#oma_diagonal_logo3 {
+  background: #bbbcbc;
+  padding: 2px;
   transform: rotate(5deg);
   -ms-transform: rotate(5deg);
   /* IE 9 */
@@ -109,27 +124,12 @@ h1 {
   -webkit-transform: rotate(5deg);
   /* Safari and Chrome */
   -o-transform: rotate(5deg);
-  /* Opera */ }
-
-#oma_diagonal_logo3 {
-  background: #bbbcbc;
-  position: absolute;
-  padding: 2px;
-  transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  /* IE 9 */
-  -moz-transform: rotate(30deg);
-  /* Firefox */
-  -webkit-transform: rotate(30deg);
-  /* Safari and Chrome */
-  -o-transform: rotate(30deg);
   /* Opera */
-  top: 250px;
-  right: 300px; }
+  top: 50px;
+  z-index: 1; }
 
 #oma_promo_panel {
   background: #231f20;
-  position: absolute;
   padding: 2px;
   transform: rotate(30deg);
   -ms-transform: rotate(30deg);
@@ -140,40 +140,53 @@ h1 {
   /* Safari and Chrome */
   -o-transform: rotate(30deg);
   /* Opera */
-  z-index: 2;
   color: white;
   font: georgia, helvetica, arial, sans-serif;
   font-weight: bold;
   font-size: 24px;
   text-shadow: 5px 5px 5px #110011;
-  top: 182px;
-  padding: 1px; }
+  top: 20%;
+  padding: 1px;
+  z-index: 2; }
 
 .oma_welcome_outer_panel {
   background: #bbbcbc;
-  height: 50%;
-  margin-right: 5%;
-  margin-left: 5%;
+  padding: 2px;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -moz-transform: rotate(0deg);
+  /* Firefox */
+  -webkit-transform: rotate(0deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(0deg);
+  /* Opera */
   height: 400px;
+  width: 90%;
   background: #d3f0e0;
-  z-index: 0; }
+  z-index: 0;
+  position: absolute; }
 
 .oma_welcome_inner_panel {
   background: white;
-  height: 50%;
-  margin-right: 5%;
-  margin-left: 5%;
-  position: absolute;
+  position: relative;
   width: 600px;
   height: 200px;
-  margin-left: 4.5%;
+  margin-left: 5%;
   z-index: 1; }
 
 #oma_ipso_laurem_panel {
-  background: #f1f1f1;
-  height: 50%;
-  margin-right: 5%;
-  margin-left: 5%;
+  background: #bbbcbc;
+  padding: 2px;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -moz-transform: rotate(0deg);
+  /* Firefox */
+  -webkit-transform: rotate(0deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(0deg);
+  /* Opera */
   position: relative;
   width: 600px;
   height: 200px;
@@ -191,10 +204,17 @@ h1 {
   padding-top: 30px; }
 
 #oma_ipso_laurem_cols_panel {
-  background: #f1f1f1;
-  height: 50%;
-  margin-right: 5%;
-  margin-left: 5%;
+  background: #bbbcbc;
+  padding: 2px;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -moz-transform: rotate(0deg);
+  /* Firefox */
+  -webkit-transform: rotate(0deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(0deg);
+  /* Opera */
   position: relative;
   width: 600px;
   height: 200px;
@@ -215,19 +235,18 @@ h1 {
   padding-left: 18px;
   padding-top: 40px; }
 
-#oma_top_menu {
-  background: #25b264;
-  height: 50%;
-  margin-right: 5%;
-  margin-left: 5%;
-  position: relative;
-  height: 24px; }
-
-#oma_plan_menu {
-  background: #51c183;
-  height: 50%;
-  margin-right: 5%;
-  margin-left: 5%;
+#oma_plan_menu ul {
+  background: #bbbcbc;
+  padding: 2px;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -moz-transform: rotate(0deg);
+  /* Firefox */
+  -webkit-transform: rotate(0deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(0deg);
+  /* Opera */
   display: none;
   height: 48px;
   width: 132px;
@@ -237,7 +256,7 @@ h1 {
   border-left: 4px solid white;
   border-right: 4px solid white;
   border-bottom: 4px solid white;
-  z-index: 1; }
+  z-index: 2; }
 
 #oma_menu_item {
   font-family: helvetica;
@@ -251,6 +270,7 @@ h1 {
   border-right-width: 1px;
   border-right-color: #51c183;
   padding-top: 6px;
+  display: inline;
   position: relative;
   color: white;
   height: 26px;
@@ -312,7 +332,7 @@ h1 {
   border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
-  position: relative;
+  display: inline;
   width: 10%; }
 
 #plan {
@@ -327,7 +347,7 @@ h1 {
   border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
-  position: relative;
+  display: inline;
   width: 10%; }
 
 #snapshot {
@@ -342,7 +362,7 @@ h1 {
   border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
-  position: relative;
+  display: inline;
   display: none; }
 
 #plan_by_format {
@@ -357,7 +377,7 @@ h1 {
   border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
-  position: relative;
+  display: inline;
   display: none; }
 
 #buy {
@@ -372,7 +392,7 @@ h1 {
   border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
-  position: relative;
+  display: inline;
   width: 10%; }
 
 #learn {
@@ -387,7 +407,7 @@ h1 {
   border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
-  position: relative;
+  display: inline;
   width: 10%; }
 
 #proof {
@@ -402,7 +422,7 @@ h1 {
   border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
-  position: relative;
+  display: inline;
   width: 10%; }
 
 #contact {
@@ -417,10 +437,21 @@ h1 {
   border-right-width: 1px;
   border-right-color: white;
   padding-top: 6px;
-  position: relative;
+  display: inline;
   width: 10%; }
 
 #oma_grid {
+  background: #bbbcbc;
+  padding: 2px;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -moz-transform: rotate(0deg);
+  /* Firefox */
+  -webkit-transform: rotate(0deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(0deg);
+  /* Opera */
   background: #dddede;
   position: relative;
   text-align: center;
@@ -429,4 +460,5 @@ h1 {
   padding: 32px 0;
   border: 2px solid #555;
   font-size: 12px;
-  font-family: georgia, helvetica, arial, sans-serif; }
+  font-family: georgia, helvetica, arial, sans-serif;
+  color: #25b264; }

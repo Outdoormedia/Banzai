@@ -3,8 +3,8 @@
   %head
     %title OMA Portal Proof of Concept
 
-    = stylesheet_link_tag    "application"
-    = javascript_include_tag "application"
+    = stylesheet_link_tag    "application", "homes"
+    = javascript_include_tag "application", "homes"
 
     = csrf_meta_tag
     = yield(:head)
@@ -31,29 +31,27 @@
           .oma_status_message
             = @login_status_message
 
-      #oma_ipso_laurem_panel
-        = render '/shared/ipso_laurem'
-      #oma_ipso_laurem_cols_panel
-        = render '/shared/ipso_laurem_cols'
+        #oma_ipso_laurem_panel
+          = render '/shared/ipso_laurem'
+        #oma_ipso_laurem_cols_panel
+          = render '/shared/ipso_laurem_cols'
 
-      #oma_diagonal_logo2
-        =image_tag("image002.jpg", :alt => "OMA Portal", :size=>'62x34')
 
-      #oma_diagonal_logo3
-        =image_tag("image003.jpg", :alt => "OMA Portal", :size=>'62x34')
+        #oma_diagonal_logo2
+          =image_tag("image002.jpg", :alt => "OMA Portal", :size=>'62x34')
+        #oma_diagonal_logo3
+          =image_tag("image003.jpg", :alt => "OMA Portal")
 
-      #oma_grid
-        this 
-        is
-        a 
-        grid
-        with 
-        something
-        else
-        here
-
-      = yield
-
-      = render '/shared/footer'
+        #oma_grid
+          this 
+          is
+          a 
+          grid
+          with 
+          something
+          else
+          here
   
+        = yield
         
+        = render '/shared/footer'

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails', '3.2.2'
 
 gem 'haml'
 
@@ -24,3 +24,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'rack-cache', :require => 'rack/cache'
+gem "dragonfly", '~>0.9.11'
+gem "refinerycms", "~> 2.0.2"
+gem "refinerycms-page-images", '~>2.0.0'

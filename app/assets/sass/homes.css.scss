@@ -14,15 +14,16 @@ h1     {
        font-size: $oma_font_size;
        color: $oma_green;
        }
+
 .oma_header{
-        @include panel($oma_white);
+        @include panel( 0deg, $oma_white);
         }
 
 .oma_footer{
-	@include panel($oma_white);
-	font-size: 10px;
-        text-align: center;
+	@include panel( 0deg, $oma_green);
+	height: 54px;
         }
+
 .oma_footer_text{
 	font-size: 10px;
         text-align: center;
@@ -30,53 +31,48 @@ h1     {
         }
 
 #oma_diagonal_logo2 {
-	@include diagonal_panel;
-	top: 250px;
-        right:300px;
-        transform:rotate(5deg);
-        -ms-transform:rotate(5deg); /* IE 9 */
-        -moz-transform:rotate(5deg); /* Firefox */
-        -webkit-transform:rotate(5deg); /* Safari and Chrome */
-        -o-transform:rotate(5deg); /* Opera */
+	@include panel( 30deg );
+	top: 50px;
         }
 
 #oma_diagonal_logo3 {
-	@include diagonal_panel;
-	top: 250px;
-	right: 300px;
+	@include panel( 5deg );
+	top: 50px;
+	z-index:1;
         }
 
 #oma_promo_panel {
-	@include diagonal_panel($oma_black);
-        z-index: 2;
+	@include panel( 30deg, $oma_black);
         color: $oma_white;
         font: $oma_font_family;
         font-weight:bold;
         font-size: $oma_font_size;
-        text-shadow: 5px 5px 5px #110011;
-        
-        top: 182px;
+        text-shadow: 5px 5px 5px #110011;        
+        top: 20%;
         padding: 1px;
+        z-index: 2;
         }
 
 .oma_welcome_outer_panel{
         @include panel;
         height: 400px;
+        width: 90%;
         background: $oma_green_fade-3;
         z-index: 0;
+        position:absolute;
         }
 
 .oma_welcome_inner_panel{
-	@include panel($oma_white);
-        position:absolute;
+        background: $oma_white;
+        position:relative ;
         width: 600px;
         height: 200px;
-        margin-left: 4.5%;
+        margin-left: 5%;
         z-index: 1;
         }
 
 #oma_ipso_laurem_panel{
-	@include panel($oma_grey_fade-3);
+	@include panel;
         position:relative;
         width: 600px;
         height: 200px;
@@ -93,10 +89,10 @@ h1     {
         padding-left: 12px;
         padding-left: 12px;
         padding-top: 30px;
-
         }
+
 #oma_ipso_laurem_cols_panel{
-	@include panel($oma_grey_fade-3);
+	@include panel;
         position:relative;
         width: 600px;
         height: 200px;
@@ -116,17 +112,11 @@ h1     {
 
         padding-left: 18px;
         padding-top: 40px;
-
         }
 
-#oma_top_menu {
-       @include panel($oma_green);
-       position:relative;
-       height: 24px;
-       }
 
-#oma_plan_menu {
-       @include panel($oma_green_fade-1);
+#oma_plan_menu ul{
+       @include panel;
        display: none;
        height: 48px;
        width: 132px;
@@ -136,11 +126,12 @@ h1     {
        border-left:   4px solid $oma_white;
        border-right:  4px solid $oma_white;
        border-bottom: 4px solid $oma_white;
-       z-index: 1;
+       z-index: 2;
        }
 
 #oma_menu_item {
        @include menu_item($oma_green_fade-1);
+       position:relative;
        color: $oma_white;
        height: 26px;
        width: 132px;
@@ -225,6 +216,7 @@ h1     {
 
 
 #oma_grid {
+       @include panel;
        background: $oma_grey_fade-2;
        position: relative;
        text-align: center;
@@ -234,4 +226,5 @@ h1     {
        border: 2px solid #555;
        font-size: 12px;
        font-family: $oma_font_family;
+       color:$oma_green;
        }
