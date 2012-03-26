@@ -35,6 +35,7 @@ h1     {
 #oma_diagonal_logo2 {
 	@include panel( 30deg, $oma_green );
 	left: 60%;
+	height: 100px;
 	width: 14%;
         }
 
