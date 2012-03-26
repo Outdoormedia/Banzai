@@ -21,6 +21,7 @@
 @mixin panel($deg: 0deg, $bg-color: $oma_grey){
         background: $bg-color;        
         padding: 2px;
+        position:relative;
 
         transform:rotate($deg);
         -ms-transform:rotate($deg); /* IE 9 */
@@ -53,5 +54,6 @@
        border-right-color:$color;
        padding-top:6px;
        display: inline;
+       height: 28px;
 }
 

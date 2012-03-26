@@ -1,5 +1,6 @@
 class HomesController < ApplicationController
         
+  # These instance strings are not visible using RefineryCMS        
   def index
     @login_message = "Please login: "
     @welcome_message = "Welcome to the MOVE System."

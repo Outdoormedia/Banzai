@@ -17,11 +17,13 @@ h1     {
 
 .oma_header{
         @include panel( 0deg, $oma_white);
+       left:5%;
         }
 
 .oma_footer{
-	@include panel( 0deg, $oma_green);
+	@include panel( 0deg, $oma_white);
 	height: 54px;
+	width:100%;
         }
 
 .oma_footer_text{
@@ -31,13 +33,15 @@ h1     {
         }
 
 #oma_diagonal_logo2 {
-	@include panel( 30deg );
-	top: 50px;
+	@include panel( 30deg, $oma_green );
+	left: 60%;
+	width: 14%;
         }
 
 #oma_diagonal_logo3 {
-	@include panel( 5deg );
-	top: 50px;
+	@include panel( -5deg );
+	left:60%;
+	width: 24%;
 	z-index:1;
         }
 
@@ -48,15 +52,17 @@ h1     {
         font-weight:bold;
         font-size: $oma_font_size;
         text-shadow: 5px 5px 5px #110011;        
-        top: 20%;
         padding: 1px;
         z-index: 2;
+        position:absolute;
+        top:20%;
         }
 
 .oma_welcome_outer_panel{
         @include panel;
         height: 400px;
         width: 90%;
+        left: 5%;
         background: $oma_green_fade-3;
         z-index: 0;
         position:absolute;
@@ -114,8 +120,14 @@ h1     {
         padding-top: 40px;
         }
 
+#oma_top_menu {
+       @include panel( 0deg, $oma_green);
+       position:relative;
+       height: 24px;
+       left: 5%;
+       }
 
-#oma_plan_menu ul{
+#oma_plan_menu {
        @include panel;
        display: none;
        height: 48px;
@@ -132,9 +144,6 @@ h1     {
 #oma_menu_item {
        @include menu_item($oma_green_fade-1);
        position:relative;
-       color: $oma_white;
-       height: 26px;
-       width: 132px;
        }
 
 .oma_status_message{
@@ -183,11 +192,11 @@ h1     {
 
 #home {
        @include menu_item( $oma_white );
-       width:10%;
+       width: 120px;
        }
 #plan {
        @include menu_item( $oma_white );
-       width:10%;
+       width: 120px;
        }
 #snapshot {
        @include menu_item( $oma_white );
@@ -199,32 +208,27 @@ h1     {
        }
 #buy   {
        @include menu_item( $oma_white );
-       width:10%;
+       width: 120px;
        }
 #learn {
        @include menu_item( $oma_white );
-       width:10%;
+       width: 120px;
        }
 #proof {
        @include menu_item( $oma_white );
-       width:10%;
+       width: 120px;
        }
 #contact {
        @include menu_item( $oma_white );
-       width:10%;
+       width: 120px;
        }
 
 
-#oma_grid {
-       @include panel;
-       background: $oma_grey_fade-2;
-       position: relative;
-       text-align: center;
-       width: 480px;
-       margin: 16px auto;
-       padding: 32px 0;
-       border: 2px solid #555;
-       font-size: 12px;
-       font-family: $oma_font_family;
-       color:$oma_green;
+#oma_box1 {
+       @include panel( 0deg, $oma_grey_fade_1 );
+       width: 40%;
+       height: 20%;
+       left: 10%;
+       border: 2px solid black;
        }
+      

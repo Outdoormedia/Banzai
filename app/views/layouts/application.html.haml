@@ -3,8 +3,8 @@
   %head
     %title OMA Portal Proof of Concept
 
-    = stylesheet_link_tag    "application", "homes"
-    = javascript_include_tag "application", "homes"
+    = stylesheet_link_tag    "homes"
+    = javascript_include_tag "application"
 
     = csrf_meta_tag
     = yield(:head)
@@ -27,9 +27,9 @@
         .oma_welcome_inner_panel
       
           .oma_welcome_message
-            = @welcome_message
+            @welcome_message
           .oma_status_message
-            = @login_status_message
+            @login_status_message
 
         #oma_ipso_laurem_panel
           = render '/shared/ipso_laurem'
@@ -42,15 +42,8 @@
         #oma_diagonal_logo3
           =image_tag("image003.jpg", :alt => "OMA Portal")
 
-        #oma_grid
-          this 
-          is
-          a 
-          grid
-          with 
-          something
-          else
-          here
+        #oma_box1
+          oma_box1: this is a box we run experiments in, if we ever learn grammar that is.
   
         = yield
         
