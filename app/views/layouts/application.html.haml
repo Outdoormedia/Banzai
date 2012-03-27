@@ -3,7 +3,7 @@
   %head
     %title OMA Portal Proof of Concept
 
-    = stylesheet_link_tag    "homes"
+    = stylesheet_link_tag    "homes", "pieChart"
     = javascript_include_tag "application"
     = javascript_include_tag "http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"
 
@@ -11,7 +11,7 @@
     = yield(:head)
 
     %body
-
+ 
       .oma_header
         =image_tag("image003.jpg", :alt => "OMA Portal")
         #oma_login_invite
@@ -31,6 +31,8 @@
             @welcome_message
           .oma_status_message
             @login_status_message
+
+        .wideBox
 
         #oma_ipso_laurem_panel
           = render '/shared/ipso_laurem'
