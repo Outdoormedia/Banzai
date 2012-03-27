@@ -4,8 +4,20 @@
     %h1 Widgets Sold in 2011
     Click a slice in the chart to pull out a slice!
 
-
   %canvas#chart{width: 600, height:500}
+    :javascript
+      var canvas=document.getElementById('chart');
+      alert(canvas);
+      canvas.init();
+      alert('hey chart! 3');
+
+  %canvas#myCanvas
+    :javascript
+      var canvas=document.getElementById('myCanvas');
+          canvas=document.getElementById('chart');
+      var ctx=canvas.getContext('2d');
+      ctx.fillStyle='#FF1000';
+      ctx.fillRect(0,0,80,100);
 
   %table( id="chartData" )  
   

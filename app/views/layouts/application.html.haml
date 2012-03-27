@@ -4,7 +4,7 @@
     %title OMA Portal Proof of Concept
 
     = stylesheet_link_tag    "homes", "pieChart"
-    = javascript_include_tag "application"
+    = javascript_include_tag "application", "pieChart"
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
     = javascript_include_tag "http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"
 
@@ -22,7 +22,7 @@
 
       .oma_welcome_outer_panel
         = render '/shared/menu_bar'
-
+       
         #oma_promo_panel
           What's New?
 
