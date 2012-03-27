@@ -1,36 +1,42 @@
-@import "partials/colors";
-@import "partials/fonts";
+li {
+  font: 12px/14px sans-serif; }
 
+li {
+  font: 80% sans-serif; }
+
+li {
+  font: x-large/110% georgia, helvetica, arial, sans-serif, serif; }
+
+li {
+  font: bold italic large georgia, helvetica, arial, sans-serif, serif; }
+
+li {
+  font: normal small-caps 120%/120% helvetica; }
 
 .wideBox {
   clear: both;
   text-align: center;
   margin-bottom: 50px;
   padding: 10px;
-  background: $oma_grey;  
+  background: #bbbcbc;
   border: 1px solid #333;
   line-height: 80%;
-  
-  width: 900px;
-}
+  width: 900px; }
 
 #container {
   width: 900px;
   margin: 0 auto;
-  background: $oma_grey_fade_3;
-}
+  background: #f1f1f1; }
 
 #chart, #chartData {
   border: 1px solid #333;
-  background: #ebedf2 url("gradient.png") repeat-x 0 0;
-}
+  background: #ebedf2 url("gradient.png") repeat-x 0 0; }
 
 #chart {
   display: block;
   margin: 0 0 50px 0;
   float: left;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 #chartData {
   width: 200px;
@@ -40,28 +46,22 @@
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-  background-position: 0 -100px;
-}
+  background-position: 0 -100px; }
 
 #chartData th, #chartData td {
   padding: 0.5em;
   border: 1px dotted #666;
-  text-align: left;
-}
+  text-align: left; }
 
 #chartData th {
   border-bottom: 2px solid #333;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 #chartData td {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 #chartData td.highlight {
-  background: #e8e8e8;
-}
+  background: #e8e8e8; }
 
 #chartData tr:hover td {
-  background: #f0f0f0;
-}
+  background: #f0f0f0; }

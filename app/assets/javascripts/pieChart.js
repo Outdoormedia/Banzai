@@ -3,7 +3,7 @@
 // Tutorial Step 4.
 
 $( pieChart );
-
+ 
 function pieChart() {
 
   // Config settings
