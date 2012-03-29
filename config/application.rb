@@ -11,7 +11,7 @@ end
 
   # Heroku required this be false, see http://guides.rubyonrails.org/asset_pipeline.html
 if defined?(Production)
-   config.assets.initialize_on_precompile = false
+   config.assets.initialize_on_precompile = true
 end
         
 module OmaPortal

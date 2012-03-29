@@ -1,5 +1,6 @@
-OmaPortal::Application.configure do
+Refinery::Core.config.s3_backend = true
 
+OmaPortal::Application.configure do
   # Refinery has set config.assets.initialize_on_precompile = false by default.
   config.assets.initialize_on_precompile = false
 
@@ -35,7 +36,7 @@ OmaPortal::Application.configure do
   # config.force_ssl = true
 
   # See everything in the log (default is :info)
-   config.log_level = :debug
+  # config.log_level = :debug
 
   # Prepend all log lines with the following tags
   # config.log_tags = [ :subdomain, :uuid ]
@@ -69,3 +70,4 @@ OmaPortal::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 end
+

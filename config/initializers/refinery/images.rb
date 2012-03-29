@@ -31,13 +31,11 @@ Refinery::Images.configure do |config|
 
   # Configure Dragonfly
   # This is where in the middleware stack to insert the Dragonfly middleware
-  config.dragonfly_insert_before = "ActionDispatch::Callbacks"
-  config.dragonfly_secret = "50ade3b02ef351df0e5f3f167de52039de2cdf26e30f96b8"
+  # config.dragonfly_insert_before = "ActionDispatch::Callbacks"
+  # config.dragonfly_secret = "50ade3b02ef351df0e5f3f167de52039de2cdf26e30f96b8"
   # If you decide to trust file extensions replace :ext below with :format
-  # config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
-  config.dragonfly_url_format = "/system/images/:job/:basename.:format"
-  config.datastore_root_path = "/Users/john/Devo/oma-portal/public/system/refinery/images"
-  # config.trust_file_extensions = false
-  config.trust_file_extensions = true
+  # config.dragonfly_url_format = "/system/images/:job/:basename.:format"
+  # config.datastore_root_path = "/Users/john/Devo/oma-portal/public/system/refinery/images"
+  # config.trust_file_extensions = true
 
 end
