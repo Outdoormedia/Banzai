@@ -80,7 +80,8 @@ h1 {
   /* Safari and Chrome */
   -o-transform: rotate(0deg);
   /* Opera */
-  left: 5%; }
+  height: 140px;
+  width: 95%; }
 
 .oma_footer {
   background: white;
@@ -116,9 +117,9 @@ h1 {
   /* Safari and Chrome */
   -o-transform: rotate(30deg);
   /* Opera */
-  left: 60%;
-  height: 100px;
-  width: 14%; }
+  left: 90%;
+  border: 4px solid #25b264;
+  width: 3%; }
 
 #oma_diagonal_logo3 {
   background: #bbbcbc;
@@ -135,7 +136,7 @@ h1 {
   /* Opera */
   left: 60%;
   width: 24%;
-  z-index: 1; }
+  top: 100px; }
 
 #oma_promo_panel {
   background: #231f20;
@@ -265,7 +266,8 @@ h1 {
   /* Opera */
   position: relative;
   height: 24px;
-  left: 5%; }
+  left: 5%;
+  width: 95%; }
 
 #oma_plan_menu {
   background: #bbbcbc;

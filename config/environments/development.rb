@@ -1,9 +1,6 @@
 OmaPortal::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
-  config.S3_BUCKET = "idlika.com"
-  config.S3_KEY = 'AKIAJG2MA6FIXEPKVC6Q'
-  config.S3_SECRET = '2+lB0FQ8lBUcRkVXn3nblxU7t1ocT+Ja0dRFzida'
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development

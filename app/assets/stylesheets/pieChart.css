@@ -19,23 +19,23 @@ li {
   margin-bottom: 50px;
   padding: 10px;
   border: 1px solid #333;
-  line-height: 100%;
-  width: 900px; }
+  line-height: 100%; }
 
-#container {
+#canvas {
   width: 900px;
   margin: 0 auto;
   background: #f1f1f1; }
 
 #chart, #chartData {
-  border: 1px solid #333;
+  border: 1px solid white;
   background: #ebedf2 url("gradient.png") repeat-x 0 0; }
 
 #chart {
   display: block;
   margin: 0 0 50px 0;
-  float: left;
-  cursor: pointer; }
+  float: right;
+  cursor: pointer;
+  right: 20%; }
 
 #chartData {
   width: 200px;

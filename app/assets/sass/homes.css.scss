@@ -18,7 +18,8 @@ h1     {
 
 .oma_header{
         @include panel( 0deg, $oma_white);
-       left:5%;
+        height: 140px;
+        width: 95%;
         }
 
 .oma_footer{
@@ -35,16 +36,16 @@ h1     {
 
 #oma_diagonal_logo2 {
 	@include panel( 30deg, $oma_green );
-	left: 60%;
-	height: 100px;
-	width: 14%;
+	left: 90%;
+	border: 4px solid $oma_green;
+	width: 3%;
         }
 
 #oma_diagonal_logo3 {
 	@include panel( -5deg );
 	left:60%;
 	width: 24%;
-	z-index:1;
+	top: 100px;
         }
 
 #oma_promo_panel {
@@ -127,6 +128,7 @@ h1     {
        position:relative;
        height: 24px;
        left: 5%;
+       width: 95%;
        }
 
 #oma_plan_menu {
