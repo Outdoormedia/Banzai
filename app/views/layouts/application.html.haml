@@ -13,13 +13,7 @@
 
     %body
  
-      .oma_header
-        =image_tag("image003.jpg", :alt => "OMA Portal")
-
-        %canvas#chart{width: 160, height:150}
-        :javascript
-          var canvas=document.getElementById('chart');
-          canvas.init();
+      = render '/shared/header'
 
       %br  
       #oma_icon

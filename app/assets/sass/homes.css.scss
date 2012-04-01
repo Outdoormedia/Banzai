@@ -2,7 +2,8 @@
 //  They  will automatically  be included   in  application.css.   
 //  You   can  use   Sass  (SCSS)   here:  http://sass-lang.com/
 
-@import "partials/resets";
+//Removed per 'The Rails View' p12, now we use normalizer
+//@import "partials/resets";
 @import "partials/colors";
 @import "partials/fonts";
 @import "partials/oma_mixins";
@@ -19,7 +20,7 @@ h1     {
 .oma_header{
         @include panel( 0deg, $oma_white);
         height: 140px;
-        width: 95%;
+        width: 100%;
         }
 
 .oma_footer{

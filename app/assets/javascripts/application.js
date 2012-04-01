@@ -10,6 +10,8 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+// added modernizr per 'The Rails View', must be first one.
+//= require modernizr-1.7.custom
 //= require jquery
 //= require jquery_ujs
 //= require_tree .

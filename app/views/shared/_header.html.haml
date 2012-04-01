@@ -1,0 +1,10 @@
+.oma_header
+  %header#page_header( role = "banner")
+
+    %nav#utility
+      = link_to image_tag("image003.jpg"), root_url
+
+      %canvas#chart{width: 160, height:150}
+      :javascript
+        var canvas=document.getElementById('chart');
+        canvas.init();
