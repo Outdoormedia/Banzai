@@ -47,19 +47,20 @@ header#page_header {
 
 
 footer#page_footer { 
-  background-color: $oma_grey;
+  background-color: $oma_white;
   border-bottom: 10px solid $oma_black_fade-1;
   color: $oma_green;
   font-size: 0.7em;
   height: 100px;
   padding: 10px 20px;
+  margin: 5% 5%;
 
   ul {
     margin-left: -10px;
     padding: 0;
 
     li {
-      border-right: 1px solid $oma_green_fade_1;
+      border-right: 1px solid $oma_green_fade_2;
       display: inline;
       margin: 0;
       &:last-child {
@@ -71,7 +72,7 @@ footer#page_footer {
         &:hover, 
         &:visited, 
         &.active {
-          color: #fff;
+          color: $oma_green_fade_2;
         }
       }
     }
@@ -82,9 +83,12 @@ footer#page_footer {
 // sections for content, sidebar
 //
 section#content { 
-   float: right;
+   float: left;
+   margin: 5% 5%;
+   width: 50%;
    } 
 section#sidebar {
-   margin-right: -20px;
-   width: 300px;
+   margin-right: 3%;
+   margin-top: 7%;
+   width: 30%;
    }

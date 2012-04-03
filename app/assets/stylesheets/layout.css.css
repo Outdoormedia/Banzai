@@ -43,17 +43,18 @@ header#page_header {
   padding: 0 20px; }
 
 footer#page_footer {
-  background-color: #bbbcbc;
+  background-color: white;
   border-bottom: 10px solid #58595b;
   color: #25b264;
   font-size: 0.7em;
   height: 100px;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  margin: 5% 5%; }
   footer#page_footer ul {
     margin-left: -10px;
     padding: 0; }
     footer#page_footer ul li {
-      border-right: 1px solid #51c183;
+      border-right: 1px solid #92d8b1;
       display: inline;
       margin: 0; }
       footer#page_footer ul li:last-child {
@@ -61,11 +62,14 @@ footer#page_footer {
       footer#page_footer ul li a {
         padding: 5px 10px; }
         footer#page_footer ul li a:link, footer#page_footer ul li a:hover, footer#page_footer ul li a:visited, footer#page_footer ul li a.active {
-          color: #fff; }
+          color: #92d8b1; }
 
 section#content {
-  float: right; }
+  float: left;
+  margin: 5% 5%;
+  width: 50%; }
 
 section#sidebar {
-  margin-right: -20px;
-  width: 300px; }
+  margin-right: 3%;
+  margin-top: 7%;
+  width: 30%; }

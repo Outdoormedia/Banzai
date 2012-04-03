@@ -11,7 +11,7 @@
  *= require_self
  *= require normalize
  *= require layout
- *= require homes
  *= require sidebar
+ *= require homes
  *= require pieChart
 */

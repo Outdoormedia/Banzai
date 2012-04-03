@@ -27,7 +27,6 @@ li {
   background: #f1f1f1; }
 
 #chart, #chartData {
-  border: 1px solid #bbbcbc;
   background: #ebedf2 url("gradient.png") repeat-x 0 0; }
 
 #chart {

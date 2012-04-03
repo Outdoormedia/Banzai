@@ -23,15 +23,11 @@
         = yield
 
       %section#sidebar
-        sidebar stuff?
-        sidebar stuff?
-        sidebar stuff?
-        sidebar stuff?
         %section#recent_activity
           %header
-            %h1.ir#recent
-              Recent Activity
-              dfjdfjd
+            %h1.ir#recent_activity 
+              Happenings
+              = render '/shared/recent_activity'
               
 
     = render '/shared/footer'
