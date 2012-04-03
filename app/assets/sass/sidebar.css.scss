@@ -2,14 +2,14 @@
 @import "partials/fonts";
 
 section#sidebar {
-  background-color: $oma_green; 
+  background-color: $oma_grey_fade_1; 
   -webkit-border-top-left-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
   -moz-border-radius-topleft: 10px;
   -moz-border-radius-bottomleft: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  color: $oma_green;
+  color: $oma_white;
   float: right;
   font: {
     size: 0.8em;
@@ -40,8 +40,8 @@ section#sidebar {
 
   #recent_activity {
     header {
-      background-color: #bc471d;
-      border-bottom: 5px solid #807c77;
+      background-color: $oma_green_fade_1; 
+      border-bottom: 5px solid $oma_black_fade-1;
       margin: 10px -10px;
       padding: 5px 10px 0 10px;
       h1#recent {

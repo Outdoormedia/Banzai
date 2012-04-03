@@ -1,18 +1,3 @@
-li {
-  font: 12px/14px sans-serif; }
-
-li {
-  font: 80% sans-serif; }
-
-li {
-  font: x-large/110% georgia, helvetica, arial, sans-serif, serif; }
-
-li {
-  font: bold italic large georgia, helvetica, arial, sans-serif, serif; }
-
-li {
-  font: normal small-caps 120%/120% helvetica; }
-
 header#page_header {
   color: #25b264;
   height: 80px;
@@ -29,7 +14,7 @@ header#page_header {
     float: right;
     font-size: 0.8em;
     position: relative;
-    left: -25px;
+    left: -65px;
     top: 30px; }
   header#page_header #logo {
     position: relative;

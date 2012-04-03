@@ -1,27 +1,12 @@
-li {
-  font: 12px/14px sans-serif; }
-
-li {
-  font: 80% sans-serif; }
-
-li {
-  font: x-large/110% georgia, helvetica, arial, sans-serif, serif; }
-
-li {
-  font: bold italic large georgia, helvetica, arial, sans-serif, serif; }
-
-li {
-  font: normal small-caps 120%/120% helvetica; }
-
 section#sidebar {
-  background-color: #25b264;
+  background-color: #c9c9c9;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
   -moz-border-radius-topleft: 10px;
   -moz-border-radius-bottomleft: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  color: #25b264;
+  color: white;
   float: right;
   font-size: 0.8em;
   font-weight: normal;
@@ -40,8 +25,8 @@ section#sidebar {
     margin: 0;
     padding: 0; }
   section#sidebar #recent_activity header {
-    background-color: #bc471d;
-    border-bottom: 5px solid #807c77;
+    background-color: #51c183;
+    border-bottom: 5px solid #58595b;
     margin: 10px -10px;
     padding: 5px 10px 0 10px; }
     section#sidebar #recent_activity header h1#recent {
