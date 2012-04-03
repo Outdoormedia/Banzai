@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 %html
   %head
+    %meta( charset="utf-8" )
     %title OMA Portal Proof of Concept
 
-    = stylesheet_link_tag    "homes", "pieChart"
+    = stylesheet_link_tag    "application", "homes", "layout", "sidebar", "pieChart", "normalize"
     = javascript_include_tag "application", "pieChart"
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
     = javascript_include_tag "http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"
@@ -11,43 +12,26 @@
     = csrf_meta_tag
     = yield(:head)
 
-    %body
- 
-      = render '/shared/header'
+  %body
 
-      %br  
-      #oma_icon
-
-
-      .oma_welcome_outer_panel
-        = render '/shared/menu_bar'
-       
-        #oma_promo_panel
-          What's New?
-
-        .oma_welcome_inner_panel
-      
-          .oma_welcome_message
-            @welcome_message
-          .oma_status_message
-            @login_status_message
- 
-          = render '/shared/pieChart'
-
-        #oma_ipso_laurem_panel
-          = render '/shared/ipso_laurem'
-        #oma_ipso_laurem_cols_panel
-          = render '/shared/ipso_laurem_cols'
-
-
-        #oma_diagonal_logo2
-          =image_tag("image002.jpg", :alt => "OMA Portal", :size=>'62x34')
-        #oma_diagonal_logo3
-          =image_tag("OMA-MOVE_logo_reversed.png", :alt => "OMA Portal", :size=>'82x34')
-
-        #oma_box1
-          oma_box1: this is a box we run experiments in, if we ever learn grammar that is.
+    = render '/shared/header'
+    
+    .container
+    
+      %section#content
   
         = yield
-        
-        = render '/shared/footer'
+
+      %section#sidebar
+        sidebar stuff?
+        sidebar stuff?
+        sidebar stuff?
+        sidebar stuff?
+        %section#recent_activity
+          %header
+            %h1.ir#recent
+              Recent Activity
+              dfjdfjd
+              
+
+    = render '/shared/footer'

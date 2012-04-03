@@ -1,7 +1,6 @@
 @import "partials/colors";
 @import "partials/fonts";
 
-
 .wideBox {
   clear: both;
   text-align: center;
@@ -9,8 +8,7 @@
   padding: 10px;
   border: 1px solid #333;
   line-height: 100%;
-  
-}
+  }
 
 #canvas {
   width: 900px;
@@ -19,19 +17,18 @@
 }
 
 #chart, #chartData {
-  border: 1px solid $oma_white;
+  border: 1px solid $oma_grey;
   background: #ebedf2 url("gradient.png") repeat-x 0 0;
 }
 
 #chart {
   display: block;
-  margin: 0 0 50px 0;
   float: right;
   cursor: pointer;
-  right: 20%;
 }
 
 #chartData {
+  display: none;
   width: 200px;
   margin: 0 40px 0 0;
   float: right;

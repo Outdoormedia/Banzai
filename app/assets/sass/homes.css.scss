@@ -17,19 +17,19 @@ h1     {
        color: $oma_green;
        }
 
-.oma_header{
-        @include panel( 0deg, $oma_white);
-        height: 140px;
-        width: 100%;
+.UNUSEDoma_header{
+	@include panel( 0deg, $oma_white);
+	height: 68px;
+	width:100%;
         }
 
-.oma_footer{
+.UNUSEDoma_footer{
 	@include panel( 0deg, $oma_white);
 	height: 54px;
 	width:100%;
         }
 
-.oma_footer_text{
+.UNUSEDoma_footer_text{
 	font-size: 10px;
         text-align: center;
         color: $oma_green;	

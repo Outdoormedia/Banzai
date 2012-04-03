@@ -20,7 +20,7 @@ h1 {
   font-size: 24px;
   color: #25b264; }
 
-.oma_header {
+.UNUSEDoma_header {
   background: white;
   padding: 2px;
   position: relative;
@@ -33,10 +33,10 @@ h1 {
   /* Safari and Chrome */
   -o-transform: rotate(0deg);
   /* Opera */
-  height: 140px;
+  height: 68px;
   width: 100%; }
 
-.oma_footer {
+.UNUSEDoma_footer {
   background: white;
   padding: 2px;
   position: relative;
@@ -52,7 +52,7 @@ h1 {
   height: 54px;
   width: 100%; }
 
-.oma_footer_text {
+.UNUSEDoma_footer_text {
   font-size: 10px;
   text-align: center;
   color: #25b264; }

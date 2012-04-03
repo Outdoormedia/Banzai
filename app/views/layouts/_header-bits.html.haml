@@ -1,0 +1,31 @@
+  %br
+    .oma_welcome_outer_panel
+      = render '/shared/menu_bar'
+       
+      #oma_promo_panel
+        What's New?
+
+      .oma_welcome_inner_panel
+      
+        .oma_welcome_message
+          @welcome_message
+        .oma_status_message
+          @login_status_message
+
+    
+        = render '/shared/pieChart'
+
+    
+      #oma_ipso_laurem_panel
+        = render '/shared/ipso_laurem'
+      #oma_ipso_laurem_cols_panel
+        = render '/shared/ipso_laurem_cols'
+
+    
+      #oma_diagonal_logo2
+        =image_tag("image002.jpg", :alt => "OMA Portal", :size=>'62x34')
+      #oma_diagonal_logo3
+        =image_tag("OMA-MOVE_logo_reversed.png", :alt => "OMA Portal", :size=>'82x34')
+    
+      #oma_box1
+        oma_box1: this is a box we run experiments in, if we ever learn grammar that is.
