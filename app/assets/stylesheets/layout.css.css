@@ -29,7 +29,7 @@ header#page_header {
     float: right;
     font-size: 0.8em;
     position: relative;
-    left: -15px;
+    left: -25px;
     top: 30px; }
   header#page_header #logo {
     position: relative;
@@ -44,8 +44,8 @@ header#page_header {
 
 footer#page_footer {
   background-color: #bbbcbc;
-  border-bottom: 10px solid #4c2719;
-  color: #fff;
+  border-bottom: 10px solid #58595b;
+  color: #25b264;
   font-size: 0.7em;
   height: 100px;
   padding: 10px 20px; }
