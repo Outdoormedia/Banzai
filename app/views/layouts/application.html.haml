@@ -4,8 +4,8 @@
     %meta( charset="utf-8" )
     %title OMA Portal Proof of Concept
 
-    = stylesheet_link_tag    "application", "homes", "layout", "sidebar", "pieChart", "normalize"
-    = javascript_include_tag "application", "pieChart"
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
     = javascript_include_tag "http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"
 
@@ -14,7 +14,7 @@
 
   %body
 
-    = render '/shared/header'
+    = render 'shared/header'
     
     .container
     
@@ -29,4 +29,4 @@
               = render '/shared/recent_activity'
               
 
-    = render '/shared/footer'
+    = render 'shared/footer'

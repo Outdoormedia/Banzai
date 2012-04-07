@@ -1,4 +1,3 @@
-
 // Run the code when the DOM is ready
 // Tutorial Step 4.
 
@@ -7,15 +6,15 @@ $( pieChart );
 function pieChart() {
 
   // Config settings
-  var chartSizePercent = 55;                        // The chart radius relative to the canvas width/height (in percent)
+  var chartSizePercent = 55;                        // The chart radius relative to the canvas width/height (in percent, orig 55)
   var sliceBorderWidth = 1;                         // Width (in pixels) of the border around each slice
   var sliceBorderStyle = "#fff";                    // Colour of the border around each slice
   var sliceGradientColour = "#ddd";                 // Colour to use for one end of the chart gradient
   var maxPullOutDistance = 25;                      // How far, in pixels, to pull slices out when clicked
   var pullOutFrameStep = 4;                         // How many pixels to move a slice with each animation frame
   var pullOutFrameInterval = 40;                    // How long (in ms) between each animation frame
-  var pullOutLabelPadding = 65;                     // Padding between pulled-out slice and its label  
-  var pullOutLabelFont = "bold 16px 'Trebuchet MS', Verdana, sans-serif";  // Pull-out slice label font
+  var pullOutLabelPadding = 35;                     // Padding between pulled-out slice and its label  (65)
+  var pullOutLabelFont = "bold 12px 'Trebuchet MS', Verdana, sans-serif";  // Pull-out slice label font
   var pullOutValueFont = "bold 12px 'Trebuchet MS', Verdana, sans-serif";  // Pull-out slice value font
   var pullOutValuePrefix = "$";                     // Pull-out slice value prefix
   var pullOutShadowColour = "rgba( 0, 0, 0, .5 )";  // Colour to use for the pull-out slice shadow
@@ -29,7 +28,7 @@ function pieChart() {
   // Declare some variables for the chart
   var canvas;                       // The canvas element in the page
   var currentPullOutSlice = -1;     // The slice currently pulled out (-1 = no slice)
-  var currentPullOutDistance = 0;   // How many pixels the pulled-out slice is currently pulled out in the animation
+  var currentPullOutDistance = 0;   // How many pixels the pulled-out slice is currently pulled out in the animation (0)
   var animationId = 0;              // Tracks the interval ID for the animation created by setInterval()
   var chartData = [];               // Chart data (labels, values, and angles)
   var chartColours = [];            // Chart colours (pulled from the HTML table)
@@ -269,7 +268,6 @@ function pieChart() {
    */
 
   function drawChart() {
-
     // Get a drawing context
     var context = canvas.getContext('2d');
         
@@ -285,7 +283,6 @@ function pieChart() {
     // (We draw the pull-out slice last so its drop shadow doesn't get painted over.)
     if ( currentPullOutSlice != -1 ) drawSlice( context, currentPullOutSlice );
   }
-
 
 
   /**

@@ -1,0 +1,10 @@
+- content_for :main_navigation do
+  %nav#main_navx( role = "navigation" )
+    %ul
+      %li= nav_tab 'Ho X me', root_path, current: current_tab
+      %li= nav_tab 'About Move', root_path, current: current_tab
+      %li= nav_tab 'How you use Move', root_path, current: current_tab
+      %li= nav_tab 'Contact', root_path, current: current_tab
+      %li= nav_tab 'FAQs', root_path, current: current_tab
+      %li= nav_tab 'New', root_path, current: current_tab
+

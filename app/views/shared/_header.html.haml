@@ -1,14 +1,14 @@
 %header#page_header( role = "banner")
-  .div
-    %canvas#chart
-    = render '/shared/pieChart'
-    :javascript
-      var canvas=document.getElementById('chart');
-      canvas.init();
-   
-    %nav#utility
-      You are logged in as 
-      = link_to "[Your Account]", "current_user_path" | 
-      = link_to "[Logout]", "logout_path"
-    
-    = link_to( image_tag("image001.jpg", alt: "Outdoor Media Association", id: "logo"), root_url, title: "Dashboard")
+
+  %canvas#chart
+    = render 'shared/pieChart'
+  
+  %nav#utility
+    You are logged in as 
+    = link_to "[Your Account]", "current_user_path" | 
+    = link_to "[Logout]", "logout_path"
+  
+  = link_to( image_tag("image001.jpg", alt: "Outdoor Media Association", id: "logo"), root_url, title: "Dashboard")
+ 
+  = yield(:main_navigation)
+

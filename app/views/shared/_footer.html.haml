@@ -1,32 +1,30 @@
 %footer#page_footer
 
-  .right
-    = image_tag("oma_logo.png", :alt => "Sample App")
-  
   .left
     = image_tag("zenith.gif", :alt => "Sample App")
 
-  .center
-    .oma_footer_text  
-      %ul.page_footer
-        %li.page_footer#home
-          = link_to 'links', ""
-        %li.page_footer#home
-          = link_to 'down', ""
-        %li.page_footer#home
-          = link_to 'here', ""
-        %li.page_footer#home
-          = link_to 'to', ""
-        %li.page_footer#home
-          = link_to 'to support', ""
-        %li.page_footer#home
-          = link_to 'SEO', ""
-
+  .right
+    = image_tag("oma_logo.png", :alt => "Sample App")
   
+  .center
+    %ul
+      %li
+        = link_to 'links', ""
+      %li
+        = link_to 'down', ""
+      %li
+        = link_to 'here', ""
+      %li
+        = link_to 'to', ""
+      %li
+        = link_to 'to support', ""
+      %li
+        = link_to 'SEO', ""
+    
+    
     .oma_footer_text
       %p="© 2007-12 MOVE Pty Ltd"
     .oma_footer_text
       %p= "Outdoor Marketing Association"
-
 
 

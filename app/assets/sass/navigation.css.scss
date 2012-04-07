@@ -1,0 +1,29 @@
+@import "partials/colors";
+@import "partials/fonts";
+
+nav#main_nav { 
+  li {
+    background: $oma_grey;
+    display: inline-block;
+    margin: 0 2px;
+    padding: 4px 6px;
+
+    a,
+    a:link,
+    a:visited {
+      color: $oma_green;
+      text-decoration: none;
+      }
+
+    &.active {
+      background: #fff;
+      margin-bottom: -1px;
+      a,
+      a:link,
+      a:visited {
+        color: #555;
+        font-weight: bold;
+        }
+      }	
+    }
+  }
