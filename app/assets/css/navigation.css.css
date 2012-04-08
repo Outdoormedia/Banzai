@@ -1,0 +1,18 @@
+nav#main_nav li {
+  background: #bbbcbc;
+  display: inline-block;
+  margin: 0 2px;
+  padding: 4px 6px; }
+  nav#main_nav li a,
+  nav#main_nav li a:link,
+  nav#main_nav li a:visited {
+    color: #25b264;
+    text-decoration: none; }
+  nav#main_nav li.active {
+    background: #fff;
+    margin-bottom: -1px; }
+    nav#main_nav li.active a,
+    nav#main_nav li.active a:link,
+    nav#main_nav li.active a:visited {
+      color: #555;
+      font-weight: bold; }

@@ -6,8 +6,6 @@
 
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
-    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
-    = javascript_include_tag "http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"
 
     = csrf_meta_tag
     = yield(:head)
@@ -15,7 +13,7 @@
   %body
 
     = render 'shared/header'
-    
+
     .container
     
       %section#content
