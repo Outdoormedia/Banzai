@@ -1,9 +1,6 @@
-//  Place all  the styles  related to  the Homes  controller here.  
-//  They  will automatically  be included   in  application.css.   
-//  You   can  use   Sass  (SCSS)   here:  http://sass-lang.com/
+//  Place all  the styles related to OMA branding here.  
+//
 
-//Removed per 'The Rails View' p12, now we use normalizer
-//@import "partials/resets";
 @import "partials/colors";
 @import "partials/fonts";
 @import "partials/oma_mixins";
@@ -17,19 +14,19 @@ h1     {
        color: $oma_green;
        }
 
-.UNUSEDoma_header{
+.oma_header{
 	@include panel( 0deg, $oma_white);
 	height: 68px;
 	width:100%;
         }
 
-.UNUSEDoma_footer{
+.oma_footer{
 	@include panel( 0deg, $oma_white);
 	height: 54px;
 	width:100%;
         }
 
-.UNUSEDoma_footer_text{
+.oma_footer_text{
 	font-size: 10px;
         text-align: center;
         color: $oma_green;	

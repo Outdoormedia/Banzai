@@ -1,36 +1,54 @@
-section#sidebar {
-  background-color: #c9c9c9;
-  -webkit-border-top-left-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-bottomleft: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  color: white;
-  float: right;
-  font-size: 0.8em;
-  font-weight: normal;
-  line-height: 1.3em;
-  padding: 10px; }
-  section#sidebar a,
-  section#sidebar a:link,
-  section#sidebar a:visited {
-    color: #666;
-    text-decoration: underline; }
-  section#sidebar a:hover,
-  section#sidebar a:active {
-    color: #bc471d; }
-  section#sidebar #functional_nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-  section#sidebar #recent_activity header {
-    background-color: #51c183;
-    border-bottom: 5px solid #58595b;
-    margin: 10px -10px;
-    padding: 5px 10px 0 10px; }
-    section#sidebar #recent_activity header h1#recent {
-      background: transparent url("image003.jpeg") no-repeat scroll top left;
-      margin: 5px 0 0 0;
-      padding: 0;
-      text-indent: -999px; }
+/*
+Syntax error: File to import not found or unreadable: partials/colors.
+              Load paths:
+                /Users/john/Devo/oma-portal/app/assets
+                /Users/john/Devo/oma-portal/app/assets/sass
+        on line 1 of sass/sidebar.css.scss
+
+1: @import "partials/colors";
+2: @import "partials/fonts";
+3: 
+4: section#sidebar {
+5:   background-color: $oma_grey_fade_1; 
+6:   -webkit-border-top-left-radius: 10px;
+
+Backtrace:
+sass/sidebar.css.scss:1
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/import_node.rb:42:in `import'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/import_node.rb:25:in `imported_file'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/tree/root_node.rb:20:in `render'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/engine.rb:299:in `_render'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/engine.rb:246:in `render'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/plugin/compiler.rb:339:in `update_stylesheet'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/plugin/compiler.rb:200:in `each'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/exec.rb:411:in `watch_or_update'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/exec.rb:302:in `process_result'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/exec.rb:41:in `parse'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/lib/sass/exec.rb:21:in `parse!'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.15/bin/sass:8:in `<top (required)>'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/bin/sass:19:in `load'
+/Users/john/.rvm/gems/ruby-1.9.2-p290/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: partials/colors.\A               Load paths:\A                 /Users/john/Devo/oma-portal/app/assets\A                 /Users/john/Devo/oma-portal/app/assets/sass\A         on line 1 of sass/sidebar.css.scss\A \A 1: @import \"partials/colors\";\A 2: @import \"partials/fonts\";\A 3: \A 4: section#sidebar {\A 5:   background-color: $oma_grey_fade_1; \A 6:   -webkit-border-top-left-radius: 10px;"; }

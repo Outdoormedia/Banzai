@@ -8,7 +8,6 @@
 // do not use both unless they are different!
 header#page_header { 
 //       background: $oma_white url('image003.jpg') center left no-repeat;
-       border: 1px solid $oma_grey;
        color: $oma_green;
        height: 140px;
        margin-left: 5%;
@@ -56,19 +55,17 @@ header#page_header {
 
 footer#page_footer { 
   background-color: $oma_white;
-  border-bottom: 10px solid $oma_black_fade-1;
+  border-bottom: 5px solid $oma_black_fade-1;
   color: $oma_green;
   font-size: 0.7em;
-  height: 100px;
-  padding: 10px 20px;
   margin: 5% 5%;
 
   ul {
-    margin-left: -10px;
     padding: 0;
+    text-align: center;
 
     li {
-      border-right: 1px solid $oma_green_fade_2;
+      border-right: 2px solid $oma_grey_fade-1;
       display: inline;
       margin: 0;
       &:last-child {
@@ -80,7 +77,7 @@ footer#page_footer {
         &:hover, 
         &:visited,
         &.active {
-          color: $oma_green_fade_2;
+          color: $oma_green;
         }
       }
     }
