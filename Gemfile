@@ -28,5 +28,7 @@ gem 'jquery-rails'
 gem 'rack-cache', :require => 'rack/cache'
 gem 'fog'
 gem "dragonfly", '~>0.9.11'
+
+# Gems for RefineryCMS
 gem "refinerycms", "~> 2.0.2"
 gem "refinerycms-page-images", '~>2.0.0'

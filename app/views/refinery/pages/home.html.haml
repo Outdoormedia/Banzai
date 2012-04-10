@@ -1,5 +1,12 @@
-%h1 Homes
-- currently_at 'Homes'
-%h2 this is homes index page, From views/refinery/pages/home.html.erb
+=raw @page.content_for(:main_navigation)
+- currently_at 'Home'
 
+%h1 Homes
+%h2 this is homes index page, From views/refinery/pages/home.html.erb
 %h3 Turpis justo curabitur sit amet urna
+
+%section#body_content
+  =raw @page.content_for(:body)
+
+%section#side_body_content
+  =raw @page.content_for(:side_body)

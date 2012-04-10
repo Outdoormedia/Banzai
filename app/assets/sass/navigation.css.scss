@@ -2,26 +2,28 @@
 @import "partials/fonts";
 
 nav#main_nav { 
+  padding: 0 0 0 -100px;
+
   li {
-    background: $oma_grey;
+    border: 1px solid $oma_green_fade-1;
     display: inline-block;
-    margin: 0 2px;
-    padding: 4px 6px;
+    padding: 0 17px 0 17px;
+    font-size: 0.9em;
 
     a,
     a:link,
     a:visited {
-      color: $oma_green;
+      color: $oma_grey;
       text-decoration: none;
       }
 
     &.active {
-      background: #fff;
+      background: $oma_grey;
       margin-bottom: -1px;
       a,
       a:link,
       a:visited {
-        color: #555;
+        color: $oma_grey_fade_3;
         font-weight: bold;
         }
       }	

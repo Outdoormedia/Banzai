@@ -1,0 +1,12 @@
+=raw @page.content_for(:main_navigation)
+- currently_at 'Home'
+
+%h1 About Move
+%h2 this is About  index page, From views/refinery/pages/about_move.html.haml
+
+
+%section#body_content
+  =raw @page.content_for(:body)
+
+%section#side_body_content
+  =raw @page.content_for(:side_body)

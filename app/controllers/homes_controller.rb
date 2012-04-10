@@ -10,4 +10,7 @@ class HomesController < ApplicationController
     @organization_name = 'Outdoor Media Association'
   end
   
+  def about_move
+  end
+  
 end

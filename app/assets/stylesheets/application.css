@@ -18,5 +18,10 @@
  *= require navigation
  *= require pieChart
  *= require homes
+ *
+ * From Railscast 333 Extending Refinery CMS
+ *= require formatting
+ *= require theme
+
 */
 
