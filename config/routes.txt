@@ -1,18 +1,13 @@
-            refinery        /                                         Refinery::Core::Engine
-     home_about_move POST   /homes/:home_id/about_move(.:format)      about_moves#create
- new_home_about_move GET    /homes/:home_id/about_move/new(.:format)  about_moves#new
-edit_home_about_move GET    /homes/:home_id/about_move/edit(.:format) about_moves#edit
-                     GET    /homes/:home_id/about_move(.:format)      about_moves#show
-                     PUT    /homes/:home_id/about_move(.:format)      about_moves#update
-                     DELETE /homes/:home_id/about_move(.:format)      about_moves#destroy
-               homes GET    /homes(.:format)                          homes#index
-                     POST   /homes(.:format)                          homes#create
-            new_home GET    /homes/new(.:format)                      homes#new
-           edit_home GET    /homes/:id/edit(.:format)                 homes#edit
-                home GET    /homes/:id(.:format)                      homes#show
-                     PUT    /homes/:id(.:format)                      homes#update
-                     DELETE /homes/:id(.:format)                      homes#destroy
-                root        /                                         homes#index
+  refinery        /                               Refinery::Core::Engine
+     homes GET    /homes(.:format)                homes#index
+           POST   /homes(.:format)                homes#create
+  new_home GET    /homes/new(.:format)            homes#new
+ edit_home GET    /homes/:id/edit(.:format)       homes#edit
+      home GET    /homes/:id(.:format)            homes#show
+           PUT    /homes/:id(.:format)            homes#update
+           DELETE /homes/:id(.:format)            homes#destroy
+about_move        /homes/:id/about_move(.:format) home#about_move
+      root        /                               homes#index
 
 Routes for Refinery::Core::Engine:
                                        /system/resources/*dragonfly(.:format)       <Dragonfly::App name=:refinery_resources >

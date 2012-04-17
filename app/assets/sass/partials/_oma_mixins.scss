@@ -18,10 +18,11 @@
   font-size: $size;
   }
 
-@mixin panel($deg: 0deg, $bg-color: $oma_grey){
+@mixin panel($deg: 0deg, $bg-color: $oma_grey, $border: 1px solid $oma_green ){
         background: $bg-color;        
         padding: 2px;
         position:relative;
+        border: $border;
 
         transform:rotate($deg);
         -ms-transform:rotate($deg); /* IE 9 */

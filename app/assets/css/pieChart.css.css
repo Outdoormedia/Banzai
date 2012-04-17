@@ -7,16 +7,16 @@
   line-height: 100%; }
 
 #canvas {
-  width: 900px;
   margin: 0 auto;
-  background: #f1f1f1; }
+  background: #f1f1f1;
+  height: 400px; }
 
 #chart, #chartData {
   background: #ebedf2 url("gradient.png") repeat-x 0 0; }
 
 #chart {
   display: block;
-  float: right;
+  float: center;
   cursor: pointer; }
 
 #chartData {

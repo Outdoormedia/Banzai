@@ -4,7 +4,7 @@
     %meta( charset="utf-8" )
     %title OMA Portal Proof of Concept
 
-    = stylesheet_link_tag    "application"
+    = stylesheet_link_tag    "application", "navigation"
     = javascript_include_tag "application"
 
     = csrf_meta_tag
@@ -15,10 +15,14 @@
     = render 'shared/header'
 
     .container
-    
+
       %section#content
   
         = yield
+        = image_tag("main_image.jpg", :alt => "Sample App")
+
+      %canvas#chart( height = '300px')
+        = render 'shared/pieChart'
 
       %section#sidebar
         %section#recent_activity

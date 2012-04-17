@@ -32,3 +32,10 @@ gem "dragonfly", '~>0.9.11'
 # Gems for RefineryCMS
 gem "refinerycms", "~> 2.0.2"
 gem "refinerycms-page-images", '~>2.0.0'
+
+# Specify additional Refinery CMS Extensions here (all optional):
+gem 'refinerycms-i18n', '~> 2.0.0'
+#  gem 'refinerycms-blog', '~> 2.0.0'
+#  gem 'refinerycms-inquiries', '~> 2.0.0'
+#  gem 'refinerycms-search', '~> 2.0.0'
+#  gem 'refinerycms-page-images', '~> 2.0.0'

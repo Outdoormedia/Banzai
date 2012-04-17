@@ -9,6 +9,7 @@ h1 {
   background: white;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   /* IE 9 */
@@ -25,6 +26,7 @@ h1 {
   background: white;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   /* IE 9 */
@@ -46,6 +48,7 @@ h1 {
   background: #25b264;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(30deg);
   -ms-transform: rotate(30deg);
   /* IE 9 */
@@ -63,6 +66,7 @@ h1 {
   background: #bbbcbc;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
   /* IE 9 */
@@ -80,6 +84,7 @@ h1 {
   background: #231f20;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(30deg);
   -ms-transform: rotate(30deg);
   /* IE 9 */
@@ -103,6 +108,7 @@ h1 {
   background: #bbbcbc;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   /* IE 9 */
@@ -131,6 +137,7 @@ h1 {
   background: #bbbcbc;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   /* IE 9 */
@@ -160,6 +167,7 @@ h1 {
   background: #bbbcbc;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   /* IE 9 */
@@ -193,6 +201,7 @@ h1 {
   background: #25b264;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   /* IE 9 */
@@ -211,6 +220,7 @@ h1 {
   background: #bbbcbc;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   /* IE 9 */
@@ -423,6 +433,7 @@ h1 {
   background: #c9c9c9;
   padding: 2px;
   position: relative;
+  border: 1px solid #25b264;
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   /* IE 9 */

@@ -11,9 +11,9 @@
   }
 
 #canvas {
-  width: 900px;
   margin: 0 auto;
   background: $oma_grey_fade_3;
+  height: 400px;
 }
 
 #chart, #chartData {
@@ -22,7 +22,7 @@
 
 #chart {
   display: block;
-  float: right;
+  float: center;
   cursor: pointer;
 }
 

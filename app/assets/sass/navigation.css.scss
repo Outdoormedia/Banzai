@@ -2,8 +2,9 @@
 @import "partials/fonts";
 
 nav#main_nav { 
-  padding: 0 0 0 -100px;
-
+  ul {
+    padding: 10px 0px;
+  }
   li {
     border: 1px solid $oma_green_fade-1;
     display: inline-block;
