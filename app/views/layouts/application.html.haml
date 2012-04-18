@@ -13,22 +13,22 @@
   %body
 
     = render 'shared/header'
+    = yield(:main_navigation)
 
     .container
 
       %section#content
   
         = yield
-        = image_tag("main_image.jpg", :alt => "Sample App")
 
       %canvas#chart( height = '300px')
         = render 'shared/pieChart'
 
-      %section#sidebar
-        %section#recent_activity
-          %header
-            %h1.ir#recent_activity 
-              = render '/shared/recent_activity'
-              
-
     = render 'shared/footer'
+
+-#     %section#sidebar
+-#       %section#recent_activity
+-#         %header
+-#           %h1.ir#recent_activity 
+-#             = render '/shared/recent_activity'
+
