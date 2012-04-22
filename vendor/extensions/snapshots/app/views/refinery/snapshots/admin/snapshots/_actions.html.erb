@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Snapshots::Admin::SnapshotsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.snapshots_admin_snapshots_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_snapshots_admin_snapshot_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Snapshots::Admin::SnapshotsController.sortable? && ::Refinery::Snapshots::Snapshot.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Snapshots"),
+                 refinery.snapshots_admin_snapshots_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Snapshots"),
+                 refinery.snapshots_admin_snapshots_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

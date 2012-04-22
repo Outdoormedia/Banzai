@@ -1,0 +1,34 @@
+nl:
+  refinery:
+    plugins:
+      snapshots:
+        title: Snapshots
+    snapshots:
+      admin:
+        snapshots:
+          actions:
+            create_new: Maak een nieuwe Snapshot
+            reorder: Wijzig de volgorde van de Snapshots
+            reorder_done: Klaar met het wijzingen van de volgorde van de Snapshots
+          records:
+            title: Snapshots
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Snapshots. Druk op 'Maak een nieuwe Snapshot' om de eerste aan te maken.
+          snapshot:
+            view_live_html: Bekijk deze snapshot op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze snapshot
+            delete: Verwijder deze snapshot voor eeuwig
+      snapshots:
+        show:
+          other: Andere Snapshots
+  activerecord:
+    attributes:
+      'refinery/snapshots/snapshot':
+        market: Market
+        demog: Demog
+        format: Format
+        number_of_days_1: Number Of Days 1
+        number_of_days_2: Number Of Days 2
+        reaches_1: Reaches 1
+        reaches_2: Reaches 2
+        x_labels: X Labels

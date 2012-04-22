@@ -1,0 +1,34 @@
+en:
+  refinery:
+    plugins:
+      snapshots:
+        title: Snapshots
+    snapshots:
+      admin:
+        snapshots:
+          actions:
+            create_new: Add New Snapshot
+            reorder: Reorder Snapshots
+            reorder_done: Done Reordering Snapshots
+          records:
+            title: Snapshots
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Snapshots yet. Click "Add New Snapshot" to add your first snapshot.
+          snapshot:
+            view_live_html: View this snapshot live <br/><em>(opens in a new window)</em>
+            edit: Edit this snapshot
+            delete: Remove this snapshot forever
+      snapshots:
+        show:
+          other: Other Snapshots
+  activerecord:
+    attributes:
+      'refinery/snapshots/snapshot':
+        market: Market
+        demog: Demog
+        format: Format
+        number_of_days_1: Number Of Days 1
+        number_of_days_2: Number Of Days 2
+        reaches_1: Reaches 1
+        reaches_2: Reaches 2
+        x_labels: X Labels

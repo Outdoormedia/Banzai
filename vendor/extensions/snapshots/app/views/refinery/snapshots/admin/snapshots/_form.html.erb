@@ -1,0 +1,59 @@
+<%= form_for [refinery, :snapshots_admin, @snapshot] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @snapshot,
+              :include_object_name => true %>
+
+  
+  <div class='field'>
+    <%= f.label :market -%>
+    <%= f.text_field :market, :class => 'larger widest'  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :demog -%>
+    <%= f.text_field :demog  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :format -%>
+    <%= f.text_field :format  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :number_of_days_1 -%>
+    <%= f.number_field :number_of_days_1  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :number_of_days_2 -%>
+    <%= f.number_field :number_of_days_2  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :reaches_1 -%>
+    <%= f.text_field :reaches_1  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :reaches_2 -%>
+    <%= f.text_field :reaches_2  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :x_labels -%>
+    <%= f.text_field :x_labels  -%>
+
+  </div>
+  
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.snapshots.admin.snapshots.snapshot'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @snapshot.reaches_1) %>
+<% end -%>

@@ -1,0 +1,34 @@
+fr:
+  refinery:
+    plugins:
+      snapshots:
+        title: Snapshots
+    snapshots:
+      admin:
+        snapshots:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Snapshot
+            reorder: Réordonner les Snapshots
+            reorder_done: Fin de réordonnancement des Snapshots
+          records:
+            title: Snapshots
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Snapshot. Cliquer sur "Créer un(e) nouve(au/l/lle) Snapshot" pour créer votre premi(er/ère) snapshot.'
+          snapshot:
+            view_live_html: Voir ce(t/tte) snapshot <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) snapshot
+            delete: Supprimer définitivement ce(t/tte) snapshot
+      snapshots:
+        show:
+          other: Autres Snapshots
+  activerecord:
+    attributes:
+      'refinery/snapshots/snapshot':
+        market: Market
+        demog: Demog
+        format: Format
+        number_of_days_1: Number Of Days 1
+        number_of_days_2: Number Of Days 2
+        reaches_1: Reaches 1
+        reaches_2: Reaches 2
+        x_labels: X Labels

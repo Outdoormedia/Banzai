@@ -1,0 +1,1201 @@
+---
+location_depot_number:
+  name: Location depot number
+  parent: 
+  position_value: 999888777
+  system_code: location_depot_number
+  is_system: true
+location_depot_number_1:
+  name: '1'
+  parent: location_depot_number
+  position_value: 999888777
+  system_code: location_depot_number_1
+  is_system: 
+location_depot_number_2:
+  name: '2'
+  parent: location_depot_number
+  position_value: 999888777
+  system_code: location_depot_number_2
+  is_system: 
+zone_floor_level:
+  name: Zone floor level
+  parent: 
+  position_value: 999888777
+  system_code: zone_floor_level
+  is_system: true
+zone_floor_level_0:
+  name: '0'
+  parent: zone_floor_level
+  position_value: 999888777
+  system_code: zone_floor_level_0
+  is_system: 
+zone_floor_level_1:
+  name: '1'
+  parent: zone_floor_level
+  position_value: 999888777
+  system_code: zone_floor_level_1
+  is_system: 
+zone_section:
+  name: Zone section
+  parent: 
+  position_value: 999888777
+  system_code: zone_section
+  is_system: true
+zone_section_concourse:
+  name: Concourse
+  parent: zone_section
+  position_value: 999888777
+  system_code: zone_section_concourse
+  is_system: 
+zone_section_platform_1:
+  name: Platform 1
+  parent: zone_section
+  position_value: 999888777
+  system_code: zone_section_platform_1
+  is_system: 
+company_genre:
+  name: Company Types
+  parent: 
+  position_value: 999888777
+  system_code: company_genre
+  is_system: true
+company_genre_agency:
+  name: Agency
+  parent: company_genre
+  position_value: 10
+  system_code: company_genre_agency
+  is_system: 
+company_genre_owner:
+  name: Owner
+  parent: company_genre
+  position_value: 20
+  system_code: company_genre_owner
+  is_system: 
+company_genre_admin:
+  name: Admin
+  parent: company_genre
+  position_value: 30
+  system_code: company_genre_admin
+  is_system: 
+market:
+  name: Markets
+  parent: 
+  position_value: 999888777
+  system_code: market
+  is_system: true
+market_sydney:
+  name: Sydney
+  parent: market
+  position_value: 10
+  system_code: market_sydney
+  is_system: true
+market_sydney_city:
+  name: City
+  parent: market_sydney
+  position_value: 10
+  system_code: market_sydney_city
+  is_system: 
+market_sydney_north:
+  name: North
+  parent: market_sydney
+  position_value: 20
+  system_code: market_sydney_north
+  is_system: 
+market_sydney_west:
+  name: West
+  parent: market_sydney
+  position_value: 30
+  system_code: market_sydney_west
+  is_system: 
+market_sydney_south_west_south:
+  name: South West & South
+  parent: market_sydney
+  position_value: 40
+  system_code: market_sydney_south_west_south
+  is_system: 
+market_sydney_north_shore:
+  name: North Shore
+  parent: market_sydney
+  position_value: 50
+  system_code: market_sydney_north_shore
+  is_system: 
+market_melbourne:
+  name: Melbourne
+  parent: market
+  position_value: 20
+  system_code: market_melbourne
+  is_system: true
+market_melbourne_east:
+  name: East
+  parent: market_melbourne
+  position_value: 10
+  system_code: market_melbourne_east
+  is_system: 
+market_melbourne_central_west:
+  name: Central & West
+  parent: market_melbourne
+  position_value: 20
+  system_code: market_melbourne_central_west
+  is_system: 
+market_melbourne_south:
+  name: South
+  parent: market_melbourne
+  position_value: 30
+  system_code: market_melbourne_south
+  is_system: 
+market_melbourne_north:
+  name: North
+  parent: market_melbourne
+  position_value: 40
+  system_code: market_melbourne_north
+  is_system: 
+market_melbourne_south_east:
+  name: South East
+  parent: market_melbourne
+  position_value: 50
+  system_code: market_melbourne_south_east
+  is_system: 
+market_brisbane:
+  name: Brisbane
+  parent: market
+  position_value: 30
+  system_code: market_brisbane
+  is_system: true
+market_brisbane_city_south:
+  name: City South
+  parent: market_brisbane
+  position_value: 10
+  system_code: market_brisbane_city_south
+  is_system: 
+market_brisbane_city_north:
+  name: City North
+  parent: market_brisbane
+  position_value: 20
+  system_code: market_brisbane_city_north
+  is_system: 
+market_brisbane_north:
+  name: North
+  parent: market_brisbane
+  position_value: 30
+  system_code: market_brisbane_north
+  is_system: 
+market_brisbane_south:
+  name: South
+  parent: market_brisbane
+  position_value: 40
+  system_code: market_brisbane_south
+  is_system: 
+market_brisbane_gold_coast:
+  name: Gold Coast
+  parent: market_brisbane
+  position_value: 50
+  system_code: market_brisbane_gold_coast
+  is_system: 
+market_adelaide:
+  name: Adelaide
+  parent: market
+  position_value: 40
+  system_code: market_adelaide
+  is_system: true
+market_adelaide_east:
+  name: East
+  parent: market_adelaide
+  position_value: 10
+  system_code: market_adelaide_east
+  is_system: 
+market_adelaide_west:
+  name: West
+  parent: market_adelaide
+  position_value: 20
+  system_code: market_adelaide_west
+  is_system: 
+market_adelaide_south:
+  name: South
+  parent: market_adelaide
+  position_value: 30
+  system_code: market_adelaide_south
+  is_system: 
+market_adelaide_north_yorke:
+  name: North & Yorke
+  parent: market_adelaide
+  position_value: 40
+  system_code: market_adelaide_north_yorke
+  is_system: 
+market_perth:
+  name: Perth
+  parent: market
+  position_value: 50
+  system_code: market_perth
+  is_system: true
+market_perth_city:
+  name: City
+  parent: market_perth
+  position_value: 10
+  system_code: market_perth_city
+  is_system: 
+market_perth_east:
+  name: East
+  parent: market_perth
+  position_value: 20
+  system_code: market_perth_east
+  is_system: 
+market_perth_south_east:
+  name: South East
+  parent: market_perth
+  position_value: 30
+  system_code: market_perth_south_east
+  is_system: 
+market_perth_south_west:
+  name: South West
+  parent: market_perth
+  position_value: 40
+  system_code: market_perth_south_west
+  is_system: 
+market_perth_north:
+  name: North
+  parent: market_perth
+  position_value: 50
+  system_code: market_perth_north
+  is_system: 
+australian_state:
+  name: Australian States
+  parent: 
+  position_value: 999888777
+  system_code: australian_state
+  is_system: true
+australian_state_nsw:
+  name: NSW
+  parent: australian_state
+  position_value: 10
+  system_code: australian_state_nsw
+  is_system: 
+australian_state_qld:
+  name: QLD
+  parent: australian_state
+  position_value: 20
+  system_code: australian_state_qld
+  is_system: 
+australian_state_nt:
+  name: NT
+  parent: australian_state
+  position_value: 30
+  system_code: australian_state_nt
+  is_system: 
+australian_state_wa:
+  name: WA
+  parent: australian_state
+  position_value: 40
+  system_code: australian_state_wa
+  is_system: 
+australian_state_sa:
+  name: SA
+  parent: australian_state
+  position_value: 50
+  system_code: australian_state_sa
+  is_system: 
+australian_state_vic:
+  name: VIC
+  parent: australian_state
+  position_value: 60
+  system_code: australian_state_vic
+  is_system: 
+australian_state_ta:
+  name: TAS
+  parent: australian_state
+  position_value: 70
+  system_code: australian_state_ta
+  is_system: 
+australian_state_act:
+  name: ACT
+  parent: australian_state
+  position_value: 80
+  system_code: australian_state_act
+  is_system: 
+demographic:
+  name: Demographics
+  parent: 
+  position_value: 999888777
+  system_code: demographic
+  is_system: true
+demographic_person:
+  name: People
+  parent: demographic
+  position_value: 10
+  system_code: demographic_person
+  is_system: true
+demographic_person_p14_:
+  name: P14+
+  parent: demographic_person
+  position_value: 10
+  system_code: demographic_person_p14_
+  is_system: 
+demographic_person_p14_17:
+  name: P14-17
+  parent: demographic_person
+  position_value: 20
+  system_code: demographic_person_p14_17
+  is_system: 
+demographic_man:
+  name: Men
+  parent: demographic
+  position_value: 20
+  system_code: demographic_man
+  is_system: true
+demographic_man_m14_:
+  name: M14+
+  parent: demographic_man
+  position_value: 10
+  system_code: demographic_man_m14_
+  is_system: 
+demographic_man_m14_17:
+  name: M14-17
+  parent: demographic_man
+  position_value: 20
+  system_code: demographic_man_m14_17
+  is_system: 
+demographic_woman:
+  name: Women
+  parent: demographic
+  position_value: 30
+  system_code: demographic_woman
+  is_system: true
+demographic_woman_w14_:
+  name: W14+
+  parent: demographic_woman
+  position_value: 10
+  system_code: demographic_woman_w14_
+  is_system: 
+demographic_woman_w14_17:
+  name: W14-17
+  parent: demographic_woman
+  position_value: 20
+  system_code: demographic_woman_w14_17
+  is_system: 
+demographic_occupation:
+  name: Occupation
+  parent: demographic
+  position_value: 40
+  system_code: demographic_occupation
+  is_system: true
+demographic_occupation_og1:
+  name: OG1
+  parent: demographic_occupation
+  position_value: 10
+  system_code: demographic_occupation_og1
+  is_system: 
+demographic_occupation_og2:
+  name: OG2
+  parent: demographic_occupation
+  position_value: 20
+  system_code: demographic_occupation_og2
+  is_system: 
+demographic_household_income:
+  name: Household Income
+  parent: demographic
+  position_value: 50
+  system_code: demographic_household_income
+  is_system: true
+demographic_household_income_under_50k:
+  name: Under $50k
+  parent: demographic_household_income
+  position_value: 10
+  system_code: demographic_household_income_under_50k
+  is_system: 
+demographic_household_income_50k_120k:
+  name: $50k-$120k
+  parent: demographic_household_income
+  position_value: 20
+  system_code: demographic_household_income_50k_120k
+  is_system: 
+demographic_main_grocery_buyer:
+  name: Main Grocery Buyers
+  parent: demographic
+  position_value: 60
+  system_code: demographic_main_grocery_buyer
+  is_system: true
+demographic_main_grocery_buyer_mgb:
+  name: MGB
+  parent: demographic_main_grocery_buyer
+  position_value: 10
+  system_code: demographic_main_grocery_buyer_mgb
+  is_system: 
+demographic_main_grocery_buyer_mgb2554:
+  name: MGB2554
+  parent: demographic_main_grocery_buyer
+  position_value: 20
+  system_code: demographic_main_grocery_buyer_mgb2554
+  is_system: 
+demographic_crosstab:
+  name: Crosstabs
+  parent: demographic
+  position_value: 70
+  system_code: demographic_crosstab
+  is_system: true
+demographic_crosstab_p1639_og1:
+  name: P1639 OG1
+  parent: demographic_crosstab
+  position_value: 10
+  system_code: demographic_crosstab_p1639_og1
+  is_system: 
+demographic_crosstab_p2539_og1:
+  name: P2539 OG1
+  parent: demographic_crosstab
+  position_value: 20
+  system_code: demographic_crosstab_p2539_og1
+  is_system: 
+site_movement:
+  name: Site Movements
+  parent: 
+  position_value: 999888777
+  system_code: site_movement
+  is_system: true
+site_movement_none:
+  name: None
+  parent: site_movement
+  position_value: 10
+  system_code: site_movement_none
+  is_system: 
+site_movement_scrolling:
+  name: Scrolling
+  parent: site_movement
+  position_value: 20
+  system_code: site_movement_scrolling
+  is_system: 
+site_movement_trivision:
+  name: Trivision
+  parent: site_movement
+  position_value: 30
+  system_code: site_movement_trivision
+  is_system: 
+site_movement_emc:
+  name: EMC
+  parent: site_movement
+  position_value: 40
+  system_code: site_movement_emc
+  is_system: 
+site_movement_digital:
+  name: Digital
+  parent: site_movement
+  position_value: 50
+  system_code: site_movement_digital
+  is_system: 
+site_shop_corridor:
+  name: Site Shop Corridors
+  parent: 
+  position_value: 999888777
+  system_code: site_shop_corridor
+  is_system: true
+site_shop_corridor_minor:
+  name: Minor
+  parent: site_shop_corridor
+  position_value: 10
+  system_code: site_shop_corridor_minor
+  is_system: 
+site_shop_corridor_major:
+  name: Major
+  parent: site_shop_corridor
+  position_value: 20
+  system_code: site_shop_corridor_major
+  is_system: 
+site_shop_corridor_entrance_inside_:
+  name: Entrance (inside)
+  parent: site_shop_corridor
+  position_value: 30
+  system_code: site_shop_corridor_entrance_inside_
+  is_system: 
+site_shop_corridor_entrance_outside_:
+  name: Entrance (outside)
+  parent: site_shop_corridor
+  position_value: 40
+  system_code: site_shop_corridor_entrance_outside_
+  is_system: 
+site_airport_corridor:
+  name: Site Airport Corridors
+  parent: 
+  position_value: 999888777
+  system_code: site_airport_corridor
+  is_system: true
+site_airport_corridor_baggage_claim:
+  name: Baggage Claim
+  parent: site_airport_corridor
+  position_value: 10
+  system_code: site_airport_corridor_baggage_claim
+  is_system: 
+site_airport_corridor_check_in:
+  name: Check-in
+  parent: site_airport_corridor
+  position_value: 20
+  system_code: site_airport_corridor_check_in
+  is_system: 
+location_station_type:
+  name: Location Station Types
+  parent: 
+  position_value: 999888777
+  system_code: location_station_type
+  is_system: true
+location_station_type_network_mapped:
+  name: Network Mapped
+  parent: location_station_type
+  position_value: 10
+  system_code: location_station_type_network_mapped
+  is_system: 
+location_station_type_non_mapped:
+  name: Non-Mapped
+  parent: location_station_type
+  position_value: 20
+  system_code: location_station_type_non_mapped
+  is_system: 
+site_airport_attractor:
+  name: Site Airport Attractors
+  parent: 
+  position_value: 999888777
+  system_code: site_airport_attractor
+  is_system: true
+site_airport_attractor_amenity:
+  name: Amenities
+  parent: site_airport_attractor
+  position_value: 10
+  system_code: site_airport_attractor_amenity
+  is_system: 
+site_airport_attractor_baggage_claim_domestic:
+  name: Baggage Claim - Domestic
+  parent: site_airport_attractor
+  position_value: 20
+  system_code: site_airport_attractor_baggage_claim_domestic
+  is_system: 
+location_tier:
+  name: Location Tiers
+  parent: 
+  position_value: 999888777
+  system_code: location_tier
+  is_system: true
+location_tier_city_centre:
+  name: City Centre
+  parent: location_tier
+  position_value: 10
+  system_code: location_tier_city_centre
+  is_system: 
+location_tier_super_regional:
+  name: Super Regional
+  parent: location_tier
+  position_value: 20
+  system_code: location_tier_super_regional
+  is_system: 
+site_illumination:
+  name: Site Illuminations
+  parent: 
+  position_value: 999888777
+  system_code: site_illumination
+  is_system: true
+site_illumination_none:
+  name: None
+  parent: site_illumination
+  position_value: 10
+  system_code: site_illumination_none
+  is_system: 
+site_illumination_backlit:
+  name: Backlit
+  parent: site_illumination
+  position_value: 20
+  system_code: site_illumination_backlit
+  is_system: 
+site_illumination_frontlit:
+  name: Frontlit
+  parent: site_illumination
+  position_value: 30
+  system_code: site_illumination_frontlit
+  is_system: 
+location_vehicle:
+  name: Location Vehicles
+  parent: 
+  position_value: 999888777
+  system_code: location_vehicle
+  is_system: true
+location_vehicle_bus:
+  name: Bus
+  parent: location_vehicle
+  position_value: 10
+  system_code: location_vehicle_bus
+  is_system: 
+location_vehicle_tram:
+  name: Tram
+  parent: location_vehicle
+  position_value: 20
+  system_code: location_vehicle_tram
+  is_system: 
+site_illumination_period:
+  name: Site Illumination Periods
+  parent: 
+  position_value: 999888777
+  system_code: site_illumination_period
+  is_system: true
+site_illumination_period_none:
+  name: None
+  parent: site_illumination_period
+  position_value: 10
+  system_code: site_illumination_period_none
+  is_system: 
+site_illumination_period_dusk_to_dawn:
+  name: Dusk to Dawn
+  parent: site_illumination_period
+  position_value: 20
+  system_code: site_illumination_period_dusk_to_dawn
+  is_system: 
+site_illumination_period_dusk_to_midnight:
+  name: Dusk to Midnight
+  parent: site_illumination_period
+  position_value: 30
+  system_code: site_illumination_period_dusk_to_midnight
+  is_system: 
+site_illumination_period_24_hour:
+  name: 24-hour
+  parent: site_illumination_period
+  position_value: 40
+  system_code: site_illumination_period_24_hour
+  is_system: 
+location_category:
+  name: Location Categories
+  parent: 
+  position_value: 999888777
+  system_code: location_category
+  is_system: true
+location_category_roadside:
+  name: Roadside
+  parent: location_category
+  position_value: 10
+  system_code: location_category_roadside
+  is_system: true
+location_category_roadside_b_b_25sqm_:
+  name: B/B 25sqm+
+  parent: location_category_roadside
+  position_value: 10
+  system_code: location_category_roadside_b_b_25sqm_
+  is_system: 
+location_category_roadside_b_b_25sqm:
+  name: B/B < 25sqm
+  parent: location_category_roadside
+  position_value: 20
+  system_code: location_category_roadside_b_b_25sqm
+  is_system: 
+location_category_roadside_street_bus_tram_kiosk_fsu:
+  name: Street - Bus/Tram/Kiosk/FSU
+  parent: location_category_roadside
+  position_value: 30
+  system_code: location_category_roadside_street_bus_tram_kiosk_fsu
+  is_system: 
+location_category_roadside_street_phone_booth:
+  name: Street - Phone Booth
+  parent: location_category_roadside
+  position_value: 40
+  system_code: location_category_roadside_street_phone_booth
+  is_system: 
+location_category_roadside_airport_precinct:
+  name: Airport - Precinct
+  parent: location_category_roadside
+  position_value: 50
+  system_code: location_category_roadside_airport_precinct
+  is_system: 
+location_category_depot:
+  name: Depot
+  parent: location_category
+  position_value: 20
+  system_code: location_category_depot
+  is_system: true
+location_category_depot_maxibus:
+  name: Maxibus
+  parent: location_category_depot
+  position_value: 10
+  system_code: location_category_depot_maxibus
+  is_system: 
+location_category_depot_maxi_tram:
+  name: MaxiTram
+  parent: location_category_depot
+  position_value: 20
+  system_code: location_category_depot_maxi_tram
+  is_system: 
+location_category_station:
+  name: Station
+  parent: location_category
+  position_value: 30
+  system_code: location_category_station
+  is_system: true
+location_category_station_rail_cross_track:
+  name: Rail - Cross-track
+  parent: location_category_station
+  position_value: 10
+  system_code: location_category_station_rail_cross_track
+  is_system: 
+location_category_station_bus_rail_platform_concourse:
+  name: Bus/Rail - Platform/Concourse
+  parent: location_category_station
+  position_value: 20
+  system_code: location_category_station_bus_rail_platform_concourse
+  is_system: 
+location_category_airport:
+  name: Airport
+  parent: location_category
+  position_value: 40
+  system_code: location_category_airport
+  is_system: true
+location_category_airport_airport_internal:
+  name: Airport - Internal
+  parent: location_category_airport
+  position_value: 10
+  system_code: location_category_airport_airport_internal
+  is_system: 
+location_category_shop:
+  name: Shop
+  parent: location_category
+  position_value: 50
+  system_code: location_category_shop
+  is_system: true
+location_category_shop_retail_internal:
+  name: Retail - Internal
+  parent: location_category_shop
+  position_value: 10
+  system_code: location_category_shop_retail_internal
+  is_system: 
+planning_format:
+  name: Planning Formats
+  parent: 
+  position_value: 999888777
+  system_code: planning_format
+  is_system: true
+planning_format_roadside:
+  name: Roadside
+  parent: planning_format
+  position_value: 10
+  system_code: planning_format_roadside
+  is_system: true
+planning_format_roadside_b_b_25sqm_:
+  name: B/B 25sqm+
+  parent: planning_format_roadside
+  position_value: 10
+  system_code: planning_format_roadside_b_b_25sqm_
+  is_system: 
+planning_format_roadside_b_b_25sqm:
+  name: B/B < 25sqm
+  parent: planning_format_roadside
+  position_value: 20
+  system_code: planning_format_roadside_b_b_25sqm
+  is_system: 
+planning_format_roadside_street_bus_tram_kiosk_fsu:
+  name: Street - Bus/Tram/Kiosk/FSU
+  parent: planning_format_roadside
+  position_value: 30
+  system_code: planning_format_roadside_street_bus_tram_kiosk_fsu
+  is_system: 
+planning_format_roadside_street_phone_booth:
+  name: Street - Phone Booth
+  parent: planning_format_roadside
+  position_value: 40
+  system_code: planning_format_roadside_street_phone_booth
+  is_system: 
+planning_format_roadside_transit_external:
+  name: Transit - External
+  parent: planning_format_roadside
+  position_value: 50
+  system_code: planning_format_roadside_transit_external
+  is_system: 
+planning_format_transport:
+  name: Transport
+  parent: planning_format
+  position_value: 20
+  system_code: planning_format_transport
+  is_system: true
+planning_format_transport_airport_internal:
+  name: Airport - Internal
+  parent: planning_format_transport
+  position_value: 10
+  system_code: planning_format_transport_airport_internal
+  is_system: 
+planning_format_transport_airport_precinct:
+  name: Airport - Precinct
+  parent: planning_format_transport
+  position_value: 20
+  system_code: planning_format_transport_airport_precinct
+  is_system: 
+planning_format_transport_rail_cross_track:
+  name: Rail - Cross-track
+  parent: planning_format_transport
+  position_value: 30
+  system_code: planning_format_transport_rail_cross_track
+  is_system: 
+planning_format_transport_bus_rail_platform_concourse:
+  name: Bus/Rail - Platform/Concourse
+  parent: planning_format_transport
+  position_value: 40
+  system_code: planning_format_transport_bus_rail_platform_concourse
+  is_system: 
+planning_format_transport_transit_internal:
+  name: Transit - Internal
+  parent: planning_format_transport
+  position_value: 50
+  system_code: planning_format_transport_transit_internal
+  is_system: 
+planning_format_retail:
+  name: Retail
+  parent: planning_format
+  position_value: 30
+  system_code: planning_format_retail
+  is_system: true
+planning_format_retail_retail_internal:
+  name: Retail - Internal
+  parent: planning_format_retail
+  position_value: 10
+  system_code: planning_format_retail_retail_internal
+  is_system: 
+site_platform_position:
+  name: Site Platform Positions
+  parent: 
+  position_value: 999888777
+  system_code: site_platform_position
+  is_system: true
+site_platform_position_a:
+  name: A
+  parent: site_platform_position
+  position_value: 10
+  system_code: site_platform_position_a
+  is_system: 
+site_platform_position_b:
+  name: B
+  parent: site_platform_position
+  position_value: 20
+  system_code: site_platform_position_b
+  is_system: 
+site_platform_position_c:
+  name: C
+  parent: site_platform_position
+  position_value: 30
+  system_code: site_platform_position_c
+  is_system: 
+site_platform_position_d:
+  name: D
+  parent: site_platform_position
+  position_value: 40
+  system_code: site_platform_position_d
+  is_system: 
+site_platform_position_e:
+  name: E
+  parent: site_platform_position
+  position_value: 50
+  system_code: site_platform_position_e
+  is_system: 
+zone_platform_layout:
+  name: Zone Platform Layouts
+  parent: 
+  position_value: 999888777
+  system_code: zone_platform_layout
+  is_system: true
+zone_platform_layout_a:
+  name: A
+  parent: zone_platform_layout
+  position_value: 10
+  system_code: zone_platform_layout_a
+  is_system: 
+zone_platform_layout_b:
+  name: B
+  parent: zone_platform_layout
+  position_value: 20
+  system_code: zone_platform_layout_b
+  is_system: 
+status:
+  name: Statuses
+  parent: 
+  position_value: 999888777
+  system_code: status
+  is_system: true
+status_new:
+  name: New
+  parent: status
+  position_value: 10
+  system_code: status_new
+  is_system: 
+status_reject_new_:
+  name: Reject (New)
+  parent: status
+  position_value: 20
+  system_code: status_reject_new_
+  is_system: 
+status_archived_no_data_:
+  name: Archived (No Data)
+  parent: status
+  position_value: 30
+  system_code: status_archived_no_data_
+  is_system: 
+status_null_no_data_:
+  name: Null (No Data)
+  parent: status
+  position_value: 40
+  system_code: status_null_no_data_
+  is_system: 
+status_current:
+  name: Current
+  parent: status
+  position_value: 50
+  system_code: status_current
+  is_system: 
+status_altered:
+  name: Altered
+  parent: status
+  position_value: 60
+  system_code: status_altered
+  is_system: 
+status_reject_change_:
+  name: Reject (Change)
+  parent: status
+  position_value: 70
+  system_code: status_reject_change_
+  is_system: 
+status_archived_has_data_:
+  name: Archived (Has Data)
+  parent: status
+  position_value: 80
+  system_code: status_archived_has_data_
+  is_system: 
+status_pending:
+  name: Pending
+  parent: status
+  position_value: 90
+  system_code: status_pending
+  is_system: 
+planning_demographic:
+  name: Planning Demographics
+  parent: 
+  position_value: 999888777
+  system_code: planning_demographic
+  is_system: true
+planning_demographic_person:
+  name: People
+  parent: planning_demographic
+  position_value: 10
+  system_code: planning_demographic_person
+  is_system: true
+planning_demographic_person_p14_:
+  name: P14+
+  parent: planning_demographic_person
+  position_value: 10
+  system_code: planning_demographic_person_p14_
+  is_system: 
+planning_demographic_person_p14_17:
+  name: P14-17
+  parent: planning_demographic_person
+  position_value: 20
+  system_code: planning_demographic_person_p14_17
+  is_system: 
+planning_demographic_person_p18_24:
+  name: P18-24
+  parent: planning_demographic_person
+  position_value: 30
+  system_code: planning_demographic_person_p18_24
+  is_system: 
+planning_demographic_person_p18_39:
+  name: P18-39
+  parent: planning_demographic_person
+  position_value: 40
+  system_code: planning_demographic_person_p18_39
+  is_system: 
+planning_demographic_person_p25_39:
+  name: P25-39
+  parent: planning_demographic_person
+  position_value: 50
+  system_code: planning_demographic_person_p25_39
+  is_system: 
+planning_demographic_person_p25_54:
+  name: P25-54
+  parent: planning_demographic_person
+  position_value: 60
+  system_code: planning_demographic_person_p25_54
+  is_system: 
+planning_demographic_person_p40_54:
+  name: P40-54
+  parent: planning_demographic_person
+  position_value: 70
+  system_code: planning_demographic_person_p40_54
+  is_system: 
+planning_demographic_person_p55_:
+  name: P55+
+  parent: planning_demographic_person
+  position_value: 80
+  system_code: planning_demographic_person_p55_
+  is_system: 
+planning_demographic_man:
+  name: Men
+  parent: planning_demographic
+  position_value: 20
+  system_code: planning_demographic_man
+  is_system: true
+planning_demographic_man_m18_39:
+  name: M18-39
+  parent: planning_demographic_man
+  position_value: 10
+  system_code: planning_demographic_man_m18_39
+  is_system: 
+planning_demographic_man_m25_39:
+  name: M25-39
+  parent: planning_demographic_man
+  position_value: 20
+  system_code: planning_demographic_man_m25_39
+  is_system: 
+planning_demographic_man_m25_54:
+  name: M25-54
+  parent: planning_demographic_man
+  position_value: 30
+  system_code: planning_demographic_man_m25_54
+  is_system: 
+planning_demographic_man_m40_54:
+  name: M40-54
+  parent: planning_demographic_man
+  position_value: 40
+  system_code: planning_demographic_man_m40_54
+  is_system: 
+planning_demographic_man_m55_:
+  name: M55+
+  parent: planning_demographic_man
+  position_value: 50
+  system_code: planning_demographic_man_m55_
+  is_system: 
+planning_demographic_woman:
+  name: Women
+  parent: planning_demographic
+  position_value: 30
+  system_code: planning_demographic_woman
+  is_system: true
+planning_demographic_woman_w18_39:
+  name: W18-39
+  parent: planning_demographic_woman
+  position_value: 10
+  system_code: planning_demographic_woman_w18_39
+  is_system: 
+planning_demographic_woman_w25_39:
+  name: W25-39
+  parent: planning_demographic_woman
+  position_value: 20
+  system_code: planning_demographic_woman_w25_39
+  is_system: 
+planning_demographic_woman_w25_54:
+  name: W25-54
+  parent: planning_demographic_woman
+  position_value: 30
+  system_code: planning_demographic_woman_w25_54
+  is_system: 
+planning_demographic_woman_w40_54:
+  name: W40-54
+  parent: planning_demographic_woman
+  position_value: 40
+  system_code: planning_demographic_woman_w40_54
+  is_system: 
+planning_demographic_woman_w55_:
+  name: W55+
+  parent: planning_demographic_woman
+  position_value: 50
+  system_code: planning_demographic_woman_w55_
+  is_system: 
+planning_demographic_occupation:
+  name: Occupation
+  parent: planning_demographic
+  position_value: 40
+  system_code: planning_demographic_occupation
+  is_system: true
+planning_demographic_occupation_og1:
+  name: OG1
+  parent: planning_demographic_occupation
+  position_value: 10
+  system_code: planning_demographic_occupation_og1
+  is_system: 
+planning_demographic_household_income:
+  name: Household Income
+  parent: planning_demographic
+  position_value: 50
+  system_code: planning_demographic_household_income
+  is_system: true
+planning_demographic_household_income_120k_:
+  name: $120k+
+  parent: planning_demographic_household_income
+  position_value: 10
+  system_code: planning_demographic_household_income_120k_
+  is_system: 
+planning_demographic_main_grocery_buyer:
+  name: Main Grocery Buyers
+  parent: planning_demographic
+  position_value: 60
+  system_code: planning_demographic_main_grocery_buyer
+  is_system: true
+planning_demographic_main_grocery_buyer_mgb:
+  name: MGB
+  parent: planning_demographic_main_grocery_buyer
+  position_value: 10
+  system_code: planning_demographic_main_grocery_buyer_mgb
+  is_system: 
+planning_demographic_main_grocery_buyer_mgb_ch:
+  name: MGB Ch
+  parent: planning_demographic_main_grocery_buyer
+  position_value: 20
+  system_code: planning_demographic_main_grocery_buyer_mgb_ch
+  is_system: 
+planning_demographic_crosstab:
+  name: Crosstabs
+  parent: planning_demographic
+  position_value: 70
+  system_code: planning_demographic_crosstab
+  is_system: true
+planning_demographic_crosstab_p2539_hi_120k_:
+  name: P2539 HI $120k+
+  parent: planning_demographic_crosstab
+  position_value: 10
+  system_code: planning_demographic_crosstab_p2539_hi_120k_
+  is_system: 
+planning_demographic_crosstab_p40_hi_120k_:
+  name: P40+ HI $120k+
+  parent: planning_demographic_crosstab
+  position_value: 20
+  system_code: planning_demographic_crosstab_p40_hi_120k_
+  is_system: 
+planning_demographic_crosstab_p2554_hi_120k_:
+  name: P2554 HI $120k+
+  parent: planning_demographic_crosstab
+  position_value: 30
+  system_code: planning_demographic_crosstab_p2554_hi_120k_
+  is_system: 
+snapshot_demographic:
+  name: Snapshot Demographics
+  parent: 
+  position_value: 999888777
+  system_code: snapshot_demographic
+  is_system: true
+snapshot_demographic_p14_:
+  name: P14+
+  parent: snapshot_demographic
+  position_value: 10
+  system_code: snapshot_demographic_p14_
+  is_system: 
+snapshot_demographic_p25_54:
+  name: P25-54
+  parent: snapshot_demographic
+  position_value: 20
+  system_code: snapshot_demographic_p25_54
+  is_system: 
+snapshot_demographic_m14_:
+  name: M14+
+  parent: snapshot_demographic
+  position_value: 30
+  system_code: snapshot_demographic_m14_
+  is_system: 
+snapshot_demographic_w14_:
+  name: W14+
+  parent: snapshot_demographic
+  position_value: 40
+  system_code: snapshot_demographic_w14_
+  is_system: 
+snapshot_demographic_og1:
+  name: OG1
+  parent: snapshot_demographic
+  position_value: 50
+  system_code: snapshot_demographic_og1
+  is_system: 
+snapshot_demographic_mgb:
+  name: MGB
+  parent: snapshot_demographic
+  position_value: 60
+  system_code: snapshot_demographic_mgb
+  is_system: 
