@@ -4,16 +4,23 @@ gem 'rails', '3.2.3'
 
 gem 'haml'
 
-# for deployment on Heroku
-gem "heroku"
 
 group :development, :test do
   gem 'sqlite3'
 end
 group :production do
-  gem 'pg'
+#  gem 'pg'
   gem 'thin'
 end
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+#gem "mysql2"
+
+group :development, :test do
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,6 +35,22 @@ gem 'jquery-rails'
 gem 'rack-cache', :require => 'rack/cache'
 gem 'fog'
 gem "dragonfly", '~>0.9.11'
+
+
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+gem 'capistrano'
+
+# To use debugger
+# gem 'ruby-debug19', :require => 'ruby-debug'
 
 # Gems for RefineryCMS
 gem "refinerycms", "~> 2.0.2"

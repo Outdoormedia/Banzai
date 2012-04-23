@@ -1,4 +1,4 @@
-OmaPortal::Application.routes.draw do
+Banzai::Application.routes.draw do
 
   # This line mounts Refinery's routes at the root of your application.
   # This means, any requests to the root URL of your application will go to Refinery::PagesController#home.
@@ -6,7 +6,6 @@ OmaPortal::Application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
   mount Refinery::Core::Engine, :at => '/'
-
         
   resources :homes
   
@@ -19,7 +18,9 @@ OmaPortal::Application.routes.draw do
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+
     match 'homes/:id/about_move' => 'homes#about_move', :as => :about_move
+
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):

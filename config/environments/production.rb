@@ -1,10 +1,11 @@
 Refinery::Core.config.s3_backend = true
 
-OmaPortal::Application.configure do
+Banzai::Application.configure do
+  # Settings specified here will take precedence over those in config/application.rb
+
   # Refinery has set config.assets.initialize_on_precompile = false by default.
   config.assets.initialize_on_precompile = false
-
-  # Settings specified here will take precedence over those in config/application.rb
+  
 
   # Code is not reloaded between requests
   config.cache_classes = true
@@ -70,4 +71,3 @@ OmaPortal::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 end
-
