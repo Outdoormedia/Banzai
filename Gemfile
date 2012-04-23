@@ -7,7 +7,7 @@ gem 'rails', '3.2.3'
 
 gem "mysql2"
 gem "acts_as_tree"
-
+gem "haml-rails"
 
 group :development, :test do
 

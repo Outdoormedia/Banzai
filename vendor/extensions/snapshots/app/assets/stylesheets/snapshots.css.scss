@@ -1,0 +1,18 @@
+// Place all the styles related to the snapshots controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.snapshot_displayed {
+  background-color: #90ee90;
+}
+
+.snapshot_missing {
+  color: #d3d3d3;
+}
+
+.snapshot_chart_title {
+  font-style: bold;
+  font-size: 16px;
+
+}

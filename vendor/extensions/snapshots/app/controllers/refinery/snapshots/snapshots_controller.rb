@@ -2,13 +2,26 @@ module Refinery
   module Snapshots
     class SnapshotsController < ::ApplicationController
 
-      before_filter :find_all_snapshots
       before_filter :find_page
 
       def index
+        @chart_ids = params[:id].to_s.split(",")
+        @charts = @chart_ids.map do |snapshot_id|
+          Snapshot.find_by_id(snapshot_id)
+        end
+
+        #@bombora = Bombora.get_active
+        #@snapshots = @bombora.snapshots
+        @snapshots = Snapshot.all
+        respond_to do |format|
+          format.html
+          format.json { render json: @snapshots }
+        end
+
+
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @snapshot in the line below:
-        present(@page)
+        present(@snapshots)
       end
 
       def show
@@ -19,11 +32,7 @@ module Refinery
         present(@page)
       end
 
-    protected
-
-      def find_all_snapshots
-        @snapshots = Snapshot.order('position ASC')
-      end
+      protected
 
       def find_page
         @page = ::Refinery::Page.where(:link_url => "/snapshots").first

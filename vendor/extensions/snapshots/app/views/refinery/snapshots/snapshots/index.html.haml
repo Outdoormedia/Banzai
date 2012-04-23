@@ -1,0 +1,35 @@
+- content_for :javascript_libraries do
+  = javascript_include_tag "https://www.google.com/jsapi"
+- content_for :stylesheets do
+  = stylesheet_link_tag "snapshots"
+
+- content_for :body_content_left do
+  - @charts.each do |snapshot|
+    = render :partial => "show", :locals => {:snapshot => snapshot}
+
+  %table.smbap
+    - Selection.planning_formats.each do |formats|
+      %tr
+        %th== #{formats.name.upcase} FORMATS
+        - Selection.snapshot_demographics.each do |demog|
+          %th.center{:colspan => 5}= demog.name
+
+      - formats.children.each do |format|
+        %tr
+          %td= format.name
+          - Selection.snapshot_demographics.each do |demog|
+            - Selection.markets.each do |market|
+              = chart_link market, demog, format
+  %table.record
+    -#%tr
+    -#  %th Run Date
+    -#  %td= @bombora.run_date || "No Records"
+    -#%tr
+    -#  %th Update Date
+    -#  %td= @bombora.created_at || "No Records"
+    -#%tr
+    -#  %th Description
+    -#  %td= @bombora.description || "No Records"
+
+
+= render '/refinery/content_page'
