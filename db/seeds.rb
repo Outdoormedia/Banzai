@@ -11,3 +11,6 @@ Refinery::Pages::Engine.load_seed
 
 # Added by Refinery CMS Snapshots extension
 Refinery::Snapshots::Engine.load_seed
+
+# Added by Refinery CMS Plan By Formats extension
+Refinery::PlanByFormats::Engine.load_seed

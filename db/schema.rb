@@ -11,7 +11,43 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120419123908) do
+ActiveRecord::Schema.define(:version => 20120424004817) do
+
+  create_table "audiences", :force => true do |t|
+    t.integer  "demog_id"
+    t.integer  "region_code"
+    t.integer  "format_id"
+    t.integer  "weight"
+    t.float    "reach"
+    t.integer  "contacts"
+    t.integer  "region_pop"
+    t.decimal  "avg_freq",      :precision => 10, :scale => 0
+    t.integer  "duration"
+    t.integer  "market_id"
+    t.integer  "reach_persons"
+    t.datetime "created_at",                                   :null => false
+    t.datetime "updated_at",                                   :null => false
+  end
+
+  add_index "audiences", ["demog_id"], :name => "index_audiences_on_demog_id"
+  add_index "audiences", ["duration"], :name => "index_audiences_on_duration"
+  add_index "audiences", ["format_id"], :name => "index_audiences_on_format_id"
+  add_index "audiences", ["market_id"], :name => "index_audiences_on_market_id"
+  add_index "audiences", ["region_code"], :name => "index_audiences_on_region_code"
+  add_index "audiences", ["weight"], :name => "index_audiences_on_weight"
+
+  create_table "planning_weights", :force => true do |t|
+    t.integer  "market_id"
+    t.integer  "format_id"
+    t.integer  "heavy"
+    t.integer  "medium"
+    t.integer  "light"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "planning_weights", ["format_id"], :name => "index_planning_weights_on_format_id"
+  add_index "planning_weights", ["market_id"], :name => "index_planning_weights_on_market_id"
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -86,6 +122,13 @@ ActiveRecord::Schema.define(:version => 20120419123908) do
   add_index "refinery_pages", ["lft"], :name => "index_refinery_pages_on_lft"
   add_index "refinery_pages", ["parent_id"], :name => "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], :name => "index_refinery_pages_on_rgt"
+
+  create_table "refinery_plan_by_formats", :force => true do |t|
+    t.string   "name"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "refinery_resources", :force => true do |t|
     t.string   "file_mime_type"

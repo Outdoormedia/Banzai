@@ -1,0 +1,28 @@
+es:
+  refinery:
+    plugins:
+      plan_by_formats:
+        title: Plan By Formats
+#        article: masculino/femenino
+    plan_by_formats:
+      admin:
+        plan_by_formats:
+          actions:
+            create_new: Crear nuevo plan by format
+            reorder: Reordenar plan by formats
+            reorder_done: Reordenación de plan by formats completada
+          records:
+            title: Plan By Formats
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay plan by formats todavía. Pulsa en "Crear nuevo Plan By Format" para crear tu primer plan by format.
+          plan_by_format:
+            view_live_html: Ver este plan by format como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este plan by format
+            delete: Borrar este plan by format para siempre
+      plan_by_formats:
+        show:
+          other: Otros plan by formats
+  activerecord:
+    attributes:
+      'refinery/plan_by_formats/plan_by_format':
+        name: Name

@@ -54,3 +54,4 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
 
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
+gem 'refinerycms-plan_by_formats', :path => 'vendor/extensions'
