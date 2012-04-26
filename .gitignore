@@ -7,11 +7,12 @@
 # Ignore bundler config
 /.bundle
 
-<<<<<<< HEAD
-=======
+
 /config/database.yml
 
->>>>>>> cb7da17dfce5833185bdaf53babd2469a6a7f9b9
+#ignore resources and caches from asset pipeline
+/tmp
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
@@ -94,9 +95,7 @@ capybara-*html
 .rvmrc
 .rvmrc.*
 
-<<<<<<< HEAD
-=======
 # vendor/extensions dummy applications.
 vendor/extensions/**/spec/dummy
 
->>>>>>> cb7da17dfce5833185bdaf53babd2469a6a7f9b9
+
