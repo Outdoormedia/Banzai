@@ -9,8 +9,9 @@ gem "mysql2"
 gem "acts_as_tree"
 gem "haml-rails"
 
-group :development, :test do
 
+group :development, :test do
+  gem "rvm-capistrano"
 end
 
 
@@ -21,7 +22,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platform => :ruby
+  gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
