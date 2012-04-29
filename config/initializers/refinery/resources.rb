@@ -19,8 +19,8 @@ Refinery::Resources.configure do |config|
   # Configure Dragonfly
   # This is where in the middleware stack to insert the Dragonfly middleware
   # config.dragonfly_insert_before = "ActionDispatch::Callbacks"
-  # config.dragonfly_secret = "b04f52a849fed6bc5f1b0b4bd8030e2f4e040ce9b5df0731"
+  # config.dragonfly_secret = "6ae5849ed11942075bfd8e66954d421f3e37bbd49a77464d"
   # config.dragonfly_url_format = "/system/resources/:job/:basename.:format"
-  # config.datastore_root_path = "/Users/nigelr/Rails/banzai/public/system/refinery/resources"
+  # config.datastore_root_path = "/Users/john/Devo/oma-portal/public/system/refinery/resources"
 
 end

@@ -4,4 +4,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+
 Banzai::Application.load_tasks
+

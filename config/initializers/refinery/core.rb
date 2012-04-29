@@ -11,7 +11,7 @@ Refinery::Core.configure do |config|
   # config.base_cache_key = :refinery
 
   # Site name
-  # config.site_name = "Company Name"
+    config.site_name = "Outdoor Marketing Association"
 
   # This activates Google Analytics tracking within your website. If this
   # config is left blank or set to UA-xxxxxx-x then no remote calls to
@@ -25,7 +25,11 @@ Refinery::Core.configure do |config|
   # config.menu_hide_children = false
 
   # CSS class selectors for menu helper
-  # config.menu_css = {:selected=>"selected", :first=>"first", :last=>"last"}
+    config.menu_css = {:selected=>"selected", :first=>"first", :last=>"last"}
+
+  # Should set this if concerned about DOS attacks. See
+  # http://markevans.github.com/dragonfly/file.Configuration.html#Configuration
+  # config.dragonfly_secret = "50ade3b02ef351df0e5f3f167de52039de2cdf26e30f96b8"
 
   # Should set this if concerned about DOS attacks. See
   # http://markevans.github.com/dragonfly/file.Configuration.html#Configuration

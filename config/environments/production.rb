@@ -1,5 +1,11 @@
+Refinery::Core.config.s3_backend = true
+
 Banzai::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+
+  # Refinery has set config.assets.initialize_on_precompile = false by default.
+  config.assets.initialize_on_precompile = false
+  
 
   # Code is not reloaded between requests
   config.cache_classes = true

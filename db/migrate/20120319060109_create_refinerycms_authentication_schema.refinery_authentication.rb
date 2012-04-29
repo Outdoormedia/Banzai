@@ -39,6 +39,16 @@ class CreateRefinerycmsAuthenticationSchema < ActiveRecord::Migration
       t.timestamps
     end
 
+    create_table :refinery_resources do |t|
+      t.string   :file_mime_type
+      t.string   :file_name
+      t.integer  :file_size
+      t.string   :file_uid
+      t.string   :file_ext
+    
+      t.timestamps
+    end
+
     add_index :refinery_users, :id
   end
 end
