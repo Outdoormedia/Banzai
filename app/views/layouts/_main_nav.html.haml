@@ -1,10 +1,15 @@
 - content_for :main_navigation do
   %nav#main_nav( role="navigation" )
     %ul
-      %li= link_to 'Home', root_url, :current=>current_tab
-      %li= link_to 'About Move', root_url, :current=>current_tab 
-      %li= link_to 'How to Use Move', root_url, :current=>current_tab
-      %li= link_to 'Contact OMA', root_url, :current=>current_tab
-      %li= link_to 'FAQs', root_url, :current=>current_tab
-      %li= link_to 'News', root_url, :current=>current_tab
-      %li= link_to 'Search ... goes ... in ... here', root_url, :current=>current_tab
+      %li= link_to 'Home', root_url, current: current_tab 
+      %li= link_to 'About Move', "http://localhost:3000/menu-title/about"
+      %li= link_to 'How to Use Move', "http://localhost:3000/menu-title/how-to-use-move"
+      %li= link_to 'Contact OMA', "http://localhost:3000/menu-title/contact-oma"
+      %li= link_to 'FAQs', "http://localhost:3000/menu-title/FAQs"
+      %li= link_to 'News', "http://localhost:3000/menu-title/news"
+      %li= link_to 'Search .. here', "http://localhost:3000/menu-title/search"
+      
+      %li= link_to 'Plan', "http://localhost:3000/menu-title/Plan"
+      %li= link_to 'Buy', "http://localhost:3000/menu-title/Buy"
+      %li= link_to 'Proof', "http://localhost:3000/menu-title/Proof"
+      %li= link_to 'Learn', "http://localhost:3000/menu-title/Learn"
