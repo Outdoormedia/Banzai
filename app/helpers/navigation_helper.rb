@@ -1,5 +1,8 @@
 module NavigationHelper
 
+  # called by layouts/_main_name to create links that are page-aware.
+  # not used now because we didn't know the urls.  
+  # In HAML, hence: - nav_tab( 'Homes', root_url, content: current_tab )
   def nav_tab(title, url, options = {})
     current_tab = options.delete(:current)
     options[:class] = (current_tab == title) ? 'active' : 'inactive'
