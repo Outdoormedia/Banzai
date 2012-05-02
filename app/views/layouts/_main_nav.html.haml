@@ -1,15 +1,15 @@
 - content_for :main_navigation do
   %nav#main_nav( role="navigation" )
     %ul
-      =nav_tab 'Home',            @page, content: current_tab 
-      =nav_tab 'About Move',      @page, content: current_tab
-      =nav_tab 'How-To-Use-Move', @page, content: current_tab
-      =nav_tab 'Contact-OMA',     @page, content: current_tab
-      =nav_tab 'FAQs',            @page, content: current_tab
-      =nav_tab 'News',            @page, content: current_tab
-      =nav_tab 'Search',          @page, content: current_tab
-
-      =nav_tab 'Plan',            @page, content: current_tab
-      =nav_tab 'Buy',             @page, content: current_tab
-      =nav_tab 'Proof',           @page, content: current_tab
-      =nav_tab 'Learn',           @page, content: current_tab
+      =nav_tab 'Home',            content: current_tab 
+      =nav_tab 'About Move',      content: current_tab
+      =nav_tab 'How-To-Use-Move', content: current_tab
+      =nav_tab 'Contact-OMA',     content: current_tab
+      =nav_tab 'FAQs',            content: current_tab
+      =nav_tab 'News',            content: current_tab
+      =nav_tab 'Search',          content: current_tab
+                                  
+      =nav_tab 'Plan',            content: current_tab
+      =nav_tab 'Buy',             content: current_tab
+      =nav_tab 'Proof',           content: current_tab
+      =nav_tab 'Learn',           content: current_tab
