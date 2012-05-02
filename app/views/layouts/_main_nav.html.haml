@@ -1,18 +1,15 @@
 - content_for :main_navigation do
   %nav#main_nav( role="navigation" )
     %ul
-      %li= link_to 'Home', root_url, current: current_tab 
-      %li= link_to 'About Move', "http://localhost:3000/menu-title/about"
-      %li= link_to 'How to Use Move', "http://localhost:3000/menu-title/how-to-use-move"
-      %li= link_to 'Contact OMA', "http://localhost:3000/menu-title/contact-oma"
-      %li= link_to 'FAQs', "http://localhost:3000/menu-title/FAQs"
-      %li= link_to 'News', "http://localhost:3000/menu-title/news"
-      %li= link_to 'Search .. here', "http://localhost:3000/menu-title/search"
-      
-      %li= link_to 'Plan', "http://localhost:3000/menu-title/Plan"
-      %li= link_to 'Buy', "http://localhost:3000/menu-title/Buy"
-      %li= link_to 'Proof', "http://localhost:3000/menu-title/Proof"
-      %li= link_to 'Learn', "http://localhost:3000/menu-title/Learn"
+      =nav_tab 'Home',            @page, content: current_tab 
+      =nav_tab 'About Move',      @page, content: current_tab
+      =nav_tab 'How-To-Use-Move', @page, content: current_tab
+      =nav_tab 'Contact-OMA',     @page, content: current_tab
+      =nav_tab 'FAQs',            @page, content: current_tab
+      =nav_tab 'News',            @page, content: current_tab
+      =nav_tab 'Search',          @page, content: current_tab
 
--# Goal is to use page aware methods for menu, thus for each item:
--#    - nav_tab( 'Homes', root_url, content: current_tab )
+      =nav_tab 'Plan',            @page, content: current_tab
+      =nav_tab 'Buy',             @page, content: current_tab
+      =nav_tab 'Proof',           @page, content: current_tab
+      =nav_tab 'Learn',           @page, content: current_tab
