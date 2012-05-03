@@ -16,11 +16,12 @@ section#sidebar {
     weight: normal;
   }
   line-height: 1.3em;
+  margin-top: 42px;
   padding: 10px;
   a,
   a:link,
   a:visited {
-    color: #666;
+    color: $oma_grey_fade_1;
     text-decoration: underline;
   }
   a:hover,
