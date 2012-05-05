@@ -188,7 +188,7 @@ function pieChart() {
     if ( slice == currentPullOutSlice ) {
       pushIn();
 
-    // work site
+    // work site -- addition for OMA pieChart navigation.  'Label' is route using RefineryCMS.
       url = chartData[slice]['label'];
       $('body').load( url );
     // work site end
