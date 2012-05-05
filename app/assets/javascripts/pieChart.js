@@ -187,6 +187,12 @@ function pieChart() {
   function toggleSlice ( slice ) {
     if ( slice == currentPullOutSlice ) {
       pushIn();
+
+    // work site
+      url = chartData[slice]['label'];
+      $('body').load( url );
+    // work site end
+
     } else {
       startPullOut ( slice );
     }
@@ -251,17 +257,14 @@ function pieChart() {
    * Also un-highlights all rows in the table.
    */
 
-  function pushIn() {
+  function pushIn(slice) {
     currentPullOutSlice = -1;
     currentPullOutDistance = 0;
     clearInterval( animationId );
     drawChart();
     $('#chartData td').removeClass('highlight');
-
-    // work site
-    $('body').load('Plan');
-    // work site end
   }
+
   /**
    * Step 12.
    * Draw the chart.
