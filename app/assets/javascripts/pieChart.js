@@ -257,9 +257,11 @@ function pieChart() {
     clearInterval( animationId );
     drawChart();
     $('#chartData td').removeClass('highlight');
+
+    // work site
+    $('body').load('Plan');
+    // work site end
   }
-
-
   /**
    * Step 12.
    * Draw the chart.

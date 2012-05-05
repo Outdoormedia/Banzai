@@ -1,7 +1,7 @@
 - content_for :main_navigation do
   %nav#main_nav( role="navigation" )
     %ul
-      =nav_tab 'Home',            root_url,          content: current_tab 
+      =nav_tab 'Home',            'home',            content: current_tab 
       =nav_tab 'About Move',      'about-move',      content: current_tab
       =nav_tab 'How To Use Move', 'how-to-use-move', content: current_tab
       =nav_tab 'Contact OMA',     'contact-oma',     content: current_tab
