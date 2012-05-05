@@ -182,17 +182,15 @@ function pieChart() {
    * If it's already pulled out, push it in. Otherwise, pull it out.
    *
    * @param Number The slice index (between 0 and the number of slices - 1)
+   *
+   * Modified to use [slice]['label'] as navigation routes (for use with RefineryCMS). --JWM
    */
 
   function toggleSlice ( slice ) {
     if ( slice == currentPullOutSlice ) {
       pushIn();
-
-    // work site -- addition for OMA pieChart navigation.  'Label' is route using RefineryCMS.
       url = chartData[slice]['label'];
       $('body').load( url );
-    // work site end
-
     } else {
       startPullOut ( slice );
     }
