@@ -1,10 +1,9 @@
 - currently_at @page.slug
 
-%section#header
-  =raw @page.content_for(:header)
 
 %section#body_content
   =raw @page.content_for(:body)
 
 %section#side_body_content
-  =raw @page.content_for(:sidebody)
+  %li=raw @page.content_for(:side_body)
+
