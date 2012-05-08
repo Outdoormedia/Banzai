@@ -1,5 +1,5 @@
 require 'rvm/capistrano'
-
+require 'capistrano_colors'
 
 # General
 set :application, "banzai"

@@ -41,6 +41,7 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 gem 'capistrano'
 gem "rvm-capistrano"
+gem "capistrano_colors"
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
