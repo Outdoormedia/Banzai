@@ -64,6 +64,9 @@ namespace :deploy do
   end
 end
 
+after "deploy", "deploy:symlink_config"
+
+
 task :rvm_version do
   run "which ruby"
 end
