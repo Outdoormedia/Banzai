@@ -1,10 +1,16 @@
 - content_for :main_navigation do
   %nav#main_nav( role="navigation" )
     %ul
-      %li= link_to 'Home', root_url, :current=>current_tab
-      %li= link_to 'About Move', root_url, :current=>current_tab 
-      %li= link_to 'How to Use Move', root_url, :current=>current_tab
-      %li= link_to 'Contact OMA', root_url, :current=>current_tab
-      %li= link_to 'FAQs', root_url, :current=>current_tab
-      %li= link_to 'News', root_url, :current=>current_tab
-      %li= link_to 'Search ... goes ... in ... here', root_url, :current=>current_tab
+      =nav_tab 'Home',            'home',            content: current_tab 
+      =nav_tab 'About Move',      'about-move',      content: current_tab
+      =nav_tab 'How To Use Move', 'how-to-use-move', content: current_tab
+      =nav_tab 'Contact OMA',     'contact-oma',     content: current_tab
+      =nav_tab 'FAQs',            'faqs',            content: current_tab
+      =nav_tab 'News',            'news',            content: current_tab
+      =nav_tab 'Search',          'search',          content: current_tab
+                                 
+      =nav_tab 'Plan',            'plan',            content: current_tab
+      =nav_tab 'Buy',             'buy',             content: current_tab
+      =nav_tab 'Proof',           'proof',           content: current_tab
+      =nav_tab 'Learn',           'learn',           content: current_tab
+      =nav_tab 'Snapshots', refinery.snapshots_snapshots_path, content: current_tab

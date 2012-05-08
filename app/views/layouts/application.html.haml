@@ -16,18 +16,19 @@
 
     .container
 
+      %section#sidebar
+        %section#recent_activity
+          %header
+            %h1.ir#recent_activity 
+              = render '/shared/recent_activity'
+
+
       %section#content
-  
+
         = yield
 
-      %canvas#chart( height = '300px')
-        = render 'shared/pieChart'
+      - unless ['homes-page', "buy", "learn", "plan", "proof"].find_index(@page.slug).nil?
+        %canvas#chart( height = '300px')
+          = render 'shared/pieChart'
 
     = render 'shared/footer'
-
--#     %section#sidebar
--#       %section#recent_activity
--#         %header
--#           %h1.ir#recent_activity 
--#             = render '/shared/recent_activity'
-
