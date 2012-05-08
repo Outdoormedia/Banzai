@@ -13,6 +13,6 @@ Banzai::Application.routes.draw do
 
 
     root :to => 'pages#/home'   
-    match "home" => "pages#home"
- 
+    match "home" => 'pages#/home'
+
 end

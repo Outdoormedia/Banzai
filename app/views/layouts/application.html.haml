@@ -4,7 +4,7 @@
     %meta( charset="utf-8" )
     %title OMA Portal Proof of Concept
 
-    = stylesheet_link_tag    "application", "navigation"
+    = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = yield :stylesheets
     = csrf_meta_tag
@@ -26,8 +26,8 @@
       %section#content
 
         = yield
-
-      - unless ['homes-page', "buy", "learn", "plan", "proof"].find_index(@page.slug).nil?
+      
+      - unless ["homes-page", "buy", "learn", "plan", "proof"].find_index(@page.slug).nil?
         %canvas#chart( height = '300px')
           = render 'shared/pieChart'
 
