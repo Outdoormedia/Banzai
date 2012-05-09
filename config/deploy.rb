@@ -1,5 +1,5 @@
 require 'rvm/capistrano'
-
+require 'capistrano_colors'
 
 # General
 set :application, "banzai"
@@ -63,6 +63,9 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/database.yml #{current_path}/config/database.yml"
   end
 end
+
+after "deploy", "deploy:symlink_config"
+
 
 task :rvm_version do
   run "which ruby"
