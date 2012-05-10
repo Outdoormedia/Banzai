@@ -1,16 +1,35 @@
-- content_for :main_navigation do
-  %nav#main_nav( role="navigation" )
-    %ul
-      =nav_tab 'Home',            root_url,                            content: current_tab 
-      =nav_tab 'About Move',      'about-move',                        content: current_tab
-      =nav_tab 'How To Use Move', 'how-to-use-move',                   content: current_tab
-      =nav_tab 'Contact OMA',     'contact-oma',                       content: current_tab
-      =nav_tab 'FAQs',            'faqs',                              content: current_tab
-      =nav_tab 'News',            'news',                              content: current_tab
-      =nav_tab 'Search',          'search',                            content: current_tab
-                                                                       
-      =nav_tab 'Plan',            'plan',                              content: current_tab
-      =nav_tab 'Buy',             'buy',                               content: current_tab
-      =nav_tab 'Proof',           'proof',                             content: current_tab
-      =nav_tab 'Learn',           'learn',                             content: current_tab
-_#      =nav_tab 'Snapshots',       refinery.snapshots_snapshots_path, content: current_tab
+-if @page.slug == 'about-move'
+  - content_for :main_navigation do
+    %nav#main_nav( role="navigation" )
+      %ul
+        =nav_tab 'Home',            root_url,                            content: current_tab 
+        =nav_tab 'About Move',      'about-move',                        content: current_tab
+        =nav_tab 'How To Use Move', 'how-to-use-move',                   content: current_tab
+        =nav_tab 'Contact OMA',     'contact-oma',                       content: current_tab
+        =nav_tab 'FAQs',            'faqs',                              content: current_tab
+        =nav_tab 'News',            'news',                              content: current_tab
+        =nav_tab 'Search',          'search',                            content: current_tab
+                                                                         
+        =nav_tab 'Mission',         'mission',                              content: current_tab
+        =nav_tab 'Product',         'product',                               content: current_tab
+        =nav_tab 'M? Summary',      'm-summary',                             content: current_tab
+        =nav_tab 'MOVE System',     'move-system',                             content: current_tab
+        =nav_tab 'Governance',      'governance',                             content: current_tab
+-else
+  - content_for :main_navigation do
+    %nav#main_nav( role="navigation" )
+      %ul
+        =nav_tab 'Home',            root_url,                            content: current_tab 
+        =nav_tab 'About Move',      'about-move',                        content: current_tab
+        =nav_tab 'How To Use Move', 'how-to-use-move',                   content: current_tab
+        =nav_tab 'Contact OMA',     'contact-oma',                       content: current_tab
+        =nav_tab 'FAQs',            'faqs',                              content: current_tab
+        =nav_tab 'News',            'news',                              content: current_tab
+        =nav_tab 'Search',          'search',                            content: current_tab
+                                                                         
+        =nav_tab 'Plan',            'plan',                              content: current_tab
+        =nav_tab 'Buy',             'buy',                               content: current_tab
+        =nav_tab 'Proof',           'proof',                             content: current_tab
+        =nav_tab 'Learn',           'learn',                             content: current_tab
+  -#      =nav_tab 'Snapshots',       refinery.snapshots_snapshots_path, content: current_tab
+
