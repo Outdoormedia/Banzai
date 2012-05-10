@@ -26,7 +26,7 @@
       %section#content
 
         = yield
-      = @page.slug
+      
       - if ["home", "buy", "learn", "plan", "proof"].include?(@page.slug)
         %canvas#chart( height = '300px')
           = render 'shared/pieChart'
