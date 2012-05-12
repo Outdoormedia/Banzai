@@ -1,0 +1,33 @@
+@import "partials/colors";
+@import "partials/fonts";
+
+nav#main_nav { 
+  margin: 0 0 0 5%;
+  ul {
+    padding: 10px 0px;
+  }
+  li {
+    border: 1px solid $oma_green_fade-1;
+    display: inline-block;
+    padding: 4px 17px 4px 17px;
+    font-size: 0.9em;
+
+    a,
+    a:link,
+    a:visited {
+      color: $oma_grey;
+      text-decoration: none;
+      }
+
+    &.active {
+      background: $oma_grey;
+      margin-bottom: -1px;
+      a,
+      a:link,
+      a:visited {
+        color: $oma_grey_fade_3;
+        font-weight: bold;
+        }
+      }	
+    }
+  }

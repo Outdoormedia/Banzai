@@ -1,0 +1,101 @@
+@import "partials/colors";
+@import "partials/fonts";
+
+// use background url('image003.jpg') or similar for single logo or image
+// %logo is a separate resource, e.g. in layout.css.scss use
+//   %logo
+//    = link_to image_tag("image003.jpg"), root_url
+// do not use both unless they are different!
+
+
+header#page_header { 
+//       background: $oma_white url('image003.jpg') center left no-repeat;
+       color: $oma_green;
+       margin-left: 5%;
+       margin-right: 5%;
+       overflow: hidden;
+       
+
+       a,
+       a:link,
+       a:hover,
+       a:active,
+       a:visited {
+         color:$oma_grey;
+
+         text-align:center;
+         text-decoration:none;
+         text-transform:uppercase;
+
+         }
+
+       nav#utility {
+           float: right;
+           font-size: 0.8em;
+           position: relative;
+           left: -65px;
+           top: 30px;
+           }
+
+       #logo {
+          position: relative;
+          top: 15px;
+          }
+      }
+
+#tagline {
+         margin-left: 20px;
+         }
+
+.container { 
+	   overflow: hidden; 
+	   padding: 0 20px 0 0;
+           }
+
+
+footer#page_footer { 
+  background-color: $oma_white;
+  border-bottom: 5px solid $oma_black_fade-1;
+  color: $oma_green;
+  font-size: 0.7em;
+  margin: 5% 5%;
+
+  ul {
+    padding: 0;
+    text-align: center;
+
+    li {
+      border-right: 2px solid $oma_grey_fade-1;
+      display: inline;
+      margin: 0;
+      &:last-child {
+        border-right: none;
+      }
+      a {
+        padding: 5px 10px; 
+        &:link,
+        &:hover, 
+        &:visited,
+        &.active {
+          color: $oma_green;
+        }
+      }
+    }
+  }
+}
+
+// p. 38 Rails Views
+// sections for content, sidebar
+//
+section#content { 
+   float: left;
+   margin: 1% 5%;
+   width: 30%;
+   } 
+
+section#sidebar {
+   margin-right: 3%;
+   margin-top: 7%;
+   width: 30%;
+   color: $oma_green;
+   }

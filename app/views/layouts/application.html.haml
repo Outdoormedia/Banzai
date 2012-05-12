@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+%html
+  %head
+    %meta( charset="utf-8" )
+    %title OMA Portal Proof of Concept
+
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = yield :stylesheets
+    = csrf_meta_tag
+    = yield(:head)
+
+  %body
+
+    = render 'shared/header'
+
+    .container
+
+      %section#sidebar
+        %section#recent_activity
+          %header
+            %h1.ir#recent_activity 
+              = render '/shared/recent_activity'
+
+
+      %section#content
+
+        = yield
+      
+      - if ["home", "buy", "learn", "plan", "proof"].include?(@page.slug)
+        %canvas#chart( height = '300px')
+          = render 'shared/pieChart'
+
+    = render 'shared/footer'

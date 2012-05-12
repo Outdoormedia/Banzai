@@ -1,0 +1,37 @@
+section#sidebar {
+  background-color: #c9c9c9;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+  float: right;
+  font-size: 0.8em;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin-top: 42px;
+  padding: 10px; }
+  section#sidebar a,
+  section#sidebar a:link,
+  section#sidebar a:visited {
+    color: #c9c9c9;
+    text-decoration: underline; }
+  section#sidebar a:hover,
+  section#sidebar a:active {
+    color: #bc471d; }
+  section#sidebar #functional_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  section#sidebar #recent_activity header {
+    background-color: #51c183;
+    border-bottom: 5px solid #58595b;
+    margin: 10px -10px;
+    padding: 5px 10px 0 10px; }
+    section#sidebar #recent_activity header h1#recent {
+      background: transparent url("image003.jpeg") no-repeat scroll top left;
+      margin: 5px 0 0 0;
+      padding: 0;
+      text-indent: -999px; }

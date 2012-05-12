@@ -7,7 +7,11 @@
 # Ignore bundler config
 /.bundle
 
+
 /config/database.yml
+
+#ignore resources and caches from asset pipeline
+/tmp
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -93,4 +97,5 @@ capybara-*html
 
 # vendor/extensions dummy applications.
 vendor/extensions/**/spec/dummy
+
 

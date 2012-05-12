@@ -15,9 +15,6 @@ Refinery::Images.configure do |config|
   # Configure image sizes
   # config.user_image_sizes = {:small=>"110x110>", :medium=>"225x255>", :large=>"450x450>"}
 
-  # Configure white-listed mime types for validation
-  # config.whitelisted_mime_types = ["image/jpeg", "image/png", "image/gif", "image/tiff"]
-
   # Configure image view options
   # config.image_views = [:grid, :list]
 
@@ -35,10 +32,10 @@ Refinery::Images.configure do |config|
   # Configure Dragonfly
   # This is where in the middleware stack to insert the Dragonfly middleware
   # config.dragonfly_insert_before = "ActionDispatch::Callbacks"
-  # config.dragonfly_secret = "b04f52a849fed6bc5f1b0b4bd8030e2f4e040ce9b5df0731"
+  # config.dragonfly_secret = "50ade3b02ef351df0e5f3f167de52039de2cdf26e30f96b8"
   # If you decide to trust file extensions replace :ext below with :format
-  # config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
-  # config.datastore_root_path = "/Users/nigelr/Rails/banzai/public/system/refinery/images"
-  # config.trust_file_extensions = false
+  # config.dragonfly_url_format = "/system/images/:job/:basename.:format"
+  # config.datastore_root_path = "/Users/john/Devo/oma-portal/public/system/refinery/images"
+  # config.trust_file_extensions = true
 
 end
