@@ -106,3 +106,5 @@ samples.each do |sample|
   Refinery::Snapshots::Snapshot.create(sample)
 end
 
+# Planning Weights
+Refinery::PlanByFormats::PlanningWeight.import_csv

@@ -1,40 +1,40 @@
 module Refinery
   module PlanByFormats
     module PlanByFormatsHelper
-        def get_planning_data *values
-          data = session[:planning_data]
-          for value in values
-            break if data.nil?
-            data = data[value.to_s]
-          end
-          data
+      def get_planning_data *values
+        data = session[:planning_data]
+        for value in values
+          break if data.nil?
+          data = data[value.to_s]
         end
+        data
+      end
 
-        def clear_region_totals
-          @contacts_total = {}
-          @reach_total = {}
-          @freq_total = {}
-        end
+      def clear_region_totals
+        @contacts_total = {}
+        @reach_total = {}
+        @freq_total = {}
+      end
 
-        def add_region_totals data, demographic_id, format_id
-          @contacts_total[pos] += data.contacts.to_i
-          @reach_total[pos] += data.reach.to_i
-          @freq_total[pos] += data.frequency.to_i
-        end
+      def add_region_totals data, demographic_id, format_id
+        @contacts_total[pos] += data.contacts.to_i
+        @reach_total[pos] += data.reach.to_i
+        @freq_total[pos] += data.frequency.to_i
+      end
 
-        def thousands value
-          number_with_delimiter (value / 1000).round.to_i
-        end
+      def thousands value
+        number_with_delimiter (value / 1000).round.to_i
+      end
 
-        def precision_2 value
-          number_with_precision(value, :precision => 2)
-        end
+      def precision_2 value
+        number_with_precision(value, :precision => 2)
+      end
 
-        def percents value
-          number_to_percentage value * 100, :precision => 1
-        end
+      def percents value
+        number_to_percentage value * 100, :precision => 1
+      end
 
-        def tabs_js group
+      def tabs_js group
         %Q{
           <script type="text/javascript">
             $(function() {
@@ -50,6 +50,10 @@ module Refinery
             });
           </script>
         }
+      end
+
+      def get_weight market, format, weight
+        @planning_weights && @planning_weights.find { |pw| pw.format_id == format.id && pw.market_id == market.id }.try(weight)
       end
     end
   end

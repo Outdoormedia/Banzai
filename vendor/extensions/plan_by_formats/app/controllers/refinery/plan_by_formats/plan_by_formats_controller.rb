@@ -16,7 +16,10 @@ module Refinery
       end
 
       def show
-        @plan_by_format = PlanByFormat.find(params[:id])
+        @markets = Selection.markets
+        @formats = Selection.planning_formats
+        @planning_weights = PlanningWeight.all
+
 
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @plan_by_format in the line below:
