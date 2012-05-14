@@ -6,6 +6,10 @@ module Refinery
       before_filter :find_page
 
       def index
+        @markets = Selection.markets
+        @formats = Selection.planning_formats
+        @market_names = @markets.map &:name
+
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @plan_by_format in the line below:
         present(@page)

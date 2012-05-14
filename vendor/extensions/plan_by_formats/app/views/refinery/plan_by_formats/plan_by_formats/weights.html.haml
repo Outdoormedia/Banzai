@@ -1,0 +1,19 @@
+%table.planning_weights
+  %tr
+    %th.top.left.above
+    - for market in @markets
+      %th.val.top.left.above{:colspan => 3}= market.name
+  %tr
+    %th.top.left
+    - @markets.each do
+      %th.val H
+      %th.val M
+      %th.val.left L
+  - for format in @formats
+    %tr
+      %th.left
+        = format.name
+      - @markets.each do |market|
+        %td.val= @planning_weights[format.id][market.id][0]
+        %td.val= @planning_weights[format.id][market.id][1]
+        %td.val.left= @planning_weights[format.id][market.id][2]

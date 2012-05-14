@@ -1,0 +1,26 @@
+%table
+  %tr
+    %td.regions_column
+      %table.regions
+        %tr
+          %th REGIONS
+        - market.children.each do |region|
+          %tr
+            %td
+              = check_box_tag "planning[markets][#{market.id}][regions][]", region.id, session[:planning_data].nil? || get_planning_data(:markets, market.id, :regions).to_a.include?(region.id.to_s), :id=>"region_id_#{region.id  }"
+              = region.name
+    %td
+      %table.formats
+        - @formats.each do |formats|
+          %tr
+            %th== #{formats.name.upcase} FORMATS
+            - %w[H M L NONE].each do |weight|
+              %th= weight
+            %th
+
+          - formats.children.each do |format|
+            %tr
+              %td= format.name
+              - [3,2,1,nil].each do |x|
+                %td= radio_button_tag "planning[markets][#{market.id}][formats][#{format.id}][weight]", x, x == get_planning_data(:markets, market.id, :formats, format.id, :weight).to_i
+              %td= select_tag "planning[markets][#{market.id}][formats][#{format.id}][duration]", options_for_select([7, 14, 28].map {|x| ["#{x} days", x]}, get_planning_data(:markets, market.id, :formats, format.id, :duration).to_i)

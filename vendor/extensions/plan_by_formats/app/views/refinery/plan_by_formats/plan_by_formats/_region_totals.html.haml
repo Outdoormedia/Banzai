@@ -1,0 +1,10 @@
+%tr.totals.val
+  %th.left Region Totals
+  %th
+  - @planning_params["demographics"].each do |demographic_id|
+    %td= thousands region_totals[3][demographic_id]
+    %td= percents region_totals[1][demographic_id]
+    %td= number_with_precision(region_totals[2][demographic_id], :precision => 2)
+    %td.left= thousands region_totals[0][demographic_id]
+
+= render :partial => 'site/blank_table_row'
