@@ -26,6 +26,10 @@ module Refinery
         present(@page)
       end
 
+      def create
+
+      end
+
     protected
 
       def find_all_plan_by_formats

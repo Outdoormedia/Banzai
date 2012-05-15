@@ -1,4 +1,4 @@
-= link_to "Planning Weights", {:action => "weights"}
+= link_to "Planning Weights", refinery.plan_by_formats_plan_by_format_path("planning_weights")
 - if @plan_by_format.active
   %table.plan_by_format.report
     - for market in @demographics.first.markets
