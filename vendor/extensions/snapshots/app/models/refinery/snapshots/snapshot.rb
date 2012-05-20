@@ -1,9 +1,9 @@
 module Refinery
   module Snapshots
     class Snapshot < Refinery::Core::BaseModel
-      self.table_name = 'refinery_snapshots'      
+      self.table_name = 'refinery_snapshots'
 
-      attr_accessible :market_sc, :demographic_sc, :format_sc, :number_of_days_1, :reaches_1, :number_of_days_2, :reaches_2, :x_labels
+      attr_accessible :market_sc, :demographic_sc, :format_sc, :number_of_days_1, :reaches_1, :number_of_days_2, :reaches_2, :x_labels, :demographic
 
       belongs_to :market, class_name: "Selection"
       belongs_to :demog, class_name: "Selection"
@@ -47,6 +47,17 @@ module Refinery
       #acts_as_indexed :fields => [:reaches_1, :reaches_2, :x_labels]
       #
       #validates :reaches_1, :presence => true, :uniqueness => true
+
+      def self.import
+        self.delete_all
+        changes = %w{market format demographic}
+        YAML.load_file("db/snapshot_import.yml").each do |record|
+          changes.each do |change|
+            record.merge!((change+"_sc") => record[change]).delete(change)
+          end
+          self.create(record)
+        end
+      end
     end
   end
 end

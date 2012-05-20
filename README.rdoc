@@ -1,0 +1,6 @@
+== Welcome to Banzai
+
+= Import Snapshots
+  Copy snaphot_import.yml to the folder db/
+  run rake db:snapshot_import
+
