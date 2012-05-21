@@ -125,7 +125,6 @@ h1     {
        @include panel( 0deg, $oma_green);
        position:relative;
        height: 24px;
-       left: 5%;
        width: 95%;
        }
 
@@ -151,16 +150,16 @@ h1     {
 .oma_status_message{
         @include oma_green_text;
         text-align: left;
-	position:absolute;
-	left:200px;
-	top: 40px;
+        position:absolute;
+        left:200px;
+        top: 40px;
         }
 .oma_welcome_message{
         @include oma_text;
         text-align: left;
-	position:absolute;
-	left:200px;
-	top: 70px;
+        position:absolute;
+        left:200px;
+        top: 70px;
         }
 
 .oma_info_text{
