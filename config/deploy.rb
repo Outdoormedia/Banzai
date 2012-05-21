@@ -71,4 +71,9 @@ task :rvm_version do
   run "which ruby"
 end
 
-
+namespace :rake do
+  desc "Run a task on a remote server. 'cap rake:invoke task=db:migrate'"
+  task :invoke do
+    run("cd #{deploy_to}/current; /usr/bin/env rake #{ENV['task']}")
+  end
+end
