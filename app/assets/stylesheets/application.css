@@ -17,7 +17,7 @@
  *= require sidebar
  *= require navigation
  *= require pieChart
- *= require homes
+ ** require homes  DEPRECATED
  *
  * From Railscast 333 Extending Refinery CMS
  *= require formatting

@@ -2,10 +2,16 @@ Refinery::Pages.configure do |config|
   # Configure specific page templates
   # config.types.register :home do |home|
   #   home.parts = %w[intro body]
+  config.types.register :home do |home|
+    home.parts = %w[body, carousel, pie, welcome, news, studies]
+  end
+  config.types.register :buy do |buy|
+    buy.parts = %w[body login]
+  end
   # end
 
   # Configure global page default parts
-    config.default_parts = ["Body", "Side Body", "pieChart"]
+    config.default_parts = ["body"]
 
   # Configure whether to allow adding new page parts
     config.new_page_parts = true

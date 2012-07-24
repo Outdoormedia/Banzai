@@ -4,7 +4,7 @@ module NavigationHelper
   # In HAML: - nav_tab( 'Homes', url, content: current_tab )
   def nav_tab(title, url=title, options={})
     options[:class] = (@page.slug).casecmp(url) == 0 ? 'active' : 'inactive'
-    content_tag(:li, link_to(title, url), options )    
+    content_tag(:li, link_to(title, url), options )        
   end
 
   def currently_at(tab)

@@ -50,7 +50,7 @@ $(document).ready ->
   $('#buy').bind 'mouseover', ->
     $('#oma_welcome_message').text('Buy using MOVE AMS,  logon required.')
 
-  $('#learn').bind 'mouseover', ->
+  $('#know').bind 'mouseover', ->
     $('#oma_welcome_message').text('Learn using MOVE AMS, logon required. Not implemented this release.')
 
   $('#proof').bind 'mouseover', ->

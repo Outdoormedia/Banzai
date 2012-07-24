@@ -1,7 +1,46 @@
-header#page_header {
-  color: #25b264;
+body {
+  font_family: "Times New Roman", "Times", serif;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 5%; }
+  body #upper_page_content #carousel_content {
+    border: 1px solid #231f20;
+    float: left;
+    font-size: 0.8em;
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+    height: 320px;
+    width: 66%; }
+  body #upper_page_content #pie_content {
+    float: right;
+    border: 1px solid #e2e2e2;
+    width: 33%;
+    height: 320px; }
+  body #lower_page_content {
+    display: inline-block; }
+    body #lower_page_content #welcome_content,
+    body #lower_page_content #news_content,
+    body #lower_page_content #studies_content {
+      border: 1px solid #bbbcbc;
+      border-radius: 10px;
+      display: inherit;
+      height: 320px;
+      width: 33%; }
+
+h1 h2 {
+  font-family: "Georgia", "Arial", "Helvetica", sans-serif;
+  font-size: 24px;
+  color: #25b264; }
+
+h3 {
+  color: #0f4829;
+  font: "Georgia", "Times New Roman"; }
+
+li {
+  color: #25b264;
+  font: "Times New Roman", "Times", serif; }
+
+header#page_header {
   overflow: hidden; }
   header#page_header a,
   header#page_header a:link,
@@ -17,7 +56,7 @@ header#page_header {
     font-size: 0.8em;
     position: relative;
     left: -65px;
-    top: 30px; }
+    top: 0px; }
   header#page_header #logo {
     position: relative;
     top: 15px; }
@@ -25,13 +64,14 @@ header#page_header {
 #tagline {
   margin-left: 20px; }
 
-.container {
+container {
   overflow: hidden;
-  padding: 0 20px 0 0; }
+  padding: 0 20px 0 0;
+  background: #c8c9c9; }
 
 footer#page_footer {
   background-color: white;
-  border-bottom: 5px solid #58595b;
+  border-bottom: 5px solid #675b5e;
   color: #25b264;
   font-size: 0.7em;
   margin: 5% 5%; }
@@ -39,7 +79,7 @@ footer#page_footer {
     padding: 0;
     text-align: center; }
     footer#page_footer ul li {
-      border-right: 2px solid #c9c9c9;
+      border-right: 2px solid #c8c9c9;
       display: inline;
       margin: 0; }
       footer#page_footer ul li:last-child {
@@ -54,7 +94,7 @@ section#content {
   margin: 1% 5%;
   width: 30%; }
 
-section#sidebar {
+section#XXsidebar {
   margin-right: 3%;
   margin-top: 7%;
   width: 30%;

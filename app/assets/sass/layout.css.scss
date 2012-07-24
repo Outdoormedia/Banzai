@@ -1,5 +1,6 @@
 @import "partials/colors";
 @import "partials/fonts";
+@import "partials/oma_mixins";
 
 // use background url('image003.jpg') or similar for single logo or image
 // %logo is a separate resource, e.g. in layout.css.scss use
@@ -7,14 +8,64 @@
 //    = link_to image_tag("image003.jpg"), root_url
 // do not use both unless they are different!
 
+body{
+     font_family: $oma_body_font;
+     margin-left: 5%;
+     margin-right: 5%;
+
+     #upper_page_content{
+       #carousel_content {
+            border: 1px solid $oma_black;
+            float: left;
+            font-size: 0.8em;
+            position: relative;
+            top: 0px;
+            overflow: hidden;
+            height: 320px;
+            width: 66%;
+           }
+       #pie_content {
+            float: right;
+            border: 1px solid $oma_lightest_grey;
+            width: 33%;
+            height: 320px;
+            }
+       }
+
+     #lower_page_content{
+       display: inline-block;
+
+       #welcome_content,
+       #news_content,
+       #studies_content {
+         border: 1px solid $oma_grey;
+         border-radius:10px;
+         display: inherit;
+         height: 320px;
+         width: 33%;
+         }
+       }
+     }
+
+h1 h2 {
+       font-family: $oma_heading_font;
+       font-size: $oma_font_size;
+       color: $oma_green;
+       }
+h3 {
+   color: $oma_accent_green;
+   font: $oma_accent_font;
+}
+
+// used to test style markup for FAQs
+li {
+   color: $oma_green;
+   font: $oma_body_font;
+}
 
 header#page_header { 
-//       background: $oma_white url('image003.jpg') center left no-repeat;
-       color: $oma_green;
-       margin-left: 5%;
-       margin-right: 5%;
+//       background: $oma_white url("main_image.jpg") center left no-repeat;
        overflow: hidden;
-       
 
        a,
        a:link,
@@ -22,11 +73,9 @@ header#page_header {
        a:active,
        a:visited {
          color:$oma_grey;
-
          text-align:center;
          text-decoration:none;
          text-transform:uppercase;
-
          }
 
        nav#utility {
@@ -34,7 +83,7 @@ header#page_header {
            font-size: 0.8em;
            position: relative;
            left: -65px;
-           top: 30px;
+           top: 0px;
            }
 
        #logo {
@@ -47,15 +96,16 @@ header#page_header {
          margin-left: 20px;
          }
 
-.container { 
-	   overflow: hidden; 
-	   padding: 0 20px 0 0;
+container { 
+	       overflow: hidden; 
+	       padding: 0 20px 0 0;
+	       background: $oma_light_grey;
            }
 
 
 footer#page_footer { 
   background-color: $oma_white;
-  border-bottom: 5px solid $oma_black_fade-1;
+  border-bottom: 5px solid $oma_light_black;
   color: $oma_green;
   font-size: 0.7em;
   margin: 5% 5%;
@@ -65,7 +115,7 @@ footer#page_footer {
     text-align: center;
 
     li {
-      border-right: 2px solid $oma_grey_fade-1;
+      border-right: 2px solid $oma_light_grey;
       display: inline;
       margin: 0;
       &:last-child {
@@ -93,7 +143,7 @@ section#content {
    width: 30%;
    } 
 
-section#sidebar {
+section#XXsidebar {
    margin-right: 3%;
    margin-top: 7%;
    width: 30%;
