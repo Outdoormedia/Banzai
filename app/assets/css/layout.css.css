@@ -17,15 +17,24 @@ body {
     width: 33%;
     height: 320px; }
   body #lower_page_content {
-    display: inline-block; }
+    display: inline-block;
+    width: 1210px;
+    height: 320px; }
     body #lower_page_content #welcome_content,
-    body #lower_page_content #news_content,
-    body #lower_page_content #studies_content {
+    body #lower_page_content #news_content {
       border: 1px solid #bbbcbc;
-      border-radius: 10px;
+      border-radius: 5px;
       display: inherit;
       height: 320px;
-      width: 33%; }
+      width: 33%;
+      float: left; }
+    body #lower_page_content #studies_content {
+      border: 1px solid #bbbcbc;
+      border-radius: 5px;
+      display: inherit;
+      height: 320px;
+      width: 33%;
+      float: right; }
 
 h1 h2 {
   font-family: "Georgia", "Arial", "Helvetica", sans-serif;

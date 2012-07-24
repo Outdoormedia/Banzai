@@ -34,15 +34,25 @@ body{
 
      #lower_page_content{
        display: inline-block;
+       width: 1210px;
+       height: 320px;
 
        #welcome_content,
-       #news_content,
-       #studies_content {
+       #news_content {
          border: 1px solid $oma_grey;
-         border-radius:10px;
+         border-radius:5px;
          display: inherit;
          height: 320px;
          width: 33%;
+         float: left;
+         }
+       #studies_content {
+         border: 1px solid $oma_grey;
+         border-radius:5px;
+         display: inherit;
+         height: 320px;
+         width: 33%;
+         float: right;
          }
        }
      }
