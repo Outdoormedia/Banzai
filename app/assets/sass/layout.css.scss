@@ -48,6 +48,7 @@ body{
          height: 320px;
          width: 33%;
          float: left;
+         overflow: auto;
          }
        #studies_content {
          border: 1px solid $oma_grey;

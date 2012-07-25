@@ -29,7 +29,8 @@ body {
       display: inherit;
       height: 320px;
       width: 33%;
-      float: left; }
+      float: left;
+      overflow: auto; }
     body #lower_page_content #studies_content {
       border: 1px solid #bbbcbc;
       border-radius: 5px;
