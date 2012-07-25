@@ -15,7 +15,8 @@ body{
 
      #upper_page_content{
        #carousel_content {
-            border: 1px solid $oma_black;
+            border: 1px solid $oma_lightest_grey;
+            border-radius:5px;
             float: left;
             font-size: 0.8em;
             position: relative;
@@ -27,6 +28,7 @@ body{
        #pie_content {
             float: right;
             border: 1px solid $oma_lightest_grey;
+            border-radius:5px;
             width: 33%;
             height: 320px;
             }
@@ -106,24 +108,15 @@ header#page_header {
           }
       }
 
-#tagline {
-         margin-left: 20px;
-         }
-
-container { 
-	       overflow: hidden; 
-	       padding: 0 20px 0 0;
-	       background: $oma_light_grey;
-           }
-
 
 footer#page_footer { 
   background-color: $oma_white;
-  border-bottom: 5px solid $oma_light_black;
+//  border-bottom: 5px solid $oma_light_black;
+  border: 1px solid $oma_light_green;
   color: $oma_green;
   font-size: 0.7em;
-  margin: 5% 5%;
-
+  overflow: hidden;
+  display: inline;
   ul {
     padding: 0;
     text-align: center;
@@ -147,6 +140,16 @@ footer#page_footer {
     }
   }
 }
+
+#tagline {
+         margin-left: 20px;
+         }
+
+container { 
+	       overflow: hidden; 
+	       padding: 0 20px 0 0;
+	       background: $oma_light_grey;
+           }
 
 // p. 38 Rails Views
 // sections for content, sidebar

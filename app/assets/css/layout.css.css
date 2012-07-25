@@ -3,7 +3,8 @@ body {
   margin-left: 5%;
   margin-right: 5%; }
   body #upper_page_content #carousel_content {
-    border: 1px solid #231f20;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
     float: left;
     font-size: 0.8em;
     position: relative;
@@ -14,6 +15,7 @@ body {
   body #upper_page_content #pie_content {
     float: right;
     border: 1px solid #e2e2e2;
+    border-radius: 5px;
     width: 33%;
     height: 320px; }
   body #lower_page_content {
@@ -73,20 +75,13 @@ header#page_header {
     position: relative;
     top: 15px; }
 
-#tagline {
-  margin-left: 20px; }
-
-container {
-  overflow: hidden;
-  padding: 0 20px 0 0;
-  background: #c8c9c9; }
-
 footer#page_footer {
   background-color: white;
-  border-bottom: 5px solid #675b5e;
+  border: 1px solid #35d57c;
   color: #25b264;
   font-size: 0.7em;
-  margin: 5% 5%; }
+  overflow: hidden;
+  display: inline; }
   footer#page_footer ul {
     padding: 0;
     text-align: center; }
@@ -100,6 +95,14 @@ footer#page_footer {
         padding: 5px 10px; }
         footer#page_footer ul li a:link, footer#page_footer ul li a:hover, footer#page_footer ul li a:visited, footer#page_footer ul li a.active {
           color: #25b264; }
+
+#tagline {
+  margin-left: 20px; }
+
+container {
+  overflow: hidden;
+  padding: 0 20px 0 0;
+  background: #c8c9c9; }
 
 section#content {
   float: left;
