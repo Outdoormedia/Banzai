@@ -20,6 +20,8 @@ body {
     display: inline-block;
     width: 1210px;
     height: 320px; }
+    body #lower_page_content #text {
+      padding: 0 20px 0 20px; }
     body #lower_page_content #welcome_content,
     body #lower_page_content #news_content {
       border: 1px solid #bbbcbc;

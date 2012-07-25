@@ -36,6 +36,9 @@ body{
        display: inline-block;
        width: 1210px;
        height: 320px;
+       #text{
+         padding: 0 20px 0 20px;
+         }
 
        #welcome_content,
        #news_content {
