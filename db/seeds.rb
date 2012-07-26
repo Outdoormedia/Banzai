@@ -15,3 +15,6 @@ Refinery::Pages::Engine.load_seed
 Refinery::Snapshots::Engine.load_seed
 
 
+
+# Added by Refinery CMS Carousels extension
+Refinery::Carousels::Engine.load_seed

@@ -14,7 +14,7 @@ Refinery::Images.configure do |config|
 
   # Configure image sizes
   # config.user_image_sizes = {:small=>"110x110>", :medium=>"225x255>", :large=>"450x450>"}
-  # config.user_image_sizes = {:small=>"110x110>", :medium=>"255x255>", :large=>"900x675>"}
+  config.user_image_sizes = {:small=>"110x110>", :medium=>"255x255>", :large=>"900x675>"}
   # Configure image view options
   config.image_views = [:grid, :list]
 

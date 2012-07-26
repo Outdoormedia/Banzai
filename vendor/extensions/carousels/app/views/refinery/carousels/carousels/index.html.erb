@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="carousels">
+    <% @carousels.each do |carousel| %>
+      <li>
+        <%= link_to carousel.name, refinery.carousels_carousel_path(carousel) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>
