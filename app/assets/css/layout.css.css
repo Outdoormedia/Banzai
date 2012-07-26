@@ -82,6 +82,16 @@ footer#page_footer {
   font-size: 0.7em;
   overflow: hidden;
   display: inline; }
+  footer#page_footer nav#left_logo {
+    float: left;
+    font-size: 0.8em;
+    position: relative;
+    top: 0px; }
+  footer#page_footer nav#right_logo {
+    float: right;
+    font-size: 0.8em;
+    position: relative;
+    top: 0px; }
   footer#page_footer ul {
     padding: 0;
     text-align: center; }

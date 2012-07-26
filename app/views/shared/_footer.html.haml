@@ -1,7 +1,11 @@
 %footer#page_footer
 
+  %nav#left_logo
+    = link_to( image_tag("OMA_logo.png", :size=>'38x84', :alt => "OMA"),'http://www.oma.org.au')
+  %nav#right_logo
+    = link_to( image_tag("OMA_logo.png", :size=>'38x84', :alt => "OMA"),'http://www.oma.org.au')
+
   %ul
-    %li= link_to( image_tag("OMA_logo.png", :size=>'38x84', :alt => "OMA"), 'http://www.oma.org.au')
     %li= link_to 'Home', ""
     %li= link_to 'About OMA', 'http://www.oma.org.au' 
     %li= link_to 'About Move', "About-Move"
@@ -9,7 +13,6 @@
     %li= link_to 'Contact OMA', "Contact-OMA"
     %li= link_to 'FAQs', "FAQs"
     %li= link_to 'News', "News"
-    %li= link_to( image_tag("OMA_logo.png", :size=>'38x84', :alt => "OMA"), 'http://www.oma.org.au')
  
   %ul
     %li= link_to 'Privacy', "Privacy"
@@ -17,8 +20,7 @@
  
     %p="© 2007-12 MOVE Pty Ltd"
     %p= "Outdoor Marketing Association"
-
-
+  
 
 = yield :javascript_libraries
 = yield :javascripts
