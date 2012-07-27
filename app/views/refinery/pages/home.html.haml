@@ -5,9 +5,7 @@
 %section#upper_page_content
   %section#carousel_content
     .carousel
-    - @carousels.each do |carousel|
-      = image_tag carousel.photo.image.url, :size=>"825x320", :alt => "Carousel image."
-
+      = image_tag @carousel.photo.image.url, :size=>"825x320", :alt => "Carousel image."
 
   %section#pie_content
     =raw @page.content_for(:pie)

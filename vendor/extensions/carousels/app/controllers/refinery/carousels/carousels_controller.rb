@@ -1,3 +1,4 @@
+require 'debugger'
 module Refinery
   module Carousels
     class CarouselsController < ::ApplicationController
@@ -13,7 +14,6 @@ module Refinery
 
       def show
         @carousel = Carousel.find(params[:id])
-
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @carousel in the line below:
         present(@page)

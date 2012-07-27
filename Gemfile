@@ -12,8 +12,8 @@ gem "haml-rails"
 
 group :development, :test do
   #gem "rvm-capistrano"
-  #gem "thin"
-  #gem 'debugger'
+  gem "thin"
+  gem 'debugger'
 end
 
 
@@ -30,6 +30,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'randumb'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
