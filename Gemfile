@@ -14,6 +14,9 @@ group :development, :test do
   #gem "rvm-capistrano"
   gem "thin"
   gem 'debugger'
+  gem 'mysql2'
+  gem 'taps', :require => false # has an sqlite dependency, which heroku hates
+  gem 'sqlite3'                 # for Heroku you need taps, taps uses sqlite3  
 end
 
 
