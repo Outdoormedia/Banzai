@@ -1,4 +1,3 @@
-require 'debugger'
 module Refinery
   module Carousels
     class CarouselsController < ::ApplicationController
