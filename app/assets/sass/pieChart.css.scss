@@ -1,7 +1,6 @@
 @import "partials/colors";
 @import "partials/fonts";
 
-
 #chart, #chartData {
   background: $oma_green url("gradient.png") repeat-x 0 0;
 }
@@ -16,7 +15,6 @@
 #chartData {
   display: none;
   width: 200px;
-  margin: 0 20px 0 0;
   float: right;
   border-collapse: collapse;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
@@ -29,6 +27,7 @@
   padding: 0.5em;
   border: 1px dotted #666;
   text-align: left;
+  font-color: $oma_text;
 }
 
 #chartData th {

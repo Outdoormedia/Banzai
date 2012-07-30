@@ -78,6 +78,7 @@ header#page_header {
 footer#page_footer {
   background-color: white;
   border: 1px solid #35d57c;
+  border-bottom: 5px solid #675b5e;
   color: #25b264;
   font-size: 0.7em;
   overflow: hidden;

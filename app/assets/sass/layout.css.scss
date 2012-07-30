@@ -2,12 +2,6 @@
 @import "partials/fonts";
 @import "partials/oma_mixins";
 
-// use background url('image003.jpg') or similar for single logo or image
-// %logo is a separate resource, e.g. in layout.css.scss use
-//   %logo
-//    = link_to image_tag("image003.jpg"), root_url
-// do not use both unless they are different!
-
 body{
      font_family: $oma_body_font;
      margin-left: 5%;
@@ -111,8 +105,8 @@ header#page_header {
 
 footer#page_footer { 
   background-color: $oma_white;
-//  border-bottom: 5px solid $oma_light_black;
   border: 1px solid $oma_light_green;
+  border-bottom: 5px solid $oma_light_black;
   color: $oma_green;
   font-size: 0.7em;
   overflow: hidden;

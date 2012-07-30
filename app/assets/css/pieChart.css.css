@@ -1,37 +1,63 @@
-#chart, #chartData {
-  background: #25b264 url("gradient.png") repeat-x 0 0; }
+/*
+Syntax error: Undefined variable: "$oma_text".
+        on line 30 of sass/pieChart.css.scss
 
-#chart {
-  display: block;
-  float: center;
-  cursor: pointer;
-  width: 300px; }
+25: 
+26: #chartData th, #chartData td {
+27:   padding: 0.5em;
+28:   border: 1px dotted #666;
+29:   text-align: left;
+30:   font-color: $oma_text;
+31: }
+32: 
+33: #chartData th {
+34:   border-bottom: 2px solid #333;
+35:   text-transform: uppercase;
 
-#chartData {
-  display: none;
-  width: 200px;
-  margin: 0 20px 0 0;
-  float: right;
-  border-collapse: collapse;
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-  background-position: 0 -100px; }
-
-#chartData th, #chartData td {
-  padding: 0.5em;
-  border: 1px dotted #666;
-  text-align: left; }
-
-#chartData th {
-  border-bottom: 2px solid #333;
-  text-transform: uppercase; }
-
-#chartData td {
-  cursor: pointer; }
-
-#chartData td.highlight {
-  background: #e8e8e8; }
-
-#chartData tr:hover td {
-  background: #c8c9c9; }
+Backtrace:
+sass/pieChart.css.scss:30
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/script/variable.rb:49:in `_perform'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/script/node.rb:40:in `perform'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/tree/root_node.rb:20:in `render'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/engine.rb:300:in `_render'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/engine.rb:247:in `render'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `each'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:298:in `block in watch'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/Users/John/.rvm/gems/ruby-1.9.3-p194@banzai/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$oma_text\".\A         on line 30 of sass/pieChart.css.scss\A \A 25: \A 26: #chartData th, #chartData td {\A 27:   padding: 0.5em;\A 28:   border: 1px dotted #666;\A 29:   text-align: left;\A 30:   font-color: $oma_text;\A 31: }\A 32: \A 33: #chartData th {\A 34:   border-bottom: 2px solid #333;\A 35:   text-transform: uppercase;"; }
