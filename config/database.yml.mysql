@@ -2,7 +2,7 @@ development: &development
   adapter: mysql2
   host: localhost
   username: root
-  password: 180lbs
+  password: 
   database: oma-portal
 
 test: &test
