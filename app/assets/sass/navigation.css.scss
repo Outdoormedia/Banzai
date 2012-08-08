@@ -2,14 +2,15 @@
 @import "partials/fonts";
 
 nav#main_nav { 
-  margin: 0 0 0 5%;
+  margin: 0 0 0 0;
   ul {
-    padding: 10px 0px;
+    font: $oma_top_bar_menu_font;
+    padding: 0px 0px;
+    background:  $oma_top_bar_menu_color;
   }
   li {
-    border: 1px solid $oma_green_fade-1;
     display: inline-block;
-    padding: 4px 17px 4px 17px;
+    padding: 18px 28px 18px 17px; 
     font-size: 0.9em;
 
     a,
@@ -17,6 +18,7 @@ nav#main_nav {
     a:visited {
       color: $oma_grey;
       text-decoration: none;
+      color:$oma_white;
       }
 
     &.active {
@@ -25,7 +27,7 @@ nav#main_nav {
       a,
       a:link,
       a:visited {
-        color: $oma_grey_fade_3;
+        color: $oma_white;
         font-weight: bold;
         }
       }	

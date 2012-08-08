@@ -10,10 +10,10 @@ function pieChart() {
   var sliceBorderWidth = 1;                         // Width (in pixels) of the border around each slice
   var sliceBorderStyle = "#fff";                    // Colour of the border around each slice
   var sliceGradientColour = "#ddd";                 // Colour to use for one end of the chart gradient
-  var maxPullOutDistance = 25;                      // How far, in pixels, to pull slices out when clicked
+  var maxPullOutDistance = 20;                      // How far, in pixels, to pull slices out when clicked
   var pullOutFrameStep = 4;                         // How many pixels to move a slice with each animation frame
   var pullOutFrameInterval = 40;                    // How long (in ms) between each animation frame
-  var pullOutLabelPadding = 35;                     // Padding between pulled-out slice and its label  (65)
+  var pullOutLabelPadding = 25;                     // Padding between pulled-out slice and its label  (65)
   var pullOutLabelFont = "bold 12px 'Trebuchet MS', Verdana, sans-serif";  // Pull-out slice label font
   var pullOutValueFont = "bold 12px 'Trebuchet MS', Verdana, sans-serif";  // Pull-out slice value font
   var pullOutValuePrefix = "$";                     // Pull-out slice value prefix
@@ -317,7 +317,8 @@ function pieChart() {
       context.font = pullOutLabelFont;
       context.fillText( chartData[slice]['label'], centreX + Math.cos(midAngle) * ( chartRadius + maxPullOutDistance + pullOutLabelPadding ), centreY + Math.sin(midAngle) * ( chartRadius + maxPullOutDistance + pullOutLabelPadding ) );
       context.font = pullOutValueFont;
-      context.fillText( pullOutValuePrefix + chartData[slice]['value'] + " (" + ( parseInt( chartData[slice]['value'] / totalValue * 100 + .5 ) ) +  "%)", centreX + Math.cos(midAngle) * ( chartRadius + maxPullOutDistance + pullOutLabelPadding ), centreY + Math.sin(midAngle) * ( chartRadius + maxPullOutDistance + pullOutLabelPadding ) + 20 );
+// OMA does not use values in labels --JWM
+//      context.fillText( pullOutValuePrefix + chartData[slice]['value'] + " (" + ( parseInt( chartData[slice]['value'] / totalValue * 100 + .5 ) ) +  "%)", centreX + Math.cos(midAngle) * ( chartRadius + maxPullOutDistance + pullOutLabelPadding ), centreY + Math.sin(midAngle) * ( chartRadius + maxPullOutDistance + pullOutLabelPadding ) + 20 );
       context.shadowOffsetX = pullOutShadowOffsetX;
       context.shadowOffsetY = pullOutShadowOffsetY;
       context.shadowBlur = pullOutShadowBlur;

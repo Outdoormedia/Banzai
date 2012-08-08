@@ -1,0 +1,32 @@
+en:
+  refinery:
+    plugins:
+      calendars:
+        title: Calendars
+    calendars:
+      admin:
+        calendars:
+          actions:
+            create_new: Add New Calendar
+            reorder: Reorder Calendars
+            reorder_done: Done Reordering Calendars
+          records:
+            title: Calendars
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Calendars yet. Click "Add New Calendar" to add your first calendar.
+          calendar:
+            view_live_html: View this calendar live <br/><em>(opens in a new window)</em>
+            edit: Edit this calendar
+            delete: Remove this calendar forever
+      calendars:
+        show:
+          other: Other Calendars
+  activerecord:
+    attributes:
+      'refinery/calendars/calendar':
+        title: Title
+        when: When
+        where: Where
+        sponsor: Sponsor
+        description: Description
+        url: Url

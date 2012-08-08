@@ -1,0 +1,32 @@
+fr:
+  refinery:
+    plugins:
+      calendars:
+        title: Calendars
+    calendars:
+      admin:
+        calendars:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Calendar
+            reorder: Réordonner les Calendars
+            reorder_done: Fin de réordonnancement des Calendars
+          records:
+            title: Calendars
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Calendar. Cliquer sur "Créer un(e) nouve(au/l/lle) Calendar" pour créer votre premi(er/ère) calendar.'
+          calendar:
+            view_live_html: Voir ce(t/tte) calendar <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) calendar
+            delete: Supprimer définitivement ce(t/tte) calendar
+      calendars:
+        show:
+          other: Autres Calendars
+  activerecord:
+    attributes:
+      'refinery/calendars/calendar':
+        title: Title
+        when: When
+        where: Where
+        sponsor: Sponsor
+        description: Description
+        url: Url

@@ -1,8 +1,33 @@
 - currently_at @page.slug
 
-%section#body_content
-  =raw @page.content_for(:body)
+=raw @page.content_for(:body)
 
-%section#side_body_content
-  =raw @page.content_for(:side_body)
 
+%section#upper_page_content
+  %section#carousel_content
+    .carousel
+      = image_tag @carousel.photo.image.url, :size=>"825x320", :alt => "Carousel image."
+
+  %section#pie_content
+    =raw @page.content_for(:pie)
+    - if ["home", "buy", "know", "plan" ].include?(@page.slug)
+      %canvas#chart( height = '300px')
+        = render 'shared/pieChart'
+  
+-# LOWER PAGE CONTENT
+
+%section#lower_page_content
+
+  %section#welcome_content
+    #text
+      =raw @page.content_for(:welcome)
+
+  %section#news_content
+    #text
+      =raw @page.content_for(:news)
+
+  %section#studies_content
+    #text
+      =raw @page.content_for(:studies)
+
+%h

@@ -2,10 +2,16 @@ Refinery::Pages.configure do |config|
   # Configure specific page templates
   # config.types.register :home do |home|
   #   home.parts = %w[intro body]
+  config.types.register :home do |home|
+    home.parts = %w[body, carousel, pie, welcome, news, studies]
+  end
+  config.types.register :buy do |buy|
+    buy.parts = %w[body login]
+  end
   # end
 
   # Configure global page default parts
-    config.default_parts = ["Body", "Side Body", "pieChart"]
+    config.default_parts = ["body"]
 
   # Configure whether to allow adding new page parts
     config.new_page_parts = true
@@ -38,13 +44,12 @@ Refinery::Pages.configure do |config|
   # Set this to true to fully expand the page hierarchy in the admin
   # config.auto_expand_admin_tree = true
 
-  config.layout_template_whitelist = ["application"]
+  # Reference:  Using Custom View or Layout Templates
+  # config.use_layout_templates = false               commented out is default
+  config.layout_template_whitelist = ["application"]  # default = ["application"]
 
-  config.view_template_whitelist = ["home", "show"]
-
-  # config.use_layout_templates = false
-
-  # config.use_view_templates = false
+  config.view_template_whitelist = ["home", "show"]   # default = ["home", "show"]
+  # config.use_view_templates = false                 commented out is default
 
   # config.page_title = {:chain_page_title=>false, :ancestors=>{:separator=>" | ", :class=>"ancestors", :tag=>"span"}, :page_title=>{:class=>nil, :tag=>nil, :wrap_if_not_chained=>false}}
 

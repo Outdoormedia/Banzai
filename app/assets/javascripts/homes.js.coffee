@@ -50,11 +50,8 @@ $(document).ready ->
   $('#buy').bind 'mouseover', ->
     $('#oma_welcome_message').text('Buy using MOVE AMS,  logon required.')
 
-  $('#learn').bind 'mouseover', ->
+  $('#know').bind 'mouseover', ->
     $('#oma_welcome_message').text('Learn using MOVE AMS, logon required. Not implemented this release.')
-
-  $('#proof').bind 'mouseover', ->
-    $('#oma_welcome_message').text('Proof using MOVE AMS, logon required. Not implemented this release.')
 
   $('#contact').bind 'mouseover', ->
     $('#oma_welcome_message').text('Contact OMA using href=\'http://moveoutdoor.com.au/contact-us')

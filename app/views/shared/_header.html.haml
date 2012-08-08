@@ -1,14 +1,15 @@
 %header#page_header( role = "banner")
 
   #logo 
-    = image_tag("OMA-MOVE_logo.png", :alt=>"Outdoor Media Association", size: '200x60')
-  
-  %nav#utility
-    You are logged in as 
-    = link_to "[Your Account]", "current_user_path"
-    = link_to "[Logout]", "logout_path"  
+    = link_to( image_tag("OMA-MOVE_logo.png", size: '200x60', :alt=>"Outdoor Media Association"), 'http://www.oma.org.au')
 
-  #logo
-    = link_to( image_tag("main_image.jpg", :alt=>"Outdoor Media Association", :id=>"logo"), refinery.root_path, :title=>"Dashboard", size: '400x60' )
+    %nav#utility
+      You are logged in as 
+      = link_to "[Your Account]", "current_user_path"
+      = link_to "[Logout]", "logout_path"  
+      = link_to 'Search', '/'
 
-= yield(:main_navigation)
+
+    = yield(:main_navigation)
+
+

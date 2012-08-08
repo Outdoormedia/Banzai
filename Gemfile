@@ -1,17 +1,22 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-
+gem 'thin'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "mysql2"
 gem "acts_as_tree"
 gem "haml-rails"
-
+gem "ember-rails"
 
 group :development, :test do
   #gem "rvm-capistrano"
+  gem "thin"
+  gem 'debugger'
+  gem 'mysql2'
+  gem 'taps', :require => false # has an sqlite dependency, which heroku hates
+  gem 'sqlite3'                 # for Heroku you need taps, taps uses sqlite3  
 end
 
 
@@ -28,6 +33,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'randumb'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -43,17 +49,20 @@ gem 'capistrano'
 gem "rvm-capistrano"
 gem "capistrano_colors"
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+group :production do
+  gem 'heroku'
+  gem 'pg'
+end
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.0.0'
+gem 'refinerycms', '~> 2.0.5'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 gem 'refinerycms-i18n', '~> 2.0.0'
-#  gem 'refinerycms-blog', '~> 2.0.0'
-#  gem 'refinerycms-inquiries', '~> 2.0.0'
-#  gem 'refinerycms-search', '~> 2.0.0'
-#  gem 'refinerycms-page-images', '~> 2.0.0'
-
+#  gem 'refinerycms-blog'
+#  gem 'refinerycms-inquiries', '~> 2.0.5'
+#  gem 'refinerycms-search', '~> 2.0.5'
+gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
+gem 'refinerycms-carousels', :path => 'vendor/extensions'
+gem 'refinerycms-calendars', :path => 'vendor/extensions'

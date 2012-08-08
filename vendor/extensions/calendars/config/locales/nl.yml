@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      calendars:
+        title: Calendars
+    calendars:
+      admin:
+        calendars:
+          actions:
+            create_new: Maak een nieuwe Calendar
+            reorder: Wijzig de volgorde van de Calendars
+            reorder_done: Klaar met het wijzingen van de volgorde van de Calendars
+          records:
+            title: Calendars
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Calendars. Druk op 'Maak een nieuwe Calendar' om de eerste aan te maken.
+          calendar:
+            view_live_html: Bekijk deze calendar op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze calendar
+            delete: Verwijder deze calendar voor eeuwig
+      calendars:
+        show:
+          other: Andere Calendars
+  activerecord:
+    attributes:
+      'refinery/calendars/calendar':
+        title: Title
+        when: When
+        where: Where
+        sponsor: Sponsor
+        description: Description
+        url: Url

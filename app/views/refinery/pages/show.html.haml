@@ -1,11 +1,6 @@
 - currently_at @page.slug
 
-
 %section#body_content
-  #section#oma_top_menu
-    =raw @page.content_for(:page_navigation)
-  =raw @page.content_for(:body)
+  /=raw @page.content_for(:body)
 
-%section#side_body_content
-  =raw @page.content_for(:side_body)
-
+  = render :partial => "/refinery/content_page"

@@ -1,29 +1,15 @@
-.wideBox {
-  clear: both;
-  text-align: center;
-  margin-bottom: 50px;
-  padding: 10px;
-  border: 1px solid #333;
-  line-height: 100%; }
-
-#canvas {
-  margin: 0 auto;
-  background: #f1f1f1;
-  height: 400px;
-  width: 400px; }
-
 #chart, #chartData {
-  background: #ebedf2 url("gradient.png") repeat-x 0 0; }
+  background: #25b264 url("gradient.png") repeat-x 0 0; }
 
 #chart {
   display: block;
   float: center;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 300px; }
 
 #chartData {
   display: none;
   width: 200px;
-  margin: 0 40px 0 0;
   float: right;
   border-collapse: collapse;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
@@ -47,4 +33,4 @@
   background: #e8e8e8; }
 
 #chartData tr:hover td {
-  background: #f0f0f0; }
+  background: #c8c9c9; }
