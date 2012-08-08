@@ -10,7 +10,7 @@ set :scm, :git
 # SSH
 set :custom_ssh_keys, "~/.ssh/vlc_id_dsa"
 # Server
-server "banzai-prep.moveoutdoor.com.au", :web, :app, :db, primary: true
+server "banzai-uat.moveoutdoor.com.au", :web, :app, :db, primary: true
 set :deploy_to, "/home/banzai"
 set :rvm_ruby_string, '1.9.3-p125'
 
