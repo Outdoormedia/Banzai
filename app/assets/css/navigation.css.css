@@ -1,0 +1,24 @@
+nav#main_nav {
+  margin: 0 0 0 0; }
+  nav#main_nav ul {
+    font: "Georgia";
+    padding: 0px 0px;
+    background: #25b264; }
+  nav#main_nav li {
+    display: inline-block;
+    padding: 18px 28px 18px 17px;
+    font-size: 0.9em; }
+    nav#main_nav li a,
+    nav#main_nav li a:link,
+    nav#main_nav li a:visited {
+      color: #bbbcbc;
+      text-decoration: none;
+      color: white; }
+    nav#main_nav li.active {
+      background: #bbbcbc;
+      margin-bottom: -1px; }
+      nav#main_nav li.active a,
+      nav#main_nav li.active a:link,
+      nav#main_nav li.active a:visited {
+        color: white;
+        font-weight: bold; }
