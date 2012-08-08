@@ -5,7 +5,10 @@
 %section#upper_page_content
   %section#carousel_content
     .carousel
+    - unless @carousel.blank?
       = image_tag @carousel.photo.image.url, :size=>"825x320", :alt => "Carousel image."
+    - else
+      Image carousel is empty, please refill it.
 
   %section#pie_content
     =raw @page.content_for(:pie)
