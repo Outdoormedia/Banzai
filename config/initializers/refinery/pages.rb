@@ -46,7 +46,8 @@ Refinery::Pages.configure do |config|
 
   # Reference:  Using Custom View or Layout Templates
   # config.use_layout_templates = false               commented out is default
-  config.layout_template_whitelist = ["application"]  # default = ["application"]
+  config.use_layout_templates = true
+  config.layout_template_whitelist = ["application", "kpb_layout"]  # default = ["application"]
 
   config.view_template_whitelist = ["home", "show"]   # default = ["home", "show"]
   # config.use_view_templates = false                 commented out is default
