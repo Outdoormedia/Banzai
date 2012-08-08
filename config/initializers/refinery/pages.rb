@@ -44,13 +44,12 @@ Refinery::Pages.configure do |config|
   # Set this to true to fully expand the page hierarchy in the admin
   # config.auto_expand_admin_tree = true
 
-  config.layout_template_whitelist = ["application"]
+  # Reference:  Using Custom View or Layout Templates
+  # config.use_layout_templates = false               commented out is default
+  config.layout_template_whitelist = ["application"]  # default = ["application"]
 
-  config.view_template_whitelist = ["home", "show"]
-
-  # config.use_layout_templates = false
-
-  # config.use_view_templates = false
+  config.view_template_whitelist = ["home", "show"]   # default = ["home", "show"]
+  # config.use_view_templates = false                 commented out is default
 
   # config.page_title = {:chain_page_title=>false, :ancestors=>{:separator=>" | ", :class=>"ancestors", :tag=>"span"}, :page_title=>{:class=>nil, :tag=>nil, :wrap_if_not_chained=>false}}
 

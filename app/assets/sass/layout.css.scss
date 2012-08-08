@@ -29,21 +29,24 @@ body{
        }
 
      #lower_page_content{
-       display: inline-block;
-       width: 1210px;
+       display: block;
+       width: 66%;
        height: 320px;
        #text{
          padding: 0 20px 0 20px;
          }
 
-       #welcome_content,
+       #welcome_content {
+         width: 33%;
+         }
        #news_content {
+         width: 33%;
          border: 1px solid $oma_grey;
          border-radius:5px;
          display: inherit;
          height: 320px;
          width: 33%;
-         float: left;
+         float: right;
          overflow: auto;
          }
        #studies_content {

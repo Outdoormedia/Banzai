@@ -1,8 +1,12 @@
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-calendars (1.0)
+      refinerycms-core (~> 2.0.5)
     refinerycms-carousels (1.0)
       refinerycms-core (~> 2.0.5)
+    refinerycms-snapshots (1.0)
+      refinerycms-core (~> 2.0.3)
 
 GEM
   remote: https://rubygems.org/
@@ -20,6 +24,8 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.1.2)
+    active_model_serializers (0.5.2)
+      activemodel (~> 3.0)
     activemodel (3.2.3)
       activesupport (= 3.2.3)
       builder (~> 3.0.0)
@@ -74,6 +80,10 @@ GEM
       warden (~> 1.1.1)
     dragonfly (0.9.12)
       rack
+    ember-rails (0.7.0)
+      active_model_serializers
+      execjs (>= 1.2)
+      railties (~> 3.1)
     erubis (2.7.0)
     eventmachine (0.12.10)
     excon (0.15.4)
@@ -259,6 +269,7 @@ DEPENDENCIES
   capistrano_colors
   coffee-rails (~> 3.2.1)
   debugger
+  ember-rails
   haml-rails
   heroku
   jquery-rails
@@ -267,9 +278,11 @@ DEPENDENCIES
   rails (= 3.2.3)
   randumb
   refinerycms (~> 2.0.5)
+  refinerycms-calendars!
   refinerycms-carousels!
   refinerycms-i18n (~> 2.0.0)
   refinerycms-page-images (~> 2.0.0)
+  refinerycms-snapshots!
   rvm-capistrano
   sass-rails (~> 3.2.3)
   sqlite3

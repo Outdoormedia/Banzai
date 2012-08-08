@@ -26,5 +26,5 @@ nb:
       'refinery/carousels/carousel':
         name: Name
         photo: Photo
-        burb: Burb
+        blurb: Blurb
         contributor: Contributor

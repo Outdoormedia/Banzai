@@ -1,0 +1,33 @@
+es:
+  refinery:
+    plugins:
+      calendars:
+        title: Calendars
+#        article: masculino/femenino
+    calendars:
+      admin:
+        calendars:
+          actions:
+            create_new: Crear nuevo calendar
+            reorder: Reordenar calendars
+            reorder_done: Reordenación de calendars completada
+          records:
+            title: Calendars
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay calendars todavía. Pulsa en "Crear nuevo Calendar" para crear tu primer calendar.
+          calendar:
+            view_live_html: Ver este calendar como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este calendar
+            delete: Borrar este calendar para siempre
+      calendars:
+        show:
+          other: Otros calendars
+  activerecord:
+    attributes:
+      'refinery/calendars/calendar':
+        title: Title
+        when: When
+        where: Where
+        sponsor: Sponsor
+        description: Description
+        url: Url

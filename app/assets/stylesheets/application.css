@@ -17,10 +17,21 @@
  *= require sidebar
  *= require navigation
  *= require pieChart
- ** require homes  DEPRECATED
  *
  * From Railscast 333 Extending Refinery CMS
  *= require formatting
  *= require theme
-
 */
+
+//= require jquery
+//= require jquery_ujs
+//= require ./vendor/ember
+//= require ./vendor/ember-rest
+//= require_tree ./lib
+//= require dashbd/dashbd
+//= require_tree ./dashbd/models
+//= require_tree ./dashbd/controllers
+//= require_tree ./dashbd/views
+//= require_tree ./dashbd/helpers
+//= require_tree ./dashbd/templates
+

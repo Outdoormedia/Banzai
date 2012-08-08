@@ -8,7 +8,7 @@ gem 'thin'
 gem "mysql2"
 gem "acts_as_tree"
 gem "haml-rails"
-
+gem "ember-rails"
 
 group :development, :test do
   #gem "rvm-capistrano"
@@ -49,6 +49,11 @@ gem 'capistrano'
 gem "rvm-capistrano"
 gem "capistrano_colors"
 
+group :production do
+  gem 'heroku'
+  gem 'pg'
+end
+
 # Refinery CMS
 gem 'refinerycms', '~> 2.0.5'
 
@@ -58,11 +63,6 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.5'
 #  gem 'refinerycms-search', '~> 2.0.5'
 gem 'refinerycms-page-images', '~> 2.0.0'
-#  gem 'refinerycms-snapshots', :path => 'vendor/extensions'
+gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-carousels', :path => 'vendor/extensions'
-
-
-group :production do
-  gem 'heroku'
-  gem 'pg'
-end
+gem 'refinerycms-calendars', :path => 'vendor/extensions'

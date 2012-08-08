@@ -4,7 +4,7 @@ class CreateCarouselsCarousels < ActiveRecord::Migration
     create_table :refinery_carousels do |t|
       t.string :name
       t.integer :photo_id
-      t.text :burb
+      t.text :blurb
       t.string :contributor
       t.integer :position
 

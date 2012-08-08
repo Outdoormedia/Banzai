@@ -3,9 +3,9 @@ module Refinery
     class Carousel < Refinery::Core::BaseModel
       self.table_name = 'refinery_carousels'
 
-      attr_accessible :name, :photo_id, :burb, :contributor, :position
+      attr_accessible :name, :photo_id, :blurb, :contributor, :position
 
-      acts_as_indexed :fields => [:name, :burb, :contributor]
+      acts_as_indexed :fields => [:name, :blurb, :contributor]
 
       validates :name, :presence => true, :uniqueness => true
 
