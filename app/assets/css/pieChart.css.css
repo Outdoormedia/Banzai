@@ -1,12 +1,3 @@
-#chart, #chartData {
-  background: #25b264 url("gradient.png") repeat-x 0 0; }
-
-#chart {
-  display: block;
-  float: center;
-  cursor: pointer;
-  width: 300px; }
-
 #chartData {
   display: none;
   width: 200px;

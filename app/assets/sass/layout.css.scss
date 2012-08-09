@@ -79,6 +79,7 @@ li {
 header#page_header { 
 //       background: $oma_white url("main_image.jpg") center left no-repeat;
        overflow: hidden;
+       display: inline;
 
        a,
        a:link,
@@ -105,6 +106,31 @@ header#page_header {
           }
       }
 
+header#kpb_header { 
+       border:1px black solid;
+       a,
+       a:link,
+       a:hover,
+       a:active,
+       a:visited {
+         color:$oma_grey;
+         text-align:center;
+         text-decoration:none;
+         text-transform:uppercase;
+         }
+
+       #pie_logo {
+           backround: red;
+           float: right;
+           font-size: 0.8em;
+           position: relative;
+           }
+
+       #logo {
+          position: relative;
+          top: 15px;
+          }
+      }
 
 footer#page_footer { 
   background-color: $oma_white;
@@ -171,9 +197,3 @@ section#content {
    width: 30%;
    } 
 
-section#XXsidebar {
-   margin-right: 3%;
-   margin-top: 7%;
-   width: 30%;
-   color: $oma_green;
-   }

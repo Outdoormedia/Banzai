@@ -57,7 +57,8 @@ li {
   font: "Times New Roman", "Times", serif; }
 
 header#page_header {
-  overflow: hidden; }
+  overflow: hidden;
+  display: inline; }
   header#page_header a,
   header#page_header a:link,
   header#page_header a:hover,
@@ -74,6 +75,26 @@ header#page_header {
     left: -65px;
     top: 0px; }
   header#page_header #logo {
+    position: relative;
+    top: 15px; }
+
+header#kpb_header {
+  border: 1px black solid; }
+  header#kpb_header a,
+  header#kpb_header a:link,
+  header#kpb_header a:hover,
+  header#kpb_header a:active,
+  header#kpb_header a:visited {
+    color: #bbbcbc;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; }
+  header#kpb_header #pie_logo {
+    backround: red;
+    float: right;
+    font-size: 0.8em;
+    position: relative; }
+  header#kpb_header #logo {
     position: relative;
     top: 15px; }
 
@@ -121,9 +142,3 @@ section#content {
   float: left;
   margin: 1% 5%;
   width: 30%; }
-
-section#XXsidebar {
-  margin-right: 3%;
-  margin-top: 7%;
-  width: 30%;
-  color: #25b264; }

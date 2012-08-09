@@ -1,0 +1,18 @@
+%header#page_header( role = "banner")
+
+  %section
+    %nav#left_logo
+
+      = link_to( image_tag("OMA-MOVE_logo.png", size: '200x60', :alt=>"Outdoor Media Association"), 'http://www.oma.org.au')
+
+    %nav#right_logo
+      = raw @page.content_for(:pie)
+      - if ["home", "buy", "know", "plan" ].include?(@page.slug)
+        %canvas#chart( height = '100px')
+          = render 'shared/pieChart'
+
+
+      
+= yield(:main_navigation)
+
+
