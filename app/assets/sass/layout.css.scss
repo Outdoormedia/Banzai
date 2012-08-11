@@ -4,6 +4,7 @@
 
 body{
      font_family: $oma_body_font;
+     margin-top: 15px;
      margin-left: 5%;
      margin-right: 5%;
 
@@ -13,10 +14,10 @@ body{
             border-radius:5px;
             float: left;
             font-size: 0.8em;
+            height: 320px;
+            overflow: hidden;
             position: relative;
             top: 0px;
-            overflow: hidden;
-            height: 320px;
             width: 66%;
            }
        #pie_content {
@@ -29,24 +30,18 @@ body{
        }
 
      #lower_page_content{
-       display: block;
-       width: 66%;
-       height: 320px;
-       #text{
-         padding: 0 20px 0 20px;
-         }
-
        #welcome_content {
+         float: left;
+         height: 320px;
+         overflow: auto;
          width: 33%;
          }
        #news_content {
-         width: 33%;
          border: 1px solid $oma_grey;
          border-radius:5px;
          display: inherit;
          height: 320px;
          width: 33%;
-         float: right;
          overflow: auto;
          }
        #studies_content {
@@ -55,7 +50,6 @@ body{
          display: inherit;
          height: 320px;
          width: 33%;
-         float: right;
          }
        }
      }
@@ -96,7 +90,7 @@ header#page_header {
            float: right;
            font-size: 0.8em;
            position: relative;
-           left: -65px;
+           left: -45px;
            top: 0px;
            }
 
@@ -106,8 +100,12 @@ header#page_header {
           }
       }
 
+
 header#kpb_header { 
        border:1px black solid;
+       overflow: hidden;
+       display: inline;
+
        a,
        a:link,
        a:hover,
@@ -119,16 +117,17 @@ header#kpb_header {
          text-transform:uppercase;
          }
 
-       #pie_logo {
-           backround: red;
+       nav#pie_logo {
+          // background: red;
            float: right;
-           font-size: 0.8em;
-           position: relative;
            }
+       #pie_content {
+          //  border: 1px solid $oma_lightest_grey;
+            width: 12%;
+            }
 
        #logo {
           position: relative;
-          top: 15px;
           }
       }
 
