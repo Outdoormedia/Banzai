@@ -3,11 +3,12 @@
   #logo 
     = link_to( image_tag("OMA-MOVE_logo.png", size: '200x60', :alt=>"Outdoor Media Association"), 'http://www.oma.org.au')
 
-    %nav#utility
-      You are logged in as 
-      = link_to "[Your Account]", "current_user_path"
-      = link_to "[Logout]", "logout_path"  
-      = link_to 'Search', '/'
+    - if current_refinery_user.present?
+      %nav#utility
+        You are logged in as 
+        = link_to "[#{current_refinery_user.username}]", '#'
+        = link_to "[Logout]", '/refinery/logout'
+        = link_to 'Search', '/'
 
 
     = yield(:main_navigation)
