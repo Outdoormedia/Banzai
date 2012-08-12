@@ -5,16 +5,15 @@
 %section#upper_page_content
   %section#carousel_content
     .carousel
-    - unless @carousel.blank?
-      = image_tag @carousel.photo.image.url, :size=>"825x320", :alt => "Carousel image."
-    - else
-      Image carousel is empty, please refill it.
+      - if @carousel.present?
+        = image_tag @carousel.photo.image.url, :size => "825x320", :alt => "Carousel image"
+      - else
+        = image_tag 'oma_placeholder.png', :size => "825x320", :alt => "Carousel image"
 
   %section#pie_content
-    =raw @page.content_for(:pie)
-    - if ["home", "buy", "know", "plan" ].include?(@page.slug)
-      %canvas#chart( height = '300px')
-        = render 'shared/pieChart'
+    = raw @page.content_for(:pie)
+    -# if ["home", "buy", "know", "plan" ].include?(@page.slug)
+    %canvas#chart{:height => '300px'}= render '/shared/pieChart'
   
 -# LOWER PAGE CONTENT
 
