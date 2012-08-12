@@ -2,12 +2,6 @@ Refinery::Pages.configure do |config|
   # Configure specific page templates
   # config.types.register :home do |home|
   #   home.parts = %w[intro body]
-  config.types.register :home do |home|
-    home.parts = %w[body, carousel, pie, welcome, news, studies]
-  end
-  config.types.register :buy do |buy|
-    buy.parts = %w[body login]
-  end
   # end
 
   # Configure global page default parts
@@ -45,9 +39,11 @@ Refinery::Pages.configure do |config|
   # config.auto_expand_admin_tree = true
 
   # Reference:  Using Custom View or Layout Templates
-  # config.use_layout_templates = false               commented out is default
+  # config.use_layout_templates = false 
   config.use_layout_templates = true
-  config.layout_template_whitelist = ["application", "know-plan-buy"]  # default = ["application"]
+  
+  # config.layout_template_whitelist = ["application"]
+  config.layout_template_whitelist = ["application", "know-plan-buy"]  
 
   # config.view_template_whitelist = ["home", "show"]   # default = ["home", "show"]
   # config.use_view_templates = true                    # commented out is default

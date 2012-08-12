@@ -6,13 +6,10 @@ Banzai::Application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
   mount Refinery::Core::Engine, :at => '/'
-        
-    resources :homes
 
+  resources :homes
   #  match 'homes/:id/about_move' => 'homes#about_move', :as => :about_move
-
-
-    root :to => 'pages#/home'   
-    match "home" => 'pages#/home'
+  match "home" => 'pages#/home'
+  root :to => 'pages#/home'   
 
 end

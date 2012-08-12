@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-%html
-  %head
-    %meta( charset="utf-8" )
-    %title OMA Portal Proof of Concept
+!!! 5
+= render  '/refinery/html_tag'
+- site_bar = render('/refinery/site_bar', :head => true)
+= render '/refinery/head'
 
-    = stylesheet_link_tag    "application"
-    = javascript_include_tag "application"
-    = yield :stylesheets
-    = csrf_meta_tag
-    = yield(:head)
-
-  %body
-
-    = render 'shared/header'
-    #div
-      = yield
-    = render 'shared/footer'
+%body
+  = render 'shared/header'
+  = yield
+  = render 'shared/footer'
