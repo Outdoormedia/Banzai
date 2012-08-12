@@ -13,12 +13,11 @@
  *
  *= require_self
  *= require normalize
-
  *= require navigation
- *= require pieChart
  *= require layout
  *
  * From Railscast 333 Extending Refinery CMS
  *= require formatting
  *= require theme
+ *= require pieChart
 */

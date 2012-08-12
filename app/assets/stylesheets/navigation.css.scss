@@ -19,7 +19,7 @@ nav#main_nav {
       color: $oma_grey;
       text-decoration: none;
       color:$oma_white;
-      }
+    }
 
     &.active {
       background: $oma_grey;
@@ -29,7 +29,7 @@ nav#main_nav {
       a:visited {
         color: $oma_white;
         font-weight: bold;
-        }
-      }	
-    }
+      }
+    }	
   }
+}
