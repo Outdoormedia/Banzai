@@ -11,11 +11,6 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 
-
-//  Added modernizr per 'The Rails View', must be first one.
-//  require modernizr-1.7.custom   where does this come from if it still does?  using 2.5.3 instead
-
-//= require modernizr-2.5.3
 //= require jquery
 //= require jquery_ujs
 //= require pieChart
