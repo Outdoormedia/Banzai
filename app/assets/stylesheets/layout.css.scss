@@ -54,17 +54,23 @@ body {
   }
 }
 
-body, h1 h2 {
-  font-family: $oma_heading_font;
-  color: $oma_green;
+body {
+  h1, h2 {
+    font-family: $oma_heading_font;
+    color: $oma_green;
+  }
 }
-body, h3 {
-  color: $oma_accent_green;
-  font: $oma_accent_font;
+body {
+  h3 {
+    color: $oma_accent_green;
+    font: $oma_accent_font;
+  }
 }
-body, ul {
-  padding: 0;
-  text-align: center;
+body {
+  ul {
+    padding: 0;
+    text-align: center;
+  }
 }
 
 // used to test style markup for FAQs
