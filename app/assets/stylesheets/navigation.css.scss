@@ -2,9 +2,9 @@
 @import "partials/fonts";
 
 nav#main_nav { 
-  margin: 0 0 0 0;
+  margin: 0;
   ul {
-    font: $oma_top_bar_menu_font;
+    font-family: $oma_top_bar_menu_font;
     padding: 0px 0px;
     background:  $oma_top_bar_menu_color;
   }

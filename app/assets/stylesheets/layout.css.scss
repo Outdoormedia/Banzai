@@ -3,53 +3,37 @@
 @import "partials/oma_mixins";
 
 body {
-  //font-family: $oma_body_font;
-  margin-top: 15px;
-  margin-left: 5%;
-  margin-right: 5%;
+  // font-family: $oma_body_font;
+  // margin-top: 15px;
+  // margin-left: 5%;
+  // margin-right: 5%;
+  border-bottom: 5px solid $oma_light_black;
 
   #upper_page_content {
     #carousel_content {
-      border: 1px solid $oma_lightest_grey;
-      border-radius:5px;
-      float: left;
+      // border: 1px solid $oma_lightest_grey;
+      // border-radius:5px;
       font-size: 0.8em;
-      height: 320px;
-      overflow: hidden;
-      position: relative;
-      top: 0px;
-      width: 66%;
+      // height: 320px;
+      // overflow: hidden;
     }
     #pie_content {
-      float: right;
-      border: 1px solid $oma_lightest_grey;
-      border-radius:5px;
-      width: 33%;
-      height: 320px;
+      // border: 1px solid $oma_lightest_grey;
+      // border-radius:5px;
+      // height: 320px;
     }
   }
 
   #lower_page_content {
     #welcome_content {
-      float: left;
-      height: 320px;
+      // height: 320px;
       overflow: auto;
-      width: 33%;
     }
     #news_content {
-      border: 1px solid $oma_grey;
-      border-radius:5px;
-      display: inherit;
-      height: 320px;
-      width: 33%;
       overflow: auto;
     }
     #studies_content {
-      border: 1px solid $oma_grey;
-      border-radius:5px;
-      display: inherit;
-      height: 320px;
-      width: 33%;
+      overflow: auto;
     }
   }
 }
@@ -131,8 +115,9 @@ header#kpb_header {
 
 footer#page_footer { 
   background-color: $oma_white;
-  border: 1px solid $oma_light_green;
-  border-bottom: 5px solid $oma_light_black;
+  border-top: 1px solid $oma_light_green;
+  margin-top: 15px;
+  padding-top: 15px;
   color: $oma_green;
   font-size: 0.7em;
   overflow: hidden;
@@ -178,19 +163,3 @@ footer#page_footer {
 #tagline {
   margin-left: 20px;
 }
-
-container { 
-  overflow: hidden; 
-  padding: 0 20px 0 0;
-  background: $oma_light_grey;
-}
-
-// p. 38 Rails Views
-// sections for content, sidebar
-//
-section#content { 
-  float: left;
-  margin: 1% 5%;
-  width: 30%;
-} 
-

@@ -1,29 +1,26 @@
-%br
-%footer#page_footer
+.container
+  %footer.sixteen.columns#page_footer
+    %nav#left_logo
+      = link_to( image_tag("OMA_logo.png", :size=>'38x84', :alt => "OMA"),'http://www.oma.org.au')
+    %nav#right_logo
+      = link_to( image_tag("OMA_logo.png", :size=>'38x84', :alt => "OMA"),'http://www.oma.org.au')
 
-  %nav#left_logo
-    = link_to( image_tag("OMA_logo.png", :size=>'38x84', :alt => "OMA"),'http://www.oma.org.au')
-  %nav#right_logo
-    = link_to( image_tag("OMA_logo.png", :size=>'38x84', :alt => "OMA"),'http://www.oma.org.au')
-
-  %ul
-    %li= link_to 'Home', ""
-    %li= link_to 'About OMA', 'http://www.oma.org.au' 
-    %li= link_to 'About Move', "About-Move"
-    %li= link_to 'How to Use Move', "How-To-Use-Move"
-    %li= link_to 'Contact OMA', "Contact-OMA"
-    %li= link_to 'FAQs', "FAQs"
-    %li= link_to 'News', "News"
- 
-  %ul
-    %li= link_to 'Privacy', "Privacy"
-    %li= link_to 'Legal', "legal-policy"
- 
-  %ul
-    %li= "© 2007-12 MOVE Pty Ltd"
-  %ul
-    %li= "Outdoor Marketing Association"
-  %ul
-    %li= "Portions of this website were created using the free web resources available at www.elated.com and are copyright Elated Communications Ltd 1996-2012"
-
-"
+    %ul
+      %li= link_to 'Home', ""
+      %li= link_to 'About OMA', 'http://www.oma.org.au' 
+      %li= link_to 'About Move', "About-Move"
+      %li= link_to 'How to Use Move', "How-To-Use-Move"
+      %li= link_to 'Contact OMA', "Contact-OMA"
+      %li= link_to 'FAQs', "FAQs"
+      %li= link_to 'News', "News"
+   
+    %ul
+      %li= link_to 'Privacy', "Privacy"
+      %li= link_to 'Legal', "legal-policy"
+   
+    %ul
+      %li= "© 2007-12 MOVE Pty Ltd"
+    %ul
+      %li= "Outdoor Marketing Association"
+    %ul
+      %li= "Portions of this website were created using the free web resources available at www.elated.com and are copyright Elated Communications Ltd 1996-2012"

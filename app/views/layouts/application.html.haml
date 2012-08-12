@@ -4,8 +4,10 @@
 = render '/refinery/head'
 
 %body
-  = render 'shared/header'
-  = yield
-  = render 'shared/footer'
+  = render '/shared/header'
+  .container
+    .sixteen.columns
+      = yield
+  = render '/shared/footer'
 
   = render '/refinery/javascripts'

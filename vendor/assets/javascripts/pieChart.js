@@ -1,11 +1,8 @@
 // Run the code when the DOM is ready
 // Tutorial Step 4.
 
-$(function() {
-  console.log("Here.");
-  pieChart();
-});
- 
+$(pieChart);
+
 function pieChart() {
 
   // Config settings
