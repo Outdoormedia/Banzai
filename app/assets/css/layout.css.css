@@ -38,14 +38,17 @@ body {
     height: 320px;
     width: 33%; }
 
-h1 h2 {
+body, h1 h2 {
   font-family: "Georgia", "Arial", "Helvetica", sans-serif;
-  font-size: 24px;
   color: #25b264; }
 
-h3 {
+body, h3 {
   color: #0f4829;
   font: "Georgia", "Times New Roman"; }
+
+body, ul {
+  padding: 0;
+  text-align: center; }
 
 li {
   color: #25b264;
@@ -53,7 +56,8 @@ li {
 
 header#page_header {
   overflow: hidden;
-  display: inline; }
+  display: inline;
+  border: 1px solid black; }
   header#page_header a,
   header#page_header a:link,
   header#page_header a:hover,

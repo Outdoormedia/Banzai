@@ -54,15 +54,18 @@ body{
        }
      }
 
-h1 h2 {
+body, h1 h2 {
        font-family: $oma_heading_font;
-       font-size: $oma_font_size;
        color: $oma_green;
        }
-h3 {
+body, h3 {
    color: $oma_accent_green;
    font: $oma_accent_font;
 }
+body, ul {
+   padding: 0;
+   text-align: center;
+   }
 
 // used to test style markup for FAQs
 li {
@@ -74,6 +77,7 @@ header#page_header {
 //       background: $oma_white url("main_image.jpg") center left no-repeat;
        overflow: hidden;
        display: inline;
+       border: 1px solid black;
 
        a,
        a:link,
