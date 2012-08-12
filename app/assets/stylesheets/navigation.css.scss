@@ -33,3 +33,36 @@ nav#main_nav {
     }	
   }
 }
+
+nav#know {
+  li {
+    a {
+      text-decoration: none;
+      color: $oma_accent_green;
+    }
+
+    &.current > a {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+
+  /* Main-level nav */
+  > ul li {
+    font-size: 120%;
+
+    /* Second-level nav */
+    > ul li {
+      padding-left: 20px;
+      font-size: 100%;
+
+      /* Third-level nav */
+      > ul li {
+        
+      }
+
+    }
+
+  }
+
+}
