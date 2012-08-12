@@ -19,4 +19,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require pieChart
+//= require homes
 

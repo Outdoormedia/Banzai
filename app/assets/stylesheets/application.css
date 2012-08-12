@@ -13,6 +13,7 @@
  *
  *= require_self
  *= require normalize
+
  *= require application
  *= require navigation
  *= require pieChart
