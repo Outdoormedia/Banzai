@@ -1,0 +1,7 @@
+%ul
+  - @collection.each_with_index do |page, index|
+    %li{:class => css_for_item(index, page.children.present?, page, @page).join(" ")}
+      = link_to page.title, refinery.url_for(page.url)
+      - if page.children.present?
+        = render_cell :menu, :menu_branch, :collection => page.children, :active_page => @page
+

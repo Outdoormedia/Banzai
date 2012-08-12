@@ -1,0 +1,3 @@
+%nav#know
+  - if @roots.present?
+    = render_cell :menu, :menu_branch, :collection => @roots, :active_page => @page

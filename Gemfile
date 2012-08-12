@@ -34,6 +34,7 @@ end
 
 gem 'jquery-rails'
 gem 'randumb'
+gem 'cells' # Used for custom menu code
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
