@@ -93,11 +93,6 @@ li {
 }
 
 header#page_header { 
-  // background: $oma_white url("main_image.jpg") center left no-repeat;
-  overflow: hidden;
-  display: inline;
-  border: 1px solid black;
-
   @include oma-links;
 
   nav#utility {
