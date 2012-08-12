@@ -94,6 +94,7 @@ li {
 
 header#page_header { 
   @include oma-links;
+  min-height: 100px;
 
   nav#utility {
     float: right;
@@ -111,10 +112,8 @@ header#page_header {
 
 
 header#kpb_header { 
-  overflow: hidden;
-  display: inline;
-
   @include oma-links;
+  min-height: 100px;
 
   nav#pie_logo {
     // background: red;
@@ -126,7 +125,7 @@ header#kpb_header {
   }
 
   #logo {
-    position: relative;
+    margin-top: 40px;
   }
 }
 

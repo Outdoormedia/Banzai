@@ -51,7 +51,6 @@ $(document).ready ->
     $('#oma_welcome_message').text('Buy using MOVE AMS,  logon required.')
 
   $('#know').bind 'mouseover', ->
-    alert("OK then")
     $('#oma_welcome_message').text('Learn using MOVE AMS, logon required. Not implemented this release.')
 
   $('#contact').bind 'mouseover', ->
