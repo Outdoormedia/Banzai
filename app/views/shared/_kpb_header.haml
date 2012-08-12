@@ -1,9 +1,9 @@
-%header#page_header( role = "banner")
+%header#kpb_header( role = "banner")
 
   #logo 
     = link_to( image_tag("OMA-MOVE_logo.png", size: '200x60', :alt=>"Outdoor Media Association"), 'http://www.oma.org.au')
 
-    %nav#utility
+    %nav#pie_logo
       %section#pie_content
         =raw @page.content_for(:pie)
         - if ["home", "buy", "know", "plan" ].include?(@page.slug)

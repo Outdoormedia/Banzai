@@ -47,10 +47,10 @@ Refinery::Pages.configure do |config|
   # Reference:  Using Custom View or Layout Templates
   # config.use_layout_templates = false               commented out is default
   config.use_layout_templates = true
-  config.layout_template_whitelist = ["application", "kpb_layout"]  # default = ["application"]
+  config.layout_template_whitelist = ["application", "know-plan-buy"]  # default = ["application"]
 
-  config.view_template_whitelist = ["home", "show"]   # default = ["home", "show"]
-  # config.use_view_templates = false                 commented out is default
+  # config.view_template_whitelist = ["home", "show"]   # default = ["home", "show"]
+  # config.use_view_templates = true                    # commented out is default
 
   # config.page_title = {:chain_page_title=>false, :ancestors=>{:separator=>" | ", :class=>"ancestors", :tag=>"span"}, :page_title=>{:class=>nil, :tag=>nil, :wrap_if_not_chained=>false}}
 

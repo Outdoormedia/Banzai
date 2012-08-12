@@ -1,6 +1,4 @@
 - currently_at @page.slug
+- @page.title = ''
 
-%section#body_content
-  /=raw @page.content_for(:body)
-
-  = render :partial => "/refinery/content_page"
+= render :partial => "/refinery/content_page"

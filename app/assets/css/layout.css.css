@@ -1,5 +1,6 @@
 body {
   font_family: "Times New Roman", "Times", serif;
+  margin-top: 15px;
   margin-left: 5%;
   margin-right: 5%; }
   body #upper_page_content #carousel_content {
@@ -7,10 +8,10 @@ body {
     border-radius: 5px;
     float: left;
     font-size: 0.8em;
+    height: 320px;
+    overflow: hidden;
     position: relative;
     top: 0px;
-    overflow: hidden;
-    height: 320px;
     width: 66%; }
   body #upper_page_content #pie_content {
     float: right;
@@ -18,30 +19,24 @@ body {
     border-radius: 5px;
     width: 33%;
     height: 320px; }
-  body #lower_page_content {
-    display: block;
-    width: 66%;
-    height: 320px; }
-    body #lower_page_content #text {
-      padding: 0 20px 0 20px; }
-    body #lower_page_content #welcome_content {
-      width: 33%; }
-    body #lower_page_content #news_content {
-      width: 33%;
-      border: 1px solid #bbbcbc;
-      border-radius: 5px;
-      display: inherit;
-      height: 320px;
-      width: 33%;
-      float: right;
-      overflow: auto; }
-    body #lower_page_content #studies_content {
-      border: 1px solid #bbbcbc;
-      border-radius: 5px;
-      display: inherit;
-      height: 320px;
-      width: 33%;
-      float: right; }
+  body #lower_page_content #welcome_content {
+    float: left;
+    height: 320px;
+    overflow: auto;
+    width: 33%; }
+  body #lower_page_content #news_content {
+    border: 1px solid #bbbcbc;
+    border-radius: 5px;
+    display: inherit;
+    height: 320px;
+    width: 33%;
+    overflow: auto; }
+  body #lower_page_content #studies_content {
+    border: 1px solid #bbbcbc;
+    border-radius: 5px;
+    display: inherit;
+    height: 320px;
+    width: 33%; }
 
 h1 h2 {
   font-family: "Georgia", "Arial", "Helvetica", sans-serif;
@@ -72,14 +67,16 @@ header#page_header {
     float: right;
     font-size: 0.8em;
     position: relative;
-    left: -65px;
+    left: -45px;
     top: 0px; }
   header#page_header #logo {
     position: relative;
     top: 15px; }
 
 header#kpb_header {
-  border: 1px black solid; }
+  border: 1px black solid;
+  overflow: hidden;
+  display: inline; }
   header#kpb_header a,
   header#kpb_header a:link,
   header#kpb_header a:hover,
@@ -89,14 +86,12 @@ header#kpb_header {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase; }
-  header#kpb_header #pie_logo {
-    backround: red;
-    float: right;
-    font-size: 0.8em;
-    position: relative; }
+  header#kpb_header nav#pie_logo {
+    float: right; }
+  header#kpb_header #pie_content {
+    width: 12%; }
   header#kpb_header #logo {
-    position: relative;
-    top: 15px; }
+    position: relative; }
 
 footer#page_footer {
   background-color: white;

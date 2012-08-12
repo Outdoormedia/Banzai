@@ -31,7 +31,10 @@ Banzai::Application.configure do
 
   # Do not compress assets
   config.assets.compress = false
-
+  # Do not serve compressed assets
+  # http://stackoverflow.com/questions/8158987/rails-3-1-asset-pipeline-css-caching-in-development
+  config.serve_static_assets = false
+  
   # Expands the lines which load the assets
   config.assets.debug = true
   
