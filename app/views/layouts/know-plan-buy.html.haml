@@ -11,7 +11,7 @@
     .row
       .four.columns.alpha
         = render '/know/sidebar'
-      .twelve.columns.omega
+      .twelve.columns.omega{:'data-pjax-container' => true}
         = yield
 
   = render 'shared/footer'

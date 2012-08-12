@@ -8,6 +8,7 @@ gem 'thin'
 gem "mysql2"
 gem "acts_as_tree"
 gem "haml-rails"
+gem 'rack-pjax'
 gem "ember-rails"
 
 group :development, :test do
