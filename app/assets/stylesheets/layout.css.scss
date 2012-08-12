@@ -29,7 +29,7 @@ body{
             }
        }
 
-     #lower_page_content{
+     #lower_page_content {
        #welcome_content {
          float: left;
          height: 320px;
@@ -73,22 +73,26 @@ li {
    font: $oma_body_font;
 }
 
+@mixin oma-links {
+  a,
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    color:$oma_grey;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+  }
+}
+
 header#page_header { 
-//       background: $oma_white url("main_image.jpg") center left no-repeat;
+       // background: $oma_white url("main_image.jpg") center left no-repeat;
        overflow: hidden;
        display: inline;
        border: 1px solid black;
 
-       a,
-       a:link,
-       a:hover,
-       a:active,
-       a:visited {
-         color:$oma_grey;
-         text-align:center;
-         text-decoration:none;
-         text-transform:uppercase;
-         }
+        @include oma-links;
 
        nav#utility {
            float: right;
@@ -110,16 +114,7 @@ header#kpb_header {
        overflow: hidden;
        display: inline;
 
-       a,
-       a:link,
-       a:hover,
-       a:active,
-       a:visited {
-         color:$oma_grey;
-         text-align:center;
-         text-decoration:none;
-         text-transform:uppercase;
-         }
+        @include oma-links;
 
        nav#pie_logo {
           // background: red;
