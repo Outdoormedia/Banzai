@@ -43,7 +43,7 @@ Refinery::Pages.configure do |config|
   config.use_layout_templates = true
   
   # config.layout_template_whitelist = ["application"]
-  config.layout_template_whitelist = ["application", "know-plan-buy"]  
+  config.layout_template_whitelist = ["application", "know-plan-buy", "plan-template"]  
 
   # config.view_template_whitelist = ["home", "show"]   # default = ["home", "show"]
   # config.use_view_templates = true                    # commented out is default
