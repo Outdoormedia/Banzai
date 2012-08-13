@@ -127,18 +127,21 @@ function pieChart() {
    */
 
   function handleChartClick ( clickEvent ) {
-
     // Get the mouse cursor position at the time of the click, relative to the canvas
+    console.log("Click: " + clickEvent.pageX + " / " + clickEvent.pageY);
     var mouseX = clickEvent.pageX - this.offsetLeft;
     var mouseY = clickEvent.pageY - this.offsetTop;
-
+    console.log("Mouse position: " + mouseX + " / " + mouseY);
+    console.log("Offset: " + this.offsetLeft + " / " + this.offsetTop);
     // Was the click inside the pie chart?
     var xFromCentre = mouseX - centreX;
     var yFromCentre = mouseY - centreY;
+    console.log("from center: " + xFromCentre + " / " + yFromCentre);
     var distanceFromCentre = Math.sqrt( Math.pow( Math.abs( xFromCentre ), 2 ) + Math.pow( Math.abs( yFromCentre ), 2 ) );
-
+    console.log("Distance from center: " + distanceFromCentre + "(" + chartRadius + ")");
+    console.log("-------");
     if ( distanceFromCentre <= chartRadius ) {
-
+      console.log("Click was inside chart.");
       // Yes, the click was inside the chart.
       // Find the slice that was clicked by comparing angles relative to the chart centre.
 

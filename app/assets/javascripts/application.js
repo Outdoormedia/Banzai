@@ -13,12 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.pjax
-// require pieChart
 //= require homes
+//= require pieChart
 //= require_self
 
 $(function() {
-  $link = $('nav#know a')
+  $link = $('nav#know a');
   $link.pjax('[data-pjax-container]');
   $link.click(function(e) {
     $(this).parent().addClass('current').siblings().removeClass('current');
