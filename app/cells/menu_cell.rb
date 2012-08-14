@@ -2,6 +2,7 @@ class MenuCell < Cell::Rails
   helper MenuHelper
 
   # method is now misnamed and closely coupled to template names... Rob?  --JWM
+  
   def know(args)
     case args[:page].slug
     when 'plan'
