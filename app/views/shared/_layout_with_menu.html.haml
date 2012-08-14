@@ -1,0 +1,20 @@
+!!! 5
+= render  '/refinery/html_tag'
+- site_bar = render('/refinery/site_bar', :head => true)
+= render '/refinery/head'
+
+%body
+  = render '/shared/header', :hide_pie_header => local_assigns[:hide_pie_header].present?
+
+  .container
+    - if local_assigns[:menu_name].present?
+      .row
+        .four.columns.alpha
+          = render '/shared/side_menu', :menu_name => local_assigns[:menu_name]
+        .twelve.columns.omega{:'data-pjax-container' => true}
+          = yield
+    - else
+      .sixteen.columns= yield
+
+  = render 'shared/footer'
+  = render '/refinery/javascripts'

@@ -18,7 +18,7 @@
 //= require_self
 
 $(function() {
-  $link = $('nav#know a');
+  $link = $('nav#side_menu a');
   $link.pjax('[data-pjax-container]');
   $link.click(function(e) {
     $(this).parent().addClass('current').siblings().removeClass('current');

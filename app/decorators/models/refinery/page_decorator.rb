@@ -1,5 +1,5 @@
 ::Refinery::Page.class_eval do
-  MENU_LOCATIONS = %w(know plan)
+  MENU_LOCATIONS = %w(know plan buy)
 
   validates :menu_location, :inclusion => {:in => MENU_LOCATIONS}, :allow_blank => true, :allow_nil => true
   attr_accessible :menu_location

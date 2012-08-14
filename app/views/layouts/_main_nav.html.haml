@@ -10,30 +10,30 @@
         %ul
           =nav_tab 'Home',            root_url,                            content: current_tab
           =nav_tab 'About OMA',       'http://oma.org.au',                 content: current_tab
-          =nav_tab 'About Move',      'about-move',                        content: current_tab
-          =nav_tab 'FAQ',             'faqs',                              content: current_tab
-          =nav_tab 'Contact Us',      'contact us',                        content: current_tab
+          =nav_tab 'About Move',      '/about-move',                        content: current_tab
+          =nav_tab 'FAQ',             '/faqs',                              content: current_tab
+          =nav_tab 'Contact Us',      '/contact us',                        content: current_tab
           =nav_tab ''                                                                         
           =nav_tab ''                                                                         
           =nav_tab ''                                                                         
           =nav_tab ''                                                                         
           =nav_tab ''                                                                         
           =nav_tab ''                                                                         
-          =nav_tab 'Know',            'know',                              content: current_tab
-          =nav_tab 'Plan',            'plan',                              content: current_tab
-          =nav_tab 'Buy',             'buy',                               content: current_tab
+          =nav_tab 'Know',            '/know',                              content: current_tab
+          =nav_tab 'Plan',            '/plan',                              content: current_tab
+          =nav_tab 'Buy',             '/buy',                               content: current_tab
   - else      
     - content_for :main_navigation do
       %nav#main_nav( role="navigation" )
         %ul
           =nav_tab 'Home',            root_url,                            content: current_tab
-          =nav_tab 'About OMA',       'http://oma.org.au',                 content: current_tab
-          =nav_tab 'About Move',      'about-move',                        content: current_tab
-          =nav_tab 'FAQ',             'faqs',                              content: current_tab
-          =nav_tab 'Contact Us',      'contact-us',                        content: current_tab
+          =nav_tab 'About OMA',       '/http://oma.org.au',                 content: current_tab
+          =nav_tab 'About Move',      '/about-move',                        content: current_tab
+          =nav_tab 'FAQ',             '/faqs',                              content: current_tab
+          =nav_tab 'Contact Us',      '/contact-us',                        content: current_tab
           =nav_tab ''                                                                         
           =nav_tab ''                                                                         
-          =nav_tab 'Know',            'know',                              content: current_tab
-          =nav_tab 'Plan',            'plan',                              content: current_tab
-          =nav_tab 'Buy',             'buy',                               content: current_tab
+          =nav_tab 'Know',            '/know',                              content: current_tab
+          =nav_tab 'Plan',            '/plan',                              content: current_tab
+          =nav_tab 'Buy',             '/buy',                               content: current_tab
 

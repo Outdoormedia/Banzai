@@ -1,13 +1,1 @@
-!!! 5
-= render  '/refinery/html_tag'
-- site_bar = render('/refinery/site_bar', :head => true)
-= render '/refinery/head'
-
-%body
-  = render '/shared/header'
-  .container
-    .sixteen.columns
-      = yield
-  = render '/shared/footer'
-
-  = render '/refinery/javascripts'
+= render '/shared/layout_with_menu', :hide_pie_header => true

@@ -18,7 +18,7 @@
 
           = link_to 'Search', '/'
 
-        - if local_assigns[:show_pie_header]
+        - unless local_assigns[:hide_pie_header]
           %section#pie_content
             = raw @page.content_for(:pie)
             #container
