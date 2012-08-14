@@ -21,7 +21,8 @@ $(function() {
   $link = $('nav#side_menu a');
   $link.pjax('[data-pjax-container]');
   $link.click(function(e) {
-    $(this).parent().addClass('current').siblings().removeClass('current');
+    $('nav#side_menu li.current').removeClass('current');
+    $(this).parent().addClass('current');
   });
    
 });
