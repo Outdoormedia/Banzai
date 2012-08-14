@@ -18,6 +18,8 @@
 //= require_self
 
 $(function() {
+  $.pjax.defaults.scrollTo = false; // Disable scrolling-to-top on each link click
+
   $link = $('nav#side_menu a');
   $link.pjax('[data-pjax-container]');
   $link.click(function(e) {
