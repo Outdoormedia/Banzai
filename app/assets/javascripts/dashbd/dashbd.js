@@ -1,1 +1,1 @@
-App = Ember.Application.create();
+//App = Ember.Application.create();

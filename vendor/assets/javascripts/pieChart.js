@@ -140,6 +140,11 @@ function pieChart() {
     var distanceFromCentre = Math.sqrt( Math.pow( Math.abs( xFromCentre ), 2 ) + Math.pow( Math.abs( yFromCentre ), 2 ) );
     console.log("Distance from center: " + distanceFromCentre + "(" + chartRadius + ")");
     console.log("-------");
+
+    // Following line to force click coordinates inside radius WHY ARE THEY WRONG? --JWM
+    // Incidentally the small pie now also responds (incorrectly though)
+    distanceFromCentre = chartRadius
+
     if ( distanceFromCentre <= chartRadius ) {
       console.log("Click was inside chart.");
       // Yes, the click was inside the chart.

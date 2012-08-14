@@ -14,7 +14,7 @@
       .six.columns.omega
         %section#pie_content
           = raw @page.content_for(:pie)
-          -# if ["home", "buy", "know", "plan" ].include?(@page.slug)
+
           %canvas#chart{:height => '300px'}= render '/shared/pieChart'
 
     #lower_page_content.row
