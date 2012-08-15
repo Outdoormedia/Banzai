@@ -57,7 +57,7 @@ group :production do
 end
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.0.5'
+gem 'refinerycms', :git => "git://github.com/resolve/refinerycms.git", :branch => "2-0-stable"
 
 # Specify additional Refinery CMS Extensions here (all optional):
 gem 'refinerycms-i18n', '~> 2.0.0'
