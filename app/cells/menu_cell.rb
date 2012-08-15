@@ -1,7 +1,5 @@
 class MenuCell < Cell::Rails
   helper MenuHelper
-
-  # method is now misnamed and closely coupled to template names... Rob?  --JWM
   
   def side_menu(args)
     @roots = Refinery::Page.send("in_#{args[:menu_name]}_menu").order('lft ASC')
@@ -18,5 +16,28 @@ class MenuCell < Cell::Rails
     @page = args[:active_page]
 
     render
+  end
+
+  def main(args)
+    @roots = args[:menu]
+    render
+  end
+
+  def main_left(args)
+    @roots = args[:menu].roots.select {|p| p[:menu_location] == 'main_left' }
+    @roots_count = @roots.count
+    @page = args[:page]
+    @grouping = 8
+
+    render :view => :grid_group
+  end
+
+  def main_right(args)
+    @roots = args[:menu].roots.select {|p| p[:menu_location] == 'main_right' }
+    @roots_count = @roots.count
+    @page = args[:page]
+    @grouping = 4
+
+    render :view => :grid_group
   end
 end

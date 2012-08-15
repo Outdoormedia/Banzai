@@ -16,8 +16,8 @@
  * $ rails runner "y Rails.configuration.assets.paths"
  *
  *= require skeleton
- *= require navigation
  *= require layout
+ *= require navigation
  *
  * From Railscast 333 Extending Refinery CMS
  *= require formatting

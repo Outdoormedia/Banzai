@@ -1,0 +1,11 @@
+.row
+  - if @roots.present?
+    - @roots.in_groups_of(@grouping).first.each_with_index do |page, index|
+      - if page.present?
+        .one.columns{:class => grid_css_for_item(index, page.children.present?, page, @page).join(" ")}
+          = link_to page.title, refinery.url_for(page.url)
+      - else
+        .one.columns{:class => ((index + 1) == @grouping ? 'omega' : '')} &nbsp;
+  - else
+    - @grouping.times do |index|
+      .one.columns{:class => simple_grid_css_for_item(index, @grouping).join(" ")} &nbsp;

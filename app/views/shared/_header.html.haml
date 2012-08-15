@@ -24,5 +24,4 @@
             #container
               %canvas#chart{:height => 100}= render 'shared/pieChart'
 
-  .sixteen.columns.alpha.omega
-    = yield(:main_navigation)
+    = render_menu 'main'

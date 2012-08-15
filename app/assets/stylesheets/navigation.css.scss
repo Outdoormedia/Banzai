@@ -1,37 +1,5 @@
 @import "partials/colors";
 @import "partials/fonts";
+@import "navigation/main_menu";
 @import "navigation/side_menu";
-
-nav#main_nav { 
-  margin: 0;
-  ul {
-    font-family: $oma_top_bar_menu_font;
-    padding: 0px 0px;
-    background:  $oma_top_bar_menu_color;
-  }
-  li {
-    display: inline-block;
-    padding: 18px 28px 18px 17px; 
-    font-size: 0.9em;
-
-    a,
-    a:link,
-    a:visited {
-      color: $oma_grey;
-      text-decoration: none;
-      color:$oma_white;
-    }
-
-    &.active {
-      background: $oma_grey;
-      margin-bottom: -1px;
-      a,
-      a:link,
-      a:visited {
-        color: $oma_white;
-        font-weight: bold;
-      }
-    }	
-  }
-}
 
