@@ -1,0 +1,15 @@
+h1, h2 {
+  font-family: $oma_heading_font;
+  color: $oma_green;
+}
+
+h3 {
+    color: $oma_accent_green;
+    font: $oma_accent_font;
+}
+
+// used to test style markup for FAQs
+li {
+  color: $oma_green;
+  font: $oma_body_font;
+}

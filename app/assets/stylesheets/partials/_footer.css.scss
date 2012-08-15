@@ -1,0 +1,46 @@
+footer#page_footer { 
+  background-color: $oma_white;
+  border-top: 1px solid $oma_light_green;
+  margin-top: 15px;
+  padding-top: 15px;
+  color: $oma_green;
+  font-size: 0.7em;
+  overflow: hidden;
+  display: inline;
+
+  nav#left_logo {
+    float: left;
+    font-size: 0.8em;
+    position: relative;
+    top: 0px;
+  }
+  nav#right_logo {
+    float: right;
+    font-size: 0.8em;
+    position: relative;
+    top: 0px;
+  }
+
+  ul {
+    padding: 0;
+    text-align: center;
+
+    li {
+      border-right: 2px solid $oma_light_grey;
+      display: inline;
+      margin: 0;
+      &:last-child {
+        border-right: none;
+      }
+      a {
+        padding: 5px 10px; 
+        &:link,
+        &:hover, 
+        &:visited,
+        &.active {
+          color: $oma_green;
+        }
+      }
+    }
+  }
+}

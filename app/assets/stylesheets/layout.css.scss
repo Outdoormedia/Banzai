@@ -2,54 +2,18 @@
 @import "partials/fonts";
 @import "partials/oma_mixins";
 
+@import "partials/typography";
+@import "partials/footer";
+@import "partials/home";
+@import "partials/pie";
+@import "partials/carousel";
+
 body {
   // font-family: $oma_body_font;
-  // margin-top: 15px;
-  // margin-left: 5%;
-  // margin-right: 5%;
   border-bottom: 5px solid $oma_light_black;
-
-  #upper_page_content {
-    #carousel_content {
-      // border: 1px solid $oma_lightest_grey;
-      // border-radius:5px;
-      font-size: 0.8em;
-      // height: 320px;
-      // overflow: hidden;
-    }
-    #pie_content {
-      // border: 1px solid $oma_lightest_grey;
-      // border-radius:5px;
-      // height: 320px;
-    }
-  }
-
-  #lower_page_content {
-    #welcome_content {
-      // height: 320px;
-      overflow: auto;
-    }
-    #news_content {
-      overflow: auto;
-    }
-    #studies_content {
-      overflow: auto;
-    }
-  }
 }
 
-body {
-  h1, h2 {
-    font-family: $oma_heading_font;
-    color: $oma_green;
-  }
-}
-body {
-  h3 {
-    color: $oma_accent_green;
-    font: $oma_accent_font;
-  }
-}
+
 body {
   ul {
     padding: 0;
@@ -57,105 +21,50 @@ body {
   }
 }
 
-// used to test style markup for FAQs
-li {
-  color: $oma_green;
-  font: $oma_body_font;
-}
 
-@mixin oma-links {
+@mixin oma-menu-links {
   a,
   a:link,
   a:hover,
   a:active,
   a:visited {
-    color:$oma_grey;
-    text-align:center;
-    text-decoration:none;
-    text-transform:uppercase;
-  }
-}
-
-header#page_header { 
-  @include oma-links;
-  min-height: 100px;
-
-  nav#utility {
-    float: right;
-    font-size: 0.8em;
-    position: relative;
-    left: -45px;
-    top: 0px;
-  }
-
-  #logo {
-    position: relative;
-    top: 15px;
-  }
-}
-
-
-header#kpb_header { 
-  @include oma-links;
-  min-height: 100px;
-
-  nav#pie_logo {
-    // background: red;
-    float: right;
-  }
-  #pie_content {
-    //  border: 1px solid $oma_lightest_grey;
-    width: 12%;
-  }
-
-  #logo {
-    margin-top: 40px;
-  }
-}
-
-footer#page_footer { 
-  background-color: $oma_white;
-  border-top: 1px solid $oma_light_green;
-  margin-top: 15px;
-  padding-top: 15px;
-  color: $oma_green;
-  font-size: 0.7em;
-  overflow: hidden;
-  display: inline;
-
-  nav#left_logo {
-    float: left;
-    font-size: 0.8em;
-    position: relative;
-    top: 0px;
-  }
-  nav#right_logo {
-    float: right;
-    font-size: 0.8em;
-    position: relative;
-    top: 0px;
-  }
-
-  ul {
-    padding: 0;
+    color: $oma_grey;
     text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
 
-    li {
-      border-right: 2px solid $oma_light_grey;
-      display: inline;
-      margin: 0;
-      &:last-child {
-        border-right: none;
-      }
-      a {
-        padding: 5px 10px; 
-        &:link,
-        &:hover, 
-        &:visited,
-        &.active {
-          color: $oma_green;
-        }
-      }
+body > header {
+  @include oma-menu-links;
+  min-height: 100px;
+
+  #logo {
+    margin-top: 15px;
+  }
+
+  &#page_header {
+    nav#utility {
+      float: right;
+      font-size: 0.8em;
+      position: relative;
+      left: -45px;
+      top: 0px;
+    }
+  }
+
+  &#kpb_header {
+    nav#pie_logo {
+      // background: red;
+      float: right;
+    }
+
+    #pie_content {
+      width: 12%;
+    }
+
+    #logo {
+      margin-top: 40px;
     }
   }
 }

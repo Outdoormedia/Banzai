@@ -19,7 +19,6 @@
  *= require layout
  *= require navigation
  *
- * From Railscast 333 Extending Refinery CMS
  *= require formatting
  *= require theme
  *= require pieChart
