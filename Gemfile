@@ -2,14 +2,12 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'thin'
-# Bundle edge Rails instead:
+# Bundle edge Rails instead:0
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "mysql2"
-gem "acts_as_tree"
 gem "haml"
 gem 'rack-pjax'
-gem "ember-rails"
 
 group :development, :test do
   #gem "rvm-capistrano"
@@ -24,18 +22,19 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.5'
+  gem 'sass-rails',   '~> 3.2.5' # Includes sass for asset pipeline
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platform => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 1.0.3' # Minifier
 end
 
-gem 'jquery-rails'
-gem 'randumb'
+gem 'jquery-rails' # Asset pipelined jquery
+gem 'randumb' # Used for picking random carousels
 gem 'cells' # Used for custom menu code
+gem 'acts-as-taggable-on' # Used for tagging
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -48,8 +47,8 @@ gem 'cells' # Used for custom menu code
 
 # Deploy with Capistrano
 gem 'capistrano'
-gem "rvm-capistrano"
-gem "capistrano_colors"
+gem 'rvm-capistrano'
+gem 'capistrano_colors'
 
 group :production do
   gem 'heroku'
@@ -57,13 +56,13 @@ group :production do
 end
 
 # Refinery CMS
-gem 'refinerycms', :git => "git://github.com/resolve/refinerycms.git", :branch => "2-0-stable"
+gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 gem 'refinerycms-i18n', '~> 2.0.0'
 #  gem 'refinerycms-blog'
 #  gem 'refinerycms-inquiries', '~> 2.0.5'
-#  gem 'refinerycms-search', '~> 2.0.5'
+gem 'refinerycms-search', :path => 'vendor/extensions'
 gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-carousels', :path => 'vendor/extensions'
