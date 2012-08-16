@@ -15,6 +15,6 @@
         %canvas#chart{:height => '300px'}= render '/shared/pieChart'
 
     #lower_page_content.row
-      .five.columns.alpha#welcome_content= raw @page.content_for(:welcome)
-      .six.columns#news_content= raw @page.content_for(:news)
-      .five.columns.omega#studies_content= raw @page.content_for(:studies)
+      .one-third.columns.alpha#welcome_content= raw @page.content_for(:welcome)
+      .one-third.columns#news_content= raw @page.content_for(:news)
+      .one-third.columns.omega#studies_content= raw @page.content_for(:studies)

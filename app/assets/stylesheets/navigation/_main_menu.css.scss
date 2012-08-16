@@ -1,5 +1,5 @@
 nav#main_nav { 
-  margin: 0;
+  height: 40px;
   font-family: $oma_top_bar_menu_font;
   background-color:  $oma_top_bar_menu_color;
   font-size: 0.9em;
@@ -11,5 +11,38 @@ nav#main_nav {
 
   br {
     
+  }
+
+  ul {
+    li {
+      text-align: center;
+      display: inline-block;
+      a {
+        display: block;
+        padding: 10px;
+        &:hover {
+          background-color: $oma_top_bar_menu_hover_color;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  nav#main_nav .offset-by-four {
+    padding-left: 92px;
+  }
+
+  nav#main_nav .alpha {
+    width: 464px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  nav#main_nav {
+    height: auto;
+
+    ul li {
+      display: block;
+    }
   }
 }

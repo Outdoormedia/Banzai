@@ -3,6 +3,7 @@
 @import "partials/oma_mixins";
 
 @import "partials/typography";
+@import "partials/header";
 @import "partials/footer";
 @import "partials/home";
 @import "partials/pie";
@@ -21,53 +22,6 @@ body {
   }
 }
 
-
-@mixin oma-menu-links {
-  a,
-  a:link,
-  a:hover,
-  a:active,
-  a:visited {
-    color: $oma_grey;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-}
-
-body > header {
-  @include oma-menu-links;
-  min-height: 100px;
-
-  #logo {
-    margin-top: 15px;
-  }
-
-  &#page_header {
-    nav#utility {
-      float: right;
-      font-size: 0.8em;
-      position: relative;
-      left: -45px;
-      top: 0px;
-    }
-  }
-
-  &#kpb_header {
-    nav#pie_logo {
-      // background: red;
-      float: right;
-    }
-
-    #pie_content {
-      width: 12%;
-    }
-
-    #logo {
-      margin-top: 40px;
-    }
-  }
-}
 
 #tagline {
   margin-left: 20px;

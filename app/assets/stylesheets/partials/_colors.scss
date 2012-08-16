@@ -8,6 +8,7 @@ $oma_lighter_green:  lighten($oma_light_green,   10%);
 $oma_lightest_green: lighten($oma_lighter_green, 10%);
 $oma_accent_green:   darken($oma_green,          25%); 
 $oma_top_bar_menu_color: $oma_green;  
+$oma_top_bar_menu_hover_color: $oma_accent_green;
 
 
 $oma_light_black:     lighten($oma_black, 25%);

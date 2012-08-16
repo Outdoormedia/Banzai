@@ -1,0 +1,32 @@
+body > header {
+  @include oma-menu-links;
+  min-height: 100px;
+  #logo {
+    margin-top: 15px;
+  }
+
+  &#page_header {
+    nav#utility {
+      float: right;
+      font-size: 0.8em;
+      position: relative;
+      left: -45px;
+      top: 0px;
+    }
+  }
+
+  &#kpb_header {
+    nav#pie_logo {
+      // background: red;
+      float: right;
+    }
+
+    #pie_content {
+      width: 12%;
+    }
+
+    #logo {
+      margin-top: 40px;
+    }
+  }
+}

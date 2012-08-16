@@ -5,56 +5,68 @@
   font-family: $oma_body_font;
   font-size:   $oma_font_size ;
   font-variant: small-caps; 
-  }
+}
 
 @mixin oma_page_header {
   background-color: $oma_grey;
   width: span(24);
-  }
+}
 
 @mixin oma_text($color: $oma_green, $size: 14px) {
   color: $color;
   font-family: $oma_body_font;
   font-size: $size;
-  }
+}
 
 @mixin panel($deg: 0deg, $bg-color: $oma_grey, $border: 1px solid $oma_green ){
-             background: $bg-color;        
-             padding: 2px;
-             position:relative;
-             border: $border;
-             
-             transform:rotate($deg);
-             -ms-transform:rotate($deg); /* IE 9 */
-             -moz-transform:rotate($deg); /* Firefox */
-             -webkit-transform:rotate($deg); /* Safari and Chrome */
-             -o-transform:rotate($deg); /* Opera */
-             }
+   background: $bg-color;
+   padding: 2px;
+   position:relative;
+   border: $border;
+
+   transform:rotate($deg);
+   -ms-transform:rotate($deg); /* IE 9 */
+   -moz-transform:rotate($deg); /* Firefox */
+   -webkit-transform:rotate($deg); /* Safari and Chrome */
+   -o-transform:rotate($deg); /* Opera */
+}
 
 //
 // Menu elements
 //
 
 @mixin menu_bar($color: $oma_grey){
-       background-color: $color;
-       display:block;
-       position:absolute;
-       left: 10%;
-       }
-
-@mixin menu_item($color: $oma_grey) {
-       font-family: $oma_top_bar_menu_font;
-       font-weight:bold;
-       font-size: 12px;
-       color:$color;
-       text-align:center;
-       text-decoration:none;
-       text-transform:uppercase;
-       border-right-style:solid;
-       border-right-width:1px;
-       border-right-color:$color;
-       padding-top:6px;
-       display: inline;
-       height: 28px;
+  background-color: $color;
+  display:block;
+  position:absolute;
+  left: 10%;
 }
 
+@mixin menu_item($color: $oma_grey) {
+  font-family: $oma_top_bar_menu_font;
+  font-weight:bold;
+  font-size: 12px;
+  color:$color;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+  border-right-style:solid;
+  border-right-width:1px;
+  border-right-color:$color;
+  padding-top:6px;
+  display: inline;
+  height: 28px;
+}
+
+@mixin oma-menu-links {
+  a,
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    color: $oma_grey;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
