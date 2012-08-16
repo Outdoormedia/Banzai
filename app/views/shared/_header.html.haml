@@ -16,7 +16,7 @@
             You are not logged in.
             = link_to "[Login]", '/refinery/login'
 
-          = link_to 'Search', '/'
+          = render "/refinery/shared/tagged"
 
         - unless local_assigns[:hide_pie_header]
           %section#pie_content
