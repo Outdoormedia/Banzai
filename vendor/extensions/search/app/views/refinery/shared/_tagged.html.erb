@@ -1,0 +1,6 @@
+<%= form_tag refinery.tagged_path, :id => "search_tags" do -%>
+  <%= text_field_tag :tag, {}, {:type => "search",
+                     :placeholder => "Search files for...", 
+                     :value => (params[:tag] if params[:tag])} %>
+  <%= submit_tag 'Go' %>
+<% end %>

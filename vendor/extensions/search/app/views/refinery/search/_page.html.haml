@@ -1,0 +1,1 @@
+.title= link_to raw(item.title.gsub(/(#{Regexp.excape(params[:query])})/i, '<mark>\1</mark>')), result_url(item)

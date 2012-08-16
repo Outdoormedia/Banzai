@@ -1,0 +1,12 @@
+- content_for :body_content_title do
+  %h1= t('.search_results_for', :what => params[:query] || params[:tag])
+
+- content_for :body do
+  %ul#search_results
+    - @results.each do |result|
+      %li
+        = render "/refinery/search/#{result.class.to_s.split('::').last.underscore}", :item => result
+
+= yield(:body_content_title)
+
+= render "/refinery/content_page"
