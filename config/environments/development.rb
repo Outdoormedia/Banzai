@@ -37,8 +37,4 @@ Banzai::Application.configure do
   
   # Expands the lines which load the assets
   config.assets.debug = true
-  
-  # Ember.js variant
-  config.ember.variant = :development
-  
 end
