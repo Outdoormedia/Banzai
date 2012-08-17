@@ -18,7 +18,7 @@ group :development, :test do
   gem 'sqlite3'                 # for Heroku you need taps, taps uses sqlite3  
 end
 
-
+gem 'sass', '3.3.0.alpha.3' # Temporary fix for Pow compatibility. Can be removed later.
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
