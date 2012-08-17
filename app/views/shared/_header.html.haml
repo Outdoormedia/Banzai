@@ -1,27 +1,18 @@
 %header.container#page_header( role = "banner")
   .sixteen.columns.alpha.omega
     .row
-      .ten.columns.alpha
-        #logo
-          = link_to root_url do
-            = image_tag("OMA-MOVE_logo.png", size: '200x60', :alt=>"Outdoor Media Association")
-
-      .six.columns.omega
-        %nav#utility
-          - if current_refinery_user.present?
-            You are logged in as 
-            = link_to "[#{current_refinery_user.username}]", '#'
-            = link_to "[Logout]", '/refinery/logout'
-          - else
-            You are not logged in.
-            = link_to "[Login]", '/refinery/login'
-
-          = render "/refinery/shared/tagged"
-
-        - unless local_assigns[:hide_pie_header]
+      - unless local_assigns[:hide_pie_header]
+        .one-third.column.alpha= render :partial => '/shared/logo'
+        .one-third.column= render '/shared/status_bar'
+        .one-third.column.omega
           %section#pie_content
             = raw @page.content_for(:pie)
             #container
-              %canvas#chart{:height => 100}= render 'shared/pieChart'
+              %canvas#chart{:height => 100}= render '/shared/pieChart'
+
+
+      - else
+        .ten.columns.alpha= render :partial => 'shared/logo'
+        .six.columns.omega= render '/shared/status_bar'
 
     = render_menu 'main'
