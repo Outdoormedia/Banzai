@@ -31,7 +31,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3' # Minifier
 end
 
-gem 'jquery-rails' # Asset pipelined jquery
+gem 'jquery-rails', '~> 2.0.0' # Asset pipelined jquery
 gem 'randumb' # Used for picking random carousels
 gem 'cells' # Used for custom menu code
 gem 'acts-as-taggable-on' # Used for tagging
