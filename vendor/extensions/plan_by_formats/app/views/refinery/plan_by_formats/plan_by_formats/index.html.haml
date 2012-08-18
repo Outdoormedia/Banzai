@@ -11,7 +11,7 @@
     - demog_names.zip([1, 2, 3]).each do |demog_name,index|
       %tr
         %th== #{demog_name} Demographic
-        %td= select_tag "planning[demographics][#{index}]", options_for_select([["None", nil]] + Selection.planning_demographic.leaves.map {|demog| [demog.name, demog.id]}, get_planning_data(:demographics, index).to_i)
+        %td= select_tag "planning[demographics][#{index}]", options_for_select([["None", nil]] + Selection.planning_demographic.leaves.order(:position_value).map {|demog| [demog.name, demog.id]}, get_planning_data(:demographics, index).to_i)
 
   %br
 

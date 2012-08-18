@@ -1,4 +1,3 @@
-# This migration comes from refinery_plan_by_formats (originally 3)
 class CreatePlanningWeights < ActiveRecord::Migration
   def change
     create_table :planning_weights do |t|

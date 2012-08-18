@@ -12,6 +12,8 @@ gem "haml-rails"
 
 group :development, :test do
   #gem "rvm-capistrano"
+  gem "hirb"
+  gem "awesome_print"
 end
 
 
