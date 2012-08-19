@@ -8,6 +8,7 @@ gem 'thin'
 gem "mysql2"
 gem "haml"
 gem 'rack-pjax'
+gem "acts_as_tree"
 
 group :development, :test do
   #gem "rvm-capistrano"
