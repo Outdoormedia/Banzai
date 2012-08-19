@@ -4,29 +4,22 @@ module Refinery
       attr_reader :demographics, :active
 
       def initialize planning_data
-        Rails.logger.info "----00000 Initialise"
         @planning_params = planning_data
         process_demographics
-        Rails.logger.info "----00000 Initialise (finish)"
       end
 
       def process_demographics
-        Rails.logger.info "----00000 process_demographics (start)"
 
         demographic_ids = @planning_params["demographics"]
         demos = demographic_ids.keys.sort.map { |id| demographic_ids[id].to_i }
         demos.delete(0)
         @demographics = demos.map do |id|
-          Rails.logger.info "----00000 process_demographics (loop)"
-
           PBFDemographic.new id, @planning_params["markets"]
         end
-        Rails.logger.info "----00000 process_demographics (mid)"
         @active = !@demographics.first.nil? && !@demographics.first.markets.empty?
       end
 
       def process
-        Rails.logger.info "Start Process"
         if @active
           @demographics.each do |demographic|
             demographic.markets.each do |market|
@@ -58,7 +51,6 @@ module Refinery
       def process_markets
         market_ids = @market_params.keys.map { |item| item.to_i }.sort {|x, y| ::Selection.find(x).position_value <=> ::Selection.find(y).position_value}
         @markets = market_ids.map do |id|
-          Rails.logger.info "---=== process market loop"
           PBFMarket.new id, @market_params[id.to_s]
         end.find_all { |market| market.active }
         @smbap = PBFsmbap.new @markets # 0, @market_params
@@ -101,7 +93,8 @@ module Refinery
 
       def process_regions
         @regions = @region_params.map { |region| region.to_i }.sort
-        #@region_code = @regions.inject(0) { |region_code_acc, region_id| region_code_acc + 2**(region_id-@id-1) }
+
+        @region_code = @regions.inject(0) { |region_code_acc, region_id| region_code_acc + 2**(region_id-@id-1) }
       end
 
       def process_formats
@@ -159,7 +152,7 @@ module Refinery
         if val2 == 0
           0
         else
-          val1 / val2
+          val1.to_f / val2
         end
       end
 
@@ -212,7 +205,7 @@ module Refinery
         if val2 == 0
           0
         else
-          val1 / val2
+          val1.to_f / val2
         end
       end
     end
@@ -276,7 +269,7 @@ module Refinery
         if val2 == 0
           0
         else
-          val1 / val2
+          val1.to_f / val2
         end
       end
 

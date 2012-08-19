@@ -84,176 +84,205 @@ market:
   system_code: market
   is_system: true
 market_sydney:
+  id: 6
   name: Sydney
   parent: market
   position_value: 10
-  system_code: market_sydney
+  system_code: market_sydnet
   is_system: true
 market_sydney_city:
+  id: 7
   name: City
-  parent: market_sydney
+  parent_id: 6
   position_value: 10
   system_code: market_sydney_city
   is_system: 
 market_sydney_north:
+  id: 8
   name: North
-  parent: market_sydney
+  parent_id: 6
   position_value: 20
   system_code: market_sydney_north
   is_system: 
 market_sydney_west:
+  id: 9
   name: West
-  parent: market_sydney
+  parent_id: 6
   position_value: 30
   system_code: market_sydney_west
   is_system: 
 market_sydney_south_west_south:
+  id: 10
   name: South West & South
-  parent: market_sydney
+  parent_id: 6
   position_value: 40
   system_code: market_sydney_south_west_south
   is_system: 
 market_sydney_north_shore:
+  id: 11
   name: North Shore
-  parent: market_sydney
+  parent_id: 6
   position_value: 50
   system_code: market_sydney_north_shore
   is_system: 
 market_melbourne:
+  id: 18
   name: Melbourne
   parent: market
   position_value: 20
   system_code: market_melbourne
   is_system: true
 market_melbourne_east:
+  id: 19
   name: East
-  parent: market_melbourne
+  parent_id: 18
   position_value: 10
   system_code: market_melbourne_east
   is_system: 
 market_melbourne_central_west:
+  id: 20
   name: Central & West
-  parent: market_melbourne
+  parent_id: 18
   position_value: 20
   system_code: market_melbourne_central_west
   is_system: 
 market_melbourne_south:
+  id: 21
   name: South
-  parent: market_melbourne
+  parent_id: 18
   position_value: 30
   system_code: market_melbourne_south
   is_system: 
 market_melbourne_north:
+  id: 22
   name: North
-  parent: market_melbourne
+  parent_id: 18
   position_value: 40
   system_code: market_melbourne_north
   is_system: 
 market_melbourne_south_east:
+  id: 23
   name: South East
-  parent: market_melbourne
+  parent_id: 18
   position_value: 50
   system_code: market_melbourne_south_east
   is_system: 
 market_brisbane:
+  id: 12
   name: Brisbane
   parent: market
   position_value: 30
   system_code: market_brisbane
   is_system: true
 market_brisbane_city_south:
+  id: 13
   name: City South
-  parent: market_brisbane
+  parent_id: 12
   position_value: 10
   system_code: market_brisbane_city_south
   is_system: 
 market_brisbane_city_north:
+  id: 14
   name: City North
-  parent: market_brisbane
+  parent_id: 12
   position_value: 20
   system_code: market_brisbane_city_north
   is_system: 
 market_brisbane_north:
+  id: 15
   name: North
-  parent: market_brisbane
+  parent_id: 12
   position_value: 30
   system_code: market_brisbane_north
   is_system: 
 market_brisbane_south:
+  id: 16
   name: South
-  parent: market_brisbane
+  parent_id: 12
   position_value: 40
   system_code: market_brisbane_south
   is_system: 
 market_brisbane_gold_coast:
+  id: 17
   name: Gold Coast
-  parent: market_brisbane
+  parent_id: 12
   position_value: 50
   system_code: market_brisbane_gold_coast
   is_system: 
 market_adelaide:
+  id: 30
   name: Adelaide
   parent: market
   position_value: 40
   system_code: market_adelaide
   is_system: true
 market_adelaide_east:
+  id: 31
   name: East
-  parent: market_adelaide
+  parent_id: 30
   position_value: 10
   system_code: market_adelaide_east
   is_system: 
 market_adelaide_west:
+  id: 32
   name: West
-  parent: market_adelaide
+  parent_id: 30
   position_value: 20
   system_code: market_adelaide_west
   is_system: 
 market_adelaide_south:
+  id: 33
   name: South
-  parent: market_adelaide
+  parent_id: 30
   position_value: 30
   system_code: market_adelaide_south
   is_system: 
 market_adelaide_north_yorke:
+  id: 34
   name: North & Yorke
-  parent: market_adelaide
+  parent_id: 30
   position_value: 40
   system_code: market_adelaide_north_yorke
   is_system: 
 market_perth:
+  id: 24
   name: Perth
   parent: market
   position_value: 50
   system_code: market_perth
   is_system: true
 market_perth_city:
+  id: 25
   name: City
-  parent: market_perth
+  parent_id: 24
   position_value: 10
   system_code: market_perth_city
   is_system: 
 market_perth_east:
+  id: 26
   name: East
-  parent: market_perth
+  parent_id: 24
   position_value: 20
   system_code: market_perth_east
   is_system: 
 market_perth_south_east:
+  id: 27
   name: South East
-  parent: market_perth
+  parent_id: 24
   position_value: 30
   system_code: market_perth_south_east
   is_system: 
 market_perth_south_west:
+  id: 28
   name: South West
-  parent: market_perth
+  parent_id: 24
   position_value: 40
   system_code: market_perth_south_west
   is_system: 
 market_perth_north:
+  id: 29
   name: North
-  parent: market_perth
+  parent_id: 24
   position_value: 50
   system_code: market_perth_north
   is_system: 
@@ -768,30 +797,35 @@ planning_format_roadside:
   system_code: planning_format_roadside
   is_system: true
 planning_format_roadside_b_b_25sqm_:
+  id: 362
   name: B/B 25sqm+
   parent: planning_format_roadside
   position_value: 10
   system_code: planning_format_roadside_b_b_25sqm_
   is_system: 
 planning_format_roadside_b_b_25sqm:
+  id: 363
   name: B/B < 25sqm
   parent: planning_format_roadside
   position_value: 20
   system_code: planning_format_roadside_b_b_25sqm
   is_system: 
 planning_format_roadside_street_bus_tram_kiosk_fsu:
+  id: 364
   name: Street - Bus/Tram/Kiosk/FSU
   parent: planning_format_roadside
   position_value: 30
   system_code: planning_format_roadside_street_bus_tram_kiosk_fsu
   is_system: 
 planning_format_roadside_street_phone_booth:
+  id: 365
   name: Street - Phone Booth
   parent: planning_format_roadside
   position_value: 40
   system_code: planning_format_roadside_street_phone_booth
   is_system: 
 planning_format_roadside_transit_external:
+  id: 366
   name: Transit - External
   parent: planning_format_roadside
   position_value: 50
@@ -804,30 +838,35 @@ planning_format_transport:
   system_code: planning_format_transport
   is_system: true
 planning_format_transport_airport_internal:
+  id: 368
   name: Airport - Internal
   parent: planning_format_transport
   position_value: 10
   system_code: planning_format_transport_airport_internal
   is_system: 
 planning_format_transport_airport_precinct:
+  id: 369
   name: Airport - Precinct
   parent: planning_format_transport
   position_value: 20
   system_code: planning_format_transport_airport_precinct
   is_system: 
 planning_format_transport_rail_cross_track:
+  id: 370
   name: Rail - Cross-track
   parent: planning_format_transport
   position_value: 30
   system_code: planning_format_transport_rail_cross_track
   is_system: 
 planning_format_transport_bus_rail_platform_concourse:
+  id: 371
   name: Bus/Rail - Platform/Concourse
   parent: planning_format_transport
   position_value: 40
   system_code: planning_format_transport_bus_rail_platform_concourse
   is_system: 
 planning_format_transport_transit_internal:
+  id: 372
   name: Transit - Internal
   parent: planning_format_transport
   position_value: 50
@@ -840,6 +879,7 @@ planning_format_retail:
   system_code: planning_format_retail
   is_system: true
 planning_format_retail_retail_internal:
+  id: 374
   name: Retail - Internal
   parent: planning_format_retail
   position_value: 10
@@ -972,48 +1012,56 @@ planning_demographic_person:
   system_code: planning_demographic_person
   is_system: true
 planning_demographic_person_p14_:
+  id: 560
   name: P14+
   parent: planning_demographic_person
   position_value: 10
   system_code: planning_demographic_person_p14_
   is_system: 
 planning_demographic_person_p14_17:
+  id: 561
   name: P14-17
   parent: planning_demographic_person
   position_value: 20
   system_code: planning_demographic_person_p14_17
   is_system: 
 planning_demographic_person_p18_24:
+  id: 562
   name: P18-24
   parent: planning_demographic_person
   position_value: 30
   system_code: planning_demographic_person_p18_24
   is_system: 
 planning_demographic_person_p18_39:
+  id: 563
   name: P18-39
   parent: planning_demographic_person
   position_value: 40
   system_code: planning_demographic_person_p18_39
   is_system: 
 planning_demographic_person_p25_39:
+  id: 564
   name: P25-39
   parent: planning_demographic_person
   position_value: 50
   system_code: planning_demographic_person_p25_39
   is_system: 
 planning_demographic_person_p25_54:
+  id: 565
   name: P25-54
   parent: planning_demographic_person
   position_value: 60
   system_code: planning_demographic_person_p25_54
   is_system: 
 planning_demographic_person_p40_54:
+  id: 566
   name: P40-54
   parent: planning_demographic_person
   position_value: 70
   system_code: planning_demographic_person_p40_54
   is_system: 
 planning_demographic_person_p55_:
+  id: 567
   name: P55+
   parent: planning_demographic_person
   position_value: 80
@@ -1026,30 +1074,35 @@ planning_demographic_man:
   system_code: planning_demographic_man
   is_system: true
 planning_demographic_man_m18_39:
+  id: 569
   name: M18-39
   parent: planning_demographic_man
   position_value: 10
   system_code: planning_demographic_man_m18_39
   is_system: 
 planning_demographic_man_m25_39:
+  id: 570
   name: M25-39
   parent: planning_demographic_man
   position_value: 20
   system_code: planning_demographic_man_m25_39
   is_system: 
 planning_demographic_man_m25_54:
+  id: 571
   name: M25-54
   parent: planning_demographic_man
   position_value: 30
   system_code: planning_demographic_man_m25_54
   is_system: 
 planning_demographic_man_m40_54:
+  id: 572
   name: M40-54
   parent: planning_demographic_man
   position_value: 40
   system_code: planning_demographic_man_m40_54
   is_system: 
 planning_demographic_man_m55_:
+  id: 573
   name: M55+
   parent: planning_demographic_man
   position_value: 50
@@ -1062,30 +1115,35 @@ planning_demographic_woman:
   system_code: planning_demographic_woman
   is_system: true
 planning_demographic_woman_w18_39:
+  id: 575
   name: W18-39
   parent: planning_demographic_woman
   position_value: 10
   system_code: planning_demographic_woman_w18_39
   is_system: 
 planning_demographic_woman_w25_39:
+  id: 576
   name: W25-39
   parent: planning_demographic_woman
   position_value: 20
   system_code: planning_demographic_woman_w25_39
   is_system: 
 planning_demographic_woman_w25_54:
+  id: 577
   name: W25-54
   parent: planning_demographic_woman
   position_value: 30
   system_code: planning_demographic_woman_w25_54
   is_system: 
 planning_demographic_woman_w40_54:
+  id: 578
   name: W40-54
   parent: planning_demographic_woman
   position_value: 40
   system_code: planning_demographic_woman_w40_54
   is_system: 
 planning_demographic_woman_w55_:
+  id: 579
   name: W55+
   parent: planning_demographic_woman
   position_value: 50
@@ -1098,6 +1156,7 @@ planning_demographic_occupation:
   system_code: planning_demographic_occupation
   is_system: true
 planning_demographic_occupation_og1:
+  id: 581
   name: OG1
   parent: planning_demographic_occupation
   position_value: 10
@@ -1110,6 +1169,7 @@ planning_demographic_household_income:
   system_code: planning_demographic_household_income
   is_system: true
 planning_demographic_household_income_120k_:
+  id: 583
   name: $120k+
   parent: planning_demographic_household_income
   position_value: 10
@@ -1122,12 +1182,14 @@ planning_demographic_main_grocery_buyer:
   system_code: planning_demographic_main_grocery_buyer
   is_system: true
 planning_demographic_main_grocery_buyer_mgb:
+  id: 585
   name: MGB
   parent: planning_demographic_main_grocery_buyer
   position_value: 10
   system_code: planning_demographic_main_grocery_buyer_mgb
   is_system: 
 planning_demographic_main_grocery_buyer_mgb_ch:
+  id: 586
   name: MGB Ch
   parent: planning_demographic_main_grocery_buyer
   position_value: 20
@@ -1140,18 +1202,21 @@ planning_demographic_crosstab:
   system_code: planning_demographic_crosstab
   is_system: true
 planning_demographic_crosstab_p2539_hi_120k_:
+  id: 588
   name: P2539 HI $120k+
   parent: planning_demographic_crosstab
   position_value: 10
   system_code: planning_demographic_crosstab_p2539_hi_120k_
   is_system: 
 planning_demographic_crosstab_p40_hi_120k_:
+  id: 589
   name: P40+ HI $120k+
   parent: planning_demographic_crosstab
   position_value: 20
   system_code: planning_demographic_crosstab_p40_hi_120k_
   is_system: 
 planning_demographic_crosstab_p2554_hi_120k_:
+  id: 590
   name: P2554 HI $120k+
   parent: planning_demographic_crosstab
   position_value: 30
