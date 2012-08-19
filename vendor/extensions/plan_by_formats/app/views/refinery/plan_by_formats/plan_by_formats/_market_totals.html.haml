@@ -1,0 +1,11 @@
+%tr.totals.val
+  %th.left== #{market_name} Totals
+  %th
+  - for demographic in @demographics
+    - demographic_market = demographic.market(market)
+    %td.val= thousands demographic_market.reach_persons
+    %td.val= percents demographic_market.reach
+    %td.val= precision_2 demographic_market.avg_freq
+    %td.val= thousands demographic_market.contacts
+
+= render :partial => 'blank_table_row'

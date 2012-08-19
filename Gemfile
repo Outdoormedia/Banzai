@@ -68,3 +68,6 @@ gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-carousels', :path => 'vendor/extensions'
 gem 'refinerycms-calendars', :path => 'vendor/extensions'
+
+gem 'refinerycms-snapshots', :path => 'vendor/extensions'
+gem 'refinerycms-plan_by_formats', :path => 'vendor/extensions'

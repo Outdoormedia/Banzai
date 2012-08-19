@@ -1,0 +1,13 @@
+%tr.values
+  %th.left
+    = format.name
+    = ["", "(L)", "(M)", "(H)"][format.weight.to_i]
+  %th.val
+    = format.duration
+    - for demographic in @demographics
+      - demographic_market_format = demographic.market(market).format(format)
+      %td.val= thousands demographic_market_format.reach_persons
+      %td.val= percents demographic_market_format.reach
+      %td.val= precision_2 demographic_market_format.avg_freq
+      %td.val= thousands demographic_market_format.contacts
+

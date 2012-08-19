@@ -1,0 +1,27 @@
+en:
+  refinery:
+    plugins:
+      plan_by_formats:
+        title: Plan By Formats
+    plan_by_formats:
+      admin:
+        plan_by_formats:
+          actions:
+            create_new: Add New Plan By Format
+            reorder: Reorder Plan By Formats
+            reorder_done: Done Reordering Plan By Formats
+          records:
+            title: Plan By Formats
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Plan By Formats yet. Click "Add New Plan By Format" to add your first plan by format.
+          plan_by_format:
+            view_live_html: View this plan by format live <br/><em>(opens in a new window)</em>
+            edit: Edit this plan by format
+            delete: Remove this plan by format forever
+      plan_by_formats:
+        show:
+          other: Other Plan By Formats
+  activerecord:
+    attributes:
+      'refinery/plan_by_formats/plan_by_format':
+        name: Name

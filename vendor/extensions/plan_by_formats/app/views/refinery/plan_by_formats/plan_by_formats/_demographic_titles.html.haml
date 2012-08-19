@@ -1,0 +1,9 @@
+%tr
+  %th.top.left.above= market_name + " Total"
+  %th.top.above
+  - for demographic in @demographics
+    %th.top.left.center.above{:colspan => 4}
+      - if defined? smbap_total
+        == #{demographic.name} (Pot=#{thousands demographic.smbap.total_population * 1000})
+      - else
+        == #{demographic.name} (Pot=#{thousands demographic.market(market).total_population*1000})

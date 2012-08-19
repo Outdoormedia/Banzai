@@ -11,6 +11,9 @@ system 'rake db:fixtures:load'
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
 
+# Added by Refinery CMS Plan By Formats extension
+Refinery::PlanByFormats::Engine.load_seed
+
 # Added by Refinery CMS Snapshots extension
 Refinery::Snapshots::Engine.load_seed
 
@@ -22,3 +25,5 @@ Refinery::Carousels::Engine.load_seed
 # Added by Refinery CMS Calendars extension
 Refinery::Calendars::Engine.load_seed
 
+# Planning Weights
+Refinery::PlanByFormats::PlanningWeight.import_csv
