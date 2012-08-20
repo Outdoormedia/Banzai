@@ -88,7 +88,7 @@ market_sydney:
   name: Sydney
   parent: market
   position_value: 10
-  system_code: market_sydnet
+  system_code: market_sydney
   is_system: true
 market_sydney_city:
   id: 7
