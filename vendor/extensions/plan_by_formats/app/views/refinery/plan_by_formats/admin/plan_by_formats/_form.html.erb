@@ -1,0 +1,17 @@
+<%= form_for [refinery, :plan_by_formats_admin, @plan_by_format] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @plan_by_format,
+              :include_object_name => true %>
+
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest'  -%>
+
+  </div>
+  
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.plan_by_formats.admin.plan_by_formats.plan_by_format'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @plan_by_format.name) %>
+<% end -%>

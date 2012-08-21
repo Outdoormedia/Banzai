@@ -1,0 +1,27 @@
+nl:
+  refinery:
+    plugins:
+      plan_by_formats:
+        title: Plan By Formats
+    plan_by_formats:
+      admin:
+        plan_by_formats:
+          actions:
+            create_new: Maak een nieuwe Plan By Format
+            reorder: Wijzig de volgorde van de Plan By Formats
+            reorder_done: Klaar met het wijzingen van de volgorde van de Plan By Formats
+          records:
+            title: Plan By Formats
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Plan By Formats. Druk op 'Maak een nieuwe Plan By Format' om de eerste aan te maken.
+          plan_by_format:
+            view_live_html: Bekijk deze plan by format op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze plan by format
+            delete: Verwijder deze plan by format voor eeuwig
+      plan_by_formats:
+        show:
+          other: Andere Plan By Formats
+  activerecord:
+    attributes:
+      'refinery/plan_by_formats/plan_by_format':
+        name: Name

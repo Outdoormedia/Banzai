@@ -1,0 +1,27 @@
+nb:
+  refinery:
+    plugins:
+      plan_by_formats:
+        title: Plan By Formats
+    plan_by_formats:
+      admin:
+        plan_by_formats:
+          actions:
+            create_new: Lag en ny Plan By Format
+            reorder: Endre rekkefølgen på Plan By Formats
+            reorder_done: Ferdig å endre rekkefølgen Plan By Formats
+          records:
+            title: Plan By Formats
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Plan By Formats enda. Klikk på "Lag en ny Plan By Format" for å legge til din første plan by format.
+          plan_by_format:
+            view_live_html: Vis hvordan denne plan by format ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne plan by format
+            delete: Fjern denne plan by format permanent
+      plan_by_formats:
+        show:
+          other: Andre Plan By Formats
+  activerecord:
+    attributes:
+      'refinery/plan_by_formats/plan_by_format':
+        name: Name

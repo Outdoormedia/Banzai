@@ -1,0 +1,29 @@
+= link_to "Planning Weights", refinery.plan_by_formats_plan_by_format_path("planning_weights")
+- if @plan_by_format.active
+  %table.plan_by_format.report
+    - for market in @demographics.first.markets
+      = render :partial => "demographic_titles", :locals => {:market_name=>market.name, :market=>market}
+      = render :partial => "region_titles"
+      - for format in market.formats
+        = render :partial => "format_lines", :locals => {:format => format, :market => market}
+      = render :partial => "market_totals" , :locals => {:market => market, :market_name => "Region"}
+
+    = render :partial => "demographic_titles", :locals => {:market_name => "SMBAP", :market=>market, :smbap_total => true }
+    = render :partial => "region_titles", :locals => {:smbap => true}
+    - for format in @demographics.first.smbap.formats
+      = render :partial => "format_lines", :locals => {:format => format, :market=> nil}
+    = render :partial => "market_totals" , :locals => {:market => nil, :market_name => "SMBAP"}
+  %div
+    - for market in @demographics.first.markets
+      %div
+        %span.pbf_market= market.name + "Regions: "
+        %span.pbf_regions= market.regions_display
+  %br      
+  %br
+- else
+  %p
+    Report Empty
+
+%hr
+-#= MetaData.get_meta_for(MetaData::BOMBORA)
+  

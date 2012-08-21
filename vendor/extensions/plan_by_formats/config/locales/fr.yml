@@ -1,0 +1,27 @@
+fr:
+  refinery:
+    plugins:
+      plan_by_formats:
+        title: Plan By Formats
+    plan_by_formats:
+      admin:
+        plan_by_formats:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Plan By Format
+            reorder: Réordonner les Plan By Formats
+            reorder_done: Fin de réordonnancement des Plan By Formats
+          records:
+            title: Plan By Formats
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Plan By Format. Cliquer sur "Créer un(e) nouve(au/l/lle) Plan By Format" pour créer votre premi(er/ère) plan by format.'
+          plan_by_format:
+            view_live_html: Voir ce(t/tte) plan by format <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) plan by format
+            delete: Supprimer définitivement ce(t/tte) plan by format
+      plan_by_formats:
+        show:
+          other: Autres Plan By Formats
+  activerecord:
+    attributes:
+      'refinery/plan_by_formats/plan_by_format':
+        name: Name

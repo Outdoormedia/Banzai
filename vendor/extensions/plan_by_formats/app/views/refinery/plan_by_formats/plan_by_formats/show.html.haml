@@ -1,0 +1,19 @@
+%table.planning_weights
+  %tr
+    %th.top.left.above
+    - for market in Selection.markets
+      %th.val.top.left.above{:colspan => 3}= market.name
+  %tr
+    %th.top.left
+    - Selection.markets.each do
+      %th.val H
+      %th.val M
+      %th.val.left L
+  - for format in Selection.planning_format.leaves
+    %tr
+      %th.left
+        = format.name
+      - Selection.markets.each do |market|
+        %td.val= get_weight(market, format, :heavy)
+        %td.val= get_weight(market, format, :medium)
+        %td.val.left= get_weight(market, format, :light)
