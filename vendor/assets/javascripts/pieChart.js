@@ -277,16 +277,17 @@ function pieChart() {
   function drawChart() {
     // Get a drawing context
     var context = canvas.getContext('2d');
-        
     // Clear the canvas, ready for the new frame
     context.clearRect ( 0, 0, canvasWidth, canvasHeight );
 
+
     // Ring around circle (a.k.a. the pizza pan)
+	// http://www.w3schools.com/html5/canvas_arc.asp
 	context.beginPath();
-	context.lineWidth="15";
+	context.lineWidth="20";
 	context.strokeStyle="grey"; //  path color
-	//  http://www.w3schools.com/html5/canvas_arc.asp
-	context.arc(150,150,105,0,2*Math.PI);  // x-center, y-center, r, ...
+
+	context.arc(150,150,108,0,2*Math.PI);  // x-center, y-center, r, ...
 	context.stroke();
 
     // Draw each slice of the chart, skipping the pull-out slice (if any)
@@ -296,7 +297,15 @@ function pieChart() {
 
     // If there's a pull-out slice in effect, draw it.
     // (We draw the pull-out slice last so its drop shadow doesn't get painted over.)
-    if ( currentPullOutSlice != -1 ) drawSlice( context, currentPullOutSlice );
+    if ( currentPullOutSlice != -1 ) {
+	  drawSlice( context, currentPullOutSlice );
+	}
+	else {
+		// Slice labels,	in layer over each slice
+		context.strokeText("K n o w", 80, 120);
+		context.strokeText("P l a n", 180, 120);
+		context.strokeText("B u y", 135, 200);
+	}
   }
 
 
