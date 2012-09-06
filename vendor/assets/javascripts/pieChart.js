@@ -301,10 +301,11 @@ function pieChart() {
 	  drawSlice( context, currentPullOutSlice );
 	}
 	else {
-		// Slice labels,	in layer over each slice
-		context.strokeText("K n o w", 80, 120);
-		context.strokeText("P l a n", 180, 120);
-		context.strokeText("B u y", 135, 200);
+	  // Slice labels,	in layer over each slice
+	  context.strokeText("K n o w", 80, 120);
+      context.strokeText("P l a n", 180, 120);
+	  context.strokeText("B u y", 135, 200);
+		
 	}
   }
 
