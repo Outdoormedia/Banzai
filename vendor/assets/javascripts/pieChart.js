@@ -300,13 +300,21 @@ function pieChart() {
     if ( currentPullOutSlice != -1 ) {
 	  drawSlice( context, currentPullOutSlice );
 	}
-	else {
+	// this draws, but in a useless manner, it also blocks click event handlers
+	//else {
 	  // Slice labels,	in layer over each slice
-	  context.strokeText("K n o w", 80, 120);
-      context.strokeText("P l a n", 180, 120);
-	  context.strokeText("B u y", 135, 200);
-		
-	}
+	  // See also HTML5 code in /shared/label-test.html
+	  //context.strokeText("K n o w", 80, 120);
+      //context.strokeText("P l a n", 180, 120);
+	  //context.strokeText("B u y", 135, 200);	
+	
+	  //context.font = "bold 18px sans-serif";
+	  //text = "P l a n";
+	  //for (i=0; i< text.length; i++ ) {
+		//context.fillText(text[i], 270,100);
+		//context.rotate(0.2);
+	  //}	
+	//}
   }
 
 

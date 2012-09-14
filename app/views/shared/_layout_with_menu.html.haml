@@ -1,5 +1,7 @@
 !!! 5
+
 = render  '/refinery/html_tag'
+
 - site_bar = render('/refinery/site_bar', :head => true)
 = render '/refinery/head'
 
@@ -15,6 +17,6 @@
           = yield
     - else
       .sixteen.columns.alpha.omega= yield
-
+	
   = render 'shared/footer'
   = render '/refinery/javascripts'

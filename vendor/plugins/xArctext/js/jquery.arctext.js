@@ -10,6 +10,7 @@
  */
 
 (function( $, undefined ) {
+	
 	/*!	
 	* FitText.js 1.0
 	*
@@ -201,7 +202,7 @@
 			
 			// calculate the arc (length) that goes from the beginning of the first letter (x=0) to the end of the last letter (x=this.dtWord).
 			// first lets calculate the angle for the triangle with base = this.dtArcBase and the other two sides = radius.
-			var angle		= 4 * Math.asin( this.dtArcBase / ( 2 * this.options.radius ) );
+			var angle		= 2 * Math.asin( this.dtArcBase / ( 2 * this.options.radius ) );
 			
 			// given the formula: L(ength) = R(adius) x A(ngle), we calculate our arc length.
 			this.dtArc		= this.options.radius * angle;
