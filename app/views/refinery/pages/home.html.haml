@@ -9,11 +9,13 @@
         = image_tag @carousel.photo.image.url, :alt => "Carousel image"
       - else
         = image_tag 'oma_placeholder.png', :alt => "Carousel image"
+
+
   %section#pie_content.six.columns.omega
     = raw @page.content_for(:pie)
-    %canvas#chart{:height => '300px'}= render '/shared/pieChart'
-
-    = render '/shared/label-test'
+    %canvas#chart{:height => '300px'}
+      = render '/shared/pieChart'
+      = render '/shared/label-test'
 
 #lower_page_content.row
   .one-third.column.alpha#welcome_content= raw @page.content_for(:welcome)
