@@ -7,16 +7,17 @@ $oma_light_green:    lighten($oma_green,         10%);
 $oma_lighter_green:  lighten($oma_light_green,   10%);
 $oma_lightest_green: lighten($oma_lighter_green, 10%);
 $oma_accent_green:   darken($oma_green,          25%); 
-$oma_top_bar_menu_color: $oma_green;  
-$oma_top_bar_menu_hover_color: $oma_accent_green;
 
+$oma_light_black:     lighten($oma_black,         10%);
+$oma_lighter_black:   lighten($oma_light_black,   10%);
+$oma_lightest_black:  lighten($oma_lighter_black, 10%);
 
-$oma_light_black:     lighten($oma_black, 25%);
-$oma_lighter_black:   lighten($oma_black, 50%);
-$oma_lightest_black:  lighten($oma_black, 75%);
+$oma_light_grey:     lighten($oma_grey,         10%);
+$oma_lighter_grey:   lighten($oma_light_grey,   10%);
+$oma_lightest_grey:  lighten($oma_lighter_grey, 15%);
 
-$oma_light_grey:     lighten($oma_grey, 5%);
-$oma_lighter_grey:   lighten($oma_grey, 10%);
-$oma_lightest_grey:  lighten($oma_grey, 15%);
+$oma_top_bar_menu_color: $oma_light_black;  
+$oma_top_bar_menu_hover_color: $oma_black;
+
 
 
