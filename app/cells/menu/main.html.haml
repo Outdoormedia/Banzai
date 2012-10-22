@@ -1,3 +1,5 @@
-%nav#main_nav.row
-  .eight.columns.alpha= render_cell :menu, :main_left, :page => @page, :menu => @roots
-  .four.columns.offset-by-four.omega= render_cell :menu, :main_right, :page => @page, :menu => @roots
+.nav.main_nav_left.row
+  .nine.columns.alpha= render_cell :menu, :main_left, :page => @page, :menu => @roots
+
+.nav.main_nav_right.row
+  .six.columns.beta= render_cell :menu, :main_right, :page => @page, :menu => @roots
