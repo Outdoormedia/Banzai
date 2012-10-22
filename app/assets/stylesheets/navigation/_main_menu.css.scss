@@ -12,7 +12,7 @@ http://stackoverflow.com/questions/5016796/html-css-gradient-that-stops-at-a-per
   font-size: 0.95em;       // if wider than 0.9em goes to multiple rows
   width: 62%;
   a {
-    color: $oma_green;
+    color: $oma_white;
   }
 
   br {
@@ -37,7 +37,7 @@ http://stackoverflow.com/questions/5016796/html-css-gradient-that-stops-at-a-per
 }
 
 .nav.main_nav_right {
-  background-color: $oma_green;
+//  background-color: $oma_green;
   height: 40px;
   float: right;
   font-family: $oma_top_bar_menu_font;
