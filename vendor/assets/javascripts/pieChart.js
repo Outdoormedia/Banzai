@@ -112,7 +112,9 @@ function pieChart() {
     // All ready! Now draw the pie chart, and add the click handler to it
     drawChart();
     $('#chart').click ( handleChartClick );
+    $('#chart').mouseover (handleChartMouseover );
   }
+
 
 
 
@@ -405,6 +407,48 @@ function pieChart() {
 
   function easeOut( ratio, power ) {
     return ( Math.pow ( 1 - ratio, power ) + 1 );
+  }
+
+  /**
+   * Step ?.
+   * Mouseover handler.
+   *
+   * @param mouseoverEvent
+   * 1. hit test for overSlice (drop event if not over valid slice)
+   * 2. display text for slice
+   */
+  function handleChartMouseover ( mouseOverEvent ) {
+	 // Get the mouse cursor position at the time of the click, relative to the canvas
+	 console.log("Mouseover: " + mouseOverEvent.pageX + " / " + mouseOverEvent.pageY);
+	 var mouseX = mouseOverEvent.pageX - this.offsetLeft;
+	 var mouseY = mouseOverEvent.pageY - this.offsetTop;
+	 // Was the click on canvas?
+	 var xFromCentre = mouseX - centreX;
+	 var yFromCentre = mouseY - centreY;
+     
+	 // Yes, the click was inside the canvas, we don't care if in Chart or not.
+	 // Find the slice that was clicked or would have been comparing angles relative to the chart centre.
+     
+	 var clickAngle = Math.atan2( yFromCentre, xFromCentre ) - chartStartAngle;
+	 if ( clickAngle < 0 ) clickAngle = 2 * Math.PI + clickAngle;
+     
+	 for ( var slice in chartData ) {
+	   if ( clickAngle >= chartData[slice]['startAngle'] && clickAngle <= chartData[slice]['endAngle'] ) {
+     
+	     // Slice found, approximately. Alert is going to happen every time, write to area
+	     // below Chart?
+	     if( chartData[slice].label == 'Know' ) { 
+	       alert ( chartData[slice].label );
+	     }
+	     if( chartData[slice].label == 'Plan' ) { 
+	       alert ( chartData[slice].label );
+	     }
+	     if( chartData[slice].label == 'Buy' ) { 
+	       alert ( chartData[slice].label );
+	     }
+	     return;
+	   }
+	 }
   }
 
 } // pieChart()
