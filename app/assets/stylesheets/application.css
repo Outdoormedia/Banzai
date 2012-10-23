@@ -18,9 +18,10 @@
  *= require skeleton
  *= require layout
  *= require navigation
- *
- *= require formatting
- *= require theme
- *= require pieChart
- *= require_self
+ */
+ /* It appears we can remove the following files
+ * require formatting
+ * require theme
+ * require pieChart
+ * require_self
 */
