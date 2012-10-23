@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require jquery.pjax
 //= require jquery.arctext
-//= require homes
+//unused require homes
 //= require pieChart
 //= require_self
 

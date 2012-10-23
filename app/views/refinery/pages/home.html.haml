@@ -14,6 +14,9 @@
     = raw @page.content_for(:pie)
     %canvas#chart{:height => '300px'}= render '/shared/pieChart'
 
+    #oma_pie_slice_message
+      %p
+
     /= render '/shared/label-test'
 
 

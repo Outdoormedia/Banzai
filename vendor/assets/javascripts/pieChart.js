@@ -109,10 +109,11 @@ function pieChart() {
       currentPos += chartData[slice]['value'] / totalValue;
     }
 
-    // All ready! Now draw the pie chart, and add the click handler to it
+    // All ready! Now draw the pie chart, and add click and mouse event handlers to it
     drawChart();
     $('#chart').click ( handleChartClick );
     $('#chart').mouseover (handleChartMouseover );
+    $('#chart').mouseout (handleChartMouseout );
   }
 
 
@@ -411,7 +412,7 @@ function pieChart() {
 
   /**
    * Step ?.
-   * Mouseover handler.
+   * Mouseover handler.  Hit test is on canvas, slice is inferred by angle of mouse to center.
    *
    * @param mouseoverEvent
    * 1. hit test for overSlice (drop event if not over valid slice)
@@ -432,23 +433,34 @@ function pieChart() {
 	 var clickAngle = Math.atan2( yFromCentre, xFromCentre ) - chartStartAngle;
 	 if ( clickAngle < 0 ) clickAngle = 2 * Math.PI + clickAngle;
      
+     // SERIOUS HACK HERE:  make these messages attribues of each slice to generalize this.
 	 for ( var slice in chartData ) {
 	   if ( clickAngle >= chartData[slice]['startAngle'] && clickAngle <= chartData[slice]['endAngle'] ) {
      
-	     // Slice found, approximately. Alert is going to happen every time, write to area
-	     // below Chart?
+	     // Slice found, approximately. Alert is going to happen every time.
 	     if( chartData[slice].label == 'Know' ) { 
-	       alert ( chartData[slice].label );
+	       $('#oma_pie_slice_message').text('Know:  Find out about MOVE.')
+	
 	     }
 	     if( chartData[slice].label == 'Plan' ) { 
-	       alert ( chartData[slice].label );
+	       $('#oma_pie_slice_message').text('Plan:  Construct your next OOH campaign.')
+	
 	     }
 	     if( chartData[slice].label == 'Buy' ) { 
-	       alert ( chartData[slice].label );
+	       $('#oma_pie_slice_message').text('Buy:  Buy your OOH signs with MOVE.')
+	
 	     }
 	     return;
 	   }
 	 }
+  }
+  /**
+   * Step ?.
+   * Mouseout handler.  Remove message on exit canvas.
+   *
+   */
+  function handleChartMouseout ( mouseOutEvent ) {
+	$('#oma_pie_slice_message').text('Double click to select a slice.')
   }
 
 } // pieChart()
