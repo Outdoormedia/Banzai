@@ -1,6 +1,5 @@
 body > header {
   @include oma-menu-links;
-  min-height: 10px;
   #logo {
     margin-top: 15px;
   }
@@ -10,7 +9,6 @@ body > header {
       float: right;
       font-size: 0.8em;
       position: relative;
-      left: -45px;
       top: 0px;
     }
   }
@@ -19,26 +17,14 @@ body > header {
     min-height:600px;
     height:auto !important;
     height:100px;
-}
-
-  &#kpb_header {
-    nav#pie_logo {
-     // background: red;
-      float: right;
-    }
-
-    #pie_content {
-      width: 12%;
-    }
-
-    #logo {
-      margin-top: 40px;
-    }
   }
+
 }
 
+// this styles the search button
 #search_tags {
+  width: 400px;
   input[type='submit'] {
-    padding: 2px 8px;
+    padding: 2px 18px;
   }
 }

@@ -5,15 +5,10 @@
         .one-third.column.alpha= render :partial => '/shared/logo'
         .one-third.column= render '/shared/status_bar'
         .one-third.column.omega
-          %section#pie_content
-            = raw @page.content_for(:pie)
-            #container
-              %canvas#chart= render '/shared/pieChart'
+          = raw @page.content_for(:pie)
+          %canvas#chart= render '/shared/pieChart'
                   
-
-
       - else
         .ten.columns.alpha= render :partial => 'shared/logo'
-        .six.columns.omega= render '/shared/status_bar'
-
+        .six.columns.alpha= render '/shared/status_bar'
     = render_menu 'main'
