@@ -8,8 +8,8 @@
           %section#pie_content
             = raw @page.content_for(:pie)
             #container
-              %canvas#chart{ :height => 100 }
-                = render '/shared/pieChart'
+              %canvas#chart= render '/shared/pieChart'
+                  
 
 
       - else

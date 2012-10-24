@@ -60,8 +60,11 @@ function pieChart() {
     // Initialise some properties of the canvas and chart
     canvasWidth = canvas.width;
     canvasHeight = canvas.height;
-    centreX = canvasWidth / 2;
-    centreY = canvasHeight / 2;
+    // Push the Chart left/right, up/down +10px or so if desired, remember ring and labels stationary
+    // Preferably move the canvass itself, or change it's dimensions, later.
+    centreX = (canvasWidth / 2) + 0;
+    centreY = (canvasHeight / 2) - 20;
+    // Push Chart up some
     chartRadius = Math.min( canvasWidth, canvasHeight ) / 2 * ( chartSizePercent / 100 );
 
     // Grab the data from the table,
@@ -284,13 +287,12 @@ function pieChart() {
     context.clearRect ( 0, 0, canvasWidth, canvasHeight );
 
 
-    // Ring around circle (a.k.a. the pizza pan)
+    // Ring around circle (a.k.a. ring, pizza pan or donut)
 	// http://www.w3schools.com/html5/canvas_arc.asp
 	context.beginPath();
-	context.lineWidth="20";
-	context.strokeStyle="grey"; //  path color
-
-	context.arc(150,150,108,0,2*Math.PI);  // x-center, y-center, r, ...
+	context.lineWidth="25";
+	context.strokeStyle="rgb(  93, 89, 89 )"; //  path color is $oma_top_bar_color
+    context.arc( 150, 130, chartRadius, 0, 2*Math.PI); // x-center, y-center, r, ...
 	context.stroke();
 
     // Draw each slice of the chart, skipping the pull-out slice (if any)

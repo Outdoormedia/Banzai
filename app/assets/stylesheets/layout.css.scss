@@ -10,17 +10,10 @@
 @import "partials/carousel";
 
 body {
-  // font-family: $oma_body_font;
+  font-family: $oma_body_font;
+  background: $oma_white;
   border-bottom: 5px solid $oma_light_black;
-}
-
-
-body {
-  padding: 20px;
-  ul {
-    padding: 0;
-    //text-align: center;
-  }
+  padding: 20px;   //move pages down a decent interval from top
 }
 
 

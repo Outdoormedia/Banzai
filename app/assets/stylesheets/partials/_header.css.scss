@@ -1,6 +1,6 @@
 body > header {
   @include oma-menu-links;
-  min-height: 100px;
+  min-height: 10px;
   #logo {
     margin-top: 15px;
   }
@@ -17,7 +17,7 @@ body > header {
 
   &#kpb_header {
     nav#pie_logo {
-      // background: red;
+     // background: red;
       float: right;
     }
 
