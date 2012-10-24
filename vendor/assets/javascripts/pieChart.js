@@ -6,7 +6,7 @@ $(pieChart);
 function pieChart() {
 
   // Config settings
-  var chartSizePercent = 65;                        // The chart radius relative to the canvas width/height (in percent, orig 55)
+  var chartSizePercent = 57;                        // The chart radius relative to the canvas width/height (in percent, orig 55)
   var sliceBorderWidth = 1;                         // Width (in pixels) of the border around each slice
   var sliceBorderStyle = "#fff";                    // Colour of the border around each slice
   var sliceGradientColour = "#ddd";                 // Colour to use for one end of the chart gradient
@@ -292,7 +292,8 @@ function pieChart() {
 	context.beginPath();
 	context.lineWidth="25";
 	context.strokeStyle="rgb(  93, 89, 89 )"; //  path color is $oma_top_bar_color
-    context.arc( 150, 130, chartRadius, 0, 2*Math.PI); // x-center, y-center, r, ...
+//    context.arc( 150, 130, chartRadius, 0, 2*Math.PI); // x-center, y-center, r, ...
+    context.arc( centreX, centreY, chartRadius, 0, 2*Math.PI); // x-center, y-center, r, ...
 	context.stroke();
 
     // Draw each slice of the chart, skipping the pull-out slice (if any)
