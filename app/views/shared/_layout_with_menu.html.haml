@@ -11,12 +11,12 @@
   .container
     - if local_assigns[:menu_name].present?
       .row
-        .four.columns.alpha
+        .four.columns
           = render '/shared/side_menu', :menu_name => local_assigns[:menu_name]
-        .twelve.columns.omega{:'data-pjax-container' => true}
+        .twelve.columns{:'data-pjax-container' => true}
           = yield
     - else
-      .sixteen.columns.alpha.omega= yield
+      .sixteen.columns= yield
 	
   = render 'shared/footer'
   = render '/refinery/javascripts'

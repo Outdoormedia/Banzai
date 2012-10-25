@@ -1,5 +1,7 @@
 .nav.main_nav_left.row
-  .nine.columns.alpha= render_cell :menu, :main_left, :page => @page, :menu => @roots
+  .ten.columns.alpha= render_cell :menu, :main_left, :page => @page, :menu => @roots
 
-.nav.main_nav_right.row
-  .six.columns= render_cell :menu, :main_right, :page => @page, :menu => @roots
+.container 
+  .offset-by-three
+    .nav.main_nav_right.row
+      .four.columns.omega= render_cell :menu, :main_right, :page => @page, :menu => @roots
