@@ -27,7 +27,8 @@ footer#page_footer {
     text-align: center;
 
     li {
-      border-right: 2px solid $oma_light_grey;
+      border-right: 2px solid $oma_topbar_black;
+      color: $oma_topbar_black;
       display: inline;
       margin: 0;
       &:last-child {
@@ -39,7 +40,7 @@ footer#page_footer {
         &:hover, 
         &:visited,
         &.active {
-          color: $oma_green;
+          color: $oma_topbar_black;
         }
       }
     }

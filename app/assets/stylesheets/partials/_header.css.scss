@@ -5,12 +5,11 @@ body > header {
   }
 
   &#page_header {
-    nav#utility {
+
       float: right;
       font-size: 0.8em;
       position: relative;
       top: 0px;
-    }
   }
 
   &#page_body {
@@ -21,10 +20,3 @@ body > header {
 
 }
 
-// this styles the search button
-#search_tags {
-  width: 400px;
-  input[type='submit'] {
-    padding: 2px 18px;
-  }
-}

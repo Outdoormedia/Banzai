@@ -1,11 +1,12 @@
 %header.container#page_header( role = "banner")
 .container
-  .six.columns= render :partial => '/shared/logo'  
   - unless local_assigns[:hide_pie_header]
+    .six.columns= render :partial => '/shared/logo'  
     .five.columns= render '/shared/status_bar'
     .five.columns
       %canvas#chart= render '/shared/pieChart'
   -else
-    .five.columns= render '/shared/status_bar'
+    .ten.columns= render :partial => '/shared/logo'  
+    .six.columns= render '/shared/status_bar'
 
   = render_menu 'main'

@@ -9,7 +9,6 @@
 
 @mixin oma_page_header {
   background-color: $oma_grey;
-  width: span(24);
 }
 
 @mixin oma_text($color: $oma_green, $size: 14px) {

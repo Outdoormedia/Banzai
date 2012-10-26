@@ -1,29 +1,21 @@
 @import "partials/colors";
 @import "partials/fonts";
 @import "partials/oma_mixins";
-
-@import "partials/typography";
-@import "partials/header";
 @import "partials/footer";
-@import "partials/home";
-@import "partials/pie";
-@import "partials/carousel";
+
 
 body {
   font-family: $oma_body_font;
   background: $oma_white;
-  border-bottom: 5px solid $oma_light_black;
-  padding: 20px;   //move pages down a decent interval from top
+  /* JG may want this back
+     border-bottom: 5px solid $oma_light_black;
+  */
+  padding-top: 20px;   //move pages down a decent interval from top
 
   page_body {
     min-height:600px;
     height:auto !important;
     height:100px;
-}
+  }
 
-}
-
-
-#tagline {
-  margin-left: 20px;
 }

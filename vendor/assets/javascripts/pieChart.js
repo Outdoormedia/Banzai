@@ -290,7 +290,7 @@ function pieChart() {
     // Ring around circle (a.k.a. ring, pizza pan or donut)
 	// http://www.w3schools.com/html5/canvas_arc.asp
 	context.beginPath();
-	context.lineWidth="25";
+	context.lineWidth="15";
 	context.strokeStyle="rgb(  93, 89, 89 )"; //  path color is $oma_top_bar_color
 //    context.arc( 150, 130, chartRadius, 0, 2*Math.PI); // x-center, y-center, r, ...
     context.arc( centreX, centreY, chartRadius, 0, 2*Math.PI); // x-center, y-center, r, ...

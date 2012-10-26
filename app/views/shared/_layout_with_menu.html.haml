@@ -2,7 +2,7 @@
 
 = render  '/refinery/html_tag'
 
-- site_bar = render('/refinery/site_bar', :head => true)
+/- site_bar = render('/refinery/site_bar', :head => true)
 = render '/refinery/head'
 
 %body
@@ -16,7 +16,8 @@
         .twelve.columns{:'data-pjax-container' => true}
           = yield
     - else
-      .sixteen.columns= yield
+      .row
+        .sixteen.columns= yield
 	
   = render 'shared/footer'
   = render '/refinery/javascripts'
