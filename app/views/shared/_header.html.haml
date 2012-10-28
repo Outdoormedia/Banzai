@@ -1,5 +1,4 @@
-%header.container#page_header( role = "banner")
-.container
+%h6.container
   - unless local_assigns[:hide_pie_header]
     .six.columns= render :partial => '/shared/logo'  
     .five.columns= render '/shared/status_bar'

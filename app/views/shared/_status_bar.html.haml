@@ -1,10 +1,9 @@
-#page_header
-  - if current_refinery_user.present?
-    You are logged in as 
-    = link_to "[#{current_refinery_user.username}]", '#'
-    = link_to "[Logout]", '/refinery/logout'
-  - else
-    You are not logged in.
-    = link_to "[Login]", '/refinery/login'
+- if current_refinery_user.present?
+  You are logged in as 
+  = link_to "[#{current_refinery_user.username}]", '#'
+  = link_to "[Logout]", '/refinery/logout'
+- else
+  You are not logged in.
+  = link_to "[Login]", '/refinery/login'
 
-  = render "/refinery/shared/tagged"
+= render "/refinery/shared/tagged"
