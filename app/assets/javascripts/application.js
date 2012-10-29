@@ -16,6 +16,7 @@
 //= require pieChart
 //= require_self
 
+
 $(function() {
   $.pjax.defaults.scrollTo = false; // Disable scrolling-to-top on each link click
 
@@ -26,4 +27,13 @@ $(function() {
     $(this).parent().addClass('current');
   });
    
+});
+
+
+$(function() {
+
+  $('#side_menu ul').mouseover(function() {
+    $(this).find('> ul').slideToggle('fast'); 
+  });
+
 });

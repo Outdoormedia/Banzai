@@ -8,6 +8,7 @@ module Refinery
     def self.search(query, page = 1)
       results = []
 
+      # Defines models that are searchable
       Refinery.searchable_models.each do |model|
         results << model.limit(RESULTS_LIMIT).with_query(query)
       end if query.present?

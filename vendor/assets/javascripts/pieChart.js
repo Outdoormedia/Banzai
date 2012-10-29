@@ -414,7 +414,7 @@ function pieChart() {
   }
 
   /**
-   * Step ?.
+   * Step 15.
    * Mouseover handler.  Hit test is on canvas, slice is inferred by angle of mouse to center.
    *
    * @param mouseoverEvent
@@ -458,7 +458,7 @@ function pieChart() {
 	 }
   }
   /**
-   * Step ?.
+   * Step 16.
    * Mouseout handler.  Remove message on exit canvas.
    *
    */

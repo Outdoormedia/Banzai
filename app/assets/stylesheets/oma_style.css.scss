@@ -1,0 +1,45 @@
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/oma_mixins";
+@import "partials/footer";
+
+
+body {
+  font-family: $oma_body_font;
+  color: $oma_light_black;
+  background: $oma_white;
+  padding-top: 20px;   //move pages down a decent interval from top
+
+  /* JG may want this back
+     border-bottom: 5px solid $oma_light_black;
+  */
+}
+
+table {
+  font-family: $oma_table_font;
+  width:80%;
+  border-collapse:collapse;
+
+  caption {
+    caption-side: top;
+    font-size:    .8em;
+    font-variant: small-caps;
+  }
+  td, th {
+    font-size:1em;
+    border:1px solid $oma_light_grey;
+    padding:3px 7px 2px 7px;
+  }
+  th {
+    font-size: 1.1em;
+    text-align:left;
+    padding-top:5px;
+    padding-bottom:4px;
+    background: $oma_light_grey;
+    color:$oma_green;
+  }
+  tr.alt td {
+    color:#000000;
+    background-color:#EAF2D3;
+  }
+}
