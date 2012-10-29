@@ -24,6 +24,7 @@ http://stackoverflow.com/questions/5016796/html-css-gradient-that-stops-at-a-per
       a {
         display: block;
         padding: 10px;
+        text-decoration: none;
 
         &:hover {
           background-color: $oma_top_bar_menu_hover_color;
@@ -39,6 +40,7 @@ http://stackoverflow.com/questions/5016796/html-css-gradient-that-stops-at-a-per
   float: right;
   font-family: $oma_top_bar_menu_item_font;
   font-size: 0.95em;       // if wider than 0.9em goes to multiple rows
+  font-weight: 500;
 
   ul {
     li {
@@ -46,7 +48,8 @@ http://stackoverflow.com/questions/5016796/html-css-gradient-that-stops-at-a-per
       a {
         display: block;
         color: $oma_top_bar_menu_color;
-        padding: 1em 1.2em 1.2em 0em;
+        padding: 1.0em 1.4em 1.4em 1em;
+        text-decoration: none;
         &:hover {
           background-color: $oma_top_bar_menu_hover_color;
         }
