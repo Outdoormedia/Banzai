@@ -8,7 +8,7 @@ body {
   font-family: $oma_body_font;
   color: $oma_light_black;
   background: $oma_white;
-  padding-top: 20px;   //move pages down a decent interval from top
+  padding: 2% 10% 0 10%;   //move pages down a decent interval from top
 
   /* JG may want this back
      border-bottom: 5px solid $oma_light_black;

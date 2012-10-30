@@ -6,7 +6,6 @@ http://stackoverflow.com/questions/5016796/html-css-gradient-that-stops-at-a-per
 .nav.main_nav_left { 
   background-color: $oma_top_bar_menu_color;
   display: inline;
-  height: 40px;
   float: left;
   font-family: $oma_top_bar_menu_font;
   font-size: 0.95em;       // if wider than 0.9em goes to multiple rows
@@ -25,7 +24,6 @@ http://stackoverflow.com/questions/5016796/html-css-gradient-that-stops-at-a-per
         display: block;
         padding: 10px;
         text-decoration: none;
-
         &:hover {
           background-color: $oma_top_bar_menu_hover_color;
         }
