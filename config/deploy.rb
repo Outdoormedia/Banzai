@@ -1,5 +1,5 @@
 require 'rvm/capistrano'
-#require 'bundler/capistrano'
+require 'bundler/capistrano'
 require 'capistrano_colors'
 
 # General
@@ -61,20 +61,14 @@ namespace :deploy do
   end
 
   task :symlink_config, roles: :app do
-    run "ln -nfs #{shared_path}/config/database.yml #{current_path}/config/database.yml"
+    run "ln -nfs #{shared_path}/config/database.yml #{latest_release}/config/database.yml"
   end
 end
 
-after "deploy", "deploy:symlink_config"
+#after "deploy", "deploy:symlink_config"
+before "deploy:assets:precompile", "deploy:symlink_config"
 
 
 task :rvm_version do
   run "which ruby"
-end
-
-namespace :rake do
-  desc "Run a task on a remote server. 'cap rake:invoke task=db:migrate'"
-  task :invoke do
-    run("cd #{deploy_to}/current; /usr/bin/env rake #{ENV['task']}")
-  end
 end
