@@ -4,10 +4,9 @@ nav#side_menu {
     padding: 0;
     margin: 0;
   }
-  ul ul {
+  & > ul > li > ul {
     display: none;
-    font: inherit;
-    }
+  }
   li {
     font-size: 0.9em;
     text-transform: uppercase;

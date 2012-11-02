@@ -16,24 +16,38 @@
 //= require pieChart
 //= require_self
 
+Site = {
+  init: function() {
+    this.startPjax();
+    this.enableSideMenuMouseFocus();
+  },
+
+  startPjax: function() {
+    $.pjax.defaults.scrollTo = false; // Disable scrolling-to-top on each link click
+
+    $link = $('nav#side_menu a');
+    $link.pjax('[data-pjax-container]');
+    $link.click(function(e) {
+      $('nav#side_menu li.current').removeClass('current');
+      $(this).parent().addClass('current');
+    });
+  },
+
+  enableSideMenuMouseFocus: function() {
+    $('#side_menu > ul > li > a').mouseover(function() {
+      $(this).parent('li').find('> ul').stop(true).slideDown('fast');
+      return false;
+    });
+
+    $('#side_menu > ul > li').mouseleave(function() {
+      $(this).find('> ul').stop(true).slideUp('fast');
+      return false;
+    });
+
+  }
+}
 
 $(function() {
-  $.pjax.defaults.scrollTo = false; // Disable scrolling-to-top on each link click
-
-  $link = $('nav#side_menu a');
-  $link.pjax('[data-pjax-container]');
-  $link.click(function(e) {
-    $('nav#side_menu li.current').removeClass('current');
-    $(this).parent().addClass('current');
-  });
-   
-});
-
-
-$(function() {
-
-  $('#side_menu ul').mouseover(function() {
-    $(this).find('> ul').slideToggle('fast'); 
-  });
+  site = Site.init();
 
 });
