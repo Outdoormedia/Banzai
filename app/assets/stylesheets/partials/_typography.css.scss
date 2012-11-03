@@ -8,6 +8,11 @@ h3 {
     font: $oma_accent_font;
 }
 
+h6 {
+   color: $oma_green;
+   font-size: .8em;   
+}
+
 // used to test style markup for FAQs
 li {
   color: $oma_green;
