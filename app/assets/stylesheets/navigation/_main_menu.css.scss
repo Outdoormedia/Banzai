@@ -1,29 +1,30 @@
-/* http://css-tricks.com/examples/CSS3Gradient/
-   http://css-tricks.com/css3-gradients/
-   Used first answer of
-http://stackoverflow.com/questions/5016796/html-css-gradient-that-stops-at-a-perticular-height-and-continues-further-with-a
-*/
-.nav.main_nav_left { 
-  background-color: $oma_top_bar_menu_color;
-  display: inline;
-  float: left;
+#main_menu {
   font-family: $oma_top_bar_menu_font;
-  font-size: 0.95em;       // if wider than 0.9em goes to multiple rows
+  font-size: 0.95em;
+  margin-bottom: 10px;
 
   a {
     color: $oma_white;
+    text-align: center;
   }
 
-
   ul {
+    margin-bottom: 0;
+    //background-color: $oma_top_bar_menu_color;
+    width: 100%;
+
     li {
       text-align: center;
       display: inline-block;
-      color: $oma_white;
+      margin-bottom: 0;
+      margin-right: -4px; // Whitespace correction.
+
       a {
         display: block;
         padding: 10px;
         text-decoration: none;
+        background-color: $oma_top_bar_menu_color;
+        
         &:hover {
           background-color: $oma_top_bar_menu_hover_color;
         }
@@ -32,45 +33,17 @@ http://stackoverflow.com/questions/5016796/html-css-gradient-that-stops-at-a-per
   }
 }
 
-.nav.main_nav_right {
-//  background-color: $oma_green;
-  height: 40px;
-  float: right;
-  font-family: $oma_top_bar_menu_item_font;
-  font-size: 0.95em;       // if wider than 0.9em goes to multiple rows
-  font-weight: 500;
-
-  ul {
-    li {
-      display: inline-block;
-      a {
-        display: block;
-        color: $oma_top_bar_menu_color;
-        padding: 1.0em 1.4em 1.4em 1em;
-        text-decoration: none;
-        &:hover {
-          background-color: $oma_top_bar_menu_hover_color;
-        }
-      }
-    }
-  }
+.nav#main_nav_left {
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  nav#main_nav .offset-by-four {
-    padding-left: 92px;
-  }
-
-  nav#main_nav .alpha {
-    width: 464px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  nav#main_nav {
-    height: auto;
-
-    ul li {
-      display: block;
+.nav#main_nav_right {
+  text-align: right;
+  a {
+    font-weight: bold;
+    color: #000;
+    background-color: inherit;
+    &:hover {
+      color: #FFF;
     }
   }
 }

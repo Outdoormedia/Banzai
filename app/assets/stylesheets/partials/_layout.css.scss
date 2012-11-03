@@ -1,0 +1,61 @@
+body {
+  margin-top: 40px;
+}
+
+#statusbar {
+  font-size: 80%;
+}
+
+// These next 4 rules could probably be factored out into a home partial.
+.carousel img {
+  max-width: 100%;
+}
+
+#oma_pie_slice_message {
+  text-align: center;
+}
+
+#upper_page_content {
+  margin-bottom: 10px;
+}
+
+#lower_page_content {
+  img {
+    max-width: 100%;
+  }
+}
+
+#body_content {
+  min-height: 300px;
+}
+
+@media only screen and (min-width: 767px) {
+  #statusbar {
+    text-align: right;
+  }
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  #logo {
+    text-align: center;
+  }
+
+  #statusbar {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+}

@@ -18,11 +18,5 @@
  *= require skeleton
  *= require oma_style
  *= require navigation
+ *
  */
- 
-/* It appears we can remove the following files
- * require formatting
- * require theme
- * require pieChart
- * require_self
-*/

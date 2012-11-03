@@ -1,24 +1,29 @@
 @import "partials/colors";
 @import "partials/fonts";
 @import "partials/oma_mixins";
+@import "partials/layout";
 @import "partials/footer";
 
+/*
+ * Note that we require a distinct layout file as opposed to changing skeleton.
+ * Skeleton works as a third-party library and we don't want to write any 
+ * modifications there in the event that we need to or want to update. Because 
+ * CSS lets you modify rules simply by declaring them after earlier rules, we 
+ * can create an additional stylesheet and keep our own styles separate.
+ */
 
 body {
   font-family: $oma_body_font;
   color: $oma_light_black;
   background: $oma_white;
-  padding: 2% 10% 0 10%;   //move pages down a decent interval from top
-
-  /* JG may want this back
-     border-bottom: 5px solid $oma_light_black;
-  */
+  // JG may want this back
+  // border-bottom: 5px solid $oma_light_black;
 }
 
 table {
   font-family: $oma_table_font;
-  width:80%;
-  border-collapse:collapse;
+  width: 80%;
+  border-collapse: collapse;
 
   caption {
     caption-side: top;
