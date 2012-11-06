@@ -34,13 +34,13 @@ Site = {
   },
 
   enableSideMenuMouseFocus: function() {
-    $('#side_menu > ul > li > a').mouseover(function() {
+    $('#side_menu ul li a').mouseover(function() {
       $(this).parent('li').find('> ul').stop(true).slideDown('fast');
       return false;
     });
 
-    $('#side_menu > ul > li').mouseleave(function() {
-      $(this).find('> ul').stop(true).slideUp('fast');
+    $('#side_menu ul li').mouseleave(function() {
+      $(this).find('ul').stop(true).slideUp('fast');
       return false;
     });
 
