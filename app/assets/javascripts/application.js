@@ -40,7 +40,7 @@ Site = {
     });
 
     $('#side_menu ul li').mouseleave(function() {
-      $(this).find('ul').stop(true).slideUp('fast');
+      $(this).find('> ul').stop(true).slideUp('fast');
       return false;
     });
 
