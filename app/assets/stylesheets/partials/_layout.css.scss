@@ -13,6 +13,9 @@ body {
 
 #oma_pie_slice_message {
   text-align: center;
+  position: relative;
+  bottom: 40px;
+  font-size: $oma_font_size;
 }
 
 #upper_page_content {
