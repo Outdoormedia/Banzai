@@ -60,8 +60,8 @@ table {
 .oma_link {
   @include oma_menu_links;
   a:hover {
-    color: $oma_green;
-    background: $oma_light_grey;
+    color: $oma_white;
+    background: $oma_black;
   }
 
 }
