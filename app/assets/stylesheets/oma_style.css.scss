@@ -12,7 +12,7 @@
  * can create an additional stylesheet and keep our own styles separate.
  */
 
-
+/* elements */
 body {
   font-family: $oma_body_font;
   font-size: 80%;
@@ -52,6 +52,10 @@ table {
     background-color:#EAF2D3;
   }
 }
+
+/* 
+  classes 
+*/
 
 .oma_link {
   @include oma_menu_links;
