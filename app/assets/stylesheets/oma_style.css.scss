@@ -12,6 +12,7 @@
  * can create an additional stylesheet and keep our own styles separate.
  */
 
+
 body {
   font-family: $oma_body_font;
   font-size: 80%;
@@ -50,4 +51,13 @@ table {
     color:#000000;
     background-color:#EAF2D3;
   }
+}
+
+.oma_link {
+  @include oma_menu_links;
+  a:hover {
+    color: $oma_green;
+    background: $oma_light_grey;
+  }
+
 }
