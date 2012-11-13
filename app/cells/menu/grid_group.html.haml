@@ -2,4 +2,7 @@
   - if @roots.present?
     - @roots.each_with_index do |page, index|
       %li{:class => css_for_item(index, page.children.present?, page, @page).join(" ")}
-        = link_to page.title, refinery.url_for(page.url)
+        = link_to page.title, refinery.url_for(page.url), 
+                              target: page.url.include?("http://") ? "_blank" : ""
+
+		
