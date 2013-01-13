@@ -1,3 +1,4 @@
+
 #main_menu {
   font-family: $oma_top_bar_menu_font;
   font-size: 0.95em;
@@ -18,6 +19,7 @@
       margin-bottom: 0;
       margin-right: -4px; // Whitespace correction.
 
+
       a {
         display: block;
         padding: 10px;
@@ -33,7 +35,8 @@
 }
 
 .nav#main_nav_left {
-}
+  include: rounded_borders
+  }
 
 .nav#main_nav_right {
   text-align: right;

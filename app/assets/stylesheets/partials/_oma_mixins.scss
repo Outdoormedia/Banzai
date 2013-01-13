@@ -70,3 +70,11 @@
     text-transform: uppercase;
   }
 }
+
+@mixin rounded_borders($rounding: 10px, $color: $oma_black) {
+  -moz-border-radius: $rounding $rounding;
+  -webkit-border-radius: $rounding $rounding; 
+  -khtml-border-radius: $rounding $rounding;
+  -o-border-radius: $rounding $rounding;
+  border-radius: $rounding $rounding;
+}
