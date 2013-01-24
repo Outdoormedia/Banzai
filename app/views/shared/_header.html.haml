@@ -3,7 +3,7 @@
   - unless local_assigns[:hide_pie_header]
     .one-third.column#logo= render :partial => '/shared/logo'
     .one-third.column
-      %canvas#chart{:height => '285px'}= render '/shared/pieChart'
+      %canvas#chart{:height => '150px'}= render '/shared/pieChart'
     .one-third.column#statusbar= render '/shared/status_bar'
   -else
     .two-thirds.column#logo= render :partial => '/shared/logo'

@@ -11,6 +11,14 @@ body {
   max-width: 100%;
 }
 
+#oma_pieChart_caption {
+  text-align: center;
+  color: $oma_light_green;
+  position: relative;
+  top: 10px;
+  font-size: $oma_font_size;  
+}
+
 #oma_pie_slice_message {
   text-align: center;
   color: $oma_light_green;

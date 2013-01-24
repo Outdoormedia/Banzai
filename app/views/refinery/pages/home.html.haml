@@ -12,6 +12,8 @@
 
   %section#pie_content.six.columns.omega
     = raw @page.content_for(:pie)
+    #oma_pieChart_caption
+      %p= 'What do you want to do with MOVE?'
     %canvas#chart{:height => '300px'}= render '/shared/pieChart'
 
     #oma_pie_slice_message
