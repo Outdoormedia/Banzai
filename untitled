@@ -1,0 +1,1 @@
+    %p{:align=>'center',:color=>$oma_green}= 'What do you want to do with MOVE?'
