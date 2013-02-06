@@ -16,7 +16,9 @@ group :development, :test do
   gem 'debugger'
   gem 'mysql2'
   gem 'taps', :require => false # has an sqlite dependency, which heroku hates
-  gem 'sqlite3'                 # for Heroku you need taps, taps uses sqlite3  
+  group :development, :test do
+  gem 'sqlite3'
+end                 # for Heroku you need taps, taps uses sqlite3  
 end
 
 gem 'sass', '3.3.0.alpha.3' # Temporary fix for Pow compatibility. Can be removed later.
@@ -57,7 +59,8 @@ group :production do
 end
 
 # Refinery CMS
-gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
+#gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
+gem 'refinerycms', '~> 2.0.0'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 gem 'refinerycms-i18n', '~> 2.0.0'
@@ -67,7 +70,11 @@ gem 'refinerycms-search', :path => 'vendor/extensions'
 gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-carousels', :path => 'vendor/extensions'
-gem 'refinerycms-calendars', :path => 'vendor/extensions'
-
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-plan_by_formats', :path => 'vendor/extensions'
+
+# 30-01-2013.  Calendar extension not creating working calendar items
+# -Modified 'refinercms-calendars' to '*-calendar'
+# -did $ gem install refinerycms-calendar JWM
+# - per http://rubygems.org/gems/refinerycms-calendar
+gem 'refinerycms-calendar', '~> 2.0.0' #, :path => 'vendor/extensions'

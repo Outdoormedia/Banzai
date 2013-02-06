@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130124040200) do
+ActiveRecord::Schema.define(:version => 20130130233349) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -101,16 +101,29 @@ ActiveRecord::Schema.define(:version => 20130124040200) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "refinery_calendars", :force => true do |t|
+  create_table "refinery_calendar_events", :force => true do |t|
     t.string   "title"
-    t.datetime "when"
-    t.string   "where"
-    t.string   "sponsor"
+    t.date     "from"
+    t.date     "to"
+    t.string   "registration_link"
+    t.string   "excerpt"
     t.text     "description"
-    t.string   "url"
     t.integer  "position"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.boolean  "featured"
+    t.string   "slug"
+    t.integer  "venue_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  create_table "refinery_calendar_venues", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "url"
+    t.string   "phone"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "refinery_carousels", :force => true do |t|

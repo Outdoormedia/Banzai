@@ -27,3 +27,6 @@ Refinery::Calendars::Engine.load_seed
 
 # Planning Weights
 Refinery::PlanByFormats::PlanningWeight.import_csv
+
+# Added by Refinery CMS Venues extension
+Refinery::Calendar::Engine.load_seed
