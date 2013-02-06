@@ -59,7 +59,6 @@ group :production do
 end
 
 # Refinery CMS
-#gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
 gem 'refinerycms', '~> 2.0.0'
 
 # Specify additional Refinery CMS Extensions here (all optional):
@@ -70,6 +69,7 @@ gem 'refinerycms-search', :path => 'vendor/extensions'
 gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-carousels', :path => 'vendor/extensions'
+gem 'refinerycms-calendar', '~> 2.0.4'
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-plan_by_formats', :path => 'vendor/extensions'
 
@@ -77,4 +77,4 @@ gem 'refinerycms-plan_by_formats', :path => 'vendor/extensions'
 # -Modified 'refinercms-calendars' to '*-calendar'
 # -did $ gem install refinerycms-calendar JWM
 # - per http://rubygems.org/gems/refinerycms-calendar
-gem 'refinerycms-calendar', '~> 2.0.0' #, :path => 'vendor/extensions'
+#gem 'refinerycms-calendar', '~> 2.0.0' #, :path => 'vendor/extensions'

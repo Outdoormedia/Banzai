@@ -1,8 +1,0 @@
-- content_for :body do
-  %table id="calendars"
-    = @calendars.each do |calendar|
-      %tr
-        = link_to calendar.title, refinery.calendars_calendar_path(calendar)
-
-<%= render '/refinery/content_page' %>
-

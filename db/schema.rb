@@ -102,6 +102,34 @@ ActiveRecord::Schema.define(:version => 20130130233349) do
   end
 
   create_table "refinery_calendar_events", :force => true do |t|
+<<<<<<< HEAD
+=======
+    t.string   "title"
+    t.date     "from"
+    t.date     "to"
+    t.string   "registration_link"
+    t.string   "excerpt"
+    t.text     "description"
+    t.integer  "position"
+    t.boolean  "featured"
+    t.string   "slug"
+    t.integer  "venue_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  create_table "refinery_calendar_venues", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "url"
+    t.string   "phone"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "refinery_calendars", :force => true do |t|
+>>>>>>> 92c7816c19bf15dccd00c86470cd6f8c8452b7ec
     t.string   "title"
     t.date     "from"
     t.date     "to"
