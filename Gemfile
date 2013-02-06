@@ -57,7 +57,7 @@ group :production do
 end
 
 # Refinery CMS
-gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
+gem 'refinerycms', :git => 'git://github.com/refinery/refinerycms.git', :branch => '2-0-stable'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 gem 'refinerycms-i18n', '~> 2.0.0'
@@ -67,7 +67,7 @@ gem 'refinerycms-search', :path => 'vendor/extensions'
 gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-carousels', :path => 'vendor/extensions'
-gem 'refinerycms-calendars', :path => 'vendor/extensions'
+#gem 'refinerycms-calendar', :path => 'vendor/extensions'
 
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-plan_by_formats', :path => 'vendor/extensions'
