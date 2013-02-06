@@ -22,8 +22,8 @@ Refinery::Snapshots::Engine.load_seed
 # Added by Refinery CMS Carousels extension
 Refinery::Carousels::Engine.load_seed
 
-# Added by Refinery CMS Calendars extension
-Refinery::Calendars::Engine.load_seed
-
 # Planning Weights
 Refinery::PlanByFormats::PlanningWeight.import_csv
+
+# Added by Refinery CMS Venues extension
+Refinery::Calendar::Engine.load_seed

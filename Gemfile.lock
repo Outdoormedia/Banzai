@@ -215,6 +215,8 @@ GEM
       rake
     rdoc (3.12)
       json (~> 1.4)
+    refinerycms-calendar (2.0.4)
+      refinerycms-core (~> 2.0.3)
     refinerycms-i18n (2.0.0)
       refinerycms-core (~> 2.0.0)
       routing-filter (>= 0.2.3)
@@ -288,6 +290,7 @@ DEPENDENCIES
   rails (= 3.2.11)
   randumb
   refinerycms!
+  refinerycms-calendar (~> 2.0.4)
   refinerycms-carousels!
   refinerycms-i18n (~> 2.0.0)
   refinerycms-page-images (~> 2.0.0)
