@@ -1,15 +1,23 @@
-h1, h2 {
+h1 {
   font-family: $oma_heading_font;
   color: $oma_green;
 }
 
+h2 {
+  font-family: $oma_heading_font;
+  color: $oma_green;    
+  font-size: 1.5em;   
+}
+
 h3 {
     color: $oma_accent_green;
-    font: $oma_accent_font;
+    font-family: $oma_accent_font;
+    font-size: 1.25em;       
 }
 
 h6 {
    color: $oma_green;
+   font_family: $oma_heading_font;
    font-size: .8em;   
 }
 

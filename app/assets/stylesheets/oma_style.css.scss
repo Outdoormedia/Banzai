@@ -4,6 +4,11 @@
 @import "partials/layout";
 @import "partials/footer";
 
+@import "navigation/main_menu";
+@import "navigation/side_menu";
+@import "partials/typography";
+@import "partials/rounded_borders";
+
 /*
  * Note that we require a distinct layout file as opposed to changing skeleton.
  * Skeleton works as a third-party library and we don't want to write any 
