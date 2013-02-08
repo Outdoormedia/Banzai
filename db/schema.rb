@@ -102,8 +102,6 @@ ActiveRecord::Schema.define(:version => 20130130233349) do
   end
 
   create_table "refinery_calendar_events", :force => true do |t|
-<<<<<<< HEAD
-=======
     t.string   "title"
     t.date     "from"
     t.date     "to"
@@ -129,7 +127,6 @@ ActiveRecord::Schema.define(:version => 20130130233349) do
   end
 
   create_table "refinery_calendars", :force => true do |t|
->>>>>>> 92c7816c19bf15dccd00c86470cd6f8c8452b7ec
     t.string   "title"
     t.date     "from"
     t.date     "to"
