@@ -9,6 +9,7 @@ gem "mysql2"
 gem "haml"
 gem 'rack-pjax'
 gem "acts_as_tree"
+gem "json", "1.7.7"
 
 group :development, :test do
   #gem "rvm-capistrano"
