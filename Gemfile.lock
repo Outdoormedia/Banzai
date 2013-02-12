@@ -280,6 +280,7 @@ DEPENDENCIES
   haml
   heroku
   jquery-rails (~> 2.0.0)
+  json (= 1.7.7)
   mysql2
   pg
   rack-pjax
