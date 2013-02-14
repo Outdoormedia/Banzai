@@ -1,0 +1,6 @@
+#main_nav_left.nav.seven.columns= render_cell :menu, :main_left, :page => @page, :menu => @roots
+
+%div{:style=>"border: 1px solid black;"}
+  #main_nav_center.five.column
+  %h6= 'What do you want to do with MOVE?'
+  #main_nav_right.nav.four.columns= render_cell :menu, :main_right, :page => @page, :menu => @roots

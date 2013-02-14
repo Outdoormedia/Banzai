@@ -4,13 +4,9 @@
   font-size: 0.95em;
   margin-bottom: 10px;
 
-  a {
-    color: $oma_white;
-    text-align: center;
-  }
 
   ul {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     width: 100%;
 
     li {
@@ -21,6 +17,7 @@
 
 
       a {
+        color: $oma_white;
         display: block;
         padding: 10px;
         text-decoration: none;
@@ -35,8 +32,12 @@
 }
 
 .nav#main_nav_left {
-  include: rounded_borders;
-  }
+}
+
+.nav#main_nav_center{
+  margin-top: 10px;
+  text-align: right;
+}
 
 .nav#main_nav_right {
   text-align: right;
