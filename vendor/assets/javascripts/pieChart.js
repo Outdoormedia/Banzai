@@ -1,8 +1,6 @@
 // Run the code when the DOM is ready
 // Tutorial Step 4.
 
-$(pieChart);
-
 function pieChart() {
 
   // Config settings

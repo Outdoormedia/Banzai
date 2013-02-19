@@ -20,6 +20,7 @@ Site = {
   init: function() {
     this.startPjax();
     this.enableSideMenuMouseFocus();
+    this.enablePieChart();
   },
 
   startPjax: function() {
@@ -44,6 +45,10 @@ Site = {
       return false;
     });
 
+  },
+
+  enablePieChart: function() {
+    if ($('#chart').length) pieChart();
   }
 }
 

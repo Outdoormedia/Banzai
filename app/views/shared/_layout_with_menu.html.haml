@@ -6,7 +6,7 @@
 = render '/refinery/head'
 
 %body
-  = render '/shared/header', :hide_pie_header => local_assigns[:hide_pie_header].present?
+  = render '/shared/header'
 
   .container
     - if local_assigns[:menu_name].present?

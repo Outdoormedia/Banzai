@@ -1,13 +1,6 @@
 .header.container
-
-  - unless local_assigns[:hide_pie_header]
-    .one-third.column#logo= render :partial => '/shared/logo'
-    .one-third.column
-      %canvas#chart{:height => '150px'}= render '/shared/pieChart'
-    .one-third.column#statusbar= render '/shared/status_bar'
-  -else
-    .two-thirds.column#logo= render :partial => '/shared/logo'
-    #statusbar.one-third.column= render '/shared/status_bar'
+  .two-thirds.column#logo= render :partial => '/shared/logo'
+  #statusbar.one-third.column= render '/shared/status_bar'
 
 #main_menu.container
   = render_menu 'main'
