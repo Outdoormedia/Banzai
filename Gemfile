@@ -71,7 +71,6 @@ gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-carousels', :path => 'vendor/extensions'
 gem 'refinerycms-calendar', '~> 2.0.4'
-gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-plan_by_formats', :path => 'vendor/extensions'
 
 # 30-01-2013.  Calendar extension not creating working calendar items
