@@ -5,15 +5,14 @@
 #upper_page_content.row
   %section#carousel_content.ten.columns.alpha
     .carousel
-      - if @carousel.present? && !@carousel.photo.image.nil?
-
-        - begin
+      - begin 
+        - if @carousel.present?
           = image_tag @carousel.photo.image.url, :alt => "Carousel image not found."
-        - rescue NoMethodError
+        - else
           = image_tag 'oma_placeholder.png', :alt => "Carousel image not found."
-
-      - else
+      - rescue NoMethodError
         = image_tag 'oma_placeholder.png', :alt => "Carousel image not found."
+
 
   %section#pie_content.six.columns.omega
     = raw @page.content_for(:pie)
