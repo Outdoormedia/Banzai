@@ -4,17 +4,15 @@
   font-size: 0.95em;
   margin-bottom: 10px;
 
-
   ul {
+    border: 1px solid $oma_green;
     margin-bottom: 10px;
-    width: 100%;
 
     li {
       text-align: center;
       display: inline-block;
       margin-bottom: 0;
       margin-right: -4px; // Whitespace correction.
-
 
       a {
         color: $oma_white;
