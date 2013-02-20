@@ -5,7 +5,6 @@
 #upper_page_content.row
   %section#carousel_content.ten.columns.alpha
     .carousel
-      - @carousel.photo.image = nil
       - if @carousel.present? && !@carousel.photo.image.nil?
         = image_tag @carousel.photo.image.url, :alt => "Carousel image not found."
       - else
