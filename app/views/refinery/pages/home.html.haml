@@ -6,7 +6,12 @@
   %section#carousel_content.ten.columns.alpha
     .carousel
       - if @carousel.present? && !@carousel.photo.image.nil?
-        = image_tag @carousel.photo.image.url, :alt => "Carousel image not found."
+
+        - begin
+          = image_tag @carousel.photo.image.url, :alt => "Carousel image not found."
+        - rescue NoMethodError
+          = image_tag 'oma_placeholder.png', :alt => "Carousel image not found."
+
       - else
         = image_tag 'oma_placeholder.png', :alt => "Carousel image not found."
 
