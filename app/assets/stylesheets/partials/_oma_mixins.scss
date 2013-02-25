@@ -42,7 +42,7 @@
 }
 
 @mixin menu_item($color: $oma_grey) {
-  font-family: $oma_top_bar_menu_font;
+  font-family: $oma_topbar_menu_font;
   font-weight:bold;
   font-size: 12px;
   color:$color;

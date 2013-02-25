@@ -54,5 +54,4 @@ Site = {
 
 $(function() {
   site = Site.init();
-
 });

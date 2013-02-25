@@ -1,6 +1,5 @@
 $oma_green:        rgb(  37, 178, 100 ); 
 $oma_black:        rgb(  35,  31,  32 );
-$oma_topbar_black: rgb(  93, 89, 89 );          // topbar_black per John Gandar request
 $oma_grey:         rgb( 187, 188, 188 );
 $oma_white:        rgb( 255,255,255 );
 
@@ -17,8 +16,8 @@ $oma_light_grey:     lighten($oma_grey,         10%);
 $oma_lighter_grey:   lighten($oma_light_grey,   10%);
 $oma_lightest_grey:  lighten($oma_lighter_grey, 15%);
 
-$oma_top_bar_menu_color: $oma_topbar_black;  
-$oma_top_bar_menu_hover_color: $oma_black;
+$oma_topbar_color: $oma_black;  // topbar_black per John Gandar request
+$oma_topbar_hover_color: $oma_green;
 
 
 
