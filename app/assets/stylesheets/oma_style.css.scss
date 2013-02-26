@@ -30,6 +30,12 @@ body {
   background: $oma_white;
 }
 
+#container { position: relative; }
+#container {
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+
 table {
   font-family: $oma_table_font;
   width: 80%;
