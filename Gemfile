@@ -72,7 +72,7 @@ gem 'refinerycms-snapshots', :path => 'vendor/extensions'
 gem 'refinerycms-carousels', :path => 'vendor/extensions'
 gem 'refinerycms-calendar', '~> 2.0.4'
 gem 'refinerycms-plan_by_formats', :path => 'vendor/extensions'
-
+gem 'refinerycms-videojs', git: 'git@github.com:adexin-team/refinerycms-videojs.git'
 # 30-01-2013.  Calendar extension not creating working calendar items
 # -Modified 'refinercms-calendars' to '*-calendar'
 # -did $ gem install refinerycms-calendar JWM

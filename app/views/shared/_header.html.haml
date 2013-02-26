@@ -1,6 +1,8 @@
-.header.container
-  .two-thirds.column#logo= render :partial => '/shared/logo'
-  #statusbar.one-third.column= render '/shared/status_bar'
+.container
+  %header.sixteen.columns#page_header
+
+    #logo.two-thirds.column= render :partial => '/shared/logo'
+    #statusbar.two-thirds-offset= render '/shared/status_bar'
 
 #main_menu.container.sixteen.columns
-  = render_menu 'main'
+  = render_menu 'main'  

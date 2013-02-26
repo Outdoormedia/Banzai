@@ -1,3 +1,12 @@
+GIT
+  remote: git@github.com:adexin-team/refinerycms-videojs.git
+  revision: c8f0c6d6e0d53c529959f867200baccbf78ba8da
+  specs:
+    refinerycms-videojs (0.5.5.1)
+      dragonfly
+      rack-cache
+      refinerycms-core
+
 PATH
   remote: vendor/extensions
   specs:
@@ -295,6 +304,7 @@ DEPENDENCIES
   refinerycms-plan_by_formats!
   refinerycms-search!
   refinerycms-snapshots!
+  refinerycms-videojs!
   rvm-capistrano
   sass (= 3.3.0.alpha.3)
   sass-rails (~> 3.2.5)

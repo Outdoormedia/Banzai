@@ -1,11 +1,13 @@
-body > header {
-  @include oma-menu-links;
-  #logo {
+header#page_header { 
+
+  &#logo {
     margin-top: 15px;
+    text-align: left;
   }
 
   &#page_header {
 
+      color: blue;
       float: right;
       font-family ;
       font-size: 0.8em;
@@ -19,5 +21,12 @@ body > header {
     height:100px;
   }
 
+  &#container{
+    border: 1px solid $oma_black;
+    background-color: red; 
+  }
+
 }
+
+
 

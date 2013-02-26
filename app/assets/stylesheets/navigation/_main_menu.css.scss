@@ -1,7 +1,18 @@
+/*
+ * OMA Topbar menu and its parts
+ */
+@import "partials/colors";
+
 #main_menu {
+
   font-family: $oma_topbar_menu_font;
   font-size: 0.95em;
   margin-bottom: 10px;
+
+  container sixteen.columns {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
   ul {
     border: 0px solid $oma_green;
@@ -57,3 +68,4 @@
     }
   }
 }
+

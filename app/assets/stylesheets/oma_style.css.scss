@@ -7,7 +7,6 @@
 @import "navigation/side_menu";
 @import "navigation/move_style";
 @import "partials/typography";
-@import "partials/rounded_borders";
 
 /*
  * Note that we require a distinct layout file as opposed to changing skeleton.
@@ -17,14 +16,18 @@
  * can create an additional stylesheet and keep our own styles separate.
  */
 
-/* elements */
+/*
+ * skeleton element rules
+ * remove left and right margins to eliminate gap between top bar menu sections
+ */
+
+
+/* OMA elements */
 body {
   font-family: $oma_body_font;
   font-size: 80%;
   color: $oma_lighter_black;
   background: $oma_white;
-  // JG may want this back
-  // border-bottom: 5px solid $oma_light_black;
 }
 
 table {
@@ -62,7 +65,7 @@ table {
   classes 
 */
 
-.oma_link {
+.oma_login-to-MOVE-link {
   @include oma_menu_links;
   a:hover {
     color: $oma_white;

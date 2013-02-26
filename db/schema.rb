@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130130233349) do
+ActiveRecord::Schema.define(:version => 20130226011818) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -128,27 +128,14 @@ ActiveRecord::Schema.define(:version => 20130130233349) do
 
   create_table "refinery_calendars", :force => true do |t|
     t.string   "title"
-    t.date     "from"
-    t.date     "to"
-    t.string   "registration_link"
-    t.string   "excerpt"
+    t.datetime "when"
+    t.string   "where"
+    t.string   "sponsor"
     t.text     "description"
-    t.integer  "position"
-    t.boolean  "featured"
-    t.string   "slug"
-    t.integer  "venue_id"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
-  end
-
-  create_table "refinery_calendar_venues", :force => true do |t|
-    t.string   "name"
-    t.string   "address"
     t.string   "url"
-    t.string   "phone"
     t.integer  "position"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "refinery_carousels", :force => true do |t|
@@ -327,6 +314,30 @@ ActiveRecord::Schema.define(:version => 20130130233349) do
   end
 
   add_index "refinery_users", ["id"], :name => "index_refinery_users_on_id"
+
+  create_table "refinery_video_files", :force => true do |t|
+    t.string   "file_name"
+    t.integer  "file_size"
+    t.string   "file_ext"
+    t.string   "file_uid"
+    t.string   "file_mime_type"
+    t.integer  "video_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "external_url"
+    t.boolean  "use_external"
+  end
+
+  create_table "refinery_videos", :force => true do |t|
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "config"
+    t.string   "title"
+    t.integer  "poster_id"
+    t.boolean  "use_shared"
+    t.text     "embed_tag"
+  end
 
   create_table "selections", :force => true do |t|
     t.string   "name"
