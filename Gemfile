@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "0.9.2.2"  # for banzairails
+gem "rake", "0.9.2.2"  # for banzairails
 gem 'rails', '3.2.11'
 gem 'thin'
 # Bundle edge Rails instead:0
