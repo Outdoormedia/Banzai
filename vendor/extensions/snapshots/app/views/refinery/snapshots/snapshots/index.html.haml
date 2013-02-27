@@ -18,7 +18,7 @@
         %tr
           %td= format.name
           - Selection.snapshot_demographics.each do |demog|
-            - Selection.markets.each do |market|
+            - Selection.markets.order(:position_value).each do |market|
               = chart_link market, demog, format
   %table.record
     -#%tr
