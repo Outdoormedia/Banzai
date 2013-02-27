@@ -27,6 +27,8 @@
         text-decoration: none;
         background-color: $oma_topbar_color;
         
+        a:visited {color:#00FF00;}
+
         &:hover {
           background-color: $oma_topbar_hover_color;
         }

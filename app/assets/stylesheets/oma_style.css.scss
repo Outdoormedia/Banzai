@@ -67,11 +67,11 @@ table {
 
 .oma_login-to-MOVE-link {
   @include oma_menu_links;
+  a:visited { background: $oma_topbar_hover_color; }
   a:hover {
     color: $oma_white;
-    background: $oma_black;
+    background: $oma_topbar_hover_color;
   }
-
 }
 /*
  * IDs

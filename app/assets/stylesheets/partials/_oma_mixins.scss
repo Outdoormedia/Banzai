@@ -60,15 +60,20 @@
 @mixin oma_menu_links($color: $oma_black) {
   a,
   a:link,
-  a:hover,
-  a:active,
   a:visited {
     color: $color;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    &:hover {
+      background-color: $oma_topbar_hover_color;
+    }
+    &:active {
+      background-color: $oma_topbar_hover_color;
+    }
   }
+
 }
 
 @mixin rounded_borders($rounding: 10px, $color: $oma_black) {
