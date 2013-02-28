@@ -2,15 +2,16 @@
   .links
     = link_to "Clear", refinery.plan_by_formats_plan_by_formats_path, :method => :delete, :confirm => "Are you sure?"
     = link_to "Planning Weights", refinery.plan_by_formats_plan_by_format_path("planning_weights")
-
+    
 = form_for :proposal_a, :url => refinery.plan_by_formats_plan_by_formats_path do
   .right
+  %br
     = submit_tag "Run Report"
   %table.record
     - demog_names = %w[Primary Secondary Tertiary]
     - demog_names.zip([1, 2, 3]).each do |demog_name,index|
       %tr
-        %th== #{demog_name} Demographic
+        %th= = #{demog_name} Demographic
         %td= select_tag "planning[demographics][#{index}]", options_for_select([["None", nil]] + Selection.planning_demographic.leaves.map {|demog| [demog.name, demog.id]}, get_planning_data(:demographics, index).to_i)
 
   %br

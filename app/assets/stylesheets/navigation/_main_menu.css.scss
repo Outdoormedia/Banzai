@@ -37,13 +37,11 @@
   }
 }
 
-
 .nav#main_nav_left {
   text-align: left;
   ul {
-    background-color: $oma_topbar_color;
     li {
-      width: 104px
+      width: 104px;
     }
   }
   a {
@@ -56,10 +54,12 @@
 .nav#main_nav_right {
   text-align: left;
   ul {
-    background-color: $oma_topbar_color;
+    li {
+      background-color: green;
+    }
   }
+
   a {
-    background-color: inherit;
     &:hover {
       color: $oma_black;
     }
