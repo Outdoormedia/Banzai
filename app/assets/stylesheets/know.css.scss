@@ -1,0 +1,26 @@
+// know.css.scss
+// styles for snapshots and plan_by_formats engines
+
+@import "partials/colors";
+
+
+table.record {
+    background-color: $oma_white;
+    display: table-cell;
+    font-size: 1.2em;
+    td {
+        padding-top: 10px;
+    }
+    th {
+        padding-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
