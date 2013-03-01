@@ -3,19 +3,19 @@
 
 @import "partials/colors";
 
-
-table.record {
-    background-color: $oma_white;
+.record {
     display: table-cell;
-    font-size: 1.2em;
-    td {
-        padding-top: 10px;
-    }
-    th {
-        padding-top: 10px;
-    }
 }
 
+// td elements within elements with class="record":
+.record td {
+    padding-top: 20px;
+    font-size: 1.2em;
+}
+// th elements within elements with class="record":
+.record th{
+        font-size: 1.4em;
+}
 
 
 

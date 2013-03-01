@@ -3,6 +3,7 @@
  */
 @import "partials/colors";
 
+
 #main_menu {
 
   font-family: $oma_topbar_menu_font;
@@ -27,8 +28,6 @@
         text-decoration: none;
         background-color: $oma_topbar_color;
         
-        a:visited {color:#00FF00;}
-
         &:hover {
           background-color: $oma_topbar_hover_color;
         }
@@ -37,32 +36,34 @@
   }
 }
 
-.nav#main_nav_left {
-  text-align: left;
+#main_menu_right {
+
+  font-family: $oma_topbar_menu_font;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+
   ul {
+    border: 0px solid $oma_green;
+    margin-bottom: 10px;
+
     li {
-      width: 104px;
-    }
-  }
-  a {
-    &:hover {
-      color: $oma_black;
+      text-align: center;
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: -4px; // Whitespace correction.
+
+      a {
+        color: $oma_white;
+        display: block;
+        font-weight: bold;
+        padding: 10px;
+        text-decoration: none;
+        background-color: $oma_green;
+        
+        &:hover {
+          background-color: $oma_topbar_hover_color;
+        }
+      }
     }
   }
 }
-
-.nav#main_nav_right {
-  text-align: left;
-  ul {
-    li {
-      background-color: green;
-    }
-  }
-
-  a {
-    &:hover {
-      color: $oma_black;
-    }
-  }
-}
-
