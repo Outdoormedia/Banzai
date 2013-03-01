@@ -18,6 +18,7 @@ $oma_lighter_grey:   lighten($oma_light_grey,   10%);
 $oma_lightest_grey:  lighten($oma_lighter_grey, 15%);
 
 $oma_topbar_color: $oma_topbar_black;  // topbar_black per John Gandar request
+$oma_right_topbar_color: lighten($oma_topbar_black, 20%);  // topbar_black per John Gandar request
 $oma_topbar_hover_color: $oma_green;
 
 
