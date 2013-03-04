@@ -13,6 +13,8 @@
   ul {
     border: 0px solid $oma_green;
     margin-bottom: 10px;
+    background-color: $oma_topbar_color;
+
 
     li {
       text-align: center;
@@ -36,34 +38,13 @@
   }
 }
 
-#main_menu_right {
-
-  font-family: $oma_topbar_menu_font;
-  font-size: 0.95em;
-  margin-bottom: 10px;
-
+.right_side.main_menu {
+  background-color: $oma_right_topbar_color;
   ul {
-    border: 0px solid $oma_green;
-    margin-bottom: 10px;
-
-    li {
-      text-align: center;
-      display: inline-block;
-      margin-bottom: 0;
-      margin-right: -4px; // Whitespace correction.
-
-      a {
-        color: $oma_white;
-        display: block;
-        font-weight: bold;
-        padding: 10px;
-        text-decoration: none;
-        background-color: $oma_right_topbar_color;
-        
-        &:hover {
-          background-color: $oma_topbar_hover_color;
-        }
-      }
-    }
+    text-align: right;
+  }
+  a {
+    background-color: $oma_right_topbar_color;    
   }
 }
+

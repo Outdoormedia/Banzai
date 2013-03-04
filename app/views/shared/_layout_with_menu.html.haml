@@ -6,18 +6,16 @@
 = render '/refinery/head'
 
 %body
-  = render '/shared/header'
-
   .container
+    = render '/shared/header'
+
     - if local_assigns[:menu_name].present?
-      .row
-        .four.columns
-          = render '/shared/side_menu', :menu_name => local_assigns[:menu_name]
-        .twelve.columns{:'data-pjax-container' => true}
-          = yield
+      .four.columns
+        = render '/shared/side_menu', :menu_name => local_assigns[:menu_name]
+      .twelve.columns{:'data-pjax-container' => true}
+        = yield
     - else
-      .row
-        .sixteen.columns= yield
+      = yield
 	
   = render 'shared/footer'
   = render '/refinery/javascripts'
