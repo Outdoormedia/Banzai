@@ -3,7 +3,7 @@
 =raw @page.content_for(:body)
 
 #upper_page_content.row
-  %section#carousel_content.ten.columns.alpha
+  #carousel_content.ten.columns.alpha
     .carousel
       - begin 
         - if @carousel.present?
@@ -14,7 +14,7 @@
         = image_tag 'oma_placeholder.png', :alt => "Carousel image not found."
 
 
-  %section#pie_content.six.columns.omega
+  #pie_content.six.columns.omega
     = raw @page.content_for(:pie)
     #oma_pieChart_caption
       %p= 'What do you want to do with MOVE?'

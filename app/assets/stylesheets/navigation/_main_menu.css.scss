@@ -4,29 +4,29 @@
 @import "partials/colors";
 
 
-#main_menu {
-
+.main_menu {
+  background-color: $oma_topbar_color;
   font-family: $oma_topbar_menu_font;
   font-size: 0.95em;
-  margin-bottom: 10px;
+  margin-bottom: 0px;  
 
   ul {
-    border: 0px solid $oma_green;
-    margin-bottom: 10px;
-    background-color: $oma_topbar_color;
-
+    display: inline-block;
+    position: relative;
+    top: 10px;
 
     li {
-      text-align: center;
-      display: inline-block;
+      text-align: right;
       margin-bottom: 0;
       margin-right: -4px; // Whitespace correction.
+      display: inline-block;
+      position: relative;
 
       a {
         color: $oma_white;
-        display: block;
         font-weight: bold;
         padding: 10px;
+        top: -10px;
         text-decoration: none;
         background-color: $oma_topbar_color;
         
@@ -38,13 +38,38 @@
   }
 }
 
-.right_side.main_menu {
-  background-color: $oma_right_topbar_color;
+.main_menu_right {
+  background-color: $oma_topbar_color;
+  font-family: $oma_topbar_menu_font;
+  font-size: 0.95em;
+  margin-bottom: 0px;  
+
   ul {
-    text-align: right;
-  }
-  a {
-    background-color: $oma_right_topbar_color;    
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    float: right;  // difference in menus
+
+    li {
+      text-align: right;
+      margin-bottom: 0;
+      margin-right: 4px; // difference in menus  Whitespace correction.
+      display: inline-block;
+      position: relative;
+
+      a {
+        color: $oma_white;
+        font-weight: bold;
+        padding: 10px;
+        top: -10px;
+        text-decoration: none;
+        background-color: $oma_topbar_color;
+        
+        &:hover {
+          background-color: $oma_topbar_hover_color;
+        }
+      }
+    }
   }
 }
 
