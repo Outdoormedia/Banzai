@@ -39,7 +39,7 @@
 }
 
 .main_menu_right {
-  background-color: $oma_topbar_color;
+  background-color: $oma_right_topbar_color;
   font-family: $oma_topbar_menu_font;
   font-size: 0.95em;
   margin-bottom: 0px;  
@@ -63,7 +63,7 @@
         padding: 10px;
         top: -10px;
         text-decoration: none;
-        background-color: $oma_topbar_color;
+        background-color: $oma_right_topbar_color;
         
         &:hover {
           background-color: $oma_topbar_hover_color;

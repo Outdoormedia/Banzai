@@ -15,8 +15,7 @@
       .twelve.columns{:'data-pjax-container' => true}
         = yield
     - else
-      .container
-        = yield
+      = yield
 	
   = render 'shared/footer'
   = render '/refinery/javascripts'
