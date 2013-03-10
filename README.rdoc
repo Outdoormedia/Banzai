@@ -15,4 +15,10 @@
   Rails Console: Refinery::Snapshots::Snapshot.import
 
 
+= Import/Update PBF
+  rake db:fixtures:load  - Selections was corrupt
+  mysql -uroot banzai_development < db/bombora_prepare.sql
+  mysql -uroot banzai_development < bombora.all.markets.ready.for.upload.sql  - Jamie produced sample in db folder.. must change from v_demog_mapping to demog_mapping
+
+
 
