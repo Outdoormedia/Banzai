@@ -14,7 +14,7 @@ Refinery::Videos.configure do |config|
     # Configure Dragonfly
     # This is where in the middleware stack to insert the Dragonfly middleware
     # config.dragonfly_insert_before = ActionDispatch::Callbacks
-    # config.dragonfly_secret = 8b03213c9a5624d35de2cfb55ebd6c196e38049a1ea5e2e0
+    # config.dragonfly_secret = c6f59cf6d53cb0c260895b6aebf1436b9f22865d36ef0dc2
     # If you decide to trust file extensions replace :ext below with :format
     # config.dragonfly_url_format = /system/videos/:job/:basename.:format
     # config.datastore_root_path = /Users/John/Devo/banzai/public/system/refinery/videos
